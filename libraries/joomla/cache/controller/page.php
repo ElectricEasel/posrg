@@ -119,7 +119,7 @@ class JCacheControllerPage extends JCacheController
 	 *
 	 * @since   11.1
 	 */
-	public function store($wrkarounds = true)
+	public function store($data, $id, $group = null, $wrkarounds = true)
 	{
 		// Get page data from JResponse body
 		$data = JResponse::getBody();

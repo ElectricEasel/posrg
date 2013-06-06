@@ -1,24 +1,9 @@
-<?php
-/*------------------------------------------------------------------------
-# mod_ofblikebox - Optimized Facebook Like Box
+<?php defined( '_JEXEC' ) or die;
 
-# ------------------------------------------------------------------------
-
-# author:    Optimized Sense
-
-# copyright: Copyright (C) 2011 http://www.o-sense.com. All Rights Reserved.
-
-# @license: http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.o-sense.com
-
-# Technical Support:  http://www.o-sense.com/contact-us/support-inquiries.html
-
--------------------------------------------------------------------------*/
-// no direct access
-defined( '_JEXEC' ) or die( 'Restricted access' );
-class oFBLikeBox{
-	function getData(&$params ){		
+class oFBLikeBox
+{
+	public static function getData(&$params )
+	{
 		$oFlink	= $params->get('olink', 'http://www.facebook.com/pages/Optimized-Sense/230549220294427?ref=ts');
 		$oFwidth	= $params->get('owidth', '300');
 		$oFheight	= $params->get('oheight', '500');
