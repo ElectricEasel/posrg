@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+    <name>Optimized FB Like Box</name>
+	<author>Optimized Sense</author>
+    <creationDate>July, 2011</creationDate>
+	<copyright>(C) 2012 Optimized Sense. This module is released under GNU/GPL license</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html</license>
+    <authoremail>support@o-sense.com</authoremail>
+    <authorurl>http://www.o-sense.com</authorurl>
+	<version>2.1.0</version>
+    <description>This module will allow you to show the Facebook Like Box for your Page, so it will show all the people that liked your page, very simple, very easy, yet effective.<br/> For more information, examples and other modules, please visit Optimized Sense (http://www.o-sense.com).
+	</description>
+    <files folder="content">
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>		
+        <filename>index.html</filename>
+        <filename module="mod_ofblikebox">mod_ofblikebox.php</filename>
+    </files>
+    <params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+		<param type="spacer" default="" />
+        <param name="olink" type="text" default="" label="Page Link" description="Put the link for your page that you want to show the like box for ( example: http://www.facebook.com/pages/Optimized-Sense/230549220294427?ref=ts )" />		  
+		<param name="owidth" type="text" default="300" label="Box Width" description="Put the width of the box that you want in pixels." />
+		<param name="oheight" type="text" default="600" label="Box Height" description="Put the height of the box that you want in pixels." />
+		<param name="ocolor" type="list" default="1" label="Color Scheme" description="Choose the color scheme for the FB Like Box.">
+            <option value="1">Light</option>
+            <option value="2">Dark</option>
+        </param>  
+		<param name="ofaces" type="list" default="1" label="Show Faces" description="Show the faces (profile photos) in the Like Box ">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </param>  
+        <param name="oborder" type="text" default="#000000" label="Border Color" description="Enter the border color for the Like Box, the color is a color code like (#000000 , #ffffff) with the #" />
+		<param name="ostream" type="list" default="1" label="Page Stream" description="Show the page stream in the Like Box (Page Stream is the things that is written in the page)">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </param>
+		<param name="oforce" type="list" default="1" label="Force Wall" description="For Places, specifies whether the stream contains posts from the Place's wall or just checkins from friends.">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </param>
+		<param name="oheader" type="list" default="1" label="Like Box Header" description="Show the (Find us on Facebook) bar at the top of the Like Box.. Note that this can be shown only if the Page Stream and/or Show Faces are shown, if both hidden, the header will not be shown)">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </param>
+		<param name="osource" type="list" default="1" label="Generated Code Type" description="Choose the generated code type wether it is HTML5 or XFBML or iFrame... This is used to support all type of websites, so in case one type didn't worked on your website, try another type">
+            <option value="1">HTML5</option>
+            <option value="2">XFBML</option>
+			<option value="3">iFrame</option>
+        </param>  
+    </params>
+	
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Module Caching">
+			<option value="0">No caching</option>
+			<option value="1">Use global</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+	
+	<!-- from here, the params for Joomla! 1.6 standards -->
+	<config>
+	<fields name="params">
+	<fieldset name="Optimized FB Like Box">
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Module Class Suffix" />
+		<field type="spacer" default="" />
+        <field name="olink" type="text" default="" label="Page Link" description="Put the link for your page that you want to show the like box for ( example: http://www.facebook.com/pages/Optimized-Sense/230549220294427?ref=ts )" />		  
+		<field name="owidth" type="text" default="300" label="Box Width" description="Put the width of the box that you want in pixels." />
+		<field name="oheight" type="text" default="600" label="Box Height" description="Put the height of the box that you want in pixels." />
+		<field name="ocolor" type="list" default="1" label="Color Scheme" description="Choose the color scheme for the FB Like Box.">
+            <option value="1">Light</option>
+            <option value="2">Dark</option>
+        </field>  
+		<field name="ofaces" type="list" default="1" label="Show Faces" description="Show the faces (profile photos) in the Like Box ">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </field>  
+        <field name="oborder" type="text" default="#000000" label="Border Color" description="Enter the border color for the Like Box, the color is a color code like (#000000 , #ffffff) with the #" />
+		<field name="ostream" type="list" default="1" label="Page Stream" description="Show the page stream in the Like Box (Page Stream is the things that is written in the page)">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </field>
+		<field name="oforce" type="list" default="1" label="Force Wall" description="For Places, specifies whether the stream contains posts from the Place's wall or just checkins from friends.">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </field>
+		<field name="oheader" type="list" default="1" label="Like Box Header" description="Show the (Find us on Facebook) bar at the top of the Like Box.. Note that this can be shown only if the Page Stream and/or Show Faces are shown, if both hidden, the header will not be shown)">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </field>
+		
+		<field name="osource" type="list" default="1" label="Generated Code Type" description="Choose the generated code type wether it is HTML5 or XFBML or iFrame... This is used to support all type of websites, so in case one type didn't worked on your website, try another type">
+            <option value="1">HTML5</option>
+            <option value="2">XFBML</option>
+			<option value="3">iFrame</option>
+        </field>
+	</fieldset>
+	
+	<fieldset name="cache">
+            <field
+               name="cache"
+               type="list"
+               default="1"
+               label="COM_MODULES_FIELD_CACHING_LABEL"
+               description="COM_MODULES_FIELD_CACHING_DESC">
+               <option
+                  value="1">JGLOBAL_USE_GLOBAL</option>
+               <option
+                  value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+            </field>
+            <field
+               name="cache_time"
+               type="text"
+               default="900"
+               label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+               description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+            <field
+               name="cachemode"
+               type="hidden"
+               default="static">
+               <option
+                  value="static"></option>
+                </field>
+         </fieldset>
+    </fields>
+     </config>
+	<!-- End Joomla! 1.6 params -->
+</install>

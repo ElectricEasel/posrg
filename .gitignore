@@ -1,0 +1,7 @@
+/cache/*
+/configuration.php
+/logs/*
+/tmp/*
+/htaccess.txt
+/README.txt
+/LICENSE.txt

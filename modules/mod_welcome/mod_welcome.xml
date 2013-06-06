@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Home page welcome</name>
+	<author></author>
+	<creationDate></creationDate>
+	<copyright></copyright>
+	<license></license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0</version>
+	<description></description>
+	<files>
+		<filename module="mod_welcome">mod_welcome.php</filename>
+		<filename module="mod_welcome">index.html</filename>
+		<filename module="mod_welcome">tmpl/default.php</filename>
+		<filename module="mod_welcome">tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+</install>

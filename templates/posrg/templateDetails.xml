@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>posrg</name>
+	<creationDate>3/16/12</creationDate>
+	<author>Electric Easel, Inc.</author>
+	<authorEmail>don@electriceasel.com</authorEmail>
+	<authorUrl>http://electriceasel.com/team-member/don-gilbert</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<version>1.0</version>
+	<description>Custom theme for POS Remarketing Group</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>html</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</files>
+	<positions>
+		<position>nav</position>
+		<position>left</position>
+		<position>right</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>footer-4</position>
+		<position>breadcrumb</position>
+		<position>content-top</position>
+		<position>content-bottom</position>
+		<position>secondary-nav</position>
+		<position>debug</position>
+	</positions>
+</extension>
