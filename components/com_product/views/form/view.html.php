@@ -12,15 +12,14 @@ class ProductViewForm extends JView
 		$thumb = new Varien_Image_Adapter_Gd2();
 		$thumb->keepAspectRatio(true);
 		$thumb->keepFrame(false);
-		//$thumb->keepTransparency(true);
-		//$thumb->backgroundColor(array(255,255,255));
 		$thumb->open($image_path)->resize($w, $h)->save($thumb_path)->__destruct();
-		return JURI::base() . $thumb_path;
+
+		return JUri::base() . $thumb_path;
 	}
 
 	public function display($tpl = null)
 	{
-		$this->data = $this->get('Item');
+		$this->item = $this->get('Item');
 
 		$arr = array(
 			(object) array(
@@ -42,6 +41,51 @@ class ProductViewForm extends JView
 			$this->profile_img = $this->getThumb('components/com_product/assets/upload/' . $this->item->image, 50, 50);
 		}
 
+		$this->prepareDocument();
+
 		parent::display($tpl);
+	}
+
+	protected function prepareDocument()
+	{
+		JFactory::getDocument()
+			->addScript('components/com_product/assets/js/ajaxupload.js')
+			->addScriptDeclaration('
+			// <![CDATA[
+			jQuery(document).ready(function($){
+
+				$("#cancel").click(function(){
+					document.location.href = "' . JRoute::_('index.php?option=com_product&view=manager') . '";
+				});
+
+				$(".jmc-upload").each(function(A, B){
+					var self = B;
+					new AjaxUpload($(B), {
+						action: "<?php echo JUri::base() ?>index.php?option=com_product&task=upload",
+						name:  "file_upload",
+						data: {},
+						responseType: "json",
+						onComplete: function(file, response) {
+							if(response){
+								alert(response.message);
+								if(response.type == "success"){
+
+									$(self)
+										.children("img")
+										.addClass("size-min")
+										.attr("src", "' . JUri::base() . 'components/com_product/assets/upload/" + response.file);
+
+									$(self)
+										.children("input")
+										.val(response.file);
+								}
+
+							}
+						}
+					});
+				});
+			});
+			// ]]>
+			');
 	}
 }

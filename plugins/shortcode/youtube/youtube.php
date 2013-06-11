@@ -34,6 +34,7 @@ class PlgShortcodeYoutube extends JPlugin
 		}
 
 		Shortcodes::addShortcode('youtube', 'PlgShortcodeYoutube::youtube');
+		Shortcodes::addShortcode('date', 'PlgShortcodeYoutube::date');
 
 		return true;
 	}
@@ -68,5 +69,19 @@ class PlgShortcodeYoutube extends JPlugin
 		}
 
 		return '<iframe title="YouTube video player" width="' . $width . '" height="' . $height . '" src="http://www.youtube.com/embed/' . $id . '" frameborder="0" allowfullscreen></iframe>';
+	}
+
+	public static function date($atts)
+	{
+		extract(
+			Shortcodes::shortcodeatts(
+				array(
+					'format' => 'm/d/Y'
+				),
+				$atts
+			)
+		);
+
+		return date($format);
 	}
 }

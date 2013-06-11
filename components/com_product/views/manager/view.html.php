@@ -17,7 +17,7 @@ class ProductViewManager extends JView
 		parent::display($tpl);
 	}
 
-	public function order( $rows, $image='filesave.png', $task="saveorder" )
+	public function order($rows, $image = 'filesave.png', $task = "saveorder")
 	{
 		$image = '<img src="' . JUri::base() . 'components/com_product/assets/images/' . $image . '" alt="save order" />';
 		return '<a href="javascript:saveorder('.(count( $rows )-1).', \''.$task.'\')" title="'.JText::_( 'Save Order' ).'">'.$image.'</a>';

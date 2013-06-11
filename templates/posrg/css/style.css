@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -292,7 +292,7 @@ form.search input[type=text] {
 #content .content-top {
 	padding: 10px;
 	padding-bottom:40px;
-	background: url(../images/under-top-widget.png) no-repeat bottom center scroll transparent;	
+	background: url(../images/under-top-widget.png) no-repeat bottom center scroll transparent;
 }
 #content .homepage-widget {
 	background:#ececec;
@@ -347,6 +347,7 @@ form.search input[type=text] {
     text-decoration: none;
     text-transform: lowercase;
     box-shadow: 1px 1px 0 #fff;
+    border:none;
 }
 #content .homepage-widget .readmore:hover,
 .readmore:hover {
@@ -1111,7 +1112,7 @@ h1.contentheading {
 	font-size:16px;
 	color:#FFF;
 	font-weight: bold;
-	
+
 }
 
 #search_results {
@@ -1180,10 +1181,7 @@ h1.contentheading {
 .quote-form-wrap #text_5,
 .quote-form-wrap #text_16,
 .quote-form-wrap #text_17,
-.quote-form-wrap #text_18,
-.specials-form-wrap #cus,
-.specials-form-wrap #tel,
-.specials-form-wrap #email {
+.quote-form-wrap #text_18 {
 	width: 300px;
 }
 .form_item.phone .form_element.cf_textbox,
@@ -1210,12 +1208,8 @@ h1.contentheading {
 .career-form-wrap .form_element.cf_textbox {
 	max-width: 300px;
 }
-.career-form-wrap input[type="text"],
-.career-form-wrap textarea,
-.quote-form-wrap input[type="text"],
-.quote-form-wrap textarea,
-.specials-form-wrap input[type="text"],
-.specials-form-wrap textarea {
+#userForm input[type="text"],
+#userForm textarea {
 	border: 1px solid #CACACA;
 	color:#000 !important;
 }
@@ -1238,8 +1232,8 @@ float:right
 	font-weight: bold;
 	margin-bottom: 5px;
 }
-.quote-form-wrap .readmore,
-.specials-form-wrap .validate.readmore {
+#userForm .readmore,
+#userForm .validate.readmore {
     border: medium none;
     font-size: 13px;
     margin-left: 270px;
@@ -1369,4 +1363,8 @@ float:right
 	border-color:#DE7A7B;
 	background-color:#E6C0C0;
 	color:#CC0000;
+}
+
+.menu .item-328 {
+	display:none !important;
 }

@@ -2,7 +2,7 @@
 
 require_once JPATH_ADMINISTRATOR . '/components/com_rsform/helpers/rsform.php';
 
-JRequest::setVar('manufacturer', $this->item->mfc);
+// JRequest::setVar('manufacturer', $this->item->mfc);
 JRequest::setVar('part_number', $this->item->product_name);
 JRequest::setVar('form_name', 'Buy Now: Specials');
 ?>
@@ -19,5 +19,7 @@ JRequest::setVar('form_name', 'Buy Now: Specials');
 		<br class="clear"/>
 	</div>
 	<span style="margin-bottom:10px;display:block;"><span style="color:red;">*</span> required fields</span>
-	<?php echo RSFormProHelper::displayForm(3); ?>
+	<div class="specials-form-wrap">
+		<?php echo RSFormProHelper::displayForm(3); ?>
+	</div>
 </div>

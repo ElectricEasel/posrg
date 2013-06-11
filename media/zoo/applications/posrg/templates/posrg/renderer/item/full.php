@@ -133,6 +133,7 @@ else
 		</div>
 		<?php endif; ?>
 		<a name="quick-quote">&nbsp;</a>
+		<h3>Online Quote &nbsp;&nbsp;&nbsp;<span style="color:red">* <span style="color:white">required fields</span></span></h3>
 		<?php
 		require_once JPATH_ADMINISTRATOR . '/components/com_rsform/helpers/rsform.php';
 

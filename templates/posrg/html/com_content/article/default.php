@@ -10,7 +10,7 @@ defined('_JEXEC') or die('Restricted access');
 </div>
 <?php endif; ?>
 
-<?php if ($this->params->get('show_page_title',1) && $this->params->get('page_title') != $this->item->title) : ?>
+<?php if ($this->params->get('show_page_title', 0) && $this->params->get('page_title') != $this->item->title) : ?>
 <h1 class="componentheading<?php echo $this->escape($this->params->get('pageclass_sfx')); ?>">
         <?php echo $this->escape($this->params->get('page_title')); ?>
 </h1>

@@ -10,7 +10,6 @@ class ProductController extends JController
 		parent::__construct($config);
 
 		$this->app = JFactory::getApplication();
-		$this->registerTask( 'unblock', 'block' );
 	}
 
 	public function display()
@@ -31,64 +30,75 @@ class ProductController extends JController
 			'delete'
 		);
 
-		if (in_array($task, $checkTask) || $view === 'block')
+		$checkView = array(
+			'form',
+			'manager'
+		);
+
+		if (in_array($task, $checkTask) || in_array($view, $checkView))
 		{
-			$this->checkTK();
 			$this->checkLogin();
+			// $this->checkTK();
 		}
 
 		parent::display();
 	}
 
-	public function block( )
+	public function publish()
 	{
-		// Check for request forgeries
-		$model = new ProductModel;
-		$arr   = array();
-		$arr['id']    = $this->app->input->getInt('id');
-		$arr['published']   = $this->getTask() == 'block' ? 0 : 1;
-		$tables    = $model->saveData($arr, array(), 'product');
+		$table = new ProductTableProduct;
+		$id = $this->app->input->getInt('id');
 
-		if ($tables->getError())
+		if ($table->toggleState($id))
 		{
-			$msg = JText::_( 'Error: One or More Record Could not be ' . $this->getTask() );
+			$this->setMessage('Item state toggled.');
 		}
 		else
 		{
-			$msg = JText::_( 'Record(s) ' . $this->getTask() );
+			$this->setMessage('There was an error changing item state.');
 		}
 
-		$this->setRedirect(JRoute::_('index.php?option=com_product&view=manager'), $msg);
+		$this->setRedirect(JRoute::_('index.php?option=com_product&view=manager'));
 	}
 
 	public function save()
 	{
 		$post  = JRequest::get('post');
-		$model = new ProductModel;
+		$table = new ProductTableProduct;
 		$id    = $this->app->input->getInt('id');
-		$max_order=$model->setTable('#__product')->select()->getListData();
-		$order  = count($max_order) + 1;//intval($rs->maxs) + 1;
-		$post['ordering']  = $order;
 
-		if (intval($post['id']))
+		if ($id)
 		{
-			$post['ordering']  = null;
+			$table->load($id);
 		}
 
-		$table = $model->saveData($post, array(), 'product');
+		if ($table->save($post))
+		{
+			$this->setMessage('Product Saved Successfully.');
+		}
+		else
+		{
+			$this->setError('There was an error saving.');
+		}
 
 		$this->setRedirect(JRoute::_('index.php?option=com_product&view=manager'));
 	}
 
 	public function delete()
 	{
+		$table = new ProductTableProduct;
 		$id = $this->app->input->getInt('id');
-		$model = new ProductModel;
-		$model->setTable('#__product')
-			->where('id = ' . $id)
-			->delete();
 
-		$this->setRedirect(JRoute::_('index.php?option=com_product&view=manager'), JText::_('GM_PRODUCT_DELETE_ITEM'));
+		if ($table->delete($id))
+		{
+			$this->setMessage('Product successfully deleted.');
+		}
+		else
+		{
+			$this->setError('There was an error deleting the product.');
+		}
+
+		$this->setRedirect(JRoute::_('index.php?option=com_product&view=manager'));
 	}
 
 	public function upload()
@@ -154,20 +164,21 @@ class ProductController extends JController
 
 	public function saveorder()
 	{
-		$cid = JRequest::getVar('cid', array(), 'get', 'array');
+		$cid = $this->app->input->get('cid', array(), 'array');
 		JArrayHelper::toInteger($cid);
 
-		$order = JRequest::getVar( 'order', array(), 'get', 'array' );
+		$order = $this->app->input->get('order', array(), 'array' );
 		JArrayHelper::toInteger($order);
 
-		$model = new ProductModel();
-		if ($model->setOrder($cid, $order, 'product'))
+		$table = new ProductTableProduct;
+
+		if ($table->saveorder($cid, $order))
 		{
-			$msg = JText::_( 'New ordering saved' );
+			$this->setMessage('New ordering saved.');
 		}
 		else
 		{
-			$msg = $model->getError();
+			$this->setError('There was an error reordering the products.');
 		}
 
 		$this->setRedirect( 'index.php?option=com_product&view=manager', $msg );

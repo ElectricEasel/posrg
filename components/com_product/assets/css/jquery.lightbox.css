@@ -4,17 +4,17 @@
  * http://jquery.com/plugins/project/jquerylightbox_bal
  *
  * This file is part of jQuery Lightbox (balupton edition).
- * 
+ *
  * jQuery Lightbox (balupton edition) is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
- * 
+ *
  * jQuery Lightbox (balupton edition) is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License
  * along with jQuery Lightbox (balupton edition).  If not, see <http://www.gnu.org/licenses/>.
  *
@@ -37,21 +37,21 @@ html, body { margin: 0; padding: 0; height: 100%;}
 	left: 0px;
 	bottom:auto;
 	right:auto;
-	
+
 	z-index:100;
 	width:100%;
 	height:auto;
-	
+
 	text-align:center;
 	color:#333333;
-	
+
 	/* stop stupid conflicts */
 	margin:0px;
 	padding:0px;
 	border:none;
 	outline:none;
 	line-height:0;
-	
+
 	/* general conflict stopper */
 	text-decoration:none;
 	background:none;
@@ -123,7 +123,7 @@ html, body { margin: 0; padding: 0; height: 100%;}
 	width:100%;
 	z-index:10;
 }
-/* #lightbox-imageBox > #lightbox-nav { left: 0; } 
+/* #lightbox-imageBox > #lightbox-nav { left: 0; }
 #lightbox-nav a { outline: none; }*/
 
 
@@ -131,40 +131,29 @@ html, body { margin: 0; padding: 0; height: 100%;}
 	display:block;
 	width:49%;
 	height: 100%;
-	background:transparent url("../images/blank.gif") no-repeat; /* Trick IE into showing hover */
+	/* background:transparent url("../images/blank.gif") no-repeat; /* Trick IE into showing hover */
 	/* cursor:pointer; */
 	zoom:1; /* who knows why? */
-	
+
 	padding:0px;
 	margin:0px;
 }
-#lightbox-nav-btnPrev { 
+#lightbox-nav-btnPrev {
 	left:0;
 	right:auto;
 	float:left;
 }
-#lightbox-nav-btnNext { 
+#lightbox-nav-btnNext {
 	left:auto;
 	right:0;
 	float:right;
 }
-/*
-.preload_largeLink, #prevLink:hover, #prevLink:visited:hover {
-	background:url("../images/prev.gif") left 45% no-repeat;
-}
-.preload_nextLink, #nextLink:hover, #nextLink:visited:hover {
-	background:url("../images/next.gif") right 45% no-repeat;
-}
-*/
 
 #lightbox-infoBox {
 	font:10px Verdana, Helvetica, sans-serif;
 	background-color: transparent !important;
 	margin:0 auto;
 	padding:0px;
-	
-	/* width: 100%;
-	padding: 0 10px 0; */
 }
 
 #lightbox-infoContainer {
@@ -172,13 +161,13 @@ html, body { margin: 0; padding: 0; height: 100%;}
 	padding-top:5px;
 	padding-bottom:5px;
 	color:#666;
-	
+
 	line-height:normal;
 	/* height:30px; */
 }
 #lightbox-infoHeader {
 	width:100%;
-	text-align:center; 
+	text-align:center;
 }
 #lightbox-caption {
 	text-align:justify;
@@ -227,6 +216,6 @@ html, body { margin: 0; padding: 0; height: 100%;}
 }
 
 #lightbox-infoContainer-clear {
-	clear:both; 
+	clear:both;
 	visibility:hidden;
 }
