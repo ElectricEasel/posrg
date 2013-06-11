@@ -12,7 +12,7 @@ class ProductController extends JController
 		$this->app = JFactory::getApplication();
 	}
 
-	public function display()
+	public function display($cachable = false, $urlparams = false)
 	{
 		$view = $this->app->input->get('view');
 		$task = $this->app->input->get('task');
@@ -41,7 +41,7 @@ class ProductController extends JController
 			// $this->checkTK();
 		}
 
-		parent::display();
+		parent::display($cachable, $urlparams);
 	}
 
 	public function publish()
