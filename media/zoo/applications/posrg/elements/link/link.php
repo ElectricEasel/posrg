@@ -29,13 +29,13 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 
 		Returns:
 			Boolean - true, on success
-	*/	
-	protected function _hasValue($params) {
+	*/
+	protected function _hasValue($params = array()) {
 		$link = $this->_data->get('value', '');
-		return !empty($link);		
+		return !empty($link);
 	}
 
-	
+
 	/*
 		Function: getText
 			Gets the link text.
@@ -47,7 +47,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 		$text = $this->_data->get('text', '');
 		return empty($text) ? $this->_data->get('value', '') : $text;
 	}
-	
+
 	/*
 		Function: getTitle
 			Gets the link title.
@@ -59,7 +59,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 		$title = $this->_data->get('custom_title', '');
 		return empty($title) ? $this->getText() : $title;
 	}
-	
+
 	/*
 		Function: getTitle
 			Gets the link title.
@@ -83,7 +83,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 			String - html
 	*/
 	public function render($params = array()) {
-		
+
 		$result = array();
 		$params['loop_count'] = 'odd';
 		foreach ($this as $self) {
@@ -97,7 +97,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 		$return .= $this->app->element->applySeparators($params['separated_by'], $result);
 		return $return;
 	}
-	
+
 	/*
 		Function: render
 			Renders the repeatable element.
@@ -113,7 +113,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 		$target = ($this->_data->get('target', '')) ? 'target="_blank"' : '';
 		$rel	= $this->_data->get('rel', '');
 		$rel	= !empty($rel) ? 'rel="' . $rel .'"' : '';
-		
+
 		$loop_count = $params['loop_count'];
 
 		//return '<a href="'.JRoute::_($this->_data->get('value', '')).'" title="'.$this->getTitle().'" '.$target.' '. $rel .'>'.$this->getText().'</a>';
@@ -130,7 +130,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
 
 	   Returns:
 	       String - html
-	*/		
+	*/
 	protected function _edit(){
         if ($layout = $this->getLayout('edit.php')) {
             return $this->renderLayout($layout,
@@ -201,7 +201,7 @@ class ElementLink extends ElementRepeatable implements iRepeatSubmittable {
         $custom_title 		= $validator->clean($values->get('custom_title'));
         $custom_description = $validator->clean($values->get('custom_description'));
         $rel          		= $validator->clean($values->get('rel'));
-        	
+
         $validator    		= $this->app->validator->create('url', array('required' => $params->get('required')), array('required' => 'Please enter an URL.'));
         $value        		= $validator->clean($values->get('value'));
 

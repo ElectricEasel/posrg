@@ -36,7 +36,7 @@ class PartsController extends JController
 		$this->setRedirect(JRoute::_('index.php?option=com_parts&view=list'), 'Import Successful.');
 	}
 
-	public function display()
+	public function display($cachable = false, $urlparams = false)
 	{
 		$view = $this->app->input->get('view');
 		$task = $this->app->input->get('task');
@@ -53,7 +53,7 @@ class PartsController extends JController
 			$this->checkLogin();
 		}
 
-		parent::display();
+		parent::display($cachable, $urlparams);
 	}
 
 	protected function checkLogin()

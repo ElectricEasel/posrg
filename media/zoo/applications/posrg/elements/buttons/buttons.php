@@ -27,7 +27,7 @@ class ElementButtons extends Element
 		Returns:
 			Boolean - true, on success
 	*/
-	public function hasValue($params)
+	public function hasValue($params = array())
 	{
 		return true;
 	}
