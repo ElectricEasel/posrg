@@ -202,6 +202,12 @@ class RSFormProValidations
 		return preg_match($format, $param, $match);
 	}
 	
+	public static function NoLinksInValue($param, $extra = null, $data = null) {
+		$format = "#((https?|ftp)://(\S*?\.\S*?))(\s|\;|\)|\]|\[|\{|\}|,|\"|'|:|\<|$|\.\s)#i";
+
+		return (preg_match($format, $param, $match) !== 1);
+	}
+	
 	public static function regex($value,$pattern=null,$data=null) {
 		return preg_match($pattern, $value);
 	}
