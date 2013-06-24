@@ -370,7 +370,7 @@ class plgSystemRsseo extends JPlugin
 	 *	Method to add robots
 	 */
 	protected function addRobots($robots) {
-		$doc =& JFactory::getDocument();
+		$doc = JFactory::getDocument();
 		
 		$registry = new JRegistry;
 		$registry->loadString($robots);

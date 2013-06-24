@@ -57,7 +57,7 @@ class JHtmlIcon {
 		return $html;
 	}
 	
-	public function filter($name, $options, $default, $selected, $class = null) {
+	public static function filter($name, $options, $default, $selected, $class = null) {
 		$html = array();
 		
 		$class = $class ? $class : 'inputbox';
