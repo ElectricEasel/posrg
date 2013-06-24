@@ -1368,3 +1368,7 @@ float:right
 .menu .item-328 {
 	display:none !important;
 }
+.search_pagination li {
+	display:inline-block;
+	margin:5px;
+}

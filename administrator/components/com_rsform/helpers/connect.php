@@ -15,7 +15,7 @@ function RSFormProConnect($url, $data, $params=array())
 	$useragent 	= _RSFORM_PRODUCT.'/'._RSFORM_VERSION.'R'._RSFORM_REVISION;
 	$timeout	= isset($params['timeout']) ? (int) $params['timeout'] : 10;
 	$method		= isset($params['method']) ? strtoupper($params['method']) : 'POST';
-	
+
 	if (isset($url_info['host']) && $url_info['host'] == 'localhost')
 		$url_info['host'] = '127.0.0.1';
 	
@@ -23,31 +23,38 @@ function RSFormProConnect($url, $data, $params=array())
 	if (extension_loaded('curl'))
 	{
 		// Init cURL
-		$ch = @curl_init();
+		$ch = curl_init();
 		
 		if ($method == 'GET' && $data)
 			$url .= (strpos($url, '?') === false ? '?' : '&').$data;
 		elseif ($method == 'POST')
-			@curl_setopt($ch, CURLOPT_POST, true);
+			curl_setopt($ch, CURLOPT_POST, true);
 		
 		// Set options
-		@curl_setopt($ch, CURLOPT_URL, $url);
-		@curl_setopt($ch, CURLOPT_FAILONERROR, 1);
-		@curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		@curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
-		@curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
-		@curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		@curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-		@curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+		curl_setopt($ch, CURLOPT_URL, $url);
+		curl_setopt($ch, CURLOPT_FAILONERROR, 1);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
+		curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_ANY);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 		
 		// Set timeout
-		@curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
+		curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
 		
 		// Grab data
-		@curl_exec($ch);
+		curl_exec($ch);
+		
+		$error = @curl_error($ch);
+		
+		if (!empty($error))
+		{
+			die($error);
+		}
 		
 		// Clean up
-		@curl_close($ch);
+		curl_close($ch);
 		
 		return true;
 	}
@@ -62,8 +69,11 @@ function RSFormProConnect($url, $data, $params=array())
 		$ssl  = $url_info['scheme'] == 'https' ? 'ssl://' : '';
 	
 		// Set timeout
-		$fsock = @fsockopen($ssl.$url_info['host'], $port, $errno, $errstr, $timeout);
-		
+		$fsock = fsockopen($ssl.$url_info['host'], $port, $errno, $errstr, $timeout);
+		if ($fsock === false)
+		{
+			die('not a valid connection');
+		}
 		if ($fsock)
 		{
 			// Set timeout

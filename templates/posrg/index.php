@@ -148,7 +148,6 @@ if ($menu->getActive() == $menu->getDefault())
 		</div>
 		<div class="bottom-nav">
 			<div class="wrap">
-				<a href="/sitemap.xml">Sitemap</a> |
 				<a href="/privacy-policy">Privacy Policy</a> |
 				&copy; <?php echo date('Y'); ?> POS Remarketing Group, Inc.
 				<a class="ee" href="http://www.electriceasel.com" target="_blank">website design by electric easel</a>

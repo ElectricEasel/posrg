@@ -533,7 +533,9 @@ class RSFormProHelper
 		$RSadapter = RSFormProHelper::getLegacyAdapter();
 		
 		if (strpos($value, '<code>') !== false)
+		{
 			return eval($value);
+		}
 		
 		return $value;
 	}
@@ -2602,7 +2604,7 @@ class RSFormProHelper
 					$className .= ' rsform-error';
 				RSFormProHelper::addClass($data['ADDITIONALATTRIBUTES'], $className);
 				
-				$out .= '<select '.($data['MULTIPLE']=='YES' ? 'multiple="multiple"' : '').' name="form['.$data['NAME'].'][]" '.((int) $data['SIZE'] > 0 ? 'size="'.(int) $data['SIZE'].'"' : '').' id="'.$data['NAME'].'" '.$data['ADDITIONALATTRIBUTES'].' >';
+				$out .= '<select '.($data['MULTIPLE']=='YES' ? 'multiple="multiple"' : '').' name="form['.$data['NAME'].']'.($data['MULTIPLE']=='YES' ? '[]' : '').'" '.((int) $data['SIZE'] > 0 ? 'size="'.(int) $data['SIZE'].'"' : '').' id="'.$data['NAME'].'" '.$data['ADDITIONALATTRIBUTES'].' >';
 				
 				$items = RSFormProHelper::explode(RSFormProHelper::isCode($data['ITEMS']));
 				

@@ -58,6 +58,8 @@ class PlgShortcodeRsform extends JPlugin
 			return;
 		}
 
+		JFactory::getLanguage()->load('com_rsform');
+
 		// We don't want to set the ID as a global var.
 		unset($atts['id']);
 
