@@ -96,40 +96,46 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 </head>
 <body class="<?php echo implode(' ', $bodyClasses); ?>">
 	<div id="container">
-				<div id="nav">
+				<div id="nav" class="blue-gradient2">
 					<div class="wrap">
 						<ul class="clr">
-							<li class="menu-button"><a href="javascript:toggleMenu();">Menu</a></li>
+							<li class="menu-button active"><a href="javascript:toggleMenu();">Menu</a></li>
 							<li class="menu-button"><a href="javascript:toggleMenu();">Services</a></li>
 							<li class="menu-button"><a href="javascript:toggleMenu();">Products</a></li>
 							<li class="menu-button"><a href="javascript:toggleMenu();">Buy</a></li>
 							<li class="menu-button"><a href="javascript:toggleMenu();">Sell</a></li>
 						</ul>
 					</div>
-					<div id="menu">
-						<jdoc:include type="modules" name="mobile-nav" />
 				</div>
-				</div>		
+				<div id="menu">
+						<jdoc:include type="modules" name="mobile-nav" />
+					</div>
 				<div id="banner">
-					<jdoc:include type="modules" name="mobile-header" />
+					<div class="wrap">
+						<jdoc:include type="modules" name="mobile-header" />
+					</div>
 				</div>
 			<div id="main">
 				<div class="wrap">
 					<?php if ($is_home) : ?>
 						<ul class="home-buttons">
 							<li class="blue-gradient">
+								<span class="icon search"></span>
 								<h3>Search Our Inventory</h3>
 								<p>Low cost point-of-sale hardware solutions</p>
 							</li>
 							<li class="blue-gradient">
+								<span class="icon services"></span>
 								<h3>POS Services</h3>
 								<p>Streamlined, organized and precise. That's POSRG.</p>
 							</li>
 							<li class="blue-gradient">
+								<span class="icon sell"></span>
 								<h3>Sell Your Used POS</h3>
 								<p>Asset appraisals for used POS and barcode hardware.</p>
 							</li>
 							<li class="blue-gradient">
+								<span class="icon info"></span>
 								<h3>POS Product Information</h3>
 								<p>POSRG partners with major brands for dedicated support.</p>
 							</li>
@@ -140,11 +146,34 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 					<?php endif; ?>
 				</div>
 			</div>
-			<div id="footer">
+			<div id="footer" class="blue-gradient">
 				<div class="wrap">
+					<ul id="footer-social">
+						<li>
+							<a class="fb" href="#"></a>
+						</li>
+						<li>
+							<a class="twitter" href="#"></a>
+						</li>
+						<li>
+							<a class="email" href="#"></a>
+						</li>
+					</ul>
+					<a class="footer-phone" href="">866-462-1005</a>
+					<span class="address">POS Remarketing Group, Inc.<br/>
+					1059 N. Old Rand Road,<br/>
+					Wauconda, IL 60084
+					</span>
+				</div>
+			</div>
+			<div id="sub-footer">
+				<div class="wrap">
+					<span class="copyright">&copy; <?php echo date('Y');?> POS Remarketing Group, Inc.</span>
+					<a href="#">Sitemap</a> | <a href="#">Privacy Policy</a>
 				</div>
 			</div>
 		</div>
 	</div>
+<div id="preloadImages"></div>
 </body>
 </html>

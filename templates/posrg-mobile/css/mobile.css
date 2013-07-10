@@ -1,49 +1,223 @@
-* {
-	
-}
 body {
 	background: url(../images/bg.png) repeat scroll 0 0 #fff;
+	font-family: Arial,sans-serif;
 	margin: 0;
 	padding: 0;
+	font-size: 13px;
 }
 .wrap {
 	width: 320px;
 	margin: 0 auto;
 }
-#banner {
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.3)));
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
-	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
-	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
-	height: 89px;
+#preloadImages {
+	position: absolute;
+	overflow: hidden;
+	left: -9999px;
+	top: -9999px;
+	height: 1px;
+	width: 1px;
+	background: url(../images/arrow-down.png) no-repeat -9999px -9999px,
+				url(../images/arrow-right.png) no-repeat -9999px -9999px;
 }
-#banner div img {
-    display: block;
-    margin: 0 auto;
-    padding-top: 7px;
-    width: 480px;
+#nav {
+	height: 46px;
+	border-bottom: 1px solid #003c80;
 }
-.blue-gradient {
-	background: rgb(0,97,173);
-	background: -moz-linear-gradient(top,  rgba(0,97,173,1) 0%, rgba(0,72,128,1) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,97,173,1)), color-stop(100%,rgba(0,72,128,1)));
-	background: -webkit-linear-gradient(top,  rgba(0,97,173,1) 0%,rgba(0,72,128,1) 100%);
-	background: -o-linear-gradient(top,  rgba(0,97,173,1) 0%,rgba(0,72,128,1) 100%);
-	background: -ms-linear-gradient(top,  rgba(0,97,173,1) 0%,rgba(0,72,128,1) 100%);
-	background: linear-gradient(to bottom,  rgba(0,97,173,1) 0%,rgba(0,72,128,1) 100%);
-}
-ul.home-buttons {
+#nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none outside none;
 }
-ul.home-buttons li {
+#nav ul li {
+	display: inline-block;
+}
+#nav ul li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    line-height: 46px;
+    padding: 0 14px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #0C3C63;
+}
+#nav ul li.active a {
+	background: #00539d;
+	box-shadow: 0 0 10px #004283 inset;	
+}
+#menu ul.menu,
+#menu ul.menu li ul {
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+	display: none;
+}
+#menu ul.menu li.active ul {
+	display: block;
+}
+#menu ul li.deeper.parent.active {
+	border-bottom: medium none;
+}
+#menu ul.menu li.active a,
+#menu ul.menu li ul li a {
+	background-color: #005faa;
+	border-bottom: 1px solid #01579b;
+	border-top: 1px solid #055fa8;
+}
+#menu ul.menu a {
 	color: #fff;
-	margin-bottom: 17px;
-	padding: 15px;
+	text-decoration: none;
+	display: block;
+	line-height: 40px;
+	background-color: #0251A2;
+    border-bottom: 1px solid #01468D;
+    border-top: 1px solid #014D9B;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.15) inset;
+    text-shadow: 1px 1px 1px #0C3C63;
+}
+#menu ul.menu li a span {
+	width: 280px;
+	margin: 0 auto;
+	display: block;
+}
+#menu ul.menu > li.deeper > a > span:after {
+	content: url('../images/arrow-down');
+	margin-left: 10px;
+}
+#menu ul.menu li ul li a span:before {
+	content: url('../images/arrow-right');
+	margin-right: 10px;
+}
+#menu ul.menu li ul li a span {
+	padding-left: 10px;
+}
+
+#banner {
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.25) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.25)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
+background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
+	border-top: 1px solid #c0c6ca;
+	height: 89px;
+}
+#banner img {
+    display: block;
+    margin: 0 auto 0 -98px;
+    padding-top: 7px;
+    width: 480px;
+}
+.blue-gradient {
+	background: #0061ad;
+	background: -moz-linear-gradient(top,  #0061ad 0%, #005ca4 27%, #004c88 77%, #004880 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0061ad), color-stop(27%,#005ca4), color-stop(77%,#004c88), color-stop(100%,#004880));
+	background: -webkit-linear-gradient(top,  #0061ad 0%,#005ca4 27%,#004c88 77%,#004880 100%);
+	background: -o-linear-gradient(top,  #0061ad 0%,#005ca4 27%,#004c88 77%,#004880 100%);
+	background: -ms-linear-gradient(top,  #0061ad 0%,#005ca4 27%,#004c88 77%,#004880 100%);
+	background: linear-gradient(to bottom,  #0061ad 0%,#005ca4 27%,#004c88 77%,#004880 100%);
+}
+.blue-gradient2 {
+	background: #0075c5;
+	background: -moz-linear-gradient(top,  #0075c5 0%, #006cb9 36%, #0068b5 43%, #0062ae 76%, #0060ab 78%, #005fa9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0075c5), color-stop(36%,#006cb9), color-stop(43%,#0068b5), color-stop(76%,#0062ae), color-stop(78%,#0060ab), color-stop(100%,#005fa9));
+	background: -webkit-linear-gradient(top,  #0075c5 0%,#006cb9 36%,#0068b5 43%,#0062ae 76%,#0060ab 78%,#005fa9 100%);
+	background: -o-linear-gradient(top,  #0075c5 0%,#006cb9 36%,#0068b5 43%,#0062ae 76%,#0060ab 78%,#005fa9 100%);
+	background: -ms-linear-gradient(top,  #0075c5 0%,#006cb9 36%,#0068b5 43%,#0062ae 76%,#0060ab 78%,#005fa9 100%);
+	background: linear-gradient(to bottom,  #0075c5 0%,#006cb9 36%,#0068b5 43%,#0062ae 76%,#0060ab 78%,#005fa9 100%);
+}
+ul.home-buttons {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none outside none;
+}
+ul.home-buttons li {
+    box-shadow: 1px 1px 2px #FFFFFF;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+    padding: 20px 45px 20px 15px;
+    text-shadow: 1px 1px 1px #0C3C63;
 }
 ul.home-buttons li h3 {
-	margin: 0 0 10px 0;
+	margin: 0 0 5px 0;
+	font-size: 15px;
+}
+ul.home-buttons li p {
+	margin: 0;
+}
+span.icon {
+	background: url(../images/sprite-home-icons.png) no-repeat scroll center 7px #fff;
+	border: 2px solid #07426F;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.15);
+    height: 40px;
+    width: 40px;
+}
+ul.home-buttons span.icon {	
+	float: left;
+	display: block;
+	margin: 5px 20px 30px 0;
+}
+span.icon.services {
+	background-position: center -31px;
+}
+span.icon.sell {
+	background-position: center -71px;
+}
+span.icon.info {
+	background-position: center -111px;
+}
+#footer {
+	border-top: 3px solid #001f3a;
+	min-height: 175px;
+	text-align: center;
+	color: #fff;
+}
+#sub-footer {
+	background-color: #00203a;
+	min-height: 60px;
+	text-align: center;
+}
+.footer-phone {
+    color: #00203A;
+    display: block;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 5px 0 12px;
+    text-decoration: none;
+}
+#footer-social {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+#footer-social li {
+	display: inline-block;
+}
+#footer-social li a {
+    background: url(../images/sprite-social.png) no-repeat scroll 0 -3px transparent;
+    display: inline-block;
+    height: 34px;
+    margin: 15px 0 5px;
+    width: 33px;
+}
+#footer-social li a.twitter {
+	background-position: -40px -3px;
+}
+#footer-social li a.email {
+	background-position: -80px -3px;
+}
+#footer .address {
+	line-height: 1.3em;
+	display: block;
+}
+#sub-footer a,
+#sub-footer {
+	color: #006fbe;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+#sub-footer .copyright {
+    display: block;
+    padding-top: 12px;
 }
