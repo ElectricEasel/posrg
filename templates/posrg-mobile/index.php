@@ -48,7 +48,8 @@ foreach ($parts as $part) {
 }
 
 $is_home = false;
-$menu = JSite::getMenu();
+$app = JFactory::getApplication();
+$menu = $app->getMenu();
 if ($menu->getActive() == $menu->getDefault()) {
    $bodyClasses[] = 'home';
    $is_home = true;
