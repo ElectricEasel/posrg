@@ -183,7 +183,11 @@ class DefaultController extends AppController {
 		$this->params   = $this->item->getParams('site');
 
 		// set renderer
-		$this->renderer = $this->app->renderer->create('item')->addPath(array($this->app->path->path('component.site:'), $this->template->getPath()));
+		$this->renderer = $this->app->renderer->create('item')->addPath(array(
+			$this->app->path->path('component.site:'),
+			$this->template->getPath(),
+			JPATH_SITE . '/templates/' . $this->app->system->application->getTemplate() . '/html/com_zoo'
+		));
 
 		// display view
 		$this->getView('item')->addTemplatePath($this->template->getPath())->setLayout('item')->display();
@@ -308,7 +312,11 @@ class DefaultController extends AppController {
 		$this->params   = $params;
 
 		// set renderer
-		$this->renderer = $this->app->renderer->create('item')->addPath(array($this->app->path->path('component.site:'), $this->template->getPath()));
+		$this->renderer = $this->app->renderer->create('item')->addPath(array(
+			$this->app->path->path('component.site:'),
+			$this->template->getPath(),
+			JPATH_SITE . '/templates/' . $this->app->system->application->getTemplate() . '/html/com_zoo'
+		));
 
 		// display view
 		$this->getView($layout)->addTemplatePath($this->template->getPath())->setLayout($layout)->display();
@@ -370,7 +378,11 @@ class DefaultController extends AppController {
 		$this->params   = $params;
 
 		// set renderer
-		$this->renderer = $this->app->renderer->create('item')->addPath(array($this->app->path->path('component.site:'), $this->template->getPath()));
+		$this->renderer = $this->app->renderer->create('item')->addPath(array(
+			$this->app->path->path('component.site:'),
+			$this->template->getPath(),
+			JPATH_SITE . '/templates/' . $this->app->system->application->getTemplate() . '/html/com_zoo'
+		));
 
 		// display view
 		$this->getView('alphaindex')->addTemplatePath($this->template->getPath())->setLayout('alphaindex')->display();
@@ -419,7 +431,11 @@ class DefaultController extends AppController {
 		$this->params   = $params;
 
 		// set renderer
-		$this->renderer = $this->app->renderer->create('item')->addPath(array($this->app->path->path('component.site:'), $this->template->getPath()));
+		$this->renderer = $this->app->renderer->create('item')->addPath(array(
+			$this->app->path->path('component.site:'),
+			$this->template->getPath(),
+			JPATH_SITE . '/templates/' . $this->app->system->application->getTemplate() . '/html/com_zoo'
+		));
 
 		// display view
 		$this->getView('tag')->addTemplatePath($this->template->getPath())->setLayout('tag')->display();
@@ -470,7 +486,11 @@ class DefaultController extends AppController {
         $this->app->system->document->setDescription(html_entity_decode($this->getView()->escape($this->app->system->document->getDescription())));
 
 		// set renderer
-		$renderer = $this->app->renderer->create('item')->addPath(array($this->app->path->path('component.site:'), $this->application->getTemplate()->getPath()));
+		$renderer = $this->app->renderer->create('item')->addPath(array(
+			$this->app->path->path('component.site:'),
+			$this->template->getPath(),
+			JPATH_SITE . '/templates/' . $this->app->system->application->getTemplate() . '/html/com_zoo'
+		));
 
 		foreach ($feed_items as $feed_item) {
 
