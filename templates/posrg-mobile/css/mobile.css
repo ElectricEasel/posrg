@@ -9,6 +9,12 @@ body {
 	width: 320px;
 	margin: 0 auto;
 }
+body.home #main {
+	background: none no-repeat scroll 0 0 transparent !important;
+}
+#main {
+	background-color: #fff;
+}
 #preloadImages {
 	position: absolute;
 	overflow: hidden;
@@ -80,11 +86,11 @@ body {
 	display: block;
 }
 #menu ul.menu > li.deeper > a > span:after {
-	content: url('../images/arrow-down');
+	content: url('../images/arrow-down.png');
 	margin-left: 10px;
 }
 #menu ul.menu li ul li a span:before {
-	content: url('../images/arrow-right');
+	content: url('../images/arrow-right.png');
 	margin-right: 10px;
 }
 #menu ul.menu li ul li a span {
@@ -107,6 +113,8 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
     padding-top: 7px;
     width: 480px;
 }
+#quote_form button#submit.blue_btn,
+#main #yoo-zoo.yoo-zoo .pos-buttons a.blue_btn,
 .blue-gradient {
 	background: #0061ad;
 	background: -moz-linear-gradient(top,  #0061ad 0%, #005ca4 27%, #004c88 77%, #004880 100%);
@@ -220,4 +228,147 @@ span.icon.info {
 #sub-footer .copyright {
     display: block;
     padding-top: 12px;
+}
+.service-page-img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E8E7E7;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    padding: 11px 15px;
+}
+.item-page p {
+	line-height: 1.4em;
+}
+.item-page ul, .item-page ol {
+	list-style: none outside none;
+    line-height: 20px;
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+.gray_box ul li, .item-page li, .pos-features ul li {
+    background: url(../images/li.png) no-repeat scroll left 9px transparent;
+    line-height: 1.4em;
+    padding: 5px 10px;
+}
+
+/* Zoo Component Stuff */
+
+#yoo-zoo {
+	width: auto !important;
+}
+#yoo-zoo div.box-t1,
+#yoo-zoo div.box-b1,
+#yoo-zoo div.box-t2,
+#yoo-zoo div.box-b2 {
+	background: none;
+}
+#yoo-zoo div.box-1,
+#yoo-zoo div.box-b3,
+#yoo-zoo div.box-t3 {
+	border: medium none;
+}
+#yoo-zoo .categories .width25 {
+	width: 50%;
+}
+.yoo-zoo fieldset, .yoo-zoo img {
+    border: 0 none;
+    height: auto;
+    max-width: 145px;
+}
+#yoo-zoo .green_btn {
+	display: none !important;
+}
+#main #yoo-zoo.yoo-zoo .rsform-block-submit button#submit,
+#main #yoo-zoo.yoo-zoo .pos-buttons a.blue_btn {
+	font-size: 17px;
+	text-transform: none;
+	width: 100%;
+	font-weight: normal;
+	text-shadow: 1px 1px 0 #0c3c63;
+	line-height: 46px;
+	height: auto;
+}
+#quote_form li {
+    background: none repeat scroll 0 0 transparent !important;
+    float: none !important;
+    padding: 5px 0 !important;
+    width: auto !important;
+}
+#quote_form li div[class*="form"] {
+	float: none;
+}
+#yoo-zoo h3 {
+    background: none repeat scroll 0 0 transparent;
+    color: #006AB8;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 0;
+    text-indent: 0;
+    text-transform: uppercase;
+}
+#yoo-zoo h3 span {
+	display: none;
+}
+#yoo-zoo input[type="text"],
+#yoo-zoo textarea,
+#yoo-zoo select {
+	background: #fff;
+	border:1px solid #d6d6d6;
+	border-radius: 4px;
+}
+#yoo-zoo .gray_box {
+	padding: 0 !important;
+	background: none;
+	border: medium none;
+}
+#main #yoo-zoo #userForm .rsform-block-notes textarea,
+#main #quote_form .rsform-block-notes textarea,
+#yoo-zoo textarea {
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    width: 270px !important;
+}
+#yoo-zoo input[type="text"] {
+    padding: 6px 5px;
+    width: 270px !important;
+}
+#yoo-zoo .pos-meta strong {
+    display: block;
+    width: auto;
+}
+#yoo-zoo .pos-meta li.element {
+	margin-bottom: 2px;
+}
+#yoo-zoo #userForm li {
+	width: auto;
+}
+#yoo-zoo#quote_form .formCaption {
+	width: 100%;
+	float: none;
+	margin: 5px 0;
+}
+div.formCaption {
+    display: block;
+    width: 100%;
+}
+#yoo-zoo img.head_image {
+	max-width: 280px;
+}
+#yoo-zoo .desc_img {
+	border: medium none !important;
+	padding: 0;
+	margin: 20px 0 0 10px;
+}
+#yoo-zoo .description {
+	margin-bottom: 15px;
+}
+#yoo-zoo .element-autorelateditems {
+	display: none;
+}
+#yoo-zoo a {
+	color: #006ab8;
 }
