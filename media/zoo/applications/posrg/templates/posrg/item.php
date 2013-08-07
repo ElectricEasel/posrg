@@ -25,6 +25,7 @@ $css_class = $this->application->getGroup().'-'.$this->template->name;
 
 	<div class="item">
 		<?php
+
 		$renderview = 'item.full';
 		echo $this->renderer->render($renderview, array('view' => $this, 'item' => $this->item)); 
 		

@@ -11,4 +11,14 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access');
 
-class PosrgApplication extends Application {}
+class PosrgApplication extends Application {
+
+	public function __construct()
+	{
+		parent::__construct();
+		
+		$zoo = App::getInstance('zoo');
+		$zoo->path->register(dirname(__FILE__) . '/classes', 'classes');
+		$zoo->loader->register('ItemRenderer', 'classes:itemrenderer.php');
+	}
+}
