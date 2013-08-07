@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>posrg-mobile</name>
+	<creationDate>July 9, 2013</creationDate>
+	<author>Bryan McCaffrey</author>
+	<authorEmail>bryan@electriceasel.com</authorEmail>
+	<authorUrl>http://www.electriceasel.com</authorUrl>
+	<copyright>Copyright (C) 2013 POSRG</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>2.5.0</version>
+	<description>A custom mobile template for POSRG.</description>
+
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>javascript</folder>
+		<folder>fonts</folder>
+		<folder>language</folder>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+	</files>
+
+	<positions>
+		<position>debug</position>
+		<position>left</position>
+		<position>footer-1</position>
+		<position>footer-2</position>
+		<position>footer-3</position>
+		<position>nav</position>
+		<position>slider</position>
+		<position>header_graphic</position>
+	</positions>
+</extension>
