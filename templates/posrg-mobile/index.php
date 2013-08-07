@@ -101,10 +101,10 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 					<div class="wrap">
 						<ul class="clr">
 							<li class="menu-button active"><a href="javascript:toggleMenu();">Menu</a></li>
-							<li class="menu-button"><a href="javascript:toggleMenu();">Services</a></li>
-							<li class="menu-button"><a href="javascript:toggleMenu();">Products</a></li>
-							<li class="menu-button"><a href="javascript:toggleMenu();">Buy</a></li>
-							<li class="menu-button"><a href="javascript:toggleMenu();">Sell</a></li>
+							<li class="menu-button"><a href="/services">Services</a></li>
+							<li class="menu-button"><a href="">Products</a></li>
+							<li class="menu-button"><a href="/inventory/search-our-inventory">Buy</a></li>
+							<li class="menu-button"><a href="/asset-appraisal">Sell</a></li>
 						</ul>
 					</div>
 				</div>
@@ -116,6 +116,13 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 						<jdoc:include type="modules" name="mobile-header" />
 					</div>
 				</div>
+				<?php if (!$is_home) : ?>
+				<div id="sub-head">
+					<div class="wrap">
+						<jdoc:include type="modules" name="sub-head" />
+					</div>
+				</div>
+				<?php endif; ?>
 			<div id="main">
 				<div class="wrap">
 					<?php if ($is_home) : ?>

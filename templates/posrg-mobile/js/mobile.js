@@ -10,6 +10,18 @@ jQuery(document).ready(function ($){
             $(p).addClass('active');
         }
     });
+    
+    $(".service-box dt").click(function() {
+	if ( jQuery(this).hasClass("minus") ) {
+		jQuery(this).removeClass("minus");
+   		jQuery(this).parent().children("dd").removeClass("show").addClass("hide");
+	}
+	else{
+		jQuery(this).addClass("minus");
+   		jQuery(this).parent().children("dd").removeClass("hide").addClass("show");
+	}
+});
+    
 	var slide_container = $('#slides');
 	if(slide_container.length > 0)
 	{
