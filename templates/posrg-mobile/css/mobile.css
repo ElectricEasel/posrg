@@ -685,3 +685,7 @@ body.services .item-page h2 {
 .product-pagination {
 	padding: 10px 0;
 }
+#banner-img {
+	background: url(/templates/posrg-mobile/images/header.png) no-repeat scroll center bottom transparent;
+	height: 89px;
+}
