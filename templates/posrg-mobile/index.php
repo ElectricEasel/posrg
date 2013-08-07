@@ -112,8 +112,7 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 						<jdoc:include type="modules" name="mobile-nav" />
 					</div>
 				<div id="banner">
-					<div class="wrap">
-						<jdoc:include type="modules" name="mobile-header" />
+					<div id="banner-img">
 					</div>
 				</div>
 				<?php if (!$is_home) : ?>
