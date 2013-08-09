@@ -126,24 +126,24 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 				<div class="wrap">
 					<?php if ($is_home) : ?>
 						<ul class="home-buttons">
-							<li class="blue-gradient">
+							<li class="blue-gradient" onclick="location.href='/inventory/search-our-inventory/'">
 								<span class="icon search"></span>
-								<h3>Search Our Inventory</h3>
+								<h3><a href="/inventory/search-our-inventory">Search Our Inventory</a></h3>
 								<p>Low cost point-of-sale hardware solutions</p>
 							</li>
-							<li class="blue-gradient">
+							<li class="blue-gradient" onclick="location.href='/services'">
 								<span class="icon services"></span>
-								<h3>POS Services</h3>
+								<h3><a href="/services">POS Services</a></h3>
 								<p>Streamlined, organized and precise. That's POSRG.</p>
 							</li>
-							<li class="blue-gradient">
+							<li class="blue-gradient" onclick="location.href='/asset-appraisal'">
 								<span class="icon sell"></span>
-								<h3>Sell Your Used POS</h3>
+								<h3><a href="/asset-appraisal">Sell Your Used POS</a></h3>
 								<p>Asset appraisals for used POS and barcode hardware.</p>
 							</li>
-							<li class="blue-gradient">
+							<li class="blue-gradient" onclick="location.href='/product-info'">
 								<span class="icon info"></span>
-								<h3>POS Product Information</h3>
+								<h3><a href="/product-info">POS Product Information</a></h3>
 								<p>POSRG partners with major brands for dedicated support.</p>
 							</li>
 						</ul>

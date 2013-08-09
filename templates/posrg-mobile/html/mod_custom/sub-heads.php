@@ -9,6 +9,11 @@ $menu = JFactory::getApplication()->getMenu();
 $parentTitle = $menu->getItem($menu->getActive()->parent_id)->title;
 $hasParent = ($menu->getItem($menu->getActive()->parent_id));
 
+switch ($title) {
+	case "Mobile Contact Us":
+		$title = "About Us";
+		break;
+}
 
 if ($hasParent == "") {
 	$newtitle = $title;

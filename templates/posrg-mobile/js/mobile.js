@@ -11,6 +11,23 @@ jQuery(document).ready(function ($){
         }
     });
     
+	$(".slidingDiv").hide();
+	$(".show_hide").show().addClass("block");
+	
+	$('.show_hide').toggle(function(){
+	   $(".slidingDiv").slideDown(
+	     function(){
+	       $("#plus").html("Show Less <span>&#8593;</span>")
+	     }
+	   );
+	},function(){
+	   $(".slidingDiv").slideUp(
+	   function(){
+	       $("#plus").html("Show More <span>&#8595;</span>")
+	   }
+	   );
+	});
+        
     $(".service-box dt").click(function() {
 	if ( jQuery(this).hasClass("minus") ) {
 		jQuery(this).removeClass("minus");
@@ -21,7 +38,6 @@ jQuery(document).ready(function ($){
    		jQuery(this).parent().children("dd").removeClass("hide").addClass("show");
 	}
 });
-    
 	var slide_container = $('#slides');
 	if(slide_container.length > 0)
 	{
