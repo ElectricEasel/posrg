@@ -136,9 +136,9 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 								<h3><a href="/services">POS Services</a></h3>
 								<p>Streamlined, organized and precise. That's POSRG.</p>
 							</li>
-							<li class="blue-gradient" onclick="location.href='/asset-appraisal'">
+							<li class="blue-gradient" onclick="location.href='/online-asset-appraisal'">
 								<span class="icon sell"></span>
-								<h3><a href="/asset-appraisal">Sell Your Used POS</a></h3>
+								<h3><a href="/online-asset-appraisal">Sell Your Used POS</a></h3>
 								<p>Asset appraisals for used POS and barcode hardware.</p>
 							</li>
 							<li class="blue-gradient" onclick="location.href='/product-info'">
