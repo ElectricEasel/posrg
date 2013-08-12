@@ -104,13 +104,13 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 							<li class="menu-button"><a href="/services">Services</a></li>
 							<li class="menu-button"><a href="">Products</a></li>
 							<li class="menu-button"><a href="/inventory/search-our-inventory">Buy</a></li>
-							<li class="menu-button"><a href="/asset-appraisal">Sell</a></li>
+							<li class="menu-button"><a href="/online-asset-appraisal">Sell</a></li>
 						</ul>
 					</div>
 				</div>
 				<div id="menu">
 						<jdoc:include type="modules" name="mobile-nav" />
-					</div>
+				</div>
 				<div id="banner">
 					<div id="banner-img">
 					</div>
@@ -180,7 +180,6 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 				</div>
 			</div>
 		</div>
-	</div>
 <div id="preloadImages"></div>
 </body>
 </html>
