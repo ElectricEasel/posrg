@@ -15,6 +15,9 @@ body {
 .block {
 	display: block !important;
 }
+.clear {
+	clear: both;
+}
 body.home #main {
 	background: none no-repeat scroll 0 0 transparent !important;
 }
@@ -136,6 +139,8 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
     padding-top: 7px;
     width: 480px;
 }
+#submit,
+.rsform-button,
 .service-box dt,
 #quote_form button#submit.blue_btn,
 #main #yoo-zoo.yoo-zoo .pos-buttons a.blue_btn,
@@ -219,6 +224,7 @@ span.icon.info {
     margin: 5px 0 12px;
     text-decoration: none;
 }
+body .no-bull,
 #specials-list,
 #footer-social {
 	list-style: none outside none;
@@ -306,6 +312,10 @@ span.icon.info {
 }
 #yoo-zoo .green_btn {
 	display: none !important;
+}
+div.formBody {
+	clear: both;
+	float: none;
 }
 #main #yoo-zoo.yoo-zoo .rsform-block-submit button#submit,
 #main #yoo-zoo.yoo-zoo .pos-buttons a.blue_btn {
@@ -414,10 +424,14 @@ div.formCaption {
 #quote_form li {
 	width: auto !important;
 }
+.formBody textarea,
+.formBody input[type="text"],
 #quote_form input[type="text"],
 #main #quote_form .rsform-block-notes textarea {
 	width: 260px !important;
 }
+.mobile-asset-appraisal .rsform-submit-button,
+.mobile-asset-appraisal .rsform-button,
 #quote_form button#submit {
     border: medium none;
     color: #FFFFFF;
@@ -461,6 +475,7 @@ body.inventory #main {
 }
 #mobile-form-section {
 	background: url(../images/bg.png) repeat scroll 0 0 #EFEFEF;
+	padding-top: 20px;
 }
 #mobile-form-section .wrap {
 	margin: 0 auto !important;
@@ -841,4 +856,92 @@ body.services #main {
 }
 body.current-specials.request-info #main {
 	background: #fff !important;
+	padding-bottom: 0;
+}
+.specials-detail img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    padding: 10px;
+    float: right;
+    max-width: 122px;
+}
+.specials-detail h2 {
+	color: #006ab8;
+	font-size: 19px;
+}
+.specials-detail h2 a {
+	float: right;
+	text-decoration: none;
+	color: #aaa;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+.specials-detail h4 {
+	font-size: 17px;
+	line-height: 1em;
+	min-height: 2em;
+	margin: 0 0 3px 0;
+}
+.specials-detail .product-desc {
+	color: #006ab8;
+	font-size: 15px;
+	margin: 1em 0;
+	line-height: 1em;
+}
+.specials-detail .price {
+	font-size: 13px;
+	color: #363636;
+	text-transform: uppercase;
+}
+.specials-detail .price span {
+	font-size: 15px;
+}
+.specials-detail {
+    padding-bottom: 40px !important;
+}
+#main2 > .wrap > div {
+	padding: 20px;
+}
+.mobile-asset-appraisal li {
+	margin-bottom: 10px;
+}
+.mobile-asset-appraisal li label {
+	margin-bottom: 3px;
+}
+.mobile-asset-appraisal li select {
+	width: 270px;
+}
+.mobile-asset-appraisal .rsform-button {
+	padding: 7px 0;
+}
+body[class*="asset-appraisal"] .item-page h3,
+.mobile-asset-appraisal h3 {
+	color: #006ab8;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+body .mobile-asset-appraisal .rsform-calendar-box {
+	width: 223px !important;
+}
+.btnCal {
+	background: url(../images/cal-pick.png) no-repeat scroll 0 0 transparent;
+	width: 26px;
+	height: 27px;
+	border: medium none;
+	padding: 0;
+	margin-left: 10px;
+}
+#submitPrev {
+    background: none repeat scroll 0 0 #000000;
+    box-shadow: 0 18px 30px rgba(255, 255, 255, 0.35) inset;
+    margin-bottom: 12px;
+}
+body.online-quote-page #main .wrap {
+	width: 280px;
+}
+body.online-quote-page #main .wrap br {
+	display: none;
 }
