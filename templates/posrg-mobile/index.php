@@ -112,7 +112,8 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 						<jdoc:include type="modules" name="mobile-nav" />
 				</div>
 				<div id="banner">
-					<div id="banner-img">
+					<div id="banner-contain">
+						<img src="/templates/posrg-mobile/images/header.png" alt="POSRG"/>
 					</div>
 				</div>
 				<?php if (!$is_home) : ?>
