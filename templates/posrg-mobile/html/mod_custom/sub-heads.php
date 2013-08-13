@@ -13,6 +13,12 @@ switch ($title) {
 	case "Mobile Contact Us":
 		$title = "About Us";
 		break;
+	case "Mobile Product Info":
+		$title = "POS Product Info";
+		break;
+	case "Mobile Asset Appraisal":
+		$title = "Sell Your Used POS";
+		break;
 }
 
 if ($hasParent == "") {
