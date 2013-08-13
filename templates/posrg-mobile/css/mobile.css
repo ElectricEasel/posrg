@@ -139,7 +139,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
 	margin: 0 auto;
 	height: 89px;
 	position: relative;
-	overflow: hidden;
+	overflow: visible;
 }
 #banner-contain img {
     bottom: 0;
@@ -868,7 +868,7 @@ body.contact .item-page h6 a {
 .item-page {
 	padding: 0 20px;
 }
-body.services #main {
+body.services-page #main {
 	padding-top: 0;
 }
 body.current-specials.request-info #main {
