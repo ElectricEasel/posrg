@@ -459,6 +459,9 @@ div.formCaption {
     text-align: center;
     width: 270px;
 }
+#yoo-zoo .details h1.title {
+	display: none;
+}
 #service-form h4 {
 	color: #006ab8;
 	text-transform: uppercase;
@@ -634,11 +637,13 @@ body.services .item-page h2 {
 	font-size: 12px;
 	font-weight: bold;
 }
+div.pos-info-search,
 .search-inventory-box {
 	background-color: #000;
 	border-radius: 6px;
 	padding: 20px;
 }
+div.pos-info-search input,
 .search-inventory-box select,
 .search-inventory-box input {
 	display: block;
@@ -650,17 +655,28 @@ body.services .item-page h2 {
 	text-indent: 5px;
 	margin-bottom: 20px;
 }
+.pos-info-search input {
+	text-indent: 5px;
+}
+.pos-info-search label,
 .search-inventory-box h2 {
 	color: #006ab8;
 	font-size: 16px;
 	text-transform: uppercase;
 	margin: 0 0 15px 0;
 	text-align: center;
+	display: block;
 }
 .search-inventory-box input[type="submit"] {
 	color: #fff;
 	font-size: 16px;
 	border: medium none;
+}
+body.product-info-page .box-1 a img {
+	margin:0;
+}
+body.product-info.item .pos-info-search {
+	display: none;
 }
 .results,
 .results .product ul {
