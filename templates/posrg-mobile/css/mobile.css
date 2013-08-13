@@ -650,13 +650,11 @@ div.pos-info-search input,
 	width: 100%;
 	padding: 10px 0;
 }
+.pos-info-search input[type="text"],
 .search-inventory-box select,
 .search-inventory-box input[type="text"] {
 	text-indent: 5px;
 	margin-bottom: 20px;
-}
-.pos-info-search input {
-	text-indent: 5px;
 }
 .pos-info-search label,
 .search-inventory-box h2 {
