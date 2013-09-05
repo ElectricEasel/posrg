@@ -2,7 +2,7 @@
  
 defined('_JEXEC') or die;
 
-$mydoc =& JFactory::getDocument();
+$mydoc = JFactory::getDocument();
 $title = $mydoc->getTitle();
 
 $menu = JFactory::getApplication()->getMenu();
