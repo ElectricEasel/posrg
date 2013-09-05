@@ -150,6 +150,7 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 						</ul>
 					<?php else: ?>
 					<jdoc:include type="message" />
+					<jdoc:include type="modules" name="mobile-info-search" />
 					<jdoc:include type="component" />
 					<?php endif; ?>
 				</div>

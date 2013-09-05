@@ -19,12 +19,21 @@ switch ($title) {
 	case "Mobile Asset Appraisal":
 		$title = "Sell Your Used POS";
 		break;
+	case "POS Services":
+		$title = "Point-of-Sale Services";
+		break;
 }
 
 if ($hasParent == "") {
 	$newtitle = $title;
 } else {
 	$newtitle = $parentTitle;
+}
+
+switch ($newtitle) {
+	case "POS Services":
+		$newtitle = "Point-of-Sale Services";
+		break;
 }
 
 

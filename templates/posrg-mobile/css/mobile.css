@@ -1,3 +1,7 @@
+img,object,embed,iframe {
+	max-width: 280px;
+}
+
 body {
 	background: url(../images/bg.png) repeat scroll 0 0 #EFEFEF;
 	font-family: Arial,sans-serif;
@@ -68,7 +72,7 @@ input[type="text"], textarea {
     display: block;
     font-size: 12px;
     line-height: 46px;
-    padding: 0 10px;
+    padding: 0 9px;
     text-decoration: none;
     text-shadow: 1px 1px 1px #0C3C63;
 }
@@ -139,7 +143,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
 	margin: 0 auto;
 	height: 89px;
 	position: relative;
-	overflow: hidden;
+	overflow: visible;
 }
 #banner-contain img {
     bottom: 0;
@@ -155,6 +159,7 @@ background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.25) 100%);
 	left: 0;
 }
 */
+fieldset.word button,
 .button.pos-info-search,
 #submit,
 .rsform-button,
@@ -459,6 +464,9 @@ div.formCaption {
     text-align: center;
     width: 270px;
 }
+#yoo-zoo .details h1.title {
+	display: none;
+}
 #service-form h4 {
 	color: #006ab8;
 	text-transform: uppercase;
@@ -496,7 +504,7 @@ body.search-by-brand #main {
 }
 #mobile-form-section {
 	background: url(../images/bg.png) repeat scroll 0 0 #EFEFEF;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 #mobile-form-section .wrap {
 	margin: 0 auto !important;
@@ -634,33 +642,50 @@ body.services .item-page h2 {
 	font-size: 12px;
 	font-weight: bold;
 }
+#searchForm fieldset,
+div.pos-info-search,
 .search-inventory-box {
 	background-color: #000;
 	border-radius: 6px;
 	padding: 20px;
+	border: medium none;
 }
+div.pos-info-search input,
 .search-inventory-box select,
 .search-inventory-box input {
 	display: block;
 	width: 100%;
 	padding: 10px 0;
 }
+.pos-info-search input[type="text"],
 .search-inventory-box select,
 .search-inventory-box input[type="text"] {
 	text-indent: 5px;
 	margin-bottom: 20px;
 }
+fieldset.word label,
+.pos-info-search label,
 .search-inventory-box h2 {
 	color: #006ab8;
 	font-size: 16px;
 	text-transform: uppercase;
 	margin: 0 0 15px 0;
 	text-align: center;
+	display: block;
 }
 .search-inventory-box input[type="submit"] {
 	color: #fff;
 	font-size: 16px;
 	border: medium none;
+}
+body.product-info-page .box-1 a img {
+	margin:0;
+}
+body.product-info.item .pos-info-search {
+	display: none;
+}
+body.product-info.item #main {
+	padding-bottom: 0;
 }
 .results,
 .results .product ul {
@@ -868,7 +893,7 @@ body.contact .item-page h6 a {
 .item-page {
 	padding: 0 20px;
 }
-body.services #main {
+body.services-page #main {
 	padding-top: 0;
 }
 body.current-specials.request-info #main {
@@ -1027,4 +1052,30 @@ body.search-by-brand #main {
     height: 40px;
     padding: 0;
     width: 100%;
+}
+fieldset.word input[type="text"] {
+	margin-bottom: 20px;
+	width: 250px;
+}
+fieldset.word button {
+    border: medium none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+}
+/*
+#main div.search {
+	padding: 0 20px;
+}
+*/
+fieldset.phrases {
+	display: none;
+}
+.form-limit {
+	display: none;
+}
+.searchintro {
+	float: left;
 }
