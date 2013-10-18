@@ -18,7 +18,7 @@ define('JS_PATH', TEMPLATE_PATH.'js/');
 
 JFactory::getDocument()
 	// add stylesheets
-	->addStyleSheet('//fonts.googleapis.com/css?family=Open+Sans:400,300,60|Droid+Sans:400,700|Arvo:400,700')
+	//->addStyleSheet('//fonts.googleapis.com/css?family=Open+Sans:400,300,600')
 	->addStyleSheet('/templates/system/css/system.css')
 	->addStyleSheet(CSS_PATH.'general.css')
 	->addStyleSheet(CSS_PATH.'mobile.css')
@@ -159,16 +159,16 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 				<div class="wrap">
 					<ul id="footer-social">
 						<li>
-							<a class="fb" href="#"></a>
+							<a class="fb" href="https://www.facebook.com/posrg"></a>
 						</li>
 						<li>
-							<a class="twitter" href="#"></a>
+							<a class="twitter" href="http://www.twitter.com/posremarket"></a>
 						</li>
 						<li>
-							<a class="email" href="#"></a>
+							<a class="email" href="mailto:ktesta@posrg.com"></a>
 						</li>
 					</ul>
-					<a class="footer-phone" href="">866-462-1005</a>
+					<a class="footer-phone" href="tel://1-866-462-1005">1-866-462-1005</a>
 					<span class="address">POS Remarketing Group, Inc.<br/>
 					1059 N. Old Rand Road,<br/>
 					Wauconda, IL 60084
@@ -178,7 +178,7 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 			<div id="sub-footer">
 				<div class="wrap">
 					<span class="copyright">&copy; <?php echo date('Y');?> POS Remarketing Group, Inc.</span>
-					<a href="#">Sitemap</a> | <a href="#">Privacy Policy</a>
+					<a href="#">Sitemap</a> | <a href="">Privacy Policy</a>
 				</div>
 			</div>
 		</div>
