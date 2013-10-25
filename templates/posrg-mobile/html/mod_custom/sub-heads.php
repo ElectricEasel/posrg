@@ -24,11 +24,15 @@ switch ($title) {
 		break;
 }
 
-if ($hasParent == "") {
-	$newtitle = $title;
-} else {
+//print_r($hasParent->id);
+
+if ($hasParent->id != "4") {
 	$newtitle = $parentTitle;
+} else {
+	$newtitle = $title;
 }
+
+//$newtitle = $title;
 
 switch ($newtitle) {
 	case "POS Services":

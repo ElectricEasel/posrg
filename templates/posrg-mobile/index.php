@@ -178,7 +178,7 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 			<div id="sub-footer">
 				<div class="wrap">
 					<span class="copyright">&copy; <?php echo date('Y');?> POS Remarketing Group, Inc.</span>
-					<a href="#">Sitemap</a> | <a href="">Privacy Policy</a>
+					<a href="/privacy-policy">Privacy Policy</a>
 				</div>
 			</div>
 		</div>
