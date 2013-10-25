@@ -59,8 +59,12 @@ class PartsController extends JController
 	protected function checkLogin()
 	{
 		$user = JFactory::getUser();
+		
+		$username = strtolower($user->get('username'));
+		
+		$allowed = array('posrg', 'admin');
 
-		if (strtolower($user->get('username')) !== 'admin')
+		if (!in_array($username, $allowed))
 		{
 			$url = JRoute::_('index.php?option=com_users&view=login');
 

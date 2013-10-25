@@ -74,3 +74,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]
 #
 ## End - Joomla! core SEF Section.
+
+Deny from 94.23.238.222
+Deny from 188.143.232.12
+Deny from 88.151.103.157
+Deny from 206.123.124.228
+

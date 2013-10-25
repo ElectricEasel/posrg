@@ -1081,7 +1081,7 @@ h1.contentheading {
 */
 
 #header .header-right {
-	width:440px;
+	width:auto;
 	position: relative;
 }
 #header .header-right .header-contact,
@@ -1371,4 +1371,19 @@ float:right
 .search_pagination li {
 	display:inline-block;
 	margin:5px;
+}
+.recycle-button {
+	background:url(../images/button-recycle.png) no-repeat scroll 0 0 transparent;
+	display: inline-block;
+	width: 171px;
+	height: 32px;
+	text-indent: -9999px;
+	margin-right: 15px;
+	top:-9px;
+	position: relative;
+	text-align: left;
+	border: medium none;
+}
+.recycle-button:hover {
+	background-position: 0 -33px;
 }

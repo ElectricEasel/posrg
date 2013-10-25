@@ -70,6 +70,7 @@ if ($menu->getActive() == $menu->getDefault())
 			<div class="header-right">
 				<div class="header-contact">
 					<span class="phone-number">
+						<a class="recycle-button" href="http://www.turbongroup.com/posrg/" target="_blank">Recycle Toner Here</a>
 						<span id="call"><b>Call Us Toll Free:</b></span>
 						<span id="tel"><b>866-462-1005</b></span>
 					</span>

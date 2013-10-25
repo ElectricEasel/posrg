@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>burak1311</name>
+	<creationDate>11/13/09</creationDate>
+	<author>Electric Easel</author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.2</version>
+	<description></description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>images/bg_body.jpg</filename>
+		<filename>images/bg_center_wapper.png</filename>
+		<filename>images/bg_center_wrapper.png</filename>
+		
+		<filename>images/bg_footer_content.jpg</filename>
+		
+		<filename>images/bg_header_footer.jpg</filename>
+		
+		<filename>images/bg_header_wrapper.png</filename>
+		
+		<filename>images/bg_menu_top_center.png</filename>
+		
+		<filename>images/bg_menu_top_left.png</filename>
+		
+		<filename>images/bg_menu_top_right.png</filename>
+		
+		<filename>images/box-center-supported.jpg</filename>
+		
+		<filename>images/box-center-supported.png</filename>
+		
+		<filename>images/box-footer-supported.jpg</filename>
+		
+		<filename>images/box-header-supported.jpg</filename>
+		
+		<filename>images/btn_viewall.jpg</filename>
+		
+		<filename>images/epson.jpg</filename>
+		
+		<filename>images/f.png</filename>
+		
+		<filename>images/hp.jpg</filename>
+		
+		<filename>images/ibm.jpg</filename>
+		
+		<filename>images/icon_menufooter.jpg</filename>
+		
+		<filename>images/icon_supported.jpg</filename>
+		
+		<filename>images/img_logo_support_line.jpg</filename>
+		
+		<filename>images/in.png</filename>
+		
+		<filename>images/li_left.gif</filename>
+		
+		<filename>images/logo.jpg</filename>
+		
+		<filename>images/main_content_center_bg.jpg</filename>
+		
+		<filename>images/main_content_center_header.jpg</filename>
+		
+		<filename>images/main_content_footer_bg.jpg</filename>
+		
+		<filename>images/nav_li_left_bg.png</filename>
+		
+		<filename>images/ncr.jpg</filename>
+		
+		<filename>images/panasonic.jpg</filename>
+		
+		<filename>images/par.jpg</filename>
+		
+		<filename>images/posrg_green.jpg</filename>
+		
+		<filename>images/product_ncr.jpg</filename>
+		<filename>images/rec.png</filename>
+		
+		<filename>images/rounded_bottom.jpg</filename>
+		
+		<filename>images/rounded_bottom_grey.jpg</filename>
+		
+		<filename>images/rounded_center.jpg</filename>
+		
+		<filename>images/rounded_center_grey.jpg</filename>
+		<filename>images/rounded_top.jpg</filename>
+		
+		<filename>images/rounded_top_grey.jpg</filename>
+		
+		<filename>images/symbol.jpg</filename>
+		<filename>images/t.png</filename>
+		
+		<filename>images/top_nav_a_right_bg.jpg</filename>
+		
+		<filename>images/top_nav_center.jpg</filename>
+		<filename>images/top_nav_left.jpg</filename>
+		
+		<filename>images/top_nav_right.jpg</filename>
+		
+		<filename>images/verfone.jpg</filename>
+		<filename>images/welcome_to_posrg.png</filename>
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/template_rtl.css</filename>
+		<filename>css/ieonly.css</filename>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	<params>
+		<param name="colorVariation" type="list" default="white" label="Color Variation" description="Color variation to use">
+			<option value="blue">Blue</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="black">Black</option>
+			<option value="white">White</option>
+		</param>
+		<param name="backgroundVariation" type="list" default="blue" label="Background Variation" description="Background color variation to use">
+			<option value="blue">Blue</option>
+			<option value="red">Red</option>
+			<option value="green">Green</option>
+			<option value="orange">Orange</option>
+			<option value="black">Black</option>
+			<option value="white">White</option>
+		</param>
+		<param name="widthStyle" type="list" default="fmax" label="Template Width" description="Width style of the template">
+			<option value="fmax">Fluid with maximum</option>
+			<option value="medium">Medium</option>
+			<option value="small">Small</option>
+			<option value="fluid">Fluid</option>
+		</param>
+	</params>
+</install>
