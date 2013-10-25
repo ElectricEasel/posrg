@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="system" method="upgrade">
+	<name>Mobile Template Switcher</name>
+	<author>Don Gilbert</author>
+	<creationDate>April 2013</creationDate>
+	<copyright>Electric Easel, Inc.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>don@electriceasel.com</authorEmail>
+	<authorUrl>www.electriceasel.com/team-member/don-gilbert</authorUrl>
+	<version>1.0</version>
+	<description>Switch site template for mobile devices</description>
+	<files>
+		<filename plugin="mobileswitcher">mobileswitcher.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="mobile_switch_enabled" type="radio" default="0"
+					label="Enable template switcher"
+					description="If yes, site template will be set to the template listed below for requests identified by Joomla as coming from a mobile device">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+					
+				<field
+					name="mobile_template"
+					type="sql"
+					label="Switch to Template"
+					description="The site template to switch to when a mobile device request is detected"
+					query="SELECT 0 AS name, '- Please Select -' AS element UNION SELECT name, element FROM #__extensions WHERE type = 'template'"
+					key_field="name"
+					value_field="element" />
+					
+				<field
+					name="mobile_homepage"
+					type="menuitem"
+					label="Mobile Home Page" />
+					
+				<field
+					name="ips"
+					type="textarea"
+					cols="20"
+					rows="5"
+					label="IP's"
+					description="Limit mobile template to these IP addresses. One per line." />
+					
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
