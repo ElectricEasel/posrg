@@ -84,5 +84,5 @@ echo $this->item->text; ?>
 </div>
 <?php endif; ?>
 
-<div class="item-separator"></div>
+<div class="item-separator clear"></div>
 <?php echo $this->item->event->afterDisplayContent; ?>
