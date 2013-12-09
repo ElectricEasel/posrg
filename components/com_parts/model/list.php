@@ -2,6 +2,7 @@
 
 class PartsModelList extends JModelList
 {
+	/** @var \JSite  */
 	protected $app;
 
 	public function __construct($config = array())
@@ -41,26 +42,29 @@ class PartsModelList extends JModelList
 
 	public function getListQuery()
 	{
-		$query = $this->getDbo()
-			->getQuery(true)
+		$db = $this->getDbo();
+		$query = $db->getQuery(true)
 			->select('*')
 			->from('#__parts');
 
 		$mfc = $this->getState('filter.mfc');
 		if($mfc)
 		{
+			$mfc = $db->escape($mfc);
 			$query->where("mfc like '%{$mfc}%'");
 		}
 
 		$keyword = $this->getState('filter.keyword');
 		if($keyword)
 		{
+			$db->escape($keyword);
 			$query->where("(mfc LIKE '%{$keyword}%' OR part_number LIKE '%{$keyword}%' OR des LIKE '%{$keyword}%' )");
 		}
 
 		$num = $this->getState('filter.part_number');
 		if($num)
 		{
+			$db->escape($num);
 			$query->where("part_number LIKE '%{$num}%'");
 		}
 
@@ -87,7 +91,7 @@ class PartsModelList extends JModelList
 		$selected = $this->getState('filter.mfc');
 		$attribs = array(
 			'class' => 'gm-select',
-			'data-placeholder' => 'Select a MFG'
+			'data-placeholder' => 'Select a MFR'
 		);
 
 		return JHTML::_('select.genericlist', $items, 'mfc', $attribs, 'value', 'text', $selected);

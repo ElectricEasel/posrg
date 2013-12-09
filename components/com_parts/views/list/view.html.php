@@ -4,8 +4,6 @@ class PartsViewList extends JView
 {
 	public function display($tpl = null)
 	{
-		$app = JFactory::getApplication();
-
 		$this->data = $this->get('Items');
 		$this->state = $this->get('State');
 		$this->pagination = $this->get('Pagination');
