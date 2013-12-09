@@ -3,7 +3,7 @@ defined('_JEXEC') or die('Restricted access');
 $template_path = '/templates/posrg';
 ?>
 <div id="slider">
-	<script type="text/javascript" src="//cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+	<script type="text/javascript" src="<?php echo $template_path; ?>/js/jquery.cycle.js"></script>
 	<script type="text/javascript">
 	// <![CDATA[
 		jQuery(document).ready(function($){
