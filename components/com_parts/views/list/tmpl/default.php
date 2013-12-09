@@ -76,7 +76,9 @@ $resetUrl = JRoute::_('index.php?option=com_parts&view=list');
 					<td><?php echo $item->part_number; ?></td>
 					<td><?php echo $item->des; ?></td>
 					<td><?php echo $item->new; ?></td>
-					<td><?php echo $item->physical_count; ?></td>
+					<td><?php
+                        // Just show blank if count is 0
+                        echo $item->physical_count ?: ''; ?></td>
 					<td class="last"><a class="gm-quote" href="<?php echo $item->url ?>">Quote</a></td>
 				</tr>
 			<?php if ($j == 2) $j = 0;
