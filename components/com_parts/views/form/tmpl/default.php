@@ -5,6 +5,8 @@ require_once JPATH_ADMINISTRATOR . '/components/com_rsform/helpers/rsform.php';
 JRequest::setVar('manufacturer', $this->item->mfc);
 JRequest::setVar('part_number', $this->item->part_number);
 JRequest::setVar('form_name', 'Quick Quote: Inventory');
+JRequest::setVar('inventory_type', $this->item->inventory_type);
+
 ?>
 <h1><span style="color: #0066cc; font-size: 18px; font-weight: bold;">Quick Quote:</span></h1>
 <br />
