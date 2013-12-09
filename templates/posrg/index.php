@@ -59,7 +59,7 @@ if ($menu->getActive() == $menu->getDefault())
 		})();
 	// ]]>
 	</script>
-	<?php if ($_SERVER['EE_ENV'] === 'development') : ?>
+	<?php if (getenv('EE_ENV') === 'development') : ?>
 	<meta name="robots" content="noindex,nofollow" />
 	<?php endif; ?>
 </head>
