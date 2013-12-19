@@ -11,7 +11,7 @@ JRequest::setVar('inventory_type', $this->item->inventory_type);
 <div class="quotebox dropshadow">
     <div class="quotebox-inner">
         <div class="logobox" style="width:100%;border-bottom:2px solid #bdbdbd;margin-bottom:10px;">
-            <img src="/templates/posrg/images/logo.png" /> <br /><br />
+            <img src="<?php echo $this->item->image; ?>" /> <br /><br />
         </div>
         <p><strong>Manufacturer:</strong> <?php echo $this->item->mfc; ?></p><br />
         <p><strong>Part:</strong> <?php echo $this->item->part_number; ?></p><br />
