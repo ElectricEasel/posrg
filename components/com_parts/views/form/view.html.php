@@ -22,16 +22,19 @@ class PartsViewForm extends JView
 
 	protected function prepareDocument()
 	{
+		$title = sprintf(
+			'%s %s currently in stock. Shop new, used and refurbished POS equipment - POSRG.com',
+			$this->item->mfc,
+			$this->item->part_number
+		);
+		$description = sprintf(
+			'%s %s %s is available at POSRG.com. We carry full lines of new, used and refurbished point of sale equipment at competitive prices.',
+			$this->item->mfc,
+			$this->item->part_number,
+			$this->item->des
+		);
 		$this->document
-			->setTitle(
-				$this->item->mfc . ' ' .
-				$this->item->part_number . ' | ' .
-				$this->document->getTitle()
-			)
-			->setDescription(htmlspecialchars(
-				$this->item->mfc . ' ' .
-				$this->item->part_number . ' ' .
-				$this->item->des
-			));
+			->setTitle($title)
+			->setDescription(htmlspecialchars($description));
 	}
 }
