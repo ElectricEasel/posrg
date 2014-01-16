@@ -27,9 +27,8 @@
 			<br />
 			<div class="gm-value">
                 <select name="inventory_type">
-                    <option value="regular" selected="selected">In House</option>
-                    <option value="brokerbin">Broker Bin</option>
-                    <option value="other">Other</option>
+                    <option value="inventory" selected="selected">Inventory</option>
+                    <option value="noninventory">Non-Inventory</option>
                 </select>
 			</div>
 		</div>
