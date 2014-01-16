@@ -101,7 +101,7 @@ class PartsController extends JController
             foreach ($items as $item)
             {
                 // If the part number starts with the manufacturer, remove it.
-                if (!empty($item->mfc) && strpos($item->part_number, $item->mfc) === 0)
+                if (!empty($item->mfc) && strpos(strtolower($item->part_number), strtolower($item->mfc)) === 0)
                 {
                     $item->part_number = preg_replace('#' . $item->mfc . '#i', '', $item->part_number, 1);
                 }
@@ -117,5 +117,7 @@ class PartsController extends JController
                 $table->id = null;
             }
         }
+
+	    $this->setRedirect(JRoute::_('index.php?option=com_parts&view=list'), 'Cleanup Successful.');
     }
 }
