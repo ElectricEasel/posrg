@@ -39,7 +39,7 @@ abstract class PartsHelper
 			return false;
 		}
 
-		return $row->part_number;
+		return str_replace(' ', '-', $row->part_number);
 	}
 
 	/**
@@ -76,20 +76,22 @@ abstract class PartsHelper
 		{
 			if (is_int($id))
 			{
-				$where = 'id';
+				$where = 'id = %s';
 			}
 			else
 			{
 				// For some reason Joomla replaces the first `-` with a `:`
 				$id = preg_replace('/:/', '-', $id, 1);
-				$where = 'part_number';
+				$id = str_replace(' ', '-', $id);
+				$where = 'REPLACE(part_number, " ", "-") = %s';
 			}
 
 			$db = JFactory::getDbo();
 			$query = $db->getQuery(true)
 			         ->select('id, mfc, part_number')
 			         ->from('#__parts')
-			         ->where($db->quoteName($where) . ' = ' .  $db->quote($db->escape($id)));
+			         ->where(sprintf($where, $db->quote($db->escape($id))))
+			         ->order('CASE WHEN inventory_type = "regular" THEN 1 ELSE 2 END, inventory_type');
 
 			self::$cache[$cacheId] = $db->setQuery($query)->loadObject();
 		}
