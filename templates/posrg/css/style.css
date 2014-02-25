@@ -1477,3 +1477,44 @@ float:right
 	font-size: 11px;
 	font-weight: bold;
 }
+
+/* NEW CONTACT PAGE STYLING */
+
+#content .contact-list {
+	list-style: none outside none;
+	margin: 0;
+	font-size: 13px;
+}
+#content .contact-list:after {
+	display: table;
+	clear: both;
+	content: "";
+	visibility: hidden;
+}
+#content .contact-list li.item {
+	float: left;
+	width: 50%;
+	padding: 0;
+	background: none;
+	margin-bottom: 10px;
+}
+#content .contact-list li.item.bh {
+	min-height: 100px;
+}
+#content .contact-list li.item span {
+	display: block;
+	line-height: 1.2em;
+}
+#content .contact-list li.item .bobblehead {
+	float: left;
+	min-width: 55px;
+}
+#content .contact-list li.item .bobblehead img {
+	display: block;
+	width: auto;
+	height: auto;
+}
+#content .contact-list li.item h6 {
+	font-size: 13px;
+	line-height: 1.2em;
+}

@@ -11,6 +11,7 @@ if ($app->input->get('option') !== 'com_product')
 
 // $this JDocument
 $this
+	->addScript($tpath . '/js/jquery.fancybox.min.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/site.js')
 	->addScriptDeclaration('
@@ -19,6 +20,7 @@ $this
 		// ]]>
 ')
 	->addStyleSheet($tpath . '/js/chosen/chosen.css')
+	->addStyleSheet($tpath . '/css/jquery.fancybox.css')
 	->addStyleSheet($tpath . '/css/style.css')
 	->setTab("\t")
 	->setBase(null)
