@@ -16,7 +16,7 @@ $this
 	->addScript($tpath . '/js/site.js')
 	->addScriptDeclaration('
 		// <![CDATA[
-			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen();});
+			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen({allow_single_deselect:true});});
 		// ]]>
 ')
 	->addStyleSheet($tpath . '/js/chosen/chosen.css')
