@@ -36,7 +36,7 @@ class WantedModelManager extends JModelList
 		if ($search)
 		{
 			$search = $db->escape($search);
-			$query->where("item_name LIKE '%{$search}%'");
+			$query->where("title LIKE '%{$search}%'");
 		}
 
 		return $query;
