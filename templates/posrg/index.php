@@ -48,6 +48,7 @@ if ($menu->getActive() == $menu->getDefault())
 	<meta name="DC.identifier" content="http://www.posrg.com/" />
 	<meta name="DC.language" content="en-US" scheme="rfc1766" />
 	<meta name="DC.subject" content="Point of Sale Refurbishing" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<script type="text/javascript">
 	// <![CDATA[
 		var _gaq = _gaq || [];
