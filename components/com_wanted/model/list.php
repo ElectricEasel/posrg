@@ -24,7 +24,7 @@ class WantedModelList extends JModelList
 		$params = $this->app->getParams();
 
 		$this->setState('params', $params);
-		$this->setState('list.limit', 50);
+		$this->setState('list.limit', 26);
 	}
 
 	public function getListQuery()

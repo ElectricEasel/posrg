@@ -1532,10 +1532,11 @@ table.wanted td, table.wanted th {
     width: 950px;
 }
 .page-wanted-pos-items #wanted {
-    background: url("/templates/posrg/images/wanted-bg.png") -12px top repeat-y;
-    background-size: 1005px 100%;
+    background: url("/templates/posrg/images/wanted.jpg") center top no-repeat;
     text-align: center;
-    padding: 68px 0 86px;
+    width: 950px;
+    height: 977px;
+    position: relative;
 }
 #wanted-list, #wanted img, #wanted h2, #wanted h3 {
     width: 700px;
@@ -1555,7 +1556,7 @@ table.wanted td, table.wanted th {
     text-align: left;
     font-weight: bold;
     font-size: 14px;
-    padding: 0 0 20px;
+    padding: 0 0 16px;
     text-indent: -4px;
 }
 #wanted h2, #wanted h3 {
@@ -1564,18 +1565,27 @@ table.wanted td, table.wanted th {
 }
 #wanted h2 {
     font-size: 26px;
-    margin: 26px auto;
+    margin: 0 auto 20px;
     line-height: 32px;
+    padding-top: 232px;
+    padding-right: 20px;
 }
 #wanted h3 {
     font-size: 18px;
-    padding: 26px 0;
     line-height: 24px;
+    position: absolute;
+    bottom: 186px;
+    left: 114px;
 }
 #wanted #wanted-list + ul li {
     display: inline-block;
     padding: 0 2px;
 
+}
+#wanted #wanted-list + ul {
+    position: absolute;
+    bottom: 254px;
+    left: 396px;
 }
 #wanted .pagination-start, #wanted .pagination-prev, #wanted .pagination-next, #wanted .pagination-end {
     padding: 0 6px;
