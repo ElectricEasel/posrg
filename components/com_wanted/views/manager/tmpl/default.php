@@ -17,26 +17,19 @@ $i     = 0;
 			<a  href="<?php echo JRoute::_('index.php?option=com_wanted&view=form') ?>"><span><?php echo JText::_('Add Item') ?></span></a>
 		</div>
 	</div>
-	<div class='item'>
-		<label><?php echo JText::_('Product name') ?></label><br/>
-		<input type="text" name="search" id="search" value="<?php echo $this->lists['search'];?>" class="gm-input" onchange="document.adminForm.submit();" />
-	</div>
+    <p id="success-message" style="display:none">Ordering Saved</p>
 	<div id='gm-family-list' class='gm-content'>
-		<table class="adminlist wanted">
+		<table class="wanted">
 			<thead>
 				<tr>
-					<th>
-						<?php echo JText::_('ID'); ?>
-					</th>
-					<th>
-						<?php echo JText::_('Title') ?>
-					</th>
+					<th><?php echo JText::_('Reorder'); ?></th>
+					<th><?php echo JText::_('Title') ?></th>
 					<th>
 						&nbsp;
 					</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="sortable">
 		<?php
 		if ($count) :
 			$k = 0;
@@ -48,8 +41,9 @@ $i     = 0;
 				$checked = JHtml::_('grid.id', $i, $item->id);
 				?>
 				<tr class="<?php echo "row$k"; ?>">
-					<td align="center">
-						<a href="<?php echo JRoute::_('index.php?option=com_wanted&view=form&id=' . $item->id) ?>"><?php echo $item->id; ?></a>
+                    <td align="center"  class="handle">
+                        <input type="hidden" value="<?php echo $item->id; ?>" name="cid" />
+						&bull;
 					</td>
                     <td>
                         <a href="<?php echo JRoute::_('index.php?option=com_wanted&view=form&id=' . $item->id) ?>"><?php echo $item->title; ?></a>

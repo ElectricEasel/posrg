@@ -109,4 +109,36 @@ class WantedController extends JController
 		}
 	}
 
+    /**
+     * Method to save the submitted ordering values for records via AJAX.
+     *
+     * @return  void
+     *
+     * @since   3.0
+     */
+    public function saveOrderAjax()
+    {
+        // Get the input
+        $pks = $this->app->input->post->get('cid', array(), 'array');
+        $order = $this->app->input->post->get('order', array(), 'array');
+
+        // Sanitize the input
+        JArrayHelper::toInteger($pks);
+        JArrayHelper::toInteger($order);
+
+        // Get the model
+        /** @var WantedModelManager $model */
+        $model = $this->getModel('manager');
+
+        // Save the ordering
+        if ($model->saveorder($pks, $order))
+        {
+            echo '1';
+        }
+
+        // Close the application
+        $this->app->close();
+    }
+
+
 }

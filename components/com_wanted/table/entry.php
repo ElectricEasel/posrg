@@ -2,6 +2,10 @@
 
 class WantedTableEntry extends JTable
 {
+    public $id;
+    public $title;
+    public $ordering;
+
 	public function __construct()
 	{
 		$db = JFactory::getDbo();

@@ -24,7 +24,7 @@ class WantedModelList extends JModelList
 		$params = $this->app->getParams();
 
 		$this->setState('params', $params);
-		$this->setState('list.limit', 26);
+		$this->setState('list.limit', 0);
 	}
 
 	public function getListQuery()
@@ -33,6 +33,6 @@ class WantedModelList extends JModelList
 			->getQuery(true)
 			->select('*')
 			->from('#__wanted')
-            ->order('title asc');
+            ->order('ordering asc');
 	}
 }

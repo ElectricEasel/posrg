@@ -10,7 +10,8 @@ jimport('joomla.html.pagination');
 
 JHtml::script('mootools.js');
 JFactory::getDocument()
-	->addScript('components/com_product/assets/js/jquery.js')
+    ->addScript('http://code.jquery.com/jquery-1.9.1.js"')
+    ->addScript('http://code.jquery.com/ui/1.10.4/jquery-ui.js')
 	->addStyleSheet('components/com_product/assets/css/template.css');
 
 JLoader::registerPrefix('Wanted', dirname(__FILE__));

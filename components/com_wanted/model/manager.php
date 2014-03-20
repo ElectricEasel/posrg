@@ -23,6 +23,7 @@ class WantedModelManager extends JModelList
 		$params = $this->app->getParams();
 		$this->setState('params', $params);
 
+        $this->setState('list.limit', 0);
 	}
 
 	public function getListQuery()
@@ -30,7 +31,8 @@ class WantedModelManager extends JModelList
 		$db = $this->getDbo();
 		$query = $db->getQuery(true)
 			->select('*')
-			->from('#__wanted');
+			->from('#__wanted')
+            ->order('ordering ASC');
 
 		$search = $this->getState('filter.search');
 		if ($search)
@@ -41,4 +43,40 @@ class WantedModelManager extends JModelList
 
 		return $query;
 	}
+
+    /**
+     * Saves the manually set order of records.
+     *
+     * @param   array    $pks    An array of primary key ids.
+     * @param   integer  $order  +1 or -1
+     *
+     * @return  mixed
+     *
+     * @since   12.2
+     */
+    public function saveorder($pks = null, $order = null)
+    {
+        $table = new WantedTableEntry;
+
+        if (empty($pks))
+        {
+            return JError::raiseWarning(500, JText::_('ERROR_NO_ITEMS_SELECTED'));
+        }
+
+        // Update ordering values
+        foreach ($pks as $i => $pk)
+        {
+            $table->load((int) $pk);
+
+            $table->ordering = $order[$i];
+
+            if (!$table->store())
+            {
+                $this->setError($table->getError());
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
