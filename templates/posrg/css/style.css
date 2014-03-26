@@ -1518,3 +1518,76 @@ float:right
 	font-size: 13px;
 	line-height: 1.2em;
 }
+table.wanted td, table.wanted th {
+    padding: 10px;
+    line-height: 12px;
+}
+table.wanted td.handle {
+    font-size: 30px;
+    cursor: move;
+    padding: 10px 0px 10px 10px;
+}
+p#success-message {
+    color: #0a0;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    line-height: 0;
+}
+.wanted-pagination ul li {
+    display: inline-block;
+    padding: 0 2px;
+}
+.wanted-pagination .pagination-start, .wanted-pagination .pagination-prev, .wanted-pagination .pagination-next, .wanted-pagination .pagination-end {
+    padding: 0 6px;
+}
+.page-wanted-pos-items #content #main {
+    width: 950px;
+}
+.page-wanted-pos-items #wanted {
+    background: url("/templates/posrg/images/wanted-top.jpg") center top no-repeat, url("/templates/posrg/images/wanted-bot.jpg") center bottom no-repeat, url("/templates/posrg/images/wanted-mid.jpg") center 255px repeat-y;
+    text-align: center;
+    width: 950px;
+    min-height: 952px;
+    position: relative;
+}
+#wanted-list, #wanted img, #wanted h2, #wanted h3 {
+    width: 700px;
+    margin: 0 auto;
+}
+#wanted-list {
+    padding-left: 110px;
+}
+#wanted-list ul {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 388px;
+}
+#wanted-list li {
+    width: 330px;
+    float: left;
+    list-style-type: disc;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 0 18px;
+    text-indent: -4px;
+}
+#wanted h2, #wanted h3 {
+    color: #311a05;
+    font-family: "Droid Serif", serif !important;
+}
+#wanted h2 {
+    font-size: 26px;
+    margin: 0 auto 20px;
+    line-height: 32px;
+    padding-top: 232px;
+    padding-right: 20px;
+}
+#wanted h3 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 174px;
+    padding-top: 26px;
+}
