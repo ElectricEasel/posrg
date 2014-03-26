@@ -1562,6 +1562,7 @@ p#success-message {
 .page-wanted-pos-items #wanted .bot {
 	background: url(/templates/posrg/images/wanted-bot.jpg) center top no-repeat;
 	height: 295px;
+	position: relative;
 }
 #wanted-list, #wanted img, #wanted h2, #wanted h3 {
     width: 700px;
@@ -1597,6 +1598,16 @@ p#success-message {
 #wanted h3 {
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 174px;
+    padding-bottom: 10px;
     padding-top: 26px;
+}
+.wanted-chat {
+    bottom: 0;
+    display: block;
+    height: 170px;
+    position: absolute;
+    width: 100%;
+}
+.wanted-chat:hover {
+	text-decoration: none;
 }
