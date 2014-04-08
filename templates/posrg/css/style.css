@@ -1603,6 +1603,7 @@ p#success-message {
 }
 .wanted-chat {
     bottom: 0;
+    left: 0;
     display: block;
     height: 170px;
     position: absolute;
