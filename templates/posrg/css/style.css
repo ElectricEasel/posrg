@@ -1606,7 +1606,7 @@ p#success-message {
     display: block;
     height: 170px;
     position: absolute;
-    width: 100%;
+    width: 950px;
 }
 .wanted-chat:hover {
 	text-decoration: none;
