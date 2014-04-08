@@ -1546,11 +1546,23 @@ p#success-message {
     width: 950px;
 }
 .page-wanted-pos-items #wanted {
-    background: url("/templates/posrg/images/wanted-top.jpg") center top no-repeat, url("/templates/posrg/images/wanted-bot.jpg") center bottom no-repeat, url("/templates/posrg/images/wanted-mid.jpg") center 255px repeat-y;
     text-align: center;
     width: 950px;
     min-height: 952px;
     position: relative;
+}
+.page-wanted-pos-items #wanted .top {
+	background: url(/templates/posrg/images/wanted-top.jpg) center top no-repeat;
+	height: 255px;
+}
+.page-wanted-pos-items #wanted .mid {
+	background: url(/templates/posrg/images/wanted-mid.jpg) center top repeat-y;
+	min-height: 402px;
+}
+.page-wanted-pos-items #wanted .bot {
+	background: url(/templates/posrg/images/wanted-bot.jpg) center top no-repeat;
+	height: 295px;
+	position: relative;
 }
 #wanted-list, #wanted img, #wanted h2, #wanted h3 {
     width: 700px;
@@ -1562,7 +1574,6 @@ p#success-message {
 #wanted-list ul {
     display: inline-block;
     vertical-align: top;
-    min-height: 388px;
 }
 #wanted-list li {
     width: 330px;
@@ -1571,7 +1582,7 @@ p#success-message {
     text-align: left;
     font-weight: bold;
     font-size: 14px;
-    padding: 0 0 18px;
+    padding: 0 0 16px;
     text-indent: -4px;
 }
 #wanted h2, #wanted h3 {
@@ -1582,12 +1593,21 @@ p#success-message {
     font-size: 26px;
     margin: 0 auto 20px;
     line-height: 32px;
-    padding-top: 232px;
     padding-right: 20px;
 }
 #wanted h3 {
     font-size: 18px;
     line-height: 24px;
-    padding-bottom: 174px;
+    padding-bottom: 10px;
     padding-top: 26px;
+}
+.wanted-chat {
+    bottom: 0;
+    display: block;
+    height: 170px;
+    position: absolute;
+    width: 100%;
+}
+.wanted-chat:hover {
+	text-decoration: none;
 }
