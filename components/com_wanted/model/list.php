@@ -33,6 +33,6 @@ class WantedModelList extends JModelList
 			->getQuery(true)
 			->select('*')
 			->from('#__wanted')
-            ->order('ordering asc');
+            ->order('title asc');
 	}
 }
