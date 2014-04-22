@@ -11,14 +11,17 @@ if ($app->input->get('option') !== 'com_product')
 
 // $this JDocument
 $this
+	->addScript($tpath . '/js/jquery.fancybox.min.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/site.js')
+    ->addStyleSheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
 	->addScriptDeclaration('
 		// <![CDATA[
 			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen({allow_single_deselect:true});});
 		// ]]>
 ')
 	->addStyleSheet($tpath . '/js/chosen/chosen.css')
+	->addStyleSheet($tpath . '/css/jquery.fancybox.css')
 	->addStyleSheet($tpath . '/css/style.css')
 	->setTab("\t")
 	->setBase(null)
@@ -46,6 +49,7 @@ if ($menu->getActive() == $menu->getDefault())
 	<meta name="DC.identifier" content="http://www.posrg.com/" />
 	<meta name="DC.language" content="en-US" scheme="rfc1766" />
 	<meta name="DC.subject" content="Point of Sale Refurbishing" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<script type="text/javascript">
 	// <![CDATA[
 		var _gaq = _gaq || [];
@@ -59,6 +63,47 @@ if ($menu->getActive() == $menu->getDefault())
 		})();
 	// ]]>
 	</script>
+    <?php if ($app->input->get('option') == 'com_wanted' && $app->input->get('view') == 'manager'): ?>
+    <script type="text/javascript">
+    // <![CDATA[
+        $(function() {
+            var sortableList = $('#sortable');
+            sortableList.sortable({
+                cursor:"move",
+                handle: 'td:first',
+                update: function(event,ui) {
+                    // Get the item ID's in an array
+                    var cids = Array.prototype.map.call(
+                        $('[name="cid"]'),
+                        function (item) {
+                            return item.value;
+                        }
+                    );
+
+                    var ordering = Object.keys(cids);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.php",
+                        data: {
+                            option: 'com_wanted',
+                            task: 'saveOrderAjax',
+                            tmpl: 'component',
+                            cid: cids,
+                            order: ordering
+                        },
+                        context: this,
+                        success: function() {
+                            $('#success-message').show().delay(1500).fadeOut(200);
+                        }
+                    })
+                }
+            });
+            sortableList.disableSelection();
+        });
+    // ]]>
+    </script>
+    <?php endif; ?>
 	<?php if (getenv('EE_ENV') === 'development') : ?>
 	<meta name="robots" content="noindex,nofollow" />
 	<?php endif; ?>

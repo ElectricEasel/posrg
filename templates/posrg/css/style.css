@@ -1477,3 +1477,138 @@ float:right
 	font-size: 11px;
 	font-weight: bold;
 }
+
+/* NEW CONTACT PAGE STYLING */
+
+#content .contact-list {
+	list-style: none outside none;
+	margin: 0;
+	font-size: 13px;
+}
+#content .contact-list:after {
+	display: table;
+	clear: both;
+	content: "";
+	visibility: hidden;
+}
+#content .contact-list li.item {
+	float: left;
+	width: 50%;
+	padding: 0;
+	background: none;
+	margin-bottom: 10px;
+}
+#content .contact-list li.item.bh {
+	min-height: 100px;
+}
+#content .contact-list li.item span {
+	display: block;
+	line-height: 1.2em;
+}
+#content .contact-list li.item .bobblehead {
+	float: left;
+	min-width: 55px;
+}
+#content .contact-list li.item .bobblehead img {
+	display: block;
+	width: auto;
+	height: auto;
+}
+#content .contact-list li.item h6 {
+	font-size: 13px;
+	line-height: 1.2em;
+}
+table.wanted td, table.wanted th {
+    padding: 10px;
+    line-height: 12px;
+}
+table.wanted td.handle {
+    font-size: 30px;
+    cursor: move;
+    padding: 10px 0px 10px 10px;
+}
+p#success-message {
+    color: #0a0;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    line-height: 0;
+}
+.wanted-pagination ul li {
+    display: inline-block;
+    padding: 0 2px;
+}
+.wanted-pagination .pagination-start, .wanted-pagination .pagination-prev, .wanted-pagination .pagination-next, .wanted-pagination .pagination-end {
+    padding: 0 6px;
+}
+.page-wanted-pos-items #content #main {
+    width: 950px;
+}
+.page-wanted-pos-items #wanted {
+    text-align: center;
+    width: 950px;
+    min-height: 952px;
+    position: relative;
+}
+.page-wanted-pos-items #wanted .top {
+	background: url(/templates/posrg/images/wanted-top.jpg) center top no-repeat;
+	height: 255px;
+}
+.page-wanted-pos-items #wanted .mid {
+	background: url(/templates/posrg/images/wanted-mid.jpg) center top repeat-y;
+	min-height: 402px;
+}
+.page-wanted-pos-items #wanted .bot {
+	background: url(/templates/posrg/images/wanted-bot.jpg) center top no-repeat;
+	height: 295px;
+	position: relative;
+}
+#wanted-list, #wanted img, #wanted h2, #wanted h3 {
+    width: 700px;
+    margin: 0 auto;
+}
+#wanted-list {
+    padding-left: 110px;
+}
+#wanted-list ul {
+    display: inline-block;
+    vertical-align: top;
+}
+#wanted-list li {
+    width: 330px;
+    float: left;
+    list-style-type: disc;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 0 16px;
+    text-indent: -4px;
+}
+#wanted h2, #wanted h3 {
+    color: #311a05;
+    font-family: "Droid Serif", serif !important;
+}
+#wanted h2 {
+    font-size: 26px;
+    margin: 0 auto 20px;
+    line-height: 32px;
+    padding-right: 20px;
+}
+#wanted h3 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    padding-top: 26px;
+}
+.wanted-chat {
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 170px;
+    position: absolute;
+    width: 950px;
+}
+.wanted-chat:hover {
+	text-decoration: none;
+}
