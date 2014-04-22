@@ -92,29 +92,40 @@ class PartsController extends JController
             ->select('*')
             ->from('#__parts');
 
-        $items = $db->setQuery($query)->loadObjectList();
+        $query2 = $db->getQuery(true)
+            ->select('COUNT(id)')
+            ->from('#__parts');
 
-        if ($items)
+        $count = $db->setQuery($query2)->loadResult();
+        $offset = 0;
+
+        while ($offset < $count)
         {
-            $table = new PartsTableImport;
+            $items = $db->setQuery($query, 0, 2500)->loadObjectList();
+            $offset += 2500;
 
-            foreach ($items as $item)
+            if ($items)
             {
-                // If the part number starts with the manufacturer, remove it.
-                if (!empty($item->mfc) && strpos(strtolower($item->part_number), strtolower($item->mfc)) === 0)
+                $table = new PartsTableImport;
+
+                foreach ($items as $item)
                 {
-                    $item->part_number = preg_replace('#' . $item->mfc . '#i', '', $item->part_number, 1);
+                    // If the part number starts with the manufacturer, remove it.
+                    if (!empty($item->mfc) && strpos(strtolower($item->part_number), strtolower($item->mfc)) === 0)
+                    {
+                        $item->part_number = preg_replace('#' . $item->mfc . '#i', '', $item->part_number, 1);
+                    }
+
+                    // Clean up all other whitespace from part_number
+                    $item->part_number = trim($item->part_number);
+                    $item->part_number = ltrim($item->part_number, '-');
+                    $item->part_number = trim($item->part_number);
+
+                    $table->save($item);
+                    $table->reset();
+                    // Reset doesn't clear the $_tbl_key
+                    $table->id = null;
                 }
-
-                // Clean up all other whitespace from part_number
-                $item->part_number = trim($item->part_number);
-                $item->part_number = ltrim($item->part_number, '-');
-                $item->part_number = trim($item->part_number);
-
-                $table->save($item);
-                $table->reset();
-                // Reset doesn't clear the $_tbl_key
-                $table->id = null;
             }
         }
 
