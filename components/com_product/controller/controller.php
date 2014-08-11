@@ -201,8 +201,10 @@ class ProductController extends JController
 	protected function checkLogin()
 	{
 		$user = JFactory::getUser();
+		
+		$allowed = array('admin', 'posrg');
 
-		if (strtolower($user->get('username')) !== 'admin')
+		if (in_array(strtolower($user->get('username')), $allowed) === false)
 		{
 			$this->setRedirect('index.php?option=com_users&view=login');
 			$this->redirect();

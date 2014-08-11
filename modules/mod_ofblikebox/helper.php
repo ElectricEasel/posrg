@@ -49,14 +49,14 @@ class oFBLikeBox
 		
 		if($oFsource == '1'){
 			//HTML5			
-			$data = '<div id="fb-root"></div><script language="javascript" type="text/javascript">(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) {return;}  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";  fjs.parentNode.insertBefore(js, fjs);}(document, \'script\', \'facebook-jssdk\'));</script>';
+			$data = '<div id="fb-root"></div><script language="javascript" type="text/javascript">(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) {return;}  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";  fjs.parentNode.insertBefore(js, fjs);}(document, \'script\', \'facebook-jssdk\'));</script>';
 			$data = $data.'<script language="javascript" type="text/javascript">//<![CDATA[ 
 																						   document.write(\'<div class="fb-like-box" data-href="'.$oFlink.'" data-width="'.$oFwidth.'" data-height="'.$oFheight.'" data-colorscheme="'.$oFcolor.'" data-show-faces="'.$oFfaces.'" data-border-color="'.$oFborder.'" data-stream="'.$oFstream.'" data-force-wall="'.$oFforce.'" data-header="'.$oFheader.'"></div> \'); 
 																						   //]]>
 			</script> ';
 		}else if($oFsource == '2'){
 			//XFBML
-			$data = '<div id="fb-root"></div><script language="javascript" type="text/javascript">(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) {return;}  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";  fjs.parentNode.insertBefore(js, fjs);}(document, \'script\', \'facebook-jssdk\'));</script>';
+			$data = '<div id="fb-root"></div><script language="javascript" type="text/javascript">(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) {return;}  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";  fjs.parentNode.insertBefore(js, fjs);}(document, \'script\', \'facebook-jssdk\'));</script>';
 			$data = $data.'<script language="javascript" type="text/javascript">//<![CDATA[ 
 																						   document.write(\'<fb:like-box href="'.$oFlink.'" width="'.$oFwidth.'" height="'.$oFheight.'" colorscheme="'.$oFcolor.'" show_faces="'.$oFfaces.'" border_color="'.$oFborder.'" stream="'.$oFstream.'" force_wall="'.$oFforce.'" header="'.$oFheader.'"></fb:like-box> \'); 
 																						   //]]>

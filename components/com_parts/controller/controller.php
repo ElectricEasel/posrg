@@ -15,6 +15,8 @@ class PartsController extends JController
 
 	public function save()
 	{
+		ini_set('max_execution_time', 300);
+		
 		if (!JSession::checkToken())
 		{
 			$this->setRedirect(JRoute::_('index.php?option=com_parts&view=list'), 'Token error');
@@ -101,7 +103,7 @@ class PartsController extends JController
 
         while ($offset < $count)
         {
-            $items = $db->setQuery($query, 0, 2500)->loadObjectList();
+            $items = $db->setQuery($query, $offset, 2500)->loadObjectList();
             $offset += 2500;
 
             if ($items)

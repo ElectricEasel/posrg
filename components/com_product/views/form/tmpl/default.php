@@ -57,7 +57,7 @@ JHtml::_('behavior.formvalidation');
 		<div class="action-container">
 			<span class="req left"><?php echo JText::_('GM_PRODUCT_RQ') ?></span>
 
-			<button id="cancel" type="button" ><?php echo JText::_('Cancel') ?></button>
+			<button id="cancel" type="button" onclick="history.go(-1);"><?php echo JText::_('Cancel') ?></button>
 			<button type="submit" class="validate" id="save_fm"><?php echo JText::_('Save') ?></button>
 		</div>
 		<input type="hidden" name="id"	value="<?php echo $this->item->id ?>" />

@@ -4,13 +4,9 @@ $app  = JFactory::getApplication();
 $menu = $app->getMenu();
 $tpath = $this->baseurl . '/templates/' . $this->template;
 
-if ($app->input->get('option') !== 'com_product')
-{
-	$this->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
-}
-
 // $this JDocument
 $this
+	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 	->addScript($tpath . '/js/jquery.fancybox.min.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/site.js')
@@ -107,6 +103,15 @@ if ($menu->getActive() == $menu->getDefault())
 	<?php if (getenv('EE_ENV') === 'development') : ?>
 	<meta name="robots" content="noindex,nofollow" />
 	<?php endif; ?>
+	<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?28HMYMeMVn2asz5zlB6L4jpFHKJGCfCN';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
 </head>
 <body class="<?php echo $body_class; ?>">
 	<div id="header">
