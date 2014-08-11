@@ -18,6 +18,6 @@
 	<div class="bot">
 	    <?php echo $this->pagination->getPagesLinks(); ?>
 	    <h3>If you have any of the above equipment in stock and are motivated to sell it at wholesale pricing please</h3>
-	    <a class="wanted-chat" href="javascript:void(window.open('http://chat.posrg.com/chat.php','','width=590,height=580,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))">&nbsp;</a>
+	    <a class="wanted-chat" href="javascript:void($zopim.livechat.window.show())">&nbsp;</a>
 	</div>
 </div>
