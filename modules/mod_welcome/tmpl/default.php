@@ -20,6 +20,7 @@ $template_path = '/templates/posrg';
 	// ]]>
 	</script>
 	<div class="slides">
+		<img src="<?php echo $template_path; ?>/images/banner-new-hardware.jpg" alt="New Hardware" />
 		<a href="/about-us/posrg-news"><img src="<?php echo $template_path; ?>/images/banner-news1.jpg" alt="POSRG News" /></a>
 		<a href="/our-process/posrg-certified"><img src="<?php echo $template_path; ?>/images/banner-hardware.jpg" alt="" /></a>
 		<a href="/inventory/search-our-inventory"><img src="<?php echo $template_path; ?>/images/banner-posrg.jpg" alt="" /></a>
