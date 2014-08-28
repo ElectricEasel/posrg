@@ -891,6 +891,9 @@ h1.contentheading {
 #yoo-zoo p.pos-links span a {
 	color:#0068C4;
 }
+#yoo-zoo .element-autorelateditems {
+	max-width: 300px;
+}
 
 .gm-content h4 {
     font-size: 12px;
