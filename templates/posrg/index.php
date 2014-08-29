@@ -31,6 +31,13 @@ if ($menu->getActive() == $menu->getDefault())
 	$is_home = true;
 }
 
+
+$menu_active = $app->getMenu()->getActive();
+$pageclass = '';
+
+if (is_object($menu_active))
+$pageclass = $menu_active->params->get('pageclass_sfx');
+
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" >
 <head>
@@ -113,7 +120,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 </script>
 <!--End of Zopim Live Chat Script-->
 </head>
-<body class="<?php echo $body_class; ?>">
+<body class="<?php echo $body_class ." ". $pageclass; ?>">
 	<div id="header">
 		<div class="wrap">
 			<a href="/" id="logo"></a>
