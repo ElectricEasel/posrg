@@ -1740,3 +1740,181 @@ form#trade-in-trade-up #submit {
 	padding-left: 40px;
 	padding-right: 40px;
 }
+body.preferred-partners #banner,
+body.preferred-partners #sidebar,
+body.preferred-partners h1.contentheading,
+body.preferred-partners .buttonheading {
+	display: none;
+}
+body.preferred-partners #content .wrap {
+	padding-top: 0;
+}
+body.preferred-partners #content #main {
+	margin: 0;
+	width: 100%;
+}
+.pp-header {
+	background: url(../images/header-partners.jpg) no-repeat center bottom #fafafa;
+	padding: 30px 50px 275px;
+	min-height: 448px;
+	text-align: center;
+	margin-bottom: 50px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.pp-header h1 {
+	color: #006ab8;
+	font-size: 39px;
+	margin: 0;
+	line-height: 1.2em;
+}
+#page .pp-header p {
+	font-size: 17px;
+	color: #666;
+	margin: 15px 0;
+	font-weight: bold;
+	line-height: 1.35em;
+	
+}
+.pp-product {
+	padding: 20px 100px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#page .pp-product p {
+	font-size: 12px;
+}
+.pp-product img {
+	display: block;
+}
+#page .pp-product h6 {
+	font-size: 14px;
+	color: #5d5d5d;
+	margin: 15px 0 10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+#page .pp-links a {
+	color: #006ab8;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 12px;
+}
+#page .pp-links a:hover,
+#page .pp-links a:active {
+	color: #000;
+}
+.pp-links i {
+	font-style: normal;
+	margin: 0 0.35em;
+}
+.pp-datalogic {
+	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
+	min-height: 262px;
+	padding-right: 380px;
+	padding-top: 40px;
+}
+.pp-epson {
+	background: url(../images/pref-partners/epson.jpg) no-repeat center bottom transparent;
+	min-height: 260px;
+    padding-left: 350px;
+    padding-top: 60px;
+}
+.pp-elo {
+	background: url(../images/pref-partners/elo.jpg) no-repeat center bottom transparent;
+	min-height: 320px;
+    padding-right: 470px;
+    padding-top: 52px;
+}
+.pp-hp {
+	background: url(../images/pref-partners/hp.jpg) no-repeat center top transparent;
+	min-height: 230px;
+	padding-top: 300px;
+	padding-right: 85px;
+}
+.pp-hp:after {
+	content: "";
+	display: table;
+	clear: both;
+	visibility: hidden;
+}
+.pp-hp img {
+	float: left;
+	padding: 0 20px 50px 0;
+}
+#page .pp-hp h6 {
+	margin-top: 0;
+}
+#pp-boxes {
+	background: url(../images/dropshadow-top.png) repeat-x 0 0 transparent;
+	padding: 30px 25px;
+	text-align: center;
+}
+.pp-box {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	border-top: 5px solid #0068ba;
+	background: url(../images/checker-fade.png) repeat-x 0 0 #f5f5f5;
+	background: url(../images/checker-fade.png) 0 0 repeat-x,
+				url(../images/dropshadow-bottom.png) 0 100% repeat-x;
+	background-color: #f5f5f5;
+}
+.pp-box > div {
+	min-height: 153px;
+	padding: 0 35px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.pp-box:last-child {
+	margin-right: 0;
+}
+#pp-boxes h3 {
+	color: #0068ba;
+	font-size: 25px;
+	line-height: 1.2em;
+	text-transform: none;
+	font-weight: bold;
+	margin: 0;
+	padding: 15px 0 0;
+}
+#pp-boxes .pp-box p {
+	margin: 10px 0 0;
+	line-height: 1.3em;
+}
+.pp-trade img {
+	padding: 20px 0 0;
+}
+.pp-box img {
+	display: block;
+	margin: 0 auto;
+}
+#pp-boxes .pp-chat h3 {
+	background: url(../images/icon-chat.png) no-repeat 100% 55% transparent;
+	line-height: 2em;
+	display: inline-block;
+	padding: 15px 60px 10px 0;
+}
+#pp-boxes .pp-contact h3 {
+	background: url(../images/icon-phone.png) no-repeat 100% 80% transparent;
+	padding: 15px 60px 0 0;
+	display: inline-block;
+}
+.pp-contact p strong {
+	display: block;
+	font-size: 16px;
+}
+.pp-box .blue-btn {
+	margin: 0 0 30px;
+	display: inline-block;
+	background: #006ab8;
+	padding: 3px 25px;
+}
+.pp-box .blue-btn:hover,
+.pp-box .blue-btn:active {
+	text-decoration: none;
+	background: #0080de;
+}
