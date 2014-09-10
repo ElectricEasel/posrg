@@ -1872,6 +1872,12 @@ body.preferred-partners #content #main {
 .pp-box:last-child {
 	margin-right: 0;
 }
+#pp-boxes:after {
+	content: "";
+	clear: both;
+	display: table;
+	visibility: hidden;
+}
 #pp-boxes h3 {
 	color: #0068ba;
 	font-size: 25px;
@@ -1903,6 +1909,14 @@ body.preferred-partners #content #main {
 	padding: 15px 60px 0 0;
 	display: inline-block;
 }
+#pp-boxes + h3 {
+	font-size: 16px;
+	text-transform: none;
+	color: #000;
+	margin: 20px 0;
+	padding: 0 25px;
+	font-weight: bold;
+}
 .pp-contact p strong {
 	display: block;
 	font-size: 16px;
@@ -1917,4 +1931,73 @@ body.preferred-partners #content #main {
 .pp-box .blue-btn:active {
 	text-decoration: none;
 	background: #0080de;
+}
+form#pref-partners {
+	margin: 25px;
+	padding: 25px 30px 25px 5px;
+	background-color: #f4f9fd;
+	border: 1px solid #cdcdcd;
+}
+form#pref-partners .rsform-block {
+	float: left;
+	padding: 0 5px;
+	width: 50%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+form#pref-partners .rsform-block:nth-child(odd) {
+	clear: both;
+}
+form#pref-partners .rsform-block-info,
+form#pref-partners .rsform-block-submit {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+form#pref-partners input[type="text"],
+form#pref-partners textarea {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+	border-radius: 0;
+}
+form#pref-partners textarea {
+	resize: vertical;
+}
+form#pref-partners .formControlLabel {
+	text-align: left;
+	width: 120px;
+	padding-left: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+form#pref-partners .formControls {
+	margin-left: 130px;
+}
+form#pref-partners .rsform-block-submit .formControlLabel {
+	display: none;
+}
+form#pref-partners .rsform-block-submit .formControls {
+	margin: 0;
+}
+form#pref-partners #submit {
+	margin: 0 auto;
+	display: block;
+	background: #006ab8;
+	padding: 4px 35px;
+	text-transform: lowercase;
+}
+form#pref-partners #submit:hover,
+form#pref-partners #submit:active {
+	background: #0080de;
+}
+form#pref-partners h3 {
+	font-size: 16px;
+	text-transform: none;
+	padding-left: 20px;
+	margin-top: 0;
 }
