@@ -2629,7 +2629,7 @@ class RSFormProHelper
 					
 					$additional = '';
 					// selected
-					if ((strpos($item, '[c]') !== false && empty($value)) || (isset($value[$data['NAME']]) && in_array($val, $value[$data['NAME']])))
+					if ((strpos($item, '[c]') !== false && empty($value)) || (isset($value[$data['NAME']]) && ((is_array($value[$data['NAME']]) && in_array($val, $value[$data['NAME']])) || (is_string($value[$data['NAME']]) && $val === $value[$data['NAME']]))))
 						$additional .= 'selected="selected"';
 					// disabled
 					if (strpos($item, '[d]') !== false)
