@@ -45,6 +45,11 @@ RewriteRule .* index.php [F]
 # www redirect (or vice versa), place that code here. Ensure those
 # redirects use the correct RewriteRule syntax and the [R=301,L] flags.
 #
+
+Redirect 301 /asset-appraisal http://posrg.com/services/asset-appraisal
+Redirect 301 /asset-appraisal/wanted-pos-items/ http://posrg.com/services/asset-appraisal/wanted-pos-items
+
+
 ## End - Custom redirects
 
 ##
