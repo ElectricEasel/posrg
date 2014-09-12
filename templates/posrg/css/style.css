@@ -376,6 +376,9 @@ form.search input[type=text] {
 #content .homepage-widget #quick-quote {
 	margin-top:-27px;
 }
+#content .homepage-widget #trade-in {
+	margin-top: -20px;
+}
 #content .homepage-widget #ebay {
 	margin-top:-7px;
 }
@@ -695,7 +698,8 @@ h1.contentheading {
     text-transform: uppercase;
 }
 #sidebar .widget.spot-marketing.prod-info .widget_content {
-	background:url(../images/widget-product-info.png) no-repeat 10px 10px scroll transparent;
+	background:url(../images/widget-products.jpg) no-repeat 0 0 scroll transparent;
+	height: 150px;
 }
 #sidebar .widget.spot-marketing .widget_content {
 	height:88px;
@@ -1756,12 +1760,9 @@ body.preferred-partners #content #main {
 .pp-header {
 	background: url(../images/header-partners.jpg) no-repeat center bottom #fafafa;
 	padding: 30px 50px 275px;
-	min-height: 448px;
+	min-height: 200px;
 	text-align: center;
 	margin-bottom: 50px;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 .pp-header h1 {
 	color: #006ab8;
@@ -1779,9 +1780,6 @@ body.preferred-partners #content #main {
 }
 .pp-product {
 	padding: 20px 100px;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 #page .pp-product p {
 	font-size: 12px;
@@ -1812,25 +1810,31 @@ body.preferred-partners #content #main {
 }
 .pp-datalogic {
 	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
-	min-height: 262px;
+	min-height: 210px;
 	padding-right: 380px;
 	padding-top: 40px;
 }
+.pp-datalogic .pp-links,
+.pp-epson .pp-links,
+.pp-elo .pp-links {
+	display: block;
+	margin-bottom: 20px;
+}
 .pp-epson {
 	background: url(../images/pref-partners/epson.jpg) no-repeat center bottom transparent;
-	min-height: 260px;
+	min-height: 185px;
     padding-left: 350px;
     padding-top: 60px;
 }
 .pp-elo {
 	background: url(../images/pref-partners/elo.jpg) no-repeat center bottom transparent;
-	min-height: 320px;
+	min-height: 250px;
     padding-right: 470px;
     padding-top: 52px;
 }
 .pp-hp {
 	background: url(../images/pref-partners/hp.jpg) no-repeat center top transparent;
-	min-height: 230px;
+	min-height: 100px;
 	padding-top: 300px;
 	padding-right: 85px;
 }
@@ -1849,7 +1853,7 @@ body.preferred-partners #content #main {
 }
 #pp-boxes {
 	background: url(../images/dropshadow-top.png) repeat-x 0 0 transparent;
-	padding: 30px 25px;
+	padding: 40px 25px 30px;
 	text-align: center;
 }
 .pp-box {
@@ -1865,9 +1869,6 @@ body.preferred-partners #content #main {
 .pp-box > div {
 	min-height: 153px;
 	padding: 0 35px;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 .pp-box:last-child {
 	margin-right: 0;
