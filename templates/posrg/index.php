@@ -212,5 +212,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 			</div>
 		</div>
 	</div>
+	<jdoc:include type="modules" name="debug" style="blank"/>
 </body>
 </html>
