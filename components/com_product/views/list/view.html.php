@@ -27,8 +27,6 @@ class ProductViewList extends JView
 
 	protected function prepareDocument()
 	{
-		JFactory::getDocument()
-			->addScript('components/com_product/assets/js/jquery.lightbox.js')
-			->addStyleSheet('components/com_product/assets/css/jquery.lightbox.css');
+
 	}
 }
