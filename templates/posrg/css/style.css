@@ -2064,7 +2064,9 @@ ul#featuredlist li div.featuredcontent table {
 ul#featuredlist li div.featuredcontent table td, ul#featuredlist li div.featuredcontent table th {
     border: 1px solid #e4e4e4;
     font-size: 10px;
-    padding: 5px;
+    padding: 0 5px;
+    height: 33px;
+    box-sizing: border-box;
 }
 ul#featuredlist li div.featuredcontent table th {
     color: #fff;
