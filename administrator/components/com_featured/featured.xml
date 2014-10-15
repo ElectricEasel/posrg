@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="2.5" method="upgrade">
-    <name>Featured Products</name>
+    <name>com_featured</name>
     <creationDate>2014</creationDate>
+    <copyright>Copyright (C) 2014. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <author>Don Gilbert</author>
-    <version>2.0</version>
+    <authorEmail>don@electriceasel.com</authorEmail>
+    <authorUrl>http://www.electriceasel.com</authorUrl>
+    <version>2.0.0</version>
+    <description>Featured Product manager for POSRG</description>
+
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
 
     <administration>
         <menu>Featured Products</menu>
-        <files folder="admin">
+        <files folder="administrator">
             <filename>featured.xml</filename>
             <filename>featured.php</filename>
             <folder>controller</folder>
