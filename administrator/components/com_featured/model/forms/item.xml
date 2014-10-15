@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset
+            name="general"
+            label="General">
+
+        <field
+                name="title"
+                type="text"
+                label="Title"
+                description="The item's title."
+                required="true" />
+
+        <field
+                name="published"
+                type="radio"
+                label="Status"
+                description="A Draft post will not be published."
+                default="1">
+            <option value="0">Draft</option>
+            <option value="1">Live</option>
+        </field>
+
+        <field
+                name="image"
+                type="media"
+                directory="featured"
+                label="Image"
+                description="The image for this spot marketing item."
+                required="true" />
+
+    </fieldset>
+
+    <fieldset
+            name="hidden"
+            label="Hidden Fields">
+
+        <field
+                name="id"
+                type="text"
+                default="0"
+                label="COM_RV_FORM_LBL_ID"
+                readonly="true"
+                class="readonly"
+                description="JGLOBAL_FIELD_ID_DESC" />
+
+        <field
+                name="checked_out"
+                type="hidden"
+                filter="unset" />
+
+        <field
+                name="checked_out_time"
+                type="hidden"
+                filter="unset" />
+
+    </fieldset>
+</form>

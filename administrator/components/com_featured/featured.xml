@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+    <name>Featured Products</name>
+    <creationDate>2014</creationDate>
+    <author>Don Gilbert</author>
+    <version>2.0</version>
+
+    <administration>
+        <menu>Featured Products</menu>
+        <files folder="admin">
+            <filename>featured.xml</filename>
+            <filename>featured.php</filename>
+            <folder>controller</folder>
+            <folder>helper</folder>
+            <folder>model</folder>
+            <folder>sql</folder>
+            <folder>table</folder>
+            <folder>views</folder>
+        </files>
+    </administration>
+
+    <files folder="site">
+        <filename>featured.php</filename>
+        <folder>controller</folder>
+        <folder>helper</folder>
+        <folder>model</folder>
+        <folder>views</folder>
+    </files>
+
+</extension>

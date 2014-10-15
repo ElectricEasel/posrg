@@ -15,21 +15,21 @@ if(!function_exists('get_parent_cat'))
 	function get_parent_cat($cat_id)
 	{
 		$db = JFactory::getDbo();
-		
+
 		do {
 			$query = 'SELECT parent'
 				.' FROM '.ZOO_TABLE_CATEGORY
 				.' WHERE id='.(int) $cat_id;
-			
+
 			$db->setQuery($query);
 			$cat_parent = $db->loadResult();
 			if($cat_parent != 0)
 			{
 				$cat_id = $cat_parent;
 			}
-			
+
 		} while ($cat_parent != 0);
-		
+
 		return $cat_id;
 	}
 }
@@ -52,6 +52,7 @@ $zoo = App::getInstance('zoo');
 
 if($uri[1] == 'product-info')
 {
+    if (isset($uri[2]))
 	switch($uri[2])
 	{
 		case 'category':
@@ -68,7 +69,7 @@ if($uri[1] == 'product-info')
 		default:
 			break;
 	}
-	
+
 	$current_cat_parent = get_parent_cat($active_cat_id);
 }
 
@@ -80,7 +81,7 @@ if($uri[1] == 'product-info')
 
 		<ul class="level1">
 			<?php
-			
+
 			foreach ($categories as $category) {
 				if(is_null($active_cat_id))
 				{
@@ -95,12 +96,12 @@ if($uri[1] == 'product-info')
 					}
 				}
 			}
-			
+
 			?>
 		</ul>
-		
+
 	<?php else : ?>
 		<?php echo JText::_('COM_ZOO_NO_CATEGORIES_FOUND'); ?>
 	<?php endif; ?>
-		
+
 </div>
