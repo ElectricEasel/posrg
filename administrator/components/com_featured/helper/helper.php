@@ -15,10 +15,20 @@ class FeaturedHelper extends EEHelper
     public static function addSubmenu($vName = '')
     {
 //        JSubMenuHelper::addEntry(
-//            JText::_('COM_RV_TITLE_RESORTS'),
-//            'index.php?option=com_rv&view=resorts',
+//            JText::_('COM_FEATURED_TITLE_ITEMS'),
+//            'index.php?option=com_featured&view=items',
 //            $vName == 'resorts'
 //        );
+    }
+
+    public static function createFolder()
+    {
+        $location = JPATH_ROOT . '/images/featured';
+
+        if (! is_dir($location))
+        {
+            JFolder::create($location);
+        }
     }
 
 }

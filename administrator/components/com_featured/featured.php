@@ -12,7 +12,12 @@ if (!JFactory::getUser()->authorise('core.manage', 'com_featured'))
     throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'));
 }
 
-JHtml::addIncludePath(__DIR__ . '/helper/html');
 JLoader::registerPrefix('Featured', __DIR__);
+
+FeaturedHelper::createFolder();
+
+JFactory::getDocument()->addStyleDeclaration('fieldset.fieldset_hidden{display:none}');
+
+JHtml::addIncludePath(__DIR__ . '/helper/html');
 
 EEController::getInstance('Featured')->run();

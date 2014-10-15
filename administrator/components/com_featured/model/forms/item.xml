@@ -29,6 +29,60 @@
                 description="The image for this spot marketing item."
                 required="true" />
 
+        <field
+                name="description"
+                type="textarea"
+                label="Description"
+                rows="20"
+                cols="30" />
+
+    </fieldset>
+
+    <fieldset
+        name="details"
+        label="Details">
+
+        <field
+                name="msrp"
+                type="text"
+                label="MSRP" />
+
+        <field
+                name="price"
+                type="text"
+                label="POSRG Price" />
+
+        <field
+                name="technology"
+                type="text"
+                label="Technology" />
+
+        <field
+                name="interface"
+                type="text"
+                label="Interface" />
+
+        <field
+                name="surface_treatment"
+                type="text"
+                label="Surface Treatment" />
+
+        <field
+                name="monitor_color"
+                type="text"
+                label="Monitor Color" />
+
+        <field
+                name="part_number"
+                type="text"
+                label="Part #" />
+
+        <field
+                name="availability"
+                type="text"
+                label="Availability"
+                default="Americas" />
+
     </fieldset>
 
     <fieldset
@@ -39,7 +93,7 @@
                 name="id"
                 type="text"
                 default="0"
-                label="COM_RV_FORM_LBL_ID"
+                label="ID"
                 readonly="true"
                 class="readonly"
                 description="JGLOBAL_FIELD_ID_DESC" />
