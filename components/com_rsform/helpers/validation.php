@@ -202,6 +202,10 @@ class RSFormProValidations
 		return preg_match($format, $param, $match);
 	}
 	
+	public static function NoLinksInValue($value, $extra = null, $data = null) {
+		return (strpos($value, 'http') === false);
+	}
+	
 	public static function regex($value,$pattern=null,$data=null) {
 		return preg_match($pattern, $value);
 	}

@@ -30,6 +30,19 @@ class PartsModelForm extends JModelItem
 				->where('id = ' . $id);
 
 			$this->_item = $db->setQuery($query)->loadObject();
+
+            $imagePathString = '/images/stories/brands/%s_search.png';
+
+            $possiblePath = sprintf($imagePathString, strtolower(str_replace(' ', '_', $this->_item->mfc)));
+
+            if (isset($this->_item->mfc) && file_exists(JPATH_ROOT . $possiblePath))
+            {
+                $this->_item->image = $possiblePath;
+            }
+            else
+            {
+                $this->_item->image = sprintf($imagePathString, 'posrg');
+            }
 		}
 
 		return $this->_item;

@@ -27,6 +27,9 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
+	
+	$('.fancybox').fancybox();
+	
 	$('.default-value').each(function() {
 	    var default_value = this.value;
 	    $(this).focus(function() {

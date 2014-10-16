@@ -1,3 +1,5 @@
+.DS_Store
+/.idea
 error_log
 /cache/*
 /configuration.php
@@ -6,3 +8,4 @@ error_log
 /htaccess.txt
 /README.txt
 /LICENSE.txt
+/support

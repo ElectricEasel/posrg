@@ -4,21 +4,20 @@ $app  = JFactory::getApplication();
 $menu = $app->getMenu();
 $tpath = $this->baseurl . '/templates/' . $this->template;
 
-if ($app->input->get('option') !== 'com_product')
-{
-	$this->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js');
-}
-
 // $this JDocument
 $this
+	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+	->addScript($tpath . '/js/jquery.fancybox.min.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/site.js')
+    ->addStyleSheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
 	->addScriptDeclaration('
 		// <![CDATA[
-			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen();});
+			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen({allow_single_deselect:true});});
 		// ]]>
 ')
 	->addStyleSheet($tpath . '/js/chosen/chosen.css')
+	->addStyleSheet($tpath . '/css/jquery.fancybox.css')
 	->addStyleSheet($tpath . '/css/style.css')
 	->setTab("\t")
 	->setBase(null)
@@ -31,6 +30,13 @@ if ($menu->getActive() == $menu->getDefault())
 	$body_class = "home";
 	$is_home = true;
 }
+
+
+$menu_active = $app->getMenu()->getActive();
+$pageclass = '';
+
+if (is_object($menu_active))
+$pageclass = $menu_active->params->get('pageclass_sfx');
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" >
@@ -46,6 +52,7 @@ if ($menu->getActive() == $menu->getDefault())
 	<meta name="DC.identifier" content="http://www.posrg.com/" />
 	<meta name="DC.language" content="en-US" scheme="rfc1766" />
 	<meta name="DC.subject" content="Point of Sale Refurbishing" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<script type="text/javascript">
 	// <![CDATA[
 		var _gaq = _gaq || [];
@@ -59,17 +66,68 @@ if ($menu->getActive() == $menu->getDefault())
 		})();
 	// ]]>
 	</script>
-	<?php if ($_SERVER['EE_ENV'] === 'development') : ?>
+    <?php if ($app->input->get('option') == 'com_wanted' && $app->input->get('view') == 'manager'): ?>
+    <script type="text/javascript">
+    // <![CDATA[
+        $(function() {
+            var sortableList = $('#sortable');
+            sortableList.sortable({
+                cursor:"move",
+                handle: 'td:first',
+                update: function(event,ui) {
+                    // Get the item ID's in an array
+                    var cids = Array.prototype.map.call(
+                        $('[name="cid"]'),
+                        function (item) {
+                            return item.value;
+                        }
+                    );
+
+                    var ordering = Object.keys(cids);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/index.php",
+                        data: {
+                            option: 'com_wanted',
+                            task: 'saveOrderAjax',
+                            tmpl: 'component',
+                            cid: cids,
+                            order: ordering
+                        },
+                        context: this,
+                        success: function() {
+                            $('#success-message').show().delay(1500).fadeOut(200);
+                        }
+                    })
+                }
+            });
+            sortableList.disableSelection();
+        });
+    // ]]>
+    </script>
+    <?php endif; ?>
+	<?php if (getenv('EE_ENV') === 'development') : ?>
 	<meta name="robots" content="noindex,nofollow" />
 	<?php endif; ?>
+	<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?28HMYMeMVn2asz5zlB6L4jpFHKJGCfCN';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
 </head>
-<body class="<?php echo $body_class; ?>">
+<body class="<?php echo $body_class ." ". $pageclass; ?>">
 	<div id="header">
 		<div class="wrap">
 			<a href="/" id="logo"></a>
 			<div class="header-right">
 				<div class="header-contact">
 					<span class="phone-number">
+						<a class="recycle-button" href="http://www.turbongroup.com/posrg/" target="_blank">Recycle Toner Here</a>
 						<span id="call"><b>Call Us Toll Free:</b></span>
 						<span id="tel"><b>866-462-1005</b></span>
 					</span>
@@ -154,5 +212,6 @@ if ($menu->getActive() == $menu->getDefault())
 			</div>
 		</div>
 	</div>
+	<jdoc:include type="modules" name="debug" style="blank"/>
 </body>
 </html>

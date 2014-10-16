@@ -2,8 +2,11 @@
 
 class Quick_CSV_Import
 {
+	public $index;
 	public $file_name;  //where to import from
 	public $error; //error message
+	public $arr_csv_import;
+	public $arr_csv_export;
 	public $arr_csv_columns; //array of columns
 	public $table_exists; //flag: does table for import exist
 	public $encoding; //encoding table, used to parse the incoming file. Added in 1.5 version
@@ -36,6 +39,7 @@ class Quick_CSV_Import
 	{
 		$this->arr_csv_export = array();
 		$this->index          = array();
+		$index                = array();
 
 		foreach ($this->mapField() as $k=>$v)
 		{
@@ -70,7 +74,7 @@ class Quick_CSV_Import
 	public function export()
 	{
 		header("Content-type: application/csv");
-		header("Content-Disposition: \"inline; filename=yourfilename.csv\"");
+		header("Content-Disposition: \"inline; filename=PartsExport.csv\"");
 
 		echo '"'.implode('","',$this->index)."\"\r\n";
 

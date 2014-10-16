@@ -31,10 +31,12 @@ class ProductModel extends JModel
 		return true;
 	}
 
-	function reorder($table,  $where='')
+	function reorder($table, $where = '')
 	{
-		if (!in_array( 'ordering', array_keys($table->getProperties() ) )){
-			$this->setError( get_class( $table ).' does not support ordering');			return false;
+		if (! in_array('ordering', array_keys($table->getProperties())))
+		{
+			$this->setError( get_class( $table ).' does not support ordering');
+			return false;
 		}
 
 		if($mode > 2) $mode = 0;

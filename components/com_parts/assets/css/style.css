@@ -329,3 +329,23 @@ div.gm-part-toolbar a.pagenav {
 	padding-top:20px;
 	text-align:center;
 }
+
+.quotebox {
+    box-shadow: 0 0 5px #999;
+    margin-bottom:15px;
+    padding:15px;
+}
+.quotebox-inner * {
+    font-size:14px;
+}
+.quotebox-form-wrap input,
+.quotebox-form-wrap textarea {
+    padding:4px;
+}
+.quotebox-form-wrap label,
+.quotebox-form-wrap .formCaption {
+    color:#06c;
+}
+.quotebox-form-wrap li {
+    width:50%
+}

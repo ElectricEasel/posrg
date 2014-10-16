@@ -115,6 +115,7 @@ class xmap_com_zoo
 				$node->priority   = $params['cat_priority'];
 				$node->changefreq = $params['cat_changefreq'];
 				$node->expandible = true;
+				$node->modified = time();
 
 				$xmap->printNode($node);
 			}

@@ -10,12 +10,26 @@ class ProductController extends JController
 		parent::__construct($config);
 
 		$this->app = JFactory::getApplication();
+        $task = $this->app->input->get('task');
+
+        // Check the task for permissions
+        $checkTask = array(
+            'block',
+            'save',
+            'saveorder',
+            'delete'
+        );
+
+        if (in_array($task, $checkTask))
+        {
+            $this->checkLogin();
+            $this->checkTK();
+        }
 	}
 
 	public function display($cachable = false, $urlparams = false)
 	{
 		$view = $this->app->input->get('view');
-		$task = $this->app->input->get('task');
 
 		if (!$task && !$view)
 		{
@@ -23,22 +37,15 @@ class ProductController extends JController
 			$this->app->input->set('view', 'list');
 		}
 
-		$checkTask = array(
-			'block',
-			'save',
-			'saveorder',
-			'delete'
-		);
-
+        // Check the view for permissions
 		$checkView = array(
 			'form',
 			'manager'
 		);
 
-		if (in_array($task, $checkTask) || in_array($view, $checkView))
+		if (in_array($view, $checkView))
 		{
 			$this->checkLogin();
-			// $this->checkTK();
 		}
 
 		parent::display($cachable, $urlparams);
@@ -186,14 +193,18 @@ class ProductController extends JController
 
 	protected function checkTK()
 	{
-		JSession::checkToken() or die('Invalid Token');
+        $method = JRequest::getMethod();
+
+		JSession::checkToken($method) or die('Invalid Token');
 	}
 
 	protected function checkLogin()
 	{
 		$user = JFactory::getUser();
+		
+		$allowed = array('admin', 'posrg');
 
-		if (strtolower($user->get('username')) !== 'admin')
+		if (in_array(strtolower($user->get('username')), $allowed) === false)
 		{
 			$this->setRedirect('index.php?option=com_users&view=login');
 			$this->redirect();

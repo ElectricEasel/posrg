@@ -10,7 +10,7 @@ jimport('joomla.html.pagination');
 
 JHtml::script('mootools.js');
 JFactory::getDocument()
-	->addScript('components/com_product/assets/js/jquery.js')
+	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 	->addStyleSheet('components/com_product/assets/css/template.css');
 
 require_once 'lib/Gd2.php';

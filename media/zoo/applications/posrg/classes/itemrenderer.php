@@ -8,6 +8,8 @@
 
 jimport('joomla.environment.browser');
 
+JLoader::register('PositionRenderer', JPATH_ADMINISTRATOR . '/components/com_zoo/helpers/renderer.php');
+
 /**
  * Class for rendering items using their positions
  *
