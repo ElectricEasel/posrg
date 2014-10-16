@@ -442,7 +442,7 @@ div.formCaption {
 }
 #sub-head h1 {
 	font-size: 24px;
-	text-indent: 20px;
+	padding-left: 20px;
 }
 #quote_form li {
 	width: auto !important;
@@ -1078,4 +1078,40 @@ fieldset.phrases {
 }
 .searchintro {
 	float: left;
+}
+
+/* Error Page stuffs */
+
+.error-container h1 {
+	color: #006AB8;
+	margin-top: 0;
+}
+.error-container p {
+	font-size: 14px;
+}
+.error-container a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 15px;
+    margin: 25px 0;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.error-container a:active {
+	background: #0075C5;
+}
+.alert {
+    background-color: #FFFCB0;
+    border: 1px solid #FFEE23;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.alert-success {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #468847;
+    border-radius: 5px;
 }

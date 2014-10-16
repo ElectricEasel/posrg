@@ -1,121 +1,158 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb">
-<head>
-<link rel="canonical" href="AboutELS" />
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>404 Error: Page Not Found</title>
-	<link href="/templates/els/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-	<link rel="stylesheet" href="/media/system/css/system.css" type="text/css" />
-	<link rel="stylesheet" href="/templates/els/css/template.css" type="text/css" />
-	<script src="/templates/els/js/modernizr.js" type="text/javascript"></script>
-</head>
-<body class="404">
-	<div style="position:absolute;width:100%;height:72px;background:#006cce;z-index:-1;top:0;left:0;"></div>
-	<div id="header">
-	<a href="/"><img id="logo" src="/templates/els/images/els_logo.png" alt="Equity Lifestyle Properties"/></a>
-			<div class="main-menu">
-				<div class="widget-content">
-<ul class="menu">
-<li class="item-101"><a href="/">Home</a></li><li class="item-112 parent"><a href="/FindACommunity/">Find a Community</a></li><li class="item-113 current active"><a href="/ManufacturedHomes/">Find a Home</a></li><li class="item-118"><a href="/FindAnRVResort">Find an RV Resort</a></li><li class="item-195 parent"><a href="/resources/latest-news/">News &amp; Specials</a></li><li class="item-135 parent"><a href="/AboutELS/">About ELS</a></li></ul>
-</div>
-	</div>
-	</div>
-	<div id="page">
-		<div id="main">
-			<div id="main-content" style="width:964px;">
-				<div id="content">
-					<div class="item-page">
-						<div style="text-align:center">
-							<img src="/images/404.jpg" alt="404" />
-							<h1 style="font-size:32px">404 Error: Page Not Found</h1>
-							<p style="color:#006ad1;font-size:16px;line-height:22px;">Sorry, the page you are looking for does not exist. Check the URL for errors and refresh the page.<br />If all else fails, our home page is always there for you - click the button below.
-							<br /><br />
-							<a class="grad_btn sml" style="margin:auto" href="/">ELS Home<span class="icon-back"></span></a>
-							</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-		<div id="footer">
-			<div class="footer-widget widget-1">
-				<div class="widget  logo-header">
-				<h3>Equity LifeStyle Properties</h3>
-					<div class="widget-content">
-						<div class="custom logo-header">
-							<p>Equity LifeStyle Properties, Inc. owns and operates the highest quality portfolio of resort communities in the United States. We have a controlling interest in over 380 quality resorts in 32 states and British Columbia with over 141,000 sites. Our goal is to create value for residents and investors by providing consistently high levels of services and amenities in attractive surroundings. Our high standards have been recognized with several "Community of the Year" awards for the outstanding quality of our communities and the professionalism of our management.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer-widget widget-2">
-				<div class="widget ">
-				<h3>About Equity LifeStyle</h3>
-					<div class="widget-content">
-						<ul class="menu widget-b">
-							<li class="item-162"><a href="/AboutELS/FAQ/">FAQ</a></li><li class="item-163"><a href="/AboutELS/Offices/">Offices</a></li><li class="item-164"><a href="/AboutELS/MissionStatement/">Mission Statement</a></li><li class="item-165"><a href="/AboutELS/CompetitiveAdvantage/">Competitive Advantage</a></li><li class="item-166"><a href="/AboutELS/Employment/">Employment</a></li><li class="item-167"><a href="/AboutELS/WeAreBuying/">We're Buying</a></li><li class="item-168"><a href="/AboutELS/IndustryInformation/">Industry Information</a></li><li class="item-170"><a href="http://phx.corporate-ir.net/preview/phoenix.zhtml?c=105322&amp;p=irol-irhome">Investor Information</a></li><li class="item-171"><a href="/AboutELS/ContactUs/">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-widget widget-3">
-				<div class="widget  widget-d">
-				<h3>Contact Equity Lifestyle</h3>
-					<div class="widget-content">
-						<div class="custom widget-d">
-							<ul>
-								<li id="f-address">Equity LifeStyle Properties, Inc.<br>
-								Two North Riverside Plaza<br>
-								Chicago, Illinois 60606</li>
-								<li id="f-phone">1-800-274-7314</li>
-								<li id="f-email"><a href="/AboutELS/ContactUs">Contact Equity LifeStyle</a></li>
-								<li style="display:none" id="f-fb">Find us on Facebook</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="clear"></div>
-			<div id="footer-nav">
-				<div class="widget footer-terms">
-					<div class="widget-content">
-						<ul class="menu">
-							<li class="item-210"><a href="/terms-conditions-and-privacy-policy/">Terms, Conditions and Privacy Policy</a></li>
-							<li class="item-212"><a href="/sitemap/">Sitemap</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="widget footer-copyright">
-					<div class="widget-content">
-						<div class="customfooter-copyright">
-							<p>&copy; <?php echo date('Y'); ?> Equity LifeStyle Properties, Inc., All rights reserved.</p>
-							<br class="clear">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
+<?php
+/**
+ * @package		Joomla.Site
+ * @subpackage	Templates.beez_20
+ * @copyright	Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+// No direct access.
+defined('_JEXEC') or die;
+
+JHtml::_('behavior.framework', true);
+
+define('TEMPLATE_PATH', "/templates/{$this->template}/");
+define('CSS_PATH', TEMPLATE_PATH.'css/');
+define('IMG_PATH', TEMPLATE_PATH.'images/');
+define('JS_PATH', TEMPLATE_PATH.'js/');
+
+JFactory::getDocument()
+	// add stylesheets
+	//->addStyleSheet('//fonts.googleapis.com/css?family=Open+Sans:400,300,600')
+	->addStyleSheet('/templates/system/css/system.css')
+	->addStyleSheet(CSS_PATH.'general.css')
+	->addStyleSheet(CSS_PATH.'mobile.css')
+	// add scripts
+	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+	//->addScript(JS_PATH.'jquery.cycle.all.latest.min.js')
+	->addScript(JS_PATH.'jquery.touchwipe.min.js')
+	->addScript(JS_PATH.'mobile.js')
+	->addScriptDeclaration('
 	// <![CDATA[
-		adroll_adv_id = "V5B7RT7MMZGEFF3YVC2RTJ";
-		adroll_pix_id = "XIUGYGBN5JDLVMQ54GGWCF";
-		(function () {
-		var oldonload = window.onload;
-		window.onload = function(){
-		__adroll_loaded=true;
-		var scr = document.createElement("script");
-		var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-		scr.setAttribute('async', 'true');
-		scr.type = "text/javascript";
-		scr.src = host + "/j/roundtrip.js";
-		((document.getElementsByTagName('head') || [null])[0] ||
-		document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-		if(oldonload){oldonload()}};
-		}());
+	jQuery.noConflict();
+	window.addEventListener("load", function(){
+		setTimeout(function(){
+			window.scrollTo(0,1);
+		}, 0);
+	});
 	// ]]>
-	</script>
+	')
+	->setTab("\t");
+
+// set bodyClasses
+$bodyClasses = array();
+$parts = explode('/', JUri::getInstance()->toString(array('path')));
+foreach ($parts as $part) {
+	if (empty($part)) continue;
+	$bodyClasses[] = strtolower(str_replace(array('-', '_'), '-', $part));
+}
+
+$is_home = false;
+$app = JFactory::getApplication();
+$menu = $app->getMenu();
+if ($menu->getActive() == $menu->getDefault()) {
+   $bodyClasses[] = 'home';
+   $is_home = true;
+}
+
+$bodyClasses[] = $menu->getActive()->alias . '-page';
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <meta name="robots" content="index,follow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/posrg-mobile/css/general.css" type="text/css" />
+	<link rel="stylesheet" href="/templates/posrg-mobile/css/mobile.css" type="text/css" />
+	<script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+	<script src="/media/system/js/core.js" type="text/javascript"></script>
+	<script src="/media/system/js/caption.js" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+	<script src="/templates/posrg-mobile/js/jquery.touchwipe.min.js" type="text/javascript"></script>
+	<script src="/templates/posrg-mobile/js/mobile.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    // <![CDATA[
+    (function(document,navigator,standalone) {
+	    // prevents links from apps from oppening in mobile safari
+	    // this javascript must be the first script in your <head>
+	    if ((standalone in navigator) && navigator[standalone]) {
+	        var curnode, location=document.location, stop=/^(a|html)$/i;
+	        document.addEventListener('click', function(e) {
+	            curnode=e.target;
+	            while (!(stop).test(curnode.nodeName)) {
+	                curnode=curnode.parentNode;
+	            }
+	            // Condidions to do this only on links to your own app
+	            // if you want all links, use if('href' in curnode) instead.
+	            if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+	                e.preventDefault();
+	                location.href = curnode.href;
+	            }
+	        },false);
+	    }
+	})(document,window.navigator,'standalone');
+	// ]]>
+    </script>
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
+</head>
+<body class="<?php echo implode(' ', $bodyClasses); ?>">
+	<div id="container">
+			<div class="blue-gradient2" id="nav">
+				<div class="wrap">
+					<ul class="clr">
+						<li class="menu-button active"><a href="/">Home</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="banner">
+				<div id="banner-contain">
+					<img alt="POSRG" src="/templates/posrg-mobile/images/header.png">
+				</div>
+			</div>
+			<div id="main" class="error-container">
+				<div class="wrap">	
+					<h1>404: Page Not Found!</h1>
+					<p>Oops! We can't find that page. Perhaps it was mistyped, or a bad link?</p>
+					<p>If you're not sure, maybe one of these will help you:</p>
+					<a class="blue-gradient2" href="javascript:void(0);" onclick="window.history.back()">go back to your previous page</a>
+					<a class="blue-gradient2" href="/">go to the home page</a>
+				</div>
+			</div>
+			<div id="footer" class="blue-gradient">
+				<div class="wrap">
+					<ul id="footer-social">
+						<li>
+							<a class="fb" href="https://www.facebook.com/posrg"></a>
+						</li>
+						<li>
+							<a class="twitter" href="http://www.twitter.com/posremarket"></a>
+						</li>
+						<li>
+							<a class="email" href="mailto:ktesta@posrg.com"></a>
+						</li>
+					</ul>
+					<a class="footer-phone" href="tel://1-866-462-1005">1-866-462-1005</a>
+					<span class="address">POS Remarketing Group, Inc.<br/>
+					1059 N. Old Rand Road,<br/>
+					Wauconda, IL 60084
+					</span>
+				</div>
+			</div>
+			<div id="sub-footer">
+				<div class="wrap">
+					<span class="copyright">&copy; <?php echo date('Y');?> POS Remarketing Group, Inc.</span>
+				</div>
+			</div>
+		</div>
+<div id="preloadImages"></div>
 </body>
 </html>
