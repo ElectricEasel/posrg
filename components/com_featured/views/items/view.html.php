@@ -1,7 +1,5 @@
 <?php defined('_JEXEC') or die;
 
-class FeaturedViewItems extends EEViewAdminList
+class FeaturedViewItems extends EEViewList
 {
-    protected $singleItemView = 'item';
-    protected $useUniversalViews = false;
 }
