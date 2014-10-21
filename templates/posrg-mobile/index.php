@@ -50,12 +50,15 @@ foreach ($parts as $part) {
 $is_home = false;
 $app = JFactory::getApplication();
 $menu = $app->getMenu();
+
+$bodyClasses[] = $menu->getActive()->alias . '-page';
+
 if ($menu->getActive() == $menu->getDefault()) {
-   $bodyClasses[] = 'home';
+   $bodyClasses = 'home';
    $is_home = true;
 }
 
-$bodyClasses[] = $menu->getActive()->alias . '-page';
+
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -95,7 +98,7 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 	  </style>
 	<![endif]-->
 </head>
-<body class="<?php echo implode(' ', $bodyClasses); ?>">
+<body class="<?php echo implode(' ', $bodyClasses); ?> mobile">
 	<div id="container">
 				<div id="nav" class="blue-gradient2">
 					<div class="wrap">
@@ -111,11 +114,12 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 				<div id="menu">
 						<jdoc:include type="modules" name="mobile-nav" />
 				</div>
-				<div id="banner">
-					<div id="banner-contain">
-						<img src="/templates/posrg-mobile/images/header.png" alt="POSRG"/>
+				<?php if ($is_home) : ?>
+					<div class="wrap">
+						<jdoc:include type="modules" name="banner_index" />
 					</div>
-				</div>
+				<?php endif; ?>
+				<jdoc:include type="modules" name="mobile-banner" />
 				<?php if (!$is_home) : ?>
 				<div id="sub-head">
 					<div class="wrap">
