@@ -46,9 +46,11 @@ input[type="text"], textarea {
 	background-color: #fff;
 	padding: 20px 0;
 }
+/*
 .item-page h1 {
 	display: none;
 }
+*/
 #preloadImages {
 	position: absolute;
 	overflow: hidden;
@@ -59,7 +61,7 @@ input[type="text"], textarea {
 	background: url(../images/arrow-down.png) no-repeat -9999px -9999px,
 				url(../images/arrow-right.png) no-repeat -9999px -9999px;
 }
-#nav {
+#navbar {
 	height: 46px;
 	border-bottom: 1px solid #003c80;
 }
@@ -82,9 +84,41 @@ input[type="text"], textarea {
     text-shadow: 1px 1px 1px #0C3C63;
 }
 #nav ul li.active a {
-	background: #00539d;
-	box-shadow: 0 0 10px #004283 inset;	
+	
 }
+.menu-button {
+    background: none repeat scroll 0 0 #00539d;
+    box-shadow: 0 0 10px #004283 inset;
+    color: #ffffff;
+    display: block;
+    float: left;
+    height: 100%;
+    line-height: 46px;
+    padding: 0 20px;
+    text-decoration: none;
+}
+.menu-phone {
+	float: right;
+	color: #fff;
+	line-height: 46px;
+	font-size: 15px;
+	
+	a {
+		color: #fff;
+		text-decoration: none;
+		height: 100%;
+		display: inline-block;
+		padding: 0 5px;
+	}
+	
+	&:after {
+		clear: both;
+		display: table;
+		visibility: hidden;
+	}
+}
+
+
 #menu ul.menu,
 #menu ul.menu li ul {
 	margin: 0;
