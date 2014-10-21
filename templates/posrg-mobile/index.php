@@ -18,7 +18,7 @@ define('JS_PATH', TEMPLATE_PATH.'js/');
 
 JFactory::getDocument()
 	// add stylesheets
-	->addStyleSheet('//fonts.googleapis.com/css?family=Open+Sans:400,300,60|Droid+Sans:400,700|Arvo:400,700')
+	//->addStyleSheet('//fonts.googleapis.com/css?family=Open+Sans:400,300,600')
 	->addStyleSheet('/templates/system/css/system.css')
 	->addStyleSheet(CSS_PATH.'general.css')
 	->addStyleSheet(CSS_PATH.'mobile.css')
@@ -50,12 +50,15 @@ foreach ($parts as $part) {
 $is_home = false;
 $app = JFactory::getApplication();
 $menu = $app->getMenu();
+
+$bodyClasses[] = $menu->getActive()->alias . '-page';
+
 if ($menu->getActive() == $menu->getDefault()) {
-   $bodyClasses[] = 'home';
+   $bodyClasses = 'home';
    $is_home = true;
 }
 
-$bodyClasses[] = $menu->getActive()->alias . '-page';
+
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -95,93 +98,74 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 	  </style>
 	<![endif]-->
 </head>
-<body class="<?php echo implode(' ', $bodyClasses); ?>">
+<body class="<?php echo implode(' ', $bodyClasses); ?> mobile">
 	<div id="container">
-				<div id="nav" class="blue-gradient2">
-					<div class="wrap">
-						<ul class="clr">
-							<li class="menu-button active"><a href="javascript:toggleMenu();">Menu</a></li>
-							<li class="menu-button"><a href="/services">Services</a></li>
-							<li class="menu-button"><a href="">Products</a></li>
-							<li class="menu-button"><a href="/inventory/search-our-inventory">Buy</a></li>
-							<li class="menu-button"><a href="/online-asset-appraisal">Sell</a></li>
-						</ul>
-					</div>
-				</div>
-				<div id="menu">
-						<jdoc:include type="modules" name="mobile-nav" />
-				</div>
-				<div id="banner">
-					<div id="banner-contain">
-						<img src="/templates/posrg-mobile/images/header.png" alt="POSRG"/>
-					</div>
-				</div>
-				<?php if (!$is_home) : ?>
-				<div id="sub-head">
-					<div class="wrap">
-						<jdoc:include type="modules" name="sub-head" />
-					</div>
-				</div>
-				<?php endif; ?>
-			<div id="main">
-				<div class="wrap">
-					<?php if ($is_home) : ?>
-						<ul class="home-buttons">
-							<li class="blue-gradient" onclick="location.href='/inventory/search-our-inventory/'">
-								<span class="icon search"></span>
-								<h3><a href="/inventory/search-our-inventory">Search Our Inventory</a></h3>
-								<p>Low cost point-of-sale hardware solutions</p>
-							</li>
-							<li class="blue-gradient" onclick="location.href='/services'">
-								<span class="icon services"></span>
-								<h3><a href="/services">POS Services</a></h3>
-								<p>Streamlined, organized and precise. That's POSRG.</p>
-							</li>
-							<li class="blue-gradient" onclick="location.href='/online-asset-appraisal'">
-								<span class="icon sell"></span>
-								<h3><a href="/online-asset-appraisal">Sell Your Used POS</a></h3>
-								<p>Asset appraisals for used POS and barcode hardware.</p>
-							</li>
-							<li class="blue-gradient" onclick="location.href='/product-info'">
-								<span class="icon info"></span>
-								<h3><a href="/product-info">POS Product Information</a></h3>
-								<p>POSRG partners with major brands for dedicated support.</p>
-							</li>
-						</ul>
-					<?php else: ?>
-					<jdoc:include type="message" />
-					<jdoc:include type="modules" name="mobile-info-search" />
-					<jdoc:include type="component" />
-					<?php endif; ?>
-				</div>
+		<jdoc:include type="modules" name="mobile-menu-buttons" />
+			<div id="menu">
+				<jdoc:include type="modules" name="mobile-nav" />
 			</div>
-			<div id="footer" class="blue-gradient">
-				<div class="wrap">
-					<ul id="footer-social">
-						<li>
-							<a class="fb" href="#"></a>
+			<?php if($this->countModules('mobile-banner')): ?>
+				<jdoc:include type="modules" name="mobile-banner" />
+			<?php endif; ?>
+		<div id="main">
+			<div class="wrap">
+				<?php if ($is_home) : ?>
+					<ul class="home-buttons">
+						<li class="blue-gradient" onclick="location.href='/inventory/search-our-inventory/'">
+							<span class="icon search"></span>
+							<h3><a href="/inventory/search-our-inventory">Search Our Inventory</a></h3>
+							<p>Low cost point-of-sale hardware solutions</p>
 						</li>
-						<li>
-							<a class="twitter" href="#"></a>
+						<li class="blue-gradient" onclick="location.href='/services'">
+							<span class="icon services"></span>
+							<h3><a href="/services">POS Services</a></h3>
+							<p>Streamlined, organized and precise. That's POSRG.</p>
 						</li>
-						<li>
-							<a class="email" href="#"></a>
+						<li class="blue-gradient" onclick="location.href='/online-asset-appraisal'">
+							<span class="icon sell"></span>
+							<h3><a href="/online-asset-appraisal">Sell Your Used POS</a></h3>
+							<p>Asset appraisals for used POS and barcode hardware.</p>
+						</li>
+						<li class="blue-gradient" onclick="location.href='/product-info'">
+							<span class="icon info"></span>
+							<h3><a href="/product-info">POS Product Information</a></h3>
+							<p>POSRG partners with major brands for dedicated support.</p>
 						</li>
 					</ul>
-					<a class="footer-phone" href="">866-462-1005</a>
-					<span class="address">POS Remarketing Group, Inc.<br/>
-					1059 N. Old Rand Road,<br/>
-					Wauconda, IL 60084
-					</span>
-				</div>
-			</div>
-			<div id="sub-footer">
-				<div class="wrap">
-					<span class="copyright">&copy; <?php echo date('Y');?> POS Remarketing Group, Inc.</span>
-					<a href="#">Sitemap</a> | <a href="#">Privacy Policy</a>
-				</div>
+				<?php else: ?>
+				<jdoc:include type="message" />
+				<jdoc:include type="modules" name="mobile-info-search" />
+				<jdoc:include type="component" />
+				<?php endif; ?>
 			</div>
 		</div>
+		<div id="footer" class="blue-gradient">
+			<div class="wrap">
+				<ul id="footer-social">
+					<li>
+						<a class="fb" href="https://www.facebook.com/posrg"></a>
+					</li>
+					<li>
+						<a class="twitter" href="http://www.twitter.com/posremarket"></a>
+					</li>
+					<li>
+						<a class="email" href="mailto:ktesta@posrg.com"></a>
+					</li>
+				</ul>
+				<a class="footer-phone" href="tel://1-866-462-1005">1-866-462-1005</a>
+				<span class="address">POS Remarketing Group, Inc.<br/>
+				1059 N. Old Rand Road,<br/>
+				Wauconda, IL 60084
+				</span>
+			</div>
+		</div>
+		<div id="sub-footer">
+			<div class="wrap">
+				<span class="copyright">&copy; <?php echo date('Y');?> POS Remarketing Group, Inc.</span>
+				<a href="/privacy-policy">Privacy Policy</a>
+			</div>
+		</div>
+	</div>
 <div id="preloadImages"></div>
 </body>
 </html>
