@@ -30,12 +30,10 @@ body {
 body.home #main {
   background: none no-repeat scroll 0 0 transparent !important;
 }
-/* Hide some page H2's */
-/*
-body.our-process .item-page h2 {
-	display: none !important;
+.item-page h1 {
+  color: #0066cc;
+  font-size: 21px;
 }
-*/
 input[type="text"],
 textarea {
   border: 1px solid #D6D6D6;
@@ -153,10 +151,6 @@ textarea {
   width: 280px;
   margin: 0 auto;
   display: block;
-}
-#menu ul.menu > li.deeper > a > span:after {
-  content: url('../images/arrow-down.png');
-  margin-left: 10px;
 }
 #menu ul.menu li ul li a span:before {
   content: url('../images/arrow-right.png');
@@ -454,19 +448,18 @@ div.formBody {
 #yoo-zoo .items {
   overflow: scroll;
 }
-body.category #yoo-zoo .description:after {
-  content: "\2190  Scroll to see all \2192";
+.table-msg {
   display: block;
-  margin: 10px 0 0;
   text-align: center;
   font-style: italic;
   font-weight: bold;
+  margin: 0;
 }
 body.category #yoo-zoo .description {
   margin-bottom: 0;
 }
 body.category #yoo-zoo .items {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 div.formCaption {
   display: block;
@@ -515,7 +508,11 @@ div.formCaption {
   width: 270px;
 }
 #yoo-zoo .details h1.title {
-  display: none;
+  text-align: center;
+  color: #0066cc;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: auto;
 }
 #service-form h4 {
   color: #006ab8;
@@ -1247,36 +1244,46 @@ form#pref-partners #submit {
   font-size: 18px;
   display: block;
 }
+.quote-form-wrap ul,
 #trade-in-trade-up ul {
   list-style: none outside none;
   margin: 0;
 }
+.quote-form-wrap ul li,
 #trade-in-trade-up ul li {
   background: none;
   padding: 0;
 }
+.quote-form-wrap li.heading,
 #trade-in-trade-up li.heading {
   margin: 20px 0 5px;
 }
+.quote-form-wrap .rsform-block,
 #trade-in-trade-up .rsform-block {
   margin-bottom: 15px;
 }
+.quote-form-wrap .rsform-block-date-available .formBody,
 #trade-in-trade-up .rsform-block-date-available .formBody {
   position: relative;
 }
+.quote-form-wrap .rsform-block-date-available .btnCal,
 #trade-in-trade-up .rsform-block-date-available .btnCal {
   position: absolute;
   top: 4px;
   right: 6px;
 }
+.quote-form-wrap .rsform-select-box,
 #trade-in-trade-up .rsform-select-box {
   width: 100%;
 }
+.quote-form-wrap input[type="text"],
 #trade-in-trade-up input[type="text"],
+.quote-form-wrap textarea,
 #trade-in-trade-up textarea {
   width: 100% !important;
   box-sizing: border-box;
 }
+.quote-form-wrap #submit,
 #trade-in-trade-up #submit {
   color: white;
   background: #0061ad;
@@ -1292,6 +1299,7 @@ form#pref-partners #submit {
   border: medium none;
   padding: 10px 0;
   font-size: 15px;
+  margin-left: 0 !important;
 }
 body.online-quote-page #main {
   background: #fff !important;
