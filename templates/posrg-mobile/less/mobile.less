@@ -459,6 +459,27 @@ div.formBody {
 	float: none;
 	margin: 5px 0;
 }
+/* Scroll tables that overflow */
+#yoo-zoo .items {
+	overflow: scroll;
+}
+body.category #yoo-zoo .description:after {
+	content: "\2190  Scroll to see all \2192";
+	display: block;
+	margin: 10px 0 0;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+body.category #yoo-zoo {
+	.description {
+		margin-bottom: 0;
+	}
+	.items {
+		margin-top: 5px;
+	}
+}
+
 div.formCaption {
     display: block;
     width: 100%;
