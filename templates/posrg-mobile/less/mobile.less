@@ -31,12 +31,10 @@ body {
 body.home #main {
 	background: none no-repeat scroll 0 0 transparent !important;
 }
-/* Hide some page H2's */
-/*
-body.our-process .item-page h2 {
-	display: none !important;
+.item-page h1 {
+	color: @blue;
+	font-size: 21px;
 }
-*/
 input[type="text"], textarea {
     border: 1px solid #D6D6D6;
     border-radius: 6px 6px 6px 6px;
@@ -162,10 +160,6 @@ input[type="text"], textarea {
 	width: 280px;
 	margin: 0 auto;
 	display: block;
-}
-#menu ul.menu > li.deeper > a > span:after {
-	content: url('../images/arrow-down.png');
-	margin-left: 10px;
 }
 #menu ul.menu li ul li a span:before {
 	content: url('../images/arrow-right.png');
@@ -459,6 +453,26 @@ div.formBody {
 	float: none;
 	margin: 5px 0;
 }
+/* Scroll tables that overflow */
+#yoo-zoo .items {
+	overflow: scroll;
+}
+.table-msg {
+	display: block;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	margin: 0;
+}
+body.category #yoo-zoo {
+	.description {
+		margin-bottom: 0;
+	}
+	.items {
+		margin-top: 0px;
+	}
+}
+
 div.formCaption {
     display: block;
     width: 100%;
@@ -506,7 +520,11 @@ div.formCaption {
     width: 270px;
 }
 #yoo-zoo .details h1.title {
-	display: none;
+	text-align: center;
+	color: @blue;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: auto;
 }
 #service-form h4 {
 	color: #006ab8;
@@ -1260,6 +1278,7 @@ form#pref-partners {
 		display: block;
 	}
 }
+.quote-form-wrap,
 #trade-in-trade-up {
 
 	ul {
@@ -1306,6 +1325,7 @@ form#pref-partners {
 		border: medium none;
 		padding: 10px 0;
 		font-size: 15px;
+		margin-left: 0 !important;
 	}
 }
 body.online-quote-page #main {

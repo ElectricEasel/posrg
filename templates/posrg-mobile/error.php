@@ -9,6 +9,11 @@
 // No direct access.
 defined('_JEXEC') or die;
 
+if (($this->error->getCode()) == '404') {
+header('Location: index.php?option=com_content&view=article&id=162');
+exit;
+}
+
 JHtml::_('behavior.framework', true);
 
 define('TEMPLATE_PATH', "/templates/{$this->template}/");
@@ -106,18 +111,6 @@ $bodyClasses[] = $menu->getActive()->alias . '-page';
 </head>
 <body class="<?php echo implode(' ', $bodyClasses); ?>">
 	<div id="container">
-			<div class="blue-gradient2" id="nav">
-				<div class="wrap">
-					<ul class="clr">
-						<li class="menu-button active"><a href="/">Home</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="banner">
-				<div id="banner-contain">
-					<img alt="POSRG" src="/templates/posrg-mobile/images/header.png">
-				</div>
-			</div>
 			<div id="main" class="error-container">
 				<div class="wrap">	
 					<h1>404: Page Not Found!</h1>

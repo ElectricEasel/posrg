@@ -27,7 +27,9 @@ jQuery(document).ready(function ($){
 	   }
 	   );
 	});
-        
+    $('body.category #yoo-zoo .items').before('<p class="table-msg">&#8592; Scroll to see all &#8594;</p>');
+    
+    
     $(".service-box dt").click(function() {
 	if ( jQuery(this).hasClass("minus") ) {
 		jQuery(this).removeClass("minus");
@@ -37,7 +39,7 @@ jQuery(document).ready(function ($){
 		jQuery(this).addClass("minus");
    		jQuery(this).parent().children("dd").removeClass("hide").addClass("show");
 	}
-});
+	});
 	var slide_container = $('#slides');
 	if(slide_container.length > 0)
 	{
