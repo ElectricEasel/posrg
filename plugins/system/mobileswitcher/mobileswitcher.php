@@ -76,7 +76,7 @@ class plgSystemMobileSwitcher extends JPlugin
 			$isMobileRequest = true;
 		}
 		
-		$isMobileRequest = true;
+		//$isMobileRequest = true;
 		
 		$this->doMobile = (bool) ($isMobileRequest === true && $this->app->isAdmin() === false);
 		
@@ -84,6 +84,8 @@ class plgSystemMobileSwitcher extends JPlugin
 		{
 			$this->browser->set('_mobile', true);
 		}
+		
+		//print_r($isMobileRequest);die;
 	}
 
 	private function checkSession()
