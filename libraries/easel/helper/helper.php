@@ -513,7 +513,7 @@ abstract class EEHelper
 
         if ($viewName === null)
         {
-            $query = [];
+            $query = array();
             $queryString = JFactory::getApplication()->input->server->getRaw('QUERY_STRING');
             parse_str($queryString, $query);
 

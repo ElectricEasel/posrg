@@ -19,7 +19,7 @@ class FeaturedModelItems extends EEModelList
         $ordering = $this->getState('list.ordering', 'a.ordering');
         $orderDir = strtoupper($this->getState('list.direction', 'ASC'));
 
-        if ($ordering && in_array($orderDir, ['ASC', 'DESC']))
+        if ($ordering && in_array($orderDir, array('ASC', 'DESC')))
         {
             $query->order($this->getDbo()->escape($ordering) . ' ' . $orderDir);
         }
@@ -46,6 +46,6 @@ class FeaturedModelItems extends EEModelList
             return $items;
         }
 
-        return [];
+        return array();
     }
 }

@@ -9,13 +9,13 @@ abstract class EEModelList extends JModelList
 	 */
 	protected $app;
 
-    protected $filter_fields = [
+    protected $filter_fields = array(
         'a.title', 'title',
         'a.ordering', 'ordering',
         'a.id', 'id',
         'a.state', 'state',
         'a.published', 'published'
-    ];
+    );
 
 	public function __construct($config = array())
 	{
@@ -39,7 +39,7 @@ abstract class EEModelList extends JModelList
 		$query = $this->buildListQuery();
 
 		// Trigger the onAfterBuildQuery event
-		$this->app->triggerEvent('onAfterBuildQuery', [$this->context, $query]);
+		$this->app->triggerEvent('onAfterBuildQuery', array($this->context, $query));
 
 		return $query;
 	}
