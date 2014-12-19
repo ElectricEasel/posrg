@@ -41,7 +41,7 @@ jQuery(document).ready(function($){
 // ]]>
 ");
 ?>
-<h2 id="tour-heading">Facility Tour</h2>
+<h2 id="tour-heading">Gallery</h2>
     <div class="advanced-slider" id="tour-slider">
 <!--[if IE]><script type="text/javascript" src="js/excanvas.compiled.js"></script><![endif]-->
 
