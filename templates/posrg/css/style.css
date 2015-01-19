@@ -2114,3 +2114,19 @@ ul#featuredlist li a.button.button-gray {
 ul#featuredlist li a.button.button-gray:hover {
     background: #8A8A8A;
 }
+
+.page-video-library .row:after {
+	display:block;
+	clear:both;
+}
+
+.page-video-library .row .span6 {
+	width:50%;
+	float:left;
+}
+
+.page-video-library #page .row .span6 h4 {
+	margin-top:10px;
+	margin-bottom:15px;
+	font-size:18px;
+}

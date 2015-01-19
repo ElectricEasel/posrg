@@ -30,6 +30,14 @@ jQuery(document).ready(function($){
 
 	$('.fancybox').fancybox();
 
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+
 	$('.default-value').each(function() {
 	    var default_value = this.value;
 	    $(this).focus(function() {
