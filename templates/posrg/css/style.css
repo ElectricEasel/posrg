@@ -137,6 +137,7 @@ a:hover {
 #nav li.active,
 #nav li:hover {
 	background: url(../images/nav_active.png) repeat-x 0 0 scroll transparent;
+	background-size:cover;
 }
 #nav > .menu,
 #nav li {
@@ -748,6 +749,36 @@ h1.contentheading {
 #sidebar .widget.contact-module p {
 	line-height: 1.5em;
 	margin:10px 0 20px 0;
+}
+#sidebar .widget.spot-marketing.video {
+	height: 222px;
+}
+#sidebar .widget.spot-marketing.video h4 {
+	border-bottom: 0;
+}
+#sidebar .widget.spot-marketing.video a.fancybox-media {
+	display: block;
+	overflow: hidden;
+	height: 146px;
+	margin-bottom: 10px;
+}
+#sidebar .widget.spot-marketing.video a.fancybox-media img {
+	max-width: 242px;
+	position: relative;
+	top: -9px;
+	left: -9px;
+}
+#sidebar .widget.spot-marketing.video h5, #sidebar .widget.spot-marketing.video h5 + a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#sidebar .widget.spot-marketing.video h5 {
+	color: #1d79ca;
+	margin-bottom: 5px;
+}
+#sidebar .widget.spot-marketing.video h5 + a {
+	color: #737373;
+	font-size: 12px;
 }
 #content #main {
 	float: right;
