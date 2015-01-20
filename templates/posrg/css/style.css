@@ -2150,14 +2150,22 @@ ul#featuredlist li a.button.button-gray:hover {
 	display:block;
 	clear:both;
 }
-
 .page-video-library .row .span6 {
 	width:50%;
 	float:left;
 }
-
 .page-video-library #page .row .span6 h4 {
 	margin-top:10px;
 	margin-bottom:15px;
 	font-size:18px;
+}
+.play-btn {
+	position: absolute;
+	bottom: 123px;
+	right: 228px;
+	color: #fff;
+}
+.play-btn a {
+	display: block;
+	margin: 8px auto 0;
 }
