@@ -2161,9 +2161,11 @@ ul#featuredlist li a.button.button-gray:hover {
 }
 .play-btn {
 	position: absolute;
-	bottom: 123px;
-	right: 228px;
+	bottom: 121px;
+	right: 213px;
 	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
 }
 .play-btn a {
 	display: block;
