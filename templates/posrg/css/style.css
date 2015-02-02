@@ -992,7 +992,13 @@ h1.contentheading {
 }
 
 #quote_form li textarea {
-    width: 585px !important;
+    width: 640px !important;
+}
+#service-form #quote_form .rsform-block-date_available input[type="text"] {
+	width: 285px !important;
+}
+#service-form #quote_form .rsform-block-date_available input[type="button"] {
+	width: 30px;
 }
 .pos-specification #yoo-zoo .link_box span {
 	width: 100%;
