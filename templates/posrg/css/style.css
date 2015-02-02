@@ -1842,17 +1842,32 @@ body.preferred-partners #content #main {
 	font-style: normal;
 	margin: 0 0.35em;
 }
-.pp-datalogic {
-	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
-	min-height: 210px;
-	padding-right: 380px;
-	padding-top: 40px;
-}
+
+.pp-panasonic .pp-links,
+.pp-posiflex .pp-links,
 .pp-datalogic .pp-links,
 .pp-epson .pp-links,
 .pp-elo .pp-links {
 	display: block;
 	margin-bottom: 20px;
+}
+.pp-panasonic {
+	background: url(../images/pref-partners/panasonic.jpg) no-repeat center bottom transparent;
+	min-height: 248px;
+	padding-right: 380px;
+	padding-top: 0;
+}
+.pp-posiflex {
+	background: url(../images/pref-partners/posiflex.jpg) no-repeat center bottom transparent;
+	min-height: 210px;
+	padding-left: 350px;
+	padding-top: 0;
+}
+.pp-datalogic {
+	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
+	min-height: 255px;
+	padding-right: 380px;
+	padding-top: 40px;
 }
 .pp-epson {
 	background: url(../images/pref-partners/epson.jpg) no-repeat center bottom transparent;
