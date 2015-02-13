@@ -2048,8 +2048,10 @@ form#pref-partners #submit:active {
 form#pref-partners h3 {
 	font-size: 16px;
 	text-transform: none;
-	padding-left: 20px;
+	padding-left: 23px;
 	margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: bold;
 }
 /* featured items page */
 ul#featuredlist {
@@ -2188,4 +2190,70 @@ ul#featuredlist li a.button.button-gray:hover {
 .play-btn a {
 	display: block;
 	margin: 8px auto 0;
+}
+.page-emv-compliance #content #main {
+    margin: 0;
+    width: 100%;
+}
+.page-emv-compliance #content .dropshadow .wrap {
+    padding: 0;
+}
+.page-emv-compliance #banner, .page-emv-compliance #sidebar, .page-emv-compliance h1.contentheading, .page-emv-compliance .buttonheading {
+    display: none;
+}
+.page-emv-compliance .emv-header {
+    text-align: center;
+    padding: 25px 60px 330px;
+    background: url(/templates/posrg/images/emv/emv-devices.jpg) center top no-repeat;
+}
+.page-emv-compliance #page .emv-header h1 {
+    color: #006ab8;
+    font-size: 39px;
+    line-height: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.page-emv-compliance #page .emv-header p {
+    font-size: 17px;
+    color: #666;
+    margin: 15px 0;
+    font-weight: bold;
+    line-height: 1.35em;
+}
+.page-emv-compliance .emv-wrap {
+    padding: 0 35px;
+}
+.page-emv-compliance #page .emv-section {
+    position: relative;
+    padding: 0 20px 30px;
+    background: url(/templates/posrg/images/emv/emv-chip.jpg) 0 bottom no-repeat;
+    margin-bottom: 40px;
+}
+.page-emv-compliance #page .emv-section .indented {
+    padding-left: 185px;
+    padding-right: 35px;
+}
+.page-emv-compliance #page .emv-section h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin:  45px 0 7px;
+}
+.page-emv-compliance #page .emv-section p {
+    font-size: 12px;
+}
+.page-emv-compliance #page .emv-section .cards {
+    position: relative;
+    z-index: 2;
+    top: 20px;
+    float: right;
+}
+.page-emv-compliance #page .emv-section .line {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    z-index: 1;
+}
+.page-emv-compliance #page h5 {
+    font-size: 16px;
+    padding-left: 20px;
 }
