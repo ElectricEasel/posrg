@@ -2210,7 +2210,7 @@ ul#featuredlist li a.button.button-gray:hover {
     color: #006ab8;
     font-size: 39px;
     line-height: 1.2em;
-    max-width: 800px;
+    max-width: 570px;
     margin: 0 auto;
 }
 .page-emv-compliance #page .emv-header p {
@@ -2225,7 +2225,7 @@ ul#featuredlist li a.button.button-gray:hover {
 }
 .page-emv-compliance #page .emv-section {
     position: relative;
-    padding: 0 20px 30px;
+    padding: 0 20px 45px;
     background: url(/templates/posrg/images/emv/emv-chip.jpg) 0 bottom no-repeat;
     margin-bottom: 40px;
 }
@@ -2245,11 +2245,12 @@ ul#featuredlist li a.button.button-gray:hover {
     position: relative;
     z-index: 2;
     top: 20px;
+    margin-bottom: 20px;
     float: right;
 }
 .page-emv-compliance #page .emv-section .line {
     position: absolute;
-    top: 115px;
+    top: 154px;
     left: 0;
     z-index: 1;
 }
