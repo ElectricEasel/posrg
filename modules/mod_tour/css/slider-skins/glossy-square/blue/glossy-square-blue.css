@@ -188,6 +188,7 @@
 
 .glossy-square-blue .thumbnail {
 	background-color: #FFF;
+	background-size: cover;
 	border: solid 3px #FFF;
 	-moz-box-shadow: 0 0 10px #AAA;
 	-webkit-box-shadow: 0 0 10px #AAA;

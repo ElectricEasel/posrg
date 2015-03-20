@@ -18,19 +18,20 @@ function RSFormProConnect($url, $data, $params=array())
 
 	if (isset($url_info['host']) && $url_info['host'] == 'localhost')
 		$url_info['host'] = '127.0.0.1';
-	
+
 	// cURL
 	if (extension_loaded('curl'))
 	{
 		// Init cURL
 		$ch = curl_init();
-		
+
 		if ($method == 'GET' && $data)
 			$url .= (strpos($url, '?') === false ? '?' : '&').$data;
 		elseif ($method == 'POST')
 			curl_setopt($ch, CURLOPT_POST, true);
-		
+
 		// Set options
+		curl_setopt($ch, CURLOPT_REFERER, $_SERVER['HTTP_ORIGIN']);
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_FAILONERROR, 1);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -39,26 +40,26 @@ function RSFormProConnect($url, $data, $params=array())
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-		
+
 		// Set timeout
 		curl_setopt($ch, CURLOPT_TIMEOUT, $timeout);
-		
+
 		// Grab data
 		curl_exec($ch);
-		
+
 		$error = @curl_error($ch);
-		
+
 		if (!empty($error))
 		{
 			die($error);
 		}
-		
+
 		// Clean up
 		curl_close($ch);
-		
+
 		return true;
 	}
-	
+
 	// fsockopen
 	if (function_exists('fsockopen'))
 	{
@@ -67,7 +68,7 @@ function RSFormProConnect($url, $data, $params=array())
 
 		$port = $url_info['scheme'] == 'https' ? 443 : 80;
 		$ssl  = $url_info['scheme'] == 'https' ? 'ssl://' : '';
-	
+
 		// Set timeout
 		$fsock = fsockopen($ssl.$url_info['host'], $port, $errno, $errstr, $timeout);
 		if ($fsock === false)
@@ -79,7 +80,7 @@ function RSFormProConnect($url, $data, $params=array())
 			// Set timeout
 			@stream_set_blocking($fsock, 1);
 			@stream_set_timeout($fsock, $timeout);
-			
+
 			if ($method == 'GET')
 			{
 				if (!isset($url_info['query']))
@@ -87,7 +88,7 @@ function RSFormProConnect($url, $data, $params=array())
 				if ($data)
 					$url_info['query'] .= ($url_info['query'] ? '&' : '').$data;
 			}
-			
+
 			@fwrite($fsock, $method.' '.$url_info['path'].(!empty($url_info['query']) ? '?'.$url_info['query'] : '').' HTTP/1.1'."\r\n");
 			@fwrite($fsock, 'Host: '.$url_info['host']."\r\n");
 			@fwrite($fsock, "User-Agent: ".$useragent."\r\n");
@@ -98,16 +99,16 @@ function RSFormProConnect($url, $data, $params=array())
 			}
 			@fwrite($fsock, 'Connection: close'."\r\n");
 			@fwrite($fsock, "\r\n");
-			
+
 			if ($method == 'POST')
 				@fwrite($fsock, $data);
-			
+
 			// Clean up
 			@fclose($fsock);
-			
+
 			return true;
 		}
 	}
-	
+
 	return false;
 }

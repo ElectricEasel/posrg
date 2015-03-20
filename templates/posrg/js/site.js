@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 		var sf_width	= 15;
 		var sf_oldwidth	= sf.width();
 		var sf_defval	= 'Search';
-		
+
 		sf.width(sf_width);
 		sf_btn.click(function(e){
 			if(sf.width() == sf_width)
@@ -27,9 +27,17 @@ jQuery(document).ready(function($){
 			}
 		});
 	}
-	
+
 	$('.fancybox').fancybox();
-	
+
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+
 	$('.default-value').each(function() {
 	    var default_value = this.value;
 	    $(this).focus(function() {
@@ -43,7 +51,7 @@ jQuery(document).ready(function($){
 	        }
 	    });
 	});
-	
+
 });
 
 

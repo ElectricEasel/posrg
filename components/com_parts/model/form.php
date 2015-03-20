@@ -29,7 +29,7 @@ class PartsModelForm extends JModelItem
 				->from('#__parts')
 				->where('id = ' . $id);
 
-			$this->_item = $db->setQuery($query)->loadObject();
+			$this->_item = (object) $db->setQuery($query)->loadObject();
 
             $imagePathString = '/images/stories/brands/%s_search.png';
 

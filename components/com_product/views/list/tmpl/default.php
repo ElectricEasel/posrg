@@ -26,12 +26,12 @@ $i		= 0;
 		<div class="gm-box-t">
 			<div class="gm-box-b">
 				<div class="gm-item">
-					<a href="<?php echo $lightbox; ?>" class="lightbox gm-enlarge">
+					<a href="<?php echo $lightbox; ?>" class="fancybox gm-enlarge">
 						<?php echo JText::_('GM_PRODUCT_LIGHTBOX')?>
 
 					</a>
 					<div class="gm-image-container size-med">
-						<a href="<?php echo $lightbox; ?>" class="lightbox" title="">
+						<a href="<?php echo $lightbox; ?>" class="fancybox" title="">
 							<img src="<?php echo $img ?>" class="gm-image-size size-med" alt="<?php echo $item->product_name ?>" />
 						</a>
 					</div>
@@ -57,10 +57,3 @@ $i		= 0;
 	endif; ?>
 
 </div>
-<script type="text/javascript">
-// <![CDATA[
-jQuery(document).ready(function($){
-	$(".lightbox").lightbox();
-});
-// ]]>
-</script>

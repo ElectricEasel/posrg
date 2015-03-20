@@ -137,6 +137,7 @@ a:hover {
 #nav li.active,
 #nav li:hover {
 	background: url(../images/nav_active.png) repeat-x 0 0 scroll transparent;
+	background-size:cover;
 }
 #nav > .menu,
 #nav li {
@@ -749,6 +750,36 @@ h1.contentheading {
 	line-height: 1.5em;
 	margin:10px 0 20px 0;
 }
+#sidebar .widget.spot-marketing.video {
+	height: 222px;
+}
+#sidebar .widget.spot-marketing.video h4 {
+	border-bottom: 0;
+}
+#sidebar .widget.spot-marketing.video a.fancybox-media {
+	display: block;
+	overflow: hidden;
+	height: 146px;
+	margin-bottom: 10px;
+}
+#sidebar .widget.spot-marketing.video a.fancybox-media img {
+	max-width: 242px;
+	position: relative;
+	top: -9px;
+	left: -9px;
+}
+#sidebar .widget.spot-marketing.video h5, #sidebar .widget.spot-marketing.video h5 + a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#sidebar .widget.spot-marketing.video h5 {
+	color: #1d79ca;
+	margin-bottom: 5px;
+}
+#sidebar .widget.spot-marketing.video h5 + a {
+	color: #737373;
+	font-size: 12px;
+}
 #content #main {
 	float: right;
 	width:705px;
@@ -961,7 +992,13 @@ h1.contentheading {
 }
 
 #quote_form li textarea {
-    width: 585px !important;
+    width: 640px !important;
+}
+#quote_form .rsform-block-date_available input[type="text"] {
+	width: 280px !important;
+}
+#quote_form .rsform-block-date_available input[type="button"] {
+	width: 30px;
 }
 .pos-specification #yoo-zoo .link_box span {
 	width: 100%;
@@ -1297,7 +1334,7 @@ float:right
 #gk_news_image_1-newsimage1 {
 	display: none !important;
 }
-.page-facility-tour #page h2.contentheading{
+.page-facility-tour #page h1.contentheading{
 	display: none;
 }
 #tour-heading {
@@ -1322,9 +1359,6 @@ float:right
     vertical-align: middle;
 }
 
-#service-form form input[type="text"] {
-	width: 315px;
-}
 #service-form form .form_item {
 	float: left;
 }
@@ -1776,7 +1810,7 @@ body.preferred-partners #content #main {
 	margin: 15px 0;
 	font-weight: bold;
 	line-height: 1.35em;
-	
+
 }
 .pp-product {
 	padding: 20px 100px;
@@ -1808,17 +1842,32 @@ body.preferred-partners #content #main {
 	font-style: normal;
 	margin: 0 0.35em;
 }
-.pp-datalogic {
-	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
-	min-height: 210px;
-	padding-right: 380px;
-	padding-top: 40px;
-}
+
+.pp-panasonic .pp-links,
+.pp-posiflex .pp-links,
 .pp-datalogic .pp-links,
 .pp-epson .pp-links,
 .pp-elo .pp-links {
 	display: block;
 	margin-bottom: 20px;
+}
+.pp-panasonic {
+	background: url(../images/pref-partners/panasonic.jpg) no-repeat center bottom transparent;
+	min-height: 248px;
+	padding-right: 380px;
+	padding-top: 0;
+}
+.pp-posiflex {
+	background: url(../images/pref-partners/posiflex.jpg) no-repeat center bottom transparent;
+	min-height: 210px;
+	padding-left: 350px;
+	padding-top: 0;
+}
+.pp-datalogic {
+	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
+	min-height: 255px;
+	padding-right: 380px;
+	padding-top: 40px;
 }
 .pp-epson {
 	background: url(../images/pref-partners/epson.jpg) no-repeat center bottom transparent;
@@ -1999,6 +2048,213 @@ form#pref-partners #submit:active {
 form#pref-partners h3 {
 	font-size: 16px;
 	text-transform: none;
-	padding-left: 20px;
+	padding-left: 23px;
 	margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+/* featured items page */
+ul#featuredlist {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+ul#featuredlist li {
+    padding: 25px 0 0;
+    margin: 0 0 25px;
+    border-top: 1px solid #eee;
+    background: none;
+}
+ul#featuredlist li:first-child {
+    padding-top: 0;
+    border-top: none;
+}
+ul#featuredlist li .frame {
+    border: 2px solid #e6e6e6;
+    background: #fff;
+    padding: 7px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 185px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin: 0 16px 20px 0;
+}
+ul#featuredlist li div.featuredcontent {
+    display: inline-block;
+    width: 485px;
+    height: 185px;
+    vertical-align: top;
+}
+ul#featuredlist li div.featuredcontent h5 {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1em;
+    margin-bottom: 14px;
+}
+ul#featuredlist li div.featuredcontent p {
+    font-size: 13px;
+    line-height: 1em;
+    margin: 12px 0 0;
+}
+ul#featuredlist li div.featuredcontent p span {
+    color: #2073cd;
+}
+ul#featuredlist li div.featuredcontent p.indent {
+    margin-top: 5px;
+    text-indent: 91px;
+}
+ul#featuredlist li div.featuredcontent table {
+    background: #f7f7f7;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 25px;
+}
+ul#featuredlist li div.featuredcontent table td, ul#featuredlist li div.featuredcontent table th {
+    border: 1px solid #e4e4e4;
+    font-size: 10px;
+    padding: 0 5px;
+    height: 33px;
+    box-sizing: border-box;
+}
+ul#featuredlist li div.featuredcontent table th {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+ul#featuredlist li div.featuredcontent table thead {
+    background: #1069c9;
+}
+ul#featuredlist li h6 {
+    font-size: 15px;
+    line-height: 1.2em;
+    color: #2073cd;
+    margin: 14px 0;
+}
+ul#featuredlist li a.button {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1em;
+    font-weight: bold;
+    text-transform: lowercase;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    padding: 5px 26px;
+    border-radius: 6px;
+}
+ul#featuredlist li a.button:hover {
+    text-decoration: none;
+}
+ul#featuredlist li a.button.button-blue {
+    background: #0f66cb;
+    margin-right: 7px;
+}
+ul#featuredlist li a.button.button-blue:hover {
+    background: #007cf8;
+}
+ul#featuredlist li a.button.button-gray {
+    background: #646464;
+}
+ul#featuredlist li a.button.button-gray:hover {
+    background: #8A8A8A;
+}
+
+.page-video-library .row:after {
+	display:block;
+	clear:both;
+}
+.page-video-library .row .span6 {
+	width:50%;
+	float:left;
+}
+.page-video-library #page .row .span6 h4 {
+	margin-top:10px;
+	margin-bottom:15px;
+	font-size:18px;
+}
+.play-btn {
+	position: absolute;
+	bottom: 121px;
+	right: 213px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+}
+.play-btn a {
+	display: block;
+	margin: 8px auto 0;
+}
+.page-emv-compliance #content #main {
+    margin: 0;
+    width: 100%;
+}
+.page-emv-compliance #content .dropshadow .wrap {
+    padding: 0;
+}
+.page-emv-compliance #banner, .page-emv-compliance #sidebar, .page-emv-compliance h1.contentheading, .page-emv-compliance .buttonheading {
+    display: none;
+}
+.page-emv-compliance .emv-header {
+    text-align: center;
+    padding: 25px 60px 330px;
+    background: url(/templates/posrg/images/emv/emv-devices.jpg) center top no-repeat;
+}
+.page-emv-compliance #page .emv-header h1 {
+    color: #006ab8;
+    font-size: 39px;
+    line-height: 1.2em;
+    max-width: 570px;
+    margin: 0 auto;
+}
+.page-emv-compliance #page .emv-header p {
+    font-size: 17px;
+    color: #666;
+    margin: 15px 0;
+    font-weight: bold;
+    line-height: 1.35em;
+}
+.page-emv-compliance .emv-wrap {
+    padding: 0 35px;
+}
+.page-emv-compliance #page .emv-section {
+    position: relative;
+    padding: 0 20px 45px;
+    background: url(/templates/posrg/images/emv/emv-chip.jpg) 0 bottom no-repeat;
+    margin-bottom: 40px;
+}
+.page-emv-compliance #page .emv-section .indented {
+    padding-left: 185px;
+    padding-right: 35px;
+}
+.page-emv-compliance #page .emv-section h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin:  45px 0 7px;
+}
+.page-emv-compliance #page .emv-section p {
+    font-size: 12px;
+}
+.page-emv-compliance #page .emv-section .cards {
+    position: relative;
+    z-index: 2;
+    top: 20px;
+    margin-bottom: 20px;
+    float: right;
+}
+.page-emv-compliance #page .emv-section .line {
+    position: absolute;
+    top: 154px;
+    left: 0;
+    z-index: 1;
+}
+.page-emv-compliance #page h5 {
+    font-size: 16px;
+    padding-left: 20px;
 }

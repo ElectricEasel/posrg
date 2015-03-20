@@ -8,6 +8,7 @@ $tpath = $this->baseurl . '/templates/' . $this->template;
 $this
 	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 	->addScript($tpath . '/js/jquery.fancybox.min.js')
+	->addScript($tpath . '/js/jquery.fancybox-media.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/site.js')
     ->addStyleSheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset
+            name="general"
+            label="General">
+
+        <field
+                name="title"
+                type="text"
+                label="Title"
+                description="The item's title."
+                required="true" />
+
+        <field
+                name="published"
+                type="radio"
+                label="Status"
+                description="A Draft post will not be published."
+                default="1">
+            <option value="0">Draft</option>
+            <option value="1">Live</option>
+        </field>
+
+        <field
+                name="image"
+                type="media"
+                directory="featured"
+                label="Image"
+                description="The image for this spot marketing item."
+                required="true" />
+
+        <field
+                name="description"
+                type="textarea"
+                label="Description"
+                rows="20"
+                cols="30" />
+
+    </fieldset>
+
+    <fieldset
+        name="details"
+        label="Details">
+
+        <field
+                name="msrp"
+                type="text"
+                label="MSRP" />
+
+        <field
+                name="price"
+                type="text"
+                label="POSRG Price" />
+
+        <field
+                name="technology"
+                type="text"
+                label="Technology" />
+
+        <field
+                name="interface"
+                type="text"
+                label="Interface" />
+
+        <field
+                name="surface_treatment"
+                type="text"
+                label="Surface Treatment" />
+
+        <field
+                name="monitor_color"
+                type="text"
+                label="Monitor Color" />
+
+        <field
+                name="part_number"
+                type="text"
+                label="Part #" />
+
+        <field
+                name="availability"
+                type="text"
+                label="Availability"
+                default="Americas" />
+
+    </fieldset>
+
+    <fieldset
+            name="hidden"
+            label="Hidden Fields">
+
+        <field
+                name="id"
+                type="text"
+                default="0"
+                label="ID"
+                readonly="true"
+                class="readonly"
+                description="JGLOBAL_FIELD_ID_DESC" />
+
+        <field
+                name="checked_out"
+                type="hidden"
+                filter="unset" />
+
+        <field
+                name="checked_out_time"
+                type="hidden"
+                filter="unset" />
+
+    </fieldset>
+</form>
