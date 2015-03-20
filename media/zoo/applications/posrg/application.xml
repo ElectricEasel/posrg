@@ -54,9 +54,8 @@
 		<param name="items_title" type="text" label="Items Title" description="Set a title above the displayed items." />
 	</params>
 	<params group="category-content">
-		<param name="teaser_description" type="textarea" label="Teaser Description" description="Set a teaser description for this category. It will be displayed in the parent category." />
-		<param name="teaser_image" type="zooimage" label="Teaser Image" description="Choose a teaser image for this category. It will be displayed in the parent category." />
-		<param name="image" type="zooimage" label="Image" description="Choose a category image." />
+		<param name="teaser_image" type="zooimage" label="Brand Image" description="Choose a brand image for this category. It will be displayed in the parent category." />
+		<param name="image" type="zooimage" label="Banner Image" description="Choose a banner image." />
 		<param name="categories_title" type="text" label="Categories Title" description="Set a title above the categories." />
 		<param name="items_title" type="text" label="Items Title" description="Set a title above the items." />
 	</params>
