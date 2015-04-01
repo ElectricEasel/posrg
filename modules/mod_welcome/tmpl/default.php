@@ -20,7 +20,6 @@ $template_path = '/templates/posrg';
 	// ]]>
 	</script>
 	<div class="slides">
-		<a target="_blank" href="http://smallbusinessgrant.fedex.com/Gallery/Detail/dd62b8a0-7a3f-4031-bf92-daacda8c15ee/?cmp=EMT-1002300-6-1-200-1111110-US-US-EN-SBGCENTRYAPPR00&acxrid=1225580814&LINK=SeeYourProfile"><img src="<?php echo $template_path; ?>/images/banner-contest.jpg" alt="Vote for POSRG" /></a>
 		<a href="/preferred-oems"><img src="<?php echo $template_path; ?>/images/banner-new-hardware.jpg" alt="New Hardware" /></a>
 		<a href="/about-us/posrg-news"><img src="<?php echo $template_path; ?>/images/banner-news1.jpg" alt="POSRG News" /></a>
 		<a href="/inventory/search-our-inventory"><img src="<?php echo $template_path; ?>/images/banner-posrg.jpg" alt="Streamlined, organized and precise. That's POSRG." /></a>
