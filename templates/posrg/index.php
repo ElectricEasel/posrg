@@ -10,6 +10,7 @@ $this
 	->addScript($tpath . '/js/jquery.fancybox.min.js')
 	->addScript($tpath . '/js/jquery.fancybox-media.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
+	->addScript($tpath . '/js/jquery.accordion.js')
 	->addScript($tpath . '/js/site.js')
     ->addStyleSheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
 	->addScriptDeclaration('

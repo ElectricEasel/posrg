@@ -1,3 +1,63 @@
+/*!
+ * jQuery Accordion 0.0.1
+ * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+ * MIT Licensed.
+ */
+
+/* Requirements */
+
+[data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* Basic Theme */
+
+[data-accordion] {
+    line-height: 1;
+}
+
+[data-control],
+[data-content] > * {
+    border-bottom: 1px solid #888;
+    padding: 10px;
+}
+
+[data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+}
+
+[data-accordion] [data-control] {
+    position: relative;
+    padding-right: 40px;
+}
+
+[data-accordion] > [data-control]:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 25px;
+    font-weight: 200;
+    color: #444;
+    height: 15px;
+    width: 24px;
+    background: url('../images/down.png') center center no-repeat;
+    background-size: 50%;
+}
+.white [data-accordion] > [data-control]:after {
+	background: url('../images/down-w.png') center center no-repeat;
+	background-size: 50%;
+}
+
+[data-accordion].open > [data-control]:after {
+    -webkit-transform: rotate(-180deg); 
+    -ms-transform: rotate(-180deg); 
+    transform: rotate(-180deg); 
+}
+
+/* End jquery Accordion */
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -2257,4 +2317,27 @@ ul#featuredlist li a.button.button-gray:hover {
 .page-emv-compliance #page h5 {
     font-size: 16px;
     padding-left: 20px;
+}
+#career-accordion {
+	margin-bottom: 25px;
+}
+#career-accordion button {
+	border: none;
+	width: 100%;
+	background-color: #0068c4;
+	color: #fff;
+	text-align: left;
+}
+
+#career-accordion [data-accordion] > [data-control]::after {
+	left: 10px;
+	right: auto;
+}
+#career-accordion [data-accordion] [data-control] {
+	padding-right: 0;
+	padding-left: 40px;
+}
+#career-accordion article {
+	background-color: #F4F9FD;
+	border-bottom: 1px solid #ccc;
 }
