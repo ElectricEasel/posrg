@@ -33,7 +33,7 @@ class plgSystemAutoversion extends JPlugin
 	{
 		$document = JFactory::getDocument();
 
-		foreach (['_scripts', '_styleSheets'] as $property)
+		foreach (array('_scripts', '_styleSheets') as $property)
 		{
 			foreach ($document->$property as $src => $attributes)
 			{
