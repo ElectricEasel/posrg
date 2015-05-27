@@ -72,6 +72,7 @@ class plgSystemRsseo extends JPlugin
 		
 		// Add site name in title
 		$sitename = $jconfig->get('sitename');
+		$config->site_name_in_title = isset($config->site_name_in_title) ? $config->site_name_in_title : null;
 		if ($config->site_name_in_title != 0 && !empty($sitename)) {
 			if ($oldtitle = $doc->getTitle()) {
 				if (strpos($oldtitle, $sitename) === FALSE) {
@@ -178,6 +179,7 @@ class plgSystemRsseo extends JPlugin
 		}
 		
 		// Replace keywords
+		$config->enable_keyword_replace = isset($config->enable_keyword_replace) ? $config->enable_keyword_replace : null;
 		if ($config->enable_keyword_replace == 1) {
 			$change = true;
 			
@@ -234,6 +236,7 @@ class plgSystemRsseo extends JPlugin
 		}
 		
 		// Add Google tracking code
+		$config->ga_tracking = isset($config->ga_tracking) ? $config->ga_tracking : null;
 		if ($config->ga_tracking) {
 			$code = $config->ga_code;
 			if (!empty($code)) {
@@ -282,7 +285,8 @@ class plgSystemRsseo extends JPlugin
 		}
 		
 		$config	= rsseoHelper::getConfig();
-		
+		$config->crawler_enable_auto = isset($config->crawler_enable_auto) ? $config->crawler_enable_auto : null;
+
 		if ($config->crawler_enable_auto) {
 			$ignored = $config->crawler_ignore;
 			$ignored = str_replace("\r",'',$ignored);
