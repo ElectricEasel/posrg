@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system">
+	<name>plg_system_autoversion</name>
+	<author>Don Gilbert</author>
+	<creationDate>Apr 2015</creationDate>
+	<copyright>(C) 2015 Electric Easel, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>don@electriceasel.com</authorEmail>
+	<authorUrl>www.electriceasel.com</authorUrl>
+	<version>2.5.0</version>
+	<description>Adds auto-versioning to css and js assets.</description>
+	<files>
+		<filename plugin="autoversion">autoversion.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>
