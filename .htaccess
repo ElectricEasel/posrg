@@ -48,6 +48,7 @@ RewriteRule .* index.php [F]
 
 Redirect 301 /asset-appraisal http://posrg.com/services/asset-appraisal
 Redirect 301 /asset-appraisal/wanted-pos-items/ http://posrg.com/services/asset-appraisal/wanted-pos-items
+Redirect 301 /media/POSRG_Product_line_Card.pdf /media/POSRG-Product-line-Card.pdf
 
 
 ## End - Custom redirects
