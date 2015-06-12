@@ -55,6 +55,7 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 	<meta name="DC.language" content="en-US" scheme="rfc1766" />
 	<meta name="DC.subject" content="Point of Sale Refurbishing" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />
+    <link href="https://plus.google.com/u/0/115660277677228108714" rel="publisher" />
 	<script type="text/javascript">
 	// <![CDATA[
 		var _gaq = _gaq || [];
