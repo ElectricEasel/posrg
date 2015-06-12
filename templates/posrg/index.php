@@ -216,5 +216,12 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		</div>
 	</div>
 	<jdoc:include type="modules" name="debug" style="blank"/>
+	<script type="text/javascript">
+	var cloak = jQuery('.cloak');
+	cloak.each(function(){
+		var email = jQuery(this).attr('href').replace("_AT_", "@");
+		jQuery(this).attr('href',email);
+	});
+	</script>
 </body>
 </html>
