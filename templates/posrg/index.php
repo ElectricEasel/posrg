@@ -128,9 +128,9 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		<div class="wrap">
 			<a href="/" id="logo"></a>
 			<div class="header-right">
+				<img class="naid" src="/images/logo-naid-green.png" alt="" /> 
 				<div class="header-contact">
 					<span class="phone-number">
-						<a class="recycle-button" href="http://www.turbongroup.com/posrg/" target="_blank">Recycle Toner Here</a>
 						<span id="call"><b>Call Us Toll Free:</b></span>
 						<span id="tel"><b>866-462-1005</b></span>
 					</span>
