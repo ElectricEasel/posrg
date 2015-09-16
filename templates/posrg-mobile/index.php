@@ -146,5 +146,12 @@ if ($menu->getActive() == $menu->getDefault()) {
 		</div>
 	</div>
 <div id="preloadImages"></div>
+	<script type="text/javascript">
+	var cloak = jQuery('.cloak');
+	cloak.each(function(){
+		var email = jQuery(this).attr('href').replace("_AT_", "@");
+		jQuery(this).attr('href',email);
+	});
+	</script>
 </body>
 </html>
