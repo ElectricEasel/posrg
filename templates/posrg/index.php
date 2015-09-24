@@ -128,7 +128,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		<div class="wrap">
 			<a href="/" id="logo"></a>
 			<div class="header-right">
-				<img class="naid" src="/images/logo-naid-green.png" alt="" /> 
+				<a href="/about-us/posrg-news/166-posrg-naid-aaa-certified-for-data-destruction"><img class="naid" src="/images/logo-naid-green.png" alt="" /></a> 
 				<div class="header-contact">
 					<span class="phone-number">
 						<span id="call"><b>Call Us Toll Free:</b></span>
