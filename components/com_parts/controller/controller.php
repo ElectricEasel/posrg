@@ -22,10 +22,16 @@ class PartsController extends JController
 			$this->setRedirect(JRoute::_('index.php?option=com_parts&view=list'), 'Token error');
 		}
 
+        if (!$this->backupParts())
+        {
+            echo "Error, backup failed. Import will not proceed. Please contact webmaster.";
+            return;
+        }
+
 		$inventoryType = $this->app->input->getString('inventory_type', 'regular');
 
 		$table = new PartsTableImport;
-		$table->truncate($inventoryType); // if isBB is 1, delete only is_bb. If isBB is 0, delete only non bb
+		$table->truncate();
 
 		$csv = new Quick_CSV_Import($_FILES['file_source']['tmp_name']);
 
@@ -132,5 +138,32 @@ class PartsController extends JController
         }
 
 	    $this->setRedirect(JRoute::_('index.php?option=com_parts&view=list'), 'Cleanup Successful.');
+    }
+
+    public function backupParts()
+    {
+        $db = JFactory::getDbo();
+
+        $sql = "DROP TABLE IF EXISTS #__parts_backup;";
+        $db->setQuery($sql);
+        $result1 = $db->execute();
+
+        $sql = "CREATE TABLE #__parts_backup LIKE #__parts;";
+        $db->setQuery($sql);
+        $result2 = $db->execute();
+
+        $sql = "INSERT #__parts_backup SELECT * FROM #__parts;";
+        $db->setQuery($sql);
+        $result3 = $db->execute();
+
+        return $result1 && $result2 && $result3;
+    }
+
+    public function clearCurrentParts()
+    {
+        $db = JFactory::getDbo();
+        $sql = "DELETE FROM #__parts;";
+        $db->setQuery($sql);
+        return $db->execute();
     }
 }

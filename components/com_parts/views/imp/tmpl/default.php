@@ -20,7 +20,7 @@
 		</div>
 		<br />
 		<br />
-		<div class="gm-item">
+		<div class="gm-item" style="display:none">
 			<div class="gm-label">
 				<label><strong>Inventory Import Type</strong></label>
 			</div>
