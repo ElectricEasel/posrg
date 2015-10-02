@@ -158,12 +158,4 @@ class PartsController extends JController
 
         return $result1 && $result2 && $result3;
     }
-
-    public function clearCurrentParts()
-    {
-        $db = JFactory::getDbo();
-        $sql = "DELETE FROM #__parts;";
-        $db->setQuery($sql);
-        return $db->execute();
-    }
 }
