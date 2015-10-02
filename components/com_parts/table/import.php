@@ -9,17 +9,12 @@ class PartsTableImport extends JTable
 		parent::__construct( '#__parts', 'id', $db );
 	}
 
-	public function truncate($type)
+	public function truncate()
 	{
-        // Only truncate if we're passing a known type.
-        if (in_array($type, array('regular', 'brokerbin', 'other')))
-        {
-            $db = $this->getDbo();
-            $query = $db->getQuery(true)
-                ->delete($this->getTableName())
-                ->where('inventory_type = ' . $db->quote($type));
+        $db = $this->getDbo();
+        $query = $db->getQuery(true)
+            ->delete($this->getTableName());
 
-            $db->setQuery($query)->execute();
-        }
+        $db->setQuery($query)->execute();
     }
 }
