@@ -278,8 +278,13 @@ form.search input[type=text] {
 }
 .naid {
 	float: left;
-	margin: 9px 90px;
-	width: 75px;
+	margin: 9px 50px 9px 30px;
+	height: 75px;
+}
+.tenyear {
+	float: left;
+	margin: 9px 0;
+	height: 75px;
 }
 #secondary-nav {
 	background:url(../images/secondary_bg.png) repeat-x;
