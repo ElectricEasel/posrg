@@ -20,6 +20,8 @@ $template_path = '/templates/posrg';
 	// ]]>
 	</script>
 	<div class="slides">
+		<a href="/about-us/posrg-story"><img src="<?php echo $template_path; ?>/images/banner-10year.jpg" alt="Happy 10 Year Anniversary POSRG!" /></a>
+		<a href="/about-us/posrg-news/166-posrg-naid-aaa-certified-for-data-destruction"><img src="<?php echo $template_path; ?>/images/banner-naid.jpg" alt="POSRG NAID AAA Certified for Data Destruction" /></a>
 		<a href="/preferred-oems"><img src="<?php echo $template_path; ?>/images/banner-new-hardware.jpg" alt="New Hardware" /></a>
 		<a href="/about-us/posrg-news"><img src="<?php echo $template_path; ?>/images/banner-news1.jpg" alt="POSRG News" /></a>
 		<a href="/inventory/search-our-inventory"><img src="<?php echo $template_path; ?>/images/banner-posrg.jpg" alt="Streamlined, organized and precise. That's POSRG." /></a>
