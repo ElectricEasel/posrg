@@ -1,0 +1,9 @@
+RewriteEngine On
+
+Redirect 301 index.html http://nabgroupequipment.com
+Redirect 301 /Products.html http://nabgroupequipment.com/products.php
+Redirect 301 /Prices.html http://nabgroupequipment.com/prices.php
+Redirect 301 /SpareNAir.html http://nabgroupequipment.com/spare-n-air.php
+Redirect 301 /TechTips.html http://nabgroupequipment.com/tech-tips.php
+Redirect 301 "/Contact Us.html" http://nabgroupequipment.com/contact-us.php
+Redirect 301 "/Print Instructions.html" http://nabgroupequipment.com/print-instructions.php
