@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Administrator"
+AuthUserFile "/home/posrgcom/.htpasswds/public_html/administrator/passwd"
+require valid-user
