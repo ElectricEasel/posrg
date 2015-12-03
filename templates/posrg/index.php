@@ -45,6 +45,7 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 <head>
 <jdoc:include type="head" />
 	<meta name="google-site-verification" content="sF65DH0a4wU2jqT9Vh3DIAWd88iaLg2-z8N4VqqYuHg" />
+	<meta name="msvalidate.01" content="9DEB2B56752FB6326BEC00315BEBD3B9" />
 	<meta name="geo.region" content="US-IL" />
 	<meta name="geo.placename" content="Wauconda" />
 	<meta name="geo.position" content="42.27240, -88.14476" />

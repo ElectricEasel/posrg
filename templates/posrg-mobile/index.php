@@ -67,6 +67,7 @@ if ($menu->getActive() == $menu->getDefault()) {
     <meta name="robots" content="index,follow" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <meta name="msvalidate.01" content="9DEB2B56752FB6326BEC00315BEBD3B9" />
     <script type="text/javascript">
     // <![CDATA[
     (function(document,navigator,standalone) {
