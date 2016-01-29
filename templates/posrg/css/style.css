@@ -167,7 +167,7 @@ a:hover {
 }
 #header #top-nav,
 #header .header-contact {
-	margin-top:25px;
+	margin-top:10px;
 	text-align: right;
 }
 #nav {
@@ -276,20 +276,23 @@ form.search input[type=text] {
 	height: 61px;
 	margin-left:20px;
 }
-.naid {
+.tenyear, .recycling, .naid, .ira {
 	float: left;
-	margin: 9px 10px 9px 10px;
+	clear: right;
+	margin: 0;
 	height: 75px;
+	position: relative;
+	top: -14px;
 }
-.tenyear {
-	float: left;
-	margin: 9px 0;
-	height: 75px;
+.naid {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .ira {
-	float: left;
-	height: 75px;
-	margin: 9px 10px 9px 0;
+	margin-right: 10px;
+}
+.recycling {
+	margin-right: 30px;
 }
 #secondary-nav {
 	background:url(../images/secondary_bg.png) repeat-x;
@@ -1215,9 +1218,12 @@ h1.contentheading {
 	width:auto;
 	position: relative;
 }
-#header .header-right .header-contact,
+#header .header-right .header-contact {
+	float: right;
+}
 #header .header-right #top-nav {
 	float:left;
+	clear: right;
 }
 #top-nav ul li {
 	display: block;
@@ -1229,7 +1235,8 @@ h1.contentheading {
 	padding:0 10px;
 	border-left:1px solid #000;
 }
-#header .header-right .phone-number {
+#header .header-right .phone-number,
+#header #top-nav ul li:first-child a {
 	border-left:none;
 }
 #top-nav ul li a {

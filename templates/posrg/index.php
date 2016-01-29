@@ -129,15 +129,16 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		<div class="wrap">
 			<a href="/" id="logo"></a>
 			<div class="header-right">
-				<img class="tenyear" src="/images/logo-10year.jpg" alt="POSRG 10th Anniversary" />
-				<a href="/about-us/posrg-news/166-posrg-naid-aaa-certified-for-data-destruction"><img class="naid" src="/images/logo-naid-green.png" alt="" /></a> 
-				<a href="http://www.illinoisrecycles.org/2014/11/pos-remarketing-group/" target="_blank"><img class="ira" src="/images/logo-ira.png" alt="Illinois Recycling Association since 1980" /></a>
 				<div class="header-contact">
 					<span class="phone-number">
 						<span id="call"><b>Call Us Toll Free:</b></span>
 						<span id="tel"><b>866-462-1005</b></span>
 					</span>
 				</div>
+				<img class="tenyear" src="/images/logo-10year.jpg" alt="POSRG 10th Anniversary" />
+				<a href="/about-us/posrg-news/166-posrg-naid-aaa-certified-for-data-destruction"><img class="naid" src="/images/logo-naid-green.png" alt="" /></a> 
+				<a href="http://www.illinoisrecycles.org/2014/11/pos-remarketing-group/" target="_blank"><img class="ira" src="/images/logo-ira.png" alt="Illinois Recycling Association since 1980" /></a>
+				<img class="recycling" src="/images/logo-recycle.png" alt="Responsible&trade; Recycling" />
 				<div id="top-nav">
 					<jdoc:include type="modules" name="top-nav" />
 				</div>
