@@ -293,6 +293,9 @@ form.search input[type=text] {
 }
 .recycling {
 	margin-right: 30px;
+	height: 65px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 #secondary-nav {
 	background:url(../images/secondary_bg.png) repeat-x;
