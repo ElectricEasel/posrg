@@ -138,7 +138,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 				<img class="tenyear" src="/images/logo-10year.jpg" alt="POSRG 10th Anniversary" />
 				<a href="/about-us/posrg-news/166-posrg-naid-aaa-certified-for-data-destruction"><img class="naid" src="/images/logo-naid-green.png" alt="" /></a> 
 				<a href="http://www.illinoisrecycles.org/2014/11/pos-remarketing-group/" target="_blank"><img class="ira" src="/images/logo-ira.png" alt="Illinois Recycling Association since 1980" /></a>
-				<img class="recycling" src="/images/logo-recycle.png" alt="Responsible&trade; Recycling" />
+				<a href="/about-us/posrg-news/posrg-r2-certified-for-responsible-electronics-recycling"><img class="recycling" src="/images/logo-recycle.png" alt="Responsible&trade; Recycling" /></a>
 				<div id="top-nav">
 					<jdoc:include type="modules" name="top-nav" />
 				</div>
