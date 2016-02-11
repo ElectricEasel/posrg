@@ -2366,3 +2366,32 @@ ul#featuredlist li a.button.button-gray:hover {
 	background-color: #F4F9FD;
 	border-bottom: 1px solid #ccc;
 }
+.certification-bar {
+	padding: 0 8px;
+}
+.certification-bar li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 22px;
+}
+.certification-bar li img {
+	padding: 0 !important;
+	margin: 0 !important;
+	float: none !important;
+	position: static;
+}
+.certification-bar li .ira,
+.certification-bar li .recucle,
+.certification-bar li .satisfaction {
+	height: 80px;
+}
+.certification-bar li .naid,
+.certification-bar li .certified {
+	height: 75px;
+}
+.certification-bar li .iso-1 {
+	height: 53px;
+}
+.certification-bar li .iso-2 {
+	height: 49px;
+}
