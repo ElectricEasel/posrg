@@ -276,7 +276,10 @@ form.search input[type=text] {
 	height: 61px;
 	margin-left:20px;
 }
-.tenyear, .recycling, .naid, .ira {
+.home .sub-logo {
+	display: none;
+}
+.sub-logo.tenyear, .sub-logo.recycling, .sub-logo.naid, .sub-logo.ira {
 	float: left;
 	clear: right;
 	margin: 0;
@@ -284,14 +287,14 @@ form.search input[type=text] {
 	position: relative;
 	top: -14px;
 }
-.naid {
+.sub-logo.naid {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.ira {
+.sub-logo.ira {
 	margin-right: 10px;
 }
-.recycling {
+.sub-logo.recycling {
 	margin-right: 30px;
 	height: 65px;
 	margin-top: 5px;
