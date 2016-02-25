@@ -279,7 +279,7 @@ form.search input[type=text] {
 .home .sub-logo {
 	display: none;
 }
-.sub-logo.tenyear, .sub-logo.recycling, .sub-logo.naid, .sub-logo.ira {
+.tenyear, .recycling, .naid, .ira {
 	float: left;
 	clear: right;
 	margin: 0;
@@ -287,14 +287,14 @@ form.search input[type=text] {
 	position: relative;
 	top: -14px;
 }
-.sub-logo.naid {
+.naid {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-.sub-logo.ira {
+.ira {
 	margin-right: 10px;
 }
-.sub-logo.recycling {
+.recycling {
 	margin-right: 30px;
 	height: 65px;
 	margin-top: 5px;
