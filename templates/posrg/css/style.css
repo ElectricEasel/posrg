@@ -2292,6 +2292,9 @@ ul#featuredlist li a.button.button-gray:hover {
 .page-recycling-and-asset-recovery #banner, .page-recycling-and-asset-recovery #sidebar, .page-recycling-and-asset-recovery h1.contentheading, .page-recycling-and-asset-recovery .buttonheading {
     display: none;
 }
+.page-recycling-and-asset-recovery #content #bottom-widget {
+	padding: 0;
+}
 .page-emv-compliance .emv-header {
     text-align: center;
     padding: 25px 60px 330px;
@@ -2576,7 +2579,7 @@ ul#featuredlist li a.button.button-gray:hover {
 }
 .recycle-recover #asset-recovery .btn-green {
 	border: 2px solid #fff;
-	margin: 100px 0 0 50px;
+	margin: 100px 0 0 100px;
 }
 .recycle-recover #asset-recycling {
 	background: url(/templates/posrg/images/banner-asset-recycling.jpg) 0 0 no-repeat;
