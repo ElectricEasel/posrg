@@ -2413,6 +2413,12 @@ ul#featuredlist li a.button.button-gray:hover {
 	border-radius: 5px;
 	background: #49b842;
 	margin-top: 25px;
+	-webkit-transition: background-color .15s linear;
+	transition: background-color .15s linear;
+}
+.btn-green:hover {
+	text-decoration: none;
+	background-color: #309F29;
 }
 .recycle-recover .half {
 	width: 50%;
