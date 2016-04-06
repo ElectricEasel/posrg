@@ -2279,14 +2279,17 @@ ul#featuredlist li a.button.button-gray:hover {
 	display: block;
 	margin: 8px auto 0;
 }
-.page-emv-compliance #content #main {
+.page-emv-compliance #content #main,
+.page-recycling-and-asset-recovery #content #main {
     margin: 0;
     width: 100%;
 }
-.page-emv-compliance #content .dropshadow .wrap {
+.page-emv-compliance #content .dropshadow .wrap,
+.page-recycling-and-asset-recovery #content .dropshadow .wrap {
     padding: 0;
 }
-.page-emv-compliance #banner, .page-emv-compliance #sidebar, .page-emv-compliance h1.contentheading, .page-emv-compliance .buttonheading {
+.page-emv-compliance #banner, .page-emv-compliance #sidebar, .page-emv-compliance h1.contentheading, .page-emv-compliance .buttonheading,
+.page-recycling-and-asset-recovery #banner, .page-recycling-and-asset-recovery #sidebar, .page-recycling-and-asset-recovery h1.contentheading, .page-recycling-and-asset-recovery .buttonheading {
     display: none;
 }
 .page-emv-compliance .emv-header {
@@ -2397,4 +2400,298 @@ ul#featuredlist li a.button.button-gray:hover {
 }
 .certification-bar li .iso-2 {
 	height: 49px;
+}
+
+.btn-green {
+	padding: 15px 35px;
+	color: #fff;
+	font-size: 23px !important;
+	display: inline-block;
+	border-radius: 5px;
+	background: #49b842;
+	margin-top: 25px;
+}
+.recycle-recover .half {
+	width: 50%;
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.recycle-recover #hero {
+	background: url(/templates/posrg/images/banner-recycling-recovery.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 223px;
+	padding: 50px;
+}
+.recycle-recover #hero h1 {
+	color: #49b842;
+	font-size: 38px;
+	text-shadow: 0 4px 28px rgba(0,0,0,0.86);
+	text-transform: uppercase;
+	width: 460px;
+}
+.recycle-recover #fully-certified {
+	text-align: center;
+	width: 760px;
+	margin: 45px auto;
+}
+.recycle-recover #fully-certified h3 {
+	color: #000;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: none;
+	margin: 0 0 5px;
+}
+.recycle-recover #fully-certified p {
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.recycle-recover #fully-certified ul {
+	margin: 0;
+}
+.recycle-recover #fully-certified ul li {
+	display: inline-block;
+	padding: 0;
+	background: none;
+	height: 75px;
+	vertical-align: middle;
+	margin: 0 20px;
+}
+.recycle-recover #fully-certified ul li img {
+	height: 100%;
+	margin: 0;
+	float: none;
+	position: static;
+}
+.recycle-recover #fully-certified ul li img.recycle {
+	height: 60px;
+	padding: 7px 0;
+}
+.recycle-recover #fully-certified ul li img.iso {
+	height: 62px;
+	padding: 6px 0;
+}
+.recycle-recover #fully-certified ul li img.ohsas {
+	height: 44px;
+	padding: 15px 0;
+}
+#page .recycle-recover .check-list {
+	margin: 0;
+}
+#page .recycle-recover .check-list li {
+	display: inline-block;
+	min-height: 19px;
+	font-size: 14px;
+	padding: 0 30px;
+	background: url(/templates/posrg/images/icon-check.png) 0 30% no-repeat;
+	color: #fff;
+	float: left;
+	width: 50%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+#page .recycle-recover .check-list li:nth-child(odd) {
+	clear: both;
+}
+#page .recycle-recover .check-list.green li {
+	background-image: url(/templates/posrg/images/icon-check-green.png);
+}
+.recycle-recover section {
+	clear: both;
+}
+.recycle-recover #data-destruction {
+	background: url(/templates/posrg/images/banner-data-destruction.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 375px;
+}
+.recycle-recover #data-destruction .half {
+	padding-top: 45px;
+}
+.recycle-recover #data-destruction h2 {
+	color: #49b842;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+}
+.recycle-recover #data-destruction p {
+	color: #fff;
+	font-size: 15px;
+	padding-right: 100px;
+	margin-bottom: 25px;
+}
+.recycle-recover #data-destruction img {
+	padding: 50px 0 0 140px
+}
+.recycle-recover #partners {
+	text-align: center;
+	padding: 30px 0;
+}
+.recycle-recover #partners h3 {
+	margin: 0 0 25px;
+	color: #49b842;
+	font-size: 21px;
+	font-weight: normal;
+	text-transform: none;
+}
+.recycle-recover #partners .logo-bar {
+	margin: 0;
+}
+.recycle-recover #partners .logo-bar li {
+	display: inline-block;
+	padding: 0;
+	background: none;
+	vertical-align: middle;
+	margin: 0 20px;
+}
+.recycle-recover #asset-recovery {
+	background: url(/templates/posrg/images/banner-asset-recovery.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 312px;
+}
+.recycle-recover #asset-recovery .half {
+	padding: 40px 60px 0;
+}
+.recycle-recover #asset-recovery h2 {
+	color: #fff;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 0 12px;
+	width: 290px;
+	line-height: 1.1em;
+}
+.recycle-recover #asset-recovery p {
+	font-size: 14px;
+	color: #fff;
+	width: 290px;
+	margin-bottom: 35px;
+}
+.recycle-recover #asset-recovery .check-list {
+	width: 360px;
+}
+.recycle-recover #asset-recovery .check-list li {
+	padding-right: 40px;
+	margin-bottom: 30px;
+}
+.recycle-recover #asset-recovery .btn-green {
+	border: 2px solid #fff;
+	margin: 100px 0 0 50px;
+}
+.recycle-recover #asset-recycling {
+	background: url(/templates/posrg/images/banner-asset-recycling.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 307px;
+}
+.recycle-recover #asset-recycling .half {
+	padding: 40px 0 0 30px;
+}
+.recycle-recover #asset-recycling h2 {
+	color: #fff;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 0 12px;
+	width: 290px;
+	line-height: 1.1em;
+}
+.recycle-recover #asset-recycling p {
+	font-size: 14px;
+	color: #fff;
+	width: 290px;
+	margin-bottom: 35px;
+}
+.recycle-recover #asset-recycling .check-list {
+	width: 40%;
+	float: left;
+}
+.recycle-recover #asset-recycling .check-list li {
+	width: 100%;
+	padding-right: 0;
+}
+.recycle-recover #asset-recycling .check-list + .check-list li {
+	margin-bottom: 15px;
+}
+.recycle-recover #asset-recycling img {
+	margin: 30px 0 0 15px;
+}
+.recycle-recover #logistics {
+	background: url(/templates/posrg/images/banner-logistics.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 312px;
+}
+.recycle-recover #logistics .half {
+	padding: 30px 0 0 50px;
+}
+.recycle-recover #logistics h2 {
+	color: #fff;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 0 12px;
+	line-height: 1.1em;
+}
+.recycle-recover #logistics p {
+	font-size: 14px;
+	color: #fff;
+	width: 280px;
+	margin-bottom: 35px;
+}
+.recycle-recover #logistics .check-list {
+	width: 370px;
+}
+.recycle-recover #logistics .check-list li {
+	padding-right: 15px;
+}
+.recycle-recover #cleanout-services {
+	background: url(/templates/posrg/images/banner-cleanout.jpg) 0 0 no-repeat;
+	background-size: cover;
+	height: 352px;
+}
+.recycle-recover #cleanout-services .half {
+	padding: 30px 15px 0 5px;
+}
+.recycle-recover #cleanout-services h2 {
+	color: #fff;
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 0 0 12px;
+	line-height: 1.1em;
+}
+.recycle-recover #cleanout-services p {
+	font-size: 14px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.recycle-recover #cleanout-services .check-list {
+	width: 35%;
+	float: left;
+}
+.recycle-recover #cleanout-services .check-list + .check-list {
+	width: 65%;
+}
+.recycle-recover #cleanout-services .check-list li {
+	width: 100%;
+	padding-right: 40px;
+}
+.recycle-recover #cleanout-services .check-list + .check-list li {
+	margin-bottom: 15px;
+	padding-right: 0;
+}
+.recycle-recover #cleanout-services img {
+	margin: 30px 0 0 15px;
+}
+.recycle-recover #more-info {
+	background: url(/templates/posrg/images/bg-pattern-black) 0 0 no-repeat;
+	background-size: cover;
+	height: 65px;
+	text-align: center;
+	padding: 35px 100px;
+}
+.recycle-recover #more-info p {
+	font-size: 22px;
+	color: #fff;
+	line-height: 1.5em;
+}
+#page .recycle-recover #more-info p a {
+	color: #49b842;
+	font-size: 1em;
 }
