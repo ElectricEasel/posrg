@@ -2732,6 +2732,10 @@ ul#featuredlist li a.button.button-gray:hover {
 	text-transform: none;
 	margin: 0 0 20px;
 }
+#quote-form .thank-you {
+	font-size: 14px !important;
+	color: #fff;
+}
 #quote-form form {
 	width: 705px;
 	margin: 0 auto;
