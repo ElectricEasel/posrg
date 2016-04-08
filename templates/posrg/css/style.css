@@ -143,6 +143,9 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+.hide-desktop {
+	display: none !important;
+}
 .wrap {
 	margin:0 auto;
 	width:990px;
