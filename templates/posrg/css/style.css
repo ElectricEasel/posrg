@@ -2577,11 +2577,18 @@ ul#featuredlist li a.button.button-gray:hover {
 	margin-bottom: 35px;
 }
 .recycle-recover #asset-recovery .check-list {
-	width: 360px;
+	width: 40%;
+	float: left;
+}
+.recycle-recover #asset-recovery .check-list + .check-list {
+	width: 50%;
 }
 .recycle-recover #asset-recovery .check-list li {
-	padding-right: 40px;
-	margin-bottom: 30px;
+	width: 100%;
+	padding-right: 0;
+}
+.recycle-recover #asset-recovery .check-list + .check-list li {
+	margin-bottom: 15px;
 }
 .recycle-recover #asset-recovery .btn-green {
 	border: 2px solid #fff;
