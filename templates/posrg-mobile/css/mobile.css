@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
 }
 .hide-mobile {
-  display: none;
+  display: none !important;
 }
 .block {
   display: block !important;
@@ -1342,6 +1342,229 @@ body.online-quote-page #main {
   color: #0066cc;
   text-decoration: none;
 }
+.btn-green {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 23px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: #49b842;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: background-color .15s linear;
+  transition: background-color .15s linear;
+}
+.btn-green:hover {
+  background-color: #309F29;
+}
 body.contact-us-page hr {
   display: none;
+}
+
+body.recycling-and-asset-recovery #main {
+  padding: 0;
+}
+body.recycling-and-asset-recovery .item-page {
+  padding: 0;
+}
+.recycle-recover section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.recycle-recover #hero {
+  background: url(/templates/posrg-mobile/images/banner-recycling-recovery.jpg) 0 78px no-repeat;
+  background-size: 100% auto;
+  height: 254px;
+}
+.recycle-recover h1,
+.recycle-recover h2 {
+  display: block !important;
+  background: #49b842;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 -20px;
+  padding: 15px 20px;
+}
+.recycle-recover .check-list {
+  margin: 0 15px 0 10px;
+}
+.recycle-recover .check-list li {
+  display: block;
+  min-height: 19px;
+  font-size: 14px;
+  padding: 0 30px;
+  background: url(/templates/posrg/images/icon-check.png) 0 30% no-repeat;
+  color: #fff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.recycle-recover .check-list.green li {
+  background-image: url(/templates/posrg/images/icon-check-green.png);
+}
+.recycle-recover #fully-certified {
+  text-align: center;
+  padding: 20px 10px 10px;
+}
+.recycle-recover #fully-certified h3 {
+  font-size: 20px;
+  margin: 0 0 7px;
+}
+.recycle-recover #fully-certified p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+.recycle-recover #fully-certified ul {
+  margin: 0;
+}
+.recycle-recover #fully-certified ul li {
+  background: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 10px;
+}
+.recycle-recover #fully-certified ul li img {
+  height: 75px;
+}
+.recycle-recover #fully-certified ul li img.recycle {
+  height: 60px;
+}
+.recycle-recover #fully-certified ul li img.iso {
+  height: 62px;
+}
+.recycle-recover #fully-certified ul li img.ohsas {
+  height: 44px;
+}
+.recycle-recover #data-destruction {
+  background: url(/templates/posrg-mobile/images/bg-pattern-black.jpg) 0 54px no-repeat;
+  background-size: 100% auto;
+  height: 437px;
+}
+.recycle-recover #data-destruction img {
+  display: none;
+}
+.recycle-recover #data-destruction p {
+  color: #fff;
+  font-size: 15px;
+}
+.recycle-recover #partners {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.recycle-recover #partners h3 {
+  color: #49b842;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.recycle-recover #partners ul {
+  margin: 0;
+}
+.recycle-recover #partners ul li {
+  background: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 10px;
+  width: 40%;
+}
+.recycle-recover #partners ul img {
+  width: 100%;
+}
+.recycle-recover #asset-recovery {
+  background: url(/templates/posrg-mobile/images/banner-asset-recovery.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 378px;
+}
+.recycle-recover #asset-recovery h2 {
+  text-align: left;
+  background: none;
+}
+.recycle-recover #asset-recovery p {
+  color: #fff;
+  font-size: 15px;
+  margin: 0 0 15px;
+}
+.recycle-recover #asset-recovery ul li {
+  margin-bottom: 10px;
+}
+.recycle-recover #asset-recovery .btn-green {
+  margin-top: 15px;
+}
+.recycle-recover #asset-recovery .half + .half {
+  text-align: center;
+}
+.recycle-recover #asset-recycling {
+  position: relative;
+  margin-bottom: 160px;
+  overflow: visible;
+}
+.recycle-recover #asset-recycling .half {
+  background: rgb(78,78,78); /* Old browsers */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRlNGU0ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2MDYwNjAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(78,78,78,1) 0%, rgba(96,96,96,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(78,78,78,1) 0%,rgba(96,96,96,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(78,78,78,1) 0%,rgba(96,96,96,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e4e4e', endColorstr='#606060',GradientType=0 ); /* IE6-8 */
+  padding: 0 20px 10px;
+  margin: 0 -20px;
+}
+.recycle-recover #asset-recycling .half:first-child {
+  background: url(/templates/posrg-mobile/images/banner-asset-recycling.jpg) 0 0 no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  width: 100%;
+  height: 160px;
+  padding: 25px 0;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.recycle-recover #asset-recycling .half:first-child img {
+  width: 75%;
+}
+.recycle-recover #asset-recycling h2 {
+  background: none;
+  text-align: left;
+}
+.recycle-recover #asset-recycling p {
+  color: #fff;
+  font-size: 15px;
+  margin: 0 0 15px;
+}
+.recycle-recover #logistics {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: url(/templates/posrg-mobile/images/circle-logistics.png) right 20px top 25px no-repeat #49b842;
+}
+.recycle-recover #logistics h2 {
+  background: none;
+  text-align: left;
+  width: 55%;
+}
+.recycle-recover #logistics p {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 0 15px;
+  line-height: 1.2em;
+  width: 55%;
+}
+.recycle-recover #cleanout-services {
+  background: url(/templates/posrg-mobile/images/banner-cleanout.jpg) 0 0 no-repeat;
+  background-size: cover;
+  height: 563px;
+}
+.recycle-recover #cleanout-services h2 {
+  background: none;
+  text-align: left;
+}
+.recycle-recover #cleanout-services p {
+  color: #fff;
+  font-size: 14px;
+  margin: 0 0 15px;
 }
