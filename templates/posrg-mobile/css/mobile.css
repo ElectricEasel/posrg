@@ -1172,6 +1172,9 @@ fieldset.phrases {
   color: #666;
   text-align: center;
 }
+.pp-header .play-btn {
+  display: none;
+}
 div.item-page.preferred-partners > h2 {
   display: none;
 }
@@ -1194,6 +1197,9 @@ body.preferred-oems #main {
   font-weight: normal;
   font-size: 14px;
   text-align: center;
+}
+.pp-product .product-image {
+  display: none;
 }
 .pp-links i {
   display: none;
