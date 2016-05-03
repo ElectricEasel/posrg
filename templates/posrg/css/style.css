@@ -1978,13 +1978,6 @@ body.preferred-partners #content #main {
 	padding-top: 300px;
 	padding-right: 85px;
 }
-.pp-hv {
-	background: url(../images/pref-partners/hv.jpg) no-repeat center bottom transparent;
-	min-height: 175px;
-    padding-left: 335px;
-    padding-top: 60px;
-    border-top: 1px solid #dedede;
-}
 .pp-hp:after {
 	content: "";
 	display: table;
@@ -1995,6 +1988,16 @@ body.preferred-partners #content #main {
 	float: left;
 	padding: 0 20px 50px 0;
 }
+.pp-hv {
+	background: url(../images/pref-partners/hv.jpg) no-repeat center bottom transparent;
+	min-height: 175px;
+    padding-left: 335px;
+    padding-top: 60px;
+    border-top: 1px solid #dedede;
+}
+.pp-hv img {
+	height: 30px;
+}
 .pp-qsr {
 	background: url(../images/pref-partners/qsr.jpg) no-repeat center 130% transparent;
 	min-height: 255px;
@@ -2002,10 +2005,14 @@ body.preferred-partners #content #main {
     padding-top: 52px;
     position: relative;
 }
+.pp-qsr img {
+	height: 76px;
+}
 .pp-qsr .product-image {
 	position: absolute;
 	right: 44px;
 	top: -15px;
+	height: auto;
 }
 
 #page .pp-hp h6 {
