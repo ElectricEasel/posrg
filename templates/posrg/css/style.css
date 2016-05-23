@@ -241,6 +241,12 @@ a:hover {
 #nav .parent.item225 ul li {
 	width: 260px !important;
 }
+#nav .has-thank-you + ul {
+	display: none !important;
+}
+#nav .hide-link {
+	display: none !important;
+}
 
 form.search {
 	padding:3px 5px;
@@ -772,6 +778,12 @@ h1.contentheading {
 	/*color:#808080;*/
 
 	font-size: 12px;
+}
+#sidebar .widget .menu .has-thank-you + ul {
+	display: none !important;
+}
+#sidebar .widget .menu .hide-link {
+	display: none !important;
 }
 #sidebar .widget.spot-marketing {
     border-top: medium none;
@@ -2825,4 +2837,19 @@ ul#featuredlist li a.button.button-gray:hover {
 }
 .placeholder-style fieldset.formFieldset ol.formContainer .rsform-block-submit {
 	margin: 15px 0 0;
+}
+.blue-btn {
+    background: none repeat scroll 0 0 #0066CC;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    height: 20px;
+    line-height: 16px;
+    text-align: center;
+    width: 100px;
+    box-shadow: 1px 1px 0 #FFFFFF;
+}
+.blue-btn:hover {
+	text-decoration: none;
+	background: #007cf8;
 }
