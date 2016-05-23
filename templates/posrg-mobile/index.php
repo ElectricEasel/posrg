@@ -154,5 +154,6 @@ if ($menu->getActive() == $menu->getDefault()) {
 		jQuery(this).attr('href',email);
 	});
 	</script>
+	<jdoc:include type="modules" name="debug" style="blank"/>
 </body>
 </html>
