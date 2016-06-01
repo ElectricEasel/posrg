@@ -2011,8 +2011,7 @@ body.preferred-partners #content #main {
 	height: 30px;
 }
 .pp-qsr {
-	background: url(../images/pref-partners/qsr.jpg) no-repeat center 130% transparent;
-	min-height: 255px;
+	min-height: 228px;
     padding-right: 326px;
     padding-top: 52px;
     position: relative;
@@ -2026,13 +2025,20 @@ body.preferred-partners #content #main {
 	top: -15px;
 	height: auto;
 }
+.pp-honeywell {
+	background: url(../images/pref-partners/honeywell.jpg) no-repeat center bottom transparent;
+	min-height: 272px;
+    padding-left: 335px;
+    padding-top: 60px;
+    border-top: 1px solid #dedede;
+}
 
 #page .pp-hp h6 {
 	margin-top: 0;
 }
 #pp-boxes {
-	background: url(../images/dropshadow-top.png) repeat-x 0 0 transparent;
-	padding: 40px 25px 30px;
+	//background: url(../images/dropshadow-top.png) repeat-x 0 0 transparent;
+	padding: 20px 25px 30px;
 	text-align: center;
 }
 .pp-box {
