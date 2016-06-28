@@ -2424,7 +2424,7 @@ ul#featuredlist li a.button.button-gray:hover {
 	border-bottom: 1px solid #ccc;
 }
 .certification-bar {
-	padding: 0 8px;
+	padding-left: 8px;
 }
 .certification-bar li {
 	display: inline-block;
