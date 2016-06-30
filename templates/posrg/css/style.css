@@ -1652,6 +1652,7 @@ float:right
 #content .contact-list li.item .bobblehead {
 	float: left;
 	min-width: 55px;
+	min-height: 105px;
 }
 #content .contact-list li.item .bobblehead img {
 	display: block;
