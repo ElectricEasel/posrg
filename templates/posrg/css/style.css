@@ -288,7 +288,12 @@ form.search input[type=text] {
 .home .sub-logo {
 	display: none;
 }
-.tenyear, .recycling, .naid, .ira {
+.sub-logo-wrap {
+	display: block;
+	float: left;
+	clear: right;
+}
+.sub-logo {
 	float: left;
 	clear: right;
 	margin: 0;
@@ -2429,6 +2434,8 @@ ul#featuredlist li a.button.button-gray:hover {
 }
 .certification-bar li {
 	display: inline-block;
+	zoom: 1;
+	*display: inline;
 	vertical-align: middle;
 	margin: 0 22px;
 }
