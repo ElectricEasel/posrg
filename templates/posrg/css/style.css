@@ -1244,6 +1244,9 @@ h1.contentheading {
 	width:auto;
 	position: relative;
 }
+.home #header .header-right {
+	max-width: 240px;
+}
 #header .header-right .header-contact {
 	float: right;
 }
