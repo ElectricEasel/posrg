@@ -51,18 +51,19 @@ Redirect 301 /asset-appraisal/wanted-pos-items/ http://posrg.com/services/asset-
 Redirect 301 /media/POSRG_Product_line_Card.pdf /media/POSRG-Product-line-Card.pdf
 Redirect 301 /services/our-green-program http://posrg.com/our-process/green-program
 Redirect 301 /services/posrg-services-a-solutions http://posrg.com/services
-Redirect 301 /services/posrg-hardware-disposition-solutions http://posrg.com/services
+Redirect 301 /services/posrg-hardware-disposition-solutions http://posrg.com/services/asset-management/asset-disposal
 Redirect 301 /services/posrg-complimentary-services http://posrg.com/services
-Redirect 301 /about-us/company-overvew http://posrg.com/about-us
+Redirect 301 /services/asset-appraisal http://posrg.com/services/recycling-and-asset-recovery
+Redirect 301 /about-us/company-overvew http://posrg.com/about-us/posrg-story 
 Redirect 301 /about-us/affiliations http://posrg.com/preferred-oems
 Redirect 301 /markets-served/conveniencegas-staions http://posrg.com/markets-served/convenience-gas-staions
 Redirect 301 /markets-served/drug-store-a-hbc-chains http://posrg.com/markets-served/drug-store-and-hbc-chains
 Redirect 301 /markets-served/supermarketgrocery-chains http://posrg.com/markets-served/supermarket-grocery-chains
 Redirect 301 /markets-served/internet-sales http://posrg.com/markets-served/internet-direct
 Redirect 301 /markets-served/canadian-market http://www.posrg.ca/
-Redirect 301 /inventory/top-ten-products http://posrg.com/markets-served/general-merchandise
+Redirect 301 /inventory/top-ten-products http://posrg.com/product-info
 Redirect 301 /about-us/letter-from-the-president http://posrg.com/about-us/mission-statement
-Redirect 301 /about-us/top-ten-products http://posrg.com/markets-served/general-merchandise
+Redirect 301 /about-us/top-ten-products http://posrg.com/services/wanted-pos-items
 
 ## End - Custom redirects
 
