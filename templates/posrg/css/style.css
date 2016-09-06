@@ -302,14 +302,13 @@ form.search input[type=text] {
 	top: -14px;
 }
 .naid {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 25px;
 }
 .ira {
-	margin-right: 10px;
+	margin-right: 25px;
 }
 .recycling {
-	margin-right: 30px;
+	margin-right: 75px;
 	height: 65px;
 	margin-top: 5px;
 	margin-bottom: 5px;
