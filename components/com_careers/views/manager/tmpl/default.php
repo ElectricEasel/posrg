@@ -24,6 +24,7 @@ $i     = 0;
 				<tr>
 					<th><?=JText::_('Reorder')?></th>
 					<th><?=JText::_('Title')?></th>
+					<th><?=JText::_('PDF')?></th>
 					<th>
 						&nbsp;
 					</th>
@@ -44,6 +45,9 @@ $i     = 0;
 					</td>
                     <td>
                         <a href="<?=JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id)?>"><?=$item->title?></a>
+                    </td>
+                    <td>
+                        <a href="<?=JRoute::_($item->pdf)?>"><?=$item->pdf?></a>
                     </td>
 					<td>
 						<a href="<?=JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id )?>"><span>Edit</span></a>

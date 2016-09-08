@@ -22,4 +22,8 @@
 		<folder>views</folder>
 	</files>
 
+	<media destination="careers" folder="media">
+		<folder>pdf</folder>
+	</media>
+
 </extension>

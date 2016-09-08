@@ -56,14 +56,37 @@ class CareersController extends JController
 	{
 		$post  = JRequest::get('post');
 		$table = new CareersTableEntry;
+		$upload_dir = JPATH_ROOT . "/media/com_careers/pdf/";
+
+		$message = true;
 		$id    = $this->app->input->getInt('id');
+		$pdf    = $this->app->input->files->get('pdf');
 
 		if ($id)
 		{
 			$table->load($id);
 		}
 
-		if ($table->save($post))
+		if ($pdf)
+		{
+			$mime = mime_content_type($pdf['tmp_name']);
+			if ($mime === 'application/pdf') {
+				if (move_uploaded_file($pdf['tmp_name'], $upload_dir . $pdf['name']))
+				{
+					$post['pdf'] = $pdf['name'];
+				}
+				else {
+					$message = false;
+				}
+			}
+		}
+
+		if (!$table->save($post))
+		{
+			$message = false;
+		}
+
+		if ($message)
 		{
 			$this->setMessage('Product Saved Successfully.');
 		}
