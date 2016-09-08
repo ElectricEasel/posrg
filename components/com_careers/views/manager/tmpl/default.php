@@ -4,6 +4,7 @@ JHtml::_('behavior.framework');
 
 $count = count($this->items);
 $i     = 0;
+$pdf_path = "/media/com_careers/pdf/";
 ?>
 <form action="<?=JRoute::_('index.php?option=com_careers&view=manager')?>" method="post" name='adminForm' id='adminForm' class='gm-form'>
 	<?=JHtml::_('form.token')?>
@@ -47,7 +48,7 @@ $i     = 0;
                         <a href="<?=JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id)?>"><?=$item->title?></a>
                     </td>
                     <td>
-                        <a href="<?=JRoute::_($item->pdf)?>"><?=$item->pdf?></a>
+                        <a href="<?=JRoute::_($pdf_path.$item->pdf)?>" target="_blank"><?=$item->pdf?></a>
                     </td>
 					<td>
 						<a href="<?=JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id )?>"><span>Edit</span></a>
