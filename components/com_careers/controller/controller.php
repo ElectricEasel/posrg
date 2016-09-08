@@ -129,7 +129,7 @@ class CareersController extends JController
 		/* var_dump($user); */
 
 		$username = strtolower($user->get('username'));
-		if (!in_array($username, array('jim', 'gchalifoux', 'admin')))
+		if (!in_array($username, array('jim', 'admin')))
 		{
 			$this->setRedirect('index.php?option=com_users&view=login');
 			$this->redirect();
