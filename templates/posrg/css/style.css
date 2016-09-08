@@ -2866,3 +2866,27 @@ ul#featuredlist li a.button.button-gray:hover {
 	text-decoration: none;
 	background: #007cf8;
 }
+table.careers td, table.careers th {
+    padding: 10px;
+    line-height: 12px;
+}
+table.careers td.handle {
+    font-size: 30px;
+    cursor: move;
+    padding: 10px 0px 10px 10px;
+}
+p#success-message {
+    color: #0a0;
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    line-height: 0;
+}
+.careers-pagination ul li {
+    display: inline-block;
+    padding: 0 2px;
+}
+.careers-pagination .pagination-start, .careers-pagination .pagination-prev, .careers-pagination .pagination-next, .careers-pagination .pagination-end {
+    padding: 0 6px;
+}

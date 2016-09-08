@@ -30,8 +30,9 @@ class CareersController extends JController
 	public function display($cachable = false, $urlparams = false)
 	{
 		$view = $this->app->input->get('view');
+		$task = $this->app->input->get('task');
 
-		if ((!isset($task) || !$task) && !$view)
+		if (!$task && !$view)
 		{
 			JRequest::setVar('view', 'list');
 			$this->app->input->set('view', 'list');
@@ -47,7 +48,7 @@ class CareersController extends JController
 		{
 			$this->checkLogin();
 		}
-
+		
 		parent::display($cachable, $urlparams);
 	}
 

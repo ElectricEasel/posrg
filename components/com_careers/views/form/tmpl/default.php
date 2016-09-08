@@ -13,8 +13,8 @@ JHtml::_('behavior.formvalidation');
 				<label for="careers_title"><?=JText::_('TITLE')?> <span class="req" >*</span></label>
 			</div>
 			<div class="value">
-			<?php $value = !is_null($this->item) ? $this->item->title : ""; ?>
-				<input name="title" value="<?=$value?>" id="careers_title" class="gm-input required" type="text" maxlength="50" />
+			<?php $title = !is_null($this->item) ? $this->item->title : ""; ?>
+				<input name="title" value="<?=$title?>" id="careers_title" class="gm-input required" type="text" maxlength="50" />
 			</div>
 		</div>
 
@@ -24,7 +24,8 @@ JHtml::_('behavior.formvalidation');
 			<button id="cancel" type="button" ><?=JText::_('Cancel')?></button>
 			<button type="submit" class="validate" id="save_fm"><?=JText::_('Save')?></button>
 		</div>
-		<input type="hidden" name="id"	value="<?=$this->item->id ?>" />
+		<?php $id = !is_null($this->item) ? $this->item->id : ""; ?>
+		<input type="hidden" name="id"	value="<?=$id?>" />
 		<?=JHtml::_('form.token')?>
 	</form>
 </div>

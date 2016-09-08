@@ -5,16 +5,16 @@ JHtml::_('behavior.framework');
 $count = count($this->items);
 $i     = 0;
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_careers&view=manager'); ?>" method="post" name='adminForm' id='adminForm' class='gm-form'>
-	<?php echo JHtml::_('form.token'); ?>
-	<input type="hidden" name="filter_order" value="<?php echo $this->lists['order']; ?>" />
-	<input type="hidden" name="filter_order_Dir" value="<?php echo $this->lists['order_Dir']; ?>" />
+<form action="<?=JRoute::_('index.php?option=com_careers&view=manager')?>" method="post" name='adminForm' id='adminForm' class='gm-form'>
+	<?=JHtml::_('form.token')?>
+	<input type="hidden" name="filter_order" value="<?=$this->lists['order']?>" />
+	<input type="hidden" name="filter_order_Dir" value="<?=$this->lists['order_Dir']?>" />
 	<input type='hidden' name='task' value='' id='task' />
 
 	<div class='gm-head'>
-		<h2 class='left'><?php echo JText::_('Career Listings Manager') ?></h2>
+		<h2 class='left'><?=JText::_('Career Listings Manager')?></h2>
 		<div class='right'>
-			<a  href="<?php echo JRoute::_('index.php?option=com_careers&view=form') ?>"><span><?php echo JText::_('Add Item') ?></span></a>
+			<a  href="<?=JRoute::_('index.php?option=com_careers&view=form')?>"><span><?=JText::_('Add Item')?></span></a>
 		</div>
 	</div>
     <p id="success-message" style="display:none">Ordering Saved</p>
@@ -22,8 +22,8 @@ $i     = 0;
 		<table class="careers">
 			<thead>
 				<tr>
-					<th><?php echo JText::_('Reorder'); ?></th>
-					<th><?php echo JText::_('Title') ?></th>
+					<th><?=JText::_('Reorder')?></th>
+					<th><?=JText::_('Title')?></th>
 					<th>
 						&nbsp;
 					</th>
@@ -35,21 +35,18 @@ $i     = 0;
 			$k = 0;
 			$cb = 0;
 			foreach ($this->items as $item) :
-				$img1    = $item->published ? 'tick.png' : 'publish_x.png';
-				$img2    = $item->frontpage ? 'tick.png' : 'publish_x.png';
-				$alt     = $item->published ? JText::_('published') : JText::_('published');
 				$checked = JHtml::_('grid.id', $i, $item->id);
 				?>
-				<tr class="<?php echo "row$k"; ?>">
+				<tr class="row<?=$k?>">
                     <td align="center"  class="handle">
-                        <input type="hidden" value="<?php echo $item->id; ?>" name="cid" />
+                        <input type="hidden" value="<?=$item->id?>" name="cid" />
 						&bull;
 					</td>
                     <td>
-                        <a href="<?php echo JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id) ?>"><?php echo $item->title; ?></a>
+                        <a href="<?=JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id)?>"><?=$item->title?></a>
                     </td>
 					<td>
-						<a href="<?php echo JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id ) ?>"><span>Edit</span></a>
+						<a href="<?=JRoute::_('index.php?option=com_careers&view=form&id=' . $item->id )?>"><span>Edit</span></a>
 						<a href="<?php echo JRoute::_('index.php?option=com_careers&task=delete&id=' . $item->id . '&' . JSession::getFormToken() . '=1' ) ?>"><span>Delete</span></a>
 					</td>
 				</tr>
@@ -62,7 +59,7 @@ $i     = 0;
 			</tbody>
 		</table>
 		<div class="gm-family-toolbar careers-pagination">
-			<?php echo $this->pagination->getPagesLinks(); ?>
+			<?=$this->pagination->getPagesLinks()?>
 		</div>
 	</div>
 </form>

@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class WantedViewManager extends JView
+class CareersViewManager extends JView
 {
 	public function display($tpl = null)
 	{
@@ -36,7 +36,7 @@ class WantedViewManager extends JView
                         type: "POST",
                         url: "/index.php",
                         data: {
-                            option: "com_wanted",
+                            option: "com_careers",
                             task: "saveOrderAjax",
                             tmpl: "component",
                             cid: cids,
@@ -59,7 +59,7 @@ class WantedViewManager extends JView
 
 	public function order($rows, $image = 'filesave.png', $task = "saveorder")
 	{
-		$image = '<img src="' . JUri::base() . 'components/com_product/assets/images/' . $image . '" alt="save order" />';
+		$image = '<img src="' . JUri::base() . 'components/com_careers/assets/images/' . $image . '" alt="save order" />';
 		return '<a href="javascript:saveorder('.(count( $rows )-1).', \''.$task.'\')" title="'.JText::_( 'Save Order' ).'">'.$image.'</a>';
 	}
 }
