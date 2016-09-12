@@ -85,6 +85,15 @@ hr {
     border: medium none;
     margin: 15px 0;
 }
+@font-face {
+	font-family: Avant; 
+	src: url(/templates/posrg/fonts/avantgarde.ttf) format('truetype');
+}
+@font-face {
+	font-family: AvantBold; 
+	src: url(/templates/posrg/fonts/avantgarde-bold.ttf) format('truetype');
+}
+
 .page-contact-us hr {
 	width: 95%;
 }
@@ -151,6 +160,7 @@ a:hover {
 	width:990px;
 	padding:0 10px;
 	position: relative;
+	overflow: hidden;
 }
 #header {
 	background:url(../images/header-fade2.png) repeat-x 0 bottom scroll #f4f4f4;
@@ -1604,6 +1614,352 @@ float:right
 	font-size: 24px;
 	line-height: 1.2em;
 }
+.header-section {
+    background: url(../images/sell-header.png);
+    width: 991px;
+    height: 709px;
+    position: relative;
+    right: 144px;
+    margin-top: -18px;
+    overflow: hidden;
+}
+h1.upgrading {
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-family: Avant !important;
+}
+.page-sell-used-pos-systems {
+	overflow-x: hidden;
+}
+h1.buy-pos {
+    color: #0072c6;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-family: AvantBold !important;
+}
+h1.looking-to-sell {
+    font-size: 25px;
+    text-align: center;
+    top: 354px;
+    position: relative;
+    color: #0072c6;
+    font-family: AvantBold !important;
+}
+button.btn-primary.sell {
+    background-color: #0072c6;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    top: 405px;
+    position: relative;
+    padding: 7px 36px;
+    font-size: 19px;
+    border-color: transparent;
+    border-radius: 3px;
+    &:hover {
+    	background-color: #0046c6 !important;
+    }
+}
+p.bullet-1 {
+    top: 387px;
+    position: relative;
+    left: 203px;
+    font-size: 15px !important;
+    width: 242px;
+    text-align: left !important;
+}
+p.bullet-2 {
+	top: 338px;
+    position: relative;
+    left: 545px;
+    font-size: 15px !important;
+    width: 288px;
+    text-align: left !important;
+}
+p.bullet-3 {
+	top: 357px;
+    position: relative;
+    left: 203px;
+    font-size: 15px !important;
+    width: 246px;
+    text-align: left !important;
+}
+p.bullet-4 {
+	top: 329px;
+    position: relative;
+    left: 545px;
+    font-size: 15px !important;
+    width: 300px;
+    text-align: left !important;
+}
+.Ken {
+    background: url(../images/ken.png);
+    width: 991px;
+    height: 300px;
+    position: relative;
+    right: 144px;
+    background-repeat: no-repeat;
+    margin-top: 32px;
+    overflow: hidden;
+}
+.Ken h1{
+    color: #0072c6;
+    font-size: 27px;
+    position: relative;
+    left: 338px;
+    top: 20px;
+    font-family: Avant !important;
+}
+.Ken h3{
+    color: #000 !important;
+    font-size: 18px;
+    font-weight: 600 !important;
+    position: relative;
+    left: 338px;
+    text-transform: none !important;
+    top: 35px;
+}
+p.ken-testimonial {
+    width: 527px;
+    text-align: left !important;
+    position: relative;
+    left: 338px;
+    font-size: 15px !important;
+    color: #000 !important;
+    top: 35px;
+    font-family: Arial;
+}
+p.ken-testimonial span{
+    font-size: 15px !important;
+    display: block;
+    position: relative;
+    top: 10px;
+}
+p.ken-title {
+    color: #000 !important;
+    font-weight: 900;
+    font-size: 14px !important;
+    position: relative;
+    top: 88px;
+    right: 47px;
+}
+.page-sell-used-pos-systems #page h1.contentheading{
+	display: none;
+}
+.page-sell-used-pos-systems #first_name {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #company {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems li.rsform-block.rsform-block-notes {
+    clear: both;
+}
+.page-sell-used-pos-systems #last_name {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #email {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #phone {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #city {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #state {
+    border-radius: 21px;
+    line-height: initial;
+    font-size: 16px;
+    width: 422px;
+    height: 51px;
+    background-color: #fff;
+}
+.page-sell-used-pos-systems #txtcal7_0 {
+	border-radius: 10px;
+    line-height: initial;
+    font-size: 16px;
+    width: 404px !important;
+    height: 31px;
+    background-color: #fff;
+    background: url(../images/date-icon.png);
+    background-repeat: no-repeat;
+    background-position: 391px;
+    padding: 10px !important;
+}
+.page-sell-used-pos-systems #quantity {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #zip {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #manufacturer {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #part_number {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #condition {
+	border-radius: 10px;
+	line-height: initial;
+	font-size: 16px;
+	padding: 11px;
+}
+.page-sell-used-pos-systems #page p{
+    margin-bottom: 8px;
+    font-size: 15px;
+    text-align: center;
+    color: #8a8787;
+    font-weight: 0;
+}
+.page-sell-used-pos-systems #page legend{
+    display: none;
+}
+h1.quote-title {
+    color: #0068C4;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0.7em;
+    font-family: AvantBold !important;
+    text-align: center;
+}
+.heading1 h1 {
+    font-size: 17px;
+    font-family: Avant !important;
+    position: relative;
+    top: 4px;
+}
+.heading2 {
+    clear: both;
+}
+.heading2 h1 {
+    font-size: 17px;
+    font-family: Avant !important;
+    padding-top: 50px;
+    position: relative;
+    top: 4px;
+}
+.page-sell-used-pos-systems li.rsform-block.rsform-block-quantity {
+    position: relative;
+    right: 450px;
+    bottom: 20px;
+}
+.page-sell-used-pos-systems #userForm li textarea {
+    resize: none;
+    height: 100px;
+    border-radius: 10px;
+    width: 842px;
+    font-size: 16px;
+    padding: 10px;
+}
+.page-sell-used-pos-systems #userForm li input[type="text"] {
+	width: 390px;
+	padding: 16px;
+}
+strong.formRequired {
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 3px;
+    color: #0072c6;
+}
+.page-sell-used-pos-systems .wrap {
+	width: 970px !important;
+}
+ul#rsform_7_page_0 {
+    width: 900px;
+    position: relative;
+    right: 140px;
+    margin-bottom: -158px;
+}
+input#btn7_0.btnCal.rsform-calendar-button {
+	display: none;
+}
+.page-sell-used-pos-systems li.rsform-block.rsform-block-equipment-location {
+    display: inline-table;
+}
+.page-sell-used-pos-systems #userForm .rsform-block-submit .readmore {
+    margin-left: 42px;
+    font-size: 19px;
+    text-transform: none;
+    padding: 9px 70px;
+    margin: 0 auto;
+    position: relative;
+    left: 320px;
+    bottom: 10px;
+}
+.page-sell-used-pos-systems .btnCal .rsform-calendar-button {
+	display: none;
+}
+.page-sell-used-pos-systems #content #bottom-widget {
+    display: none;
+}
+.bottom-logos {
+    background: url(../images/bottom-logos.jpg);
+    width: 991px;
+    height: 164px;
+    position: relative;
+    right: 144px;
+    background-repeat: no-repeat;
+    margin-top: 52px;
+}
+.page-sell-used-pos-systems #sidebar{
+	display: none;
+}
+.page-sell-used-pos-systems #content #main{
+	float: none;
+    width: 705px;
+    margin: 0 auto;
+}
+.page-sell-used-pos-systems #banner{
+	display: none;
+}
+.page-sell-used-pos-systems .quote-form-wrap{
+	background: #fff;
+    border: none;
+    margin: 0 auto;
+}
+li.rsform-block {
+    width: 50%;
+    float: left;
+}
+#rsform_7_page_0 input {
+	width: 100%;
+}
 .blue-btn {
 	background: none repeat scroll 0 0 #0066CC;
     border-radius: 5px 5px 5px 5px;
@@ -1625,6 +1981,9 @@ float:right
 	color: #0066CC;
 	font-size: 11px;
 	font-weight: bold;
+}
+input:focus {
+	border-radius: 10px;
 }
 
 /* NEW CONTACT PAGE STYLING */
@@ -1816,10 +2175,46 @@ form#trade-in-trade-up ul li.rsform-block.rsform-block-notes {
 	clear: both;
 	float: none;
 }
+#rsform_7_page_0 .rsform-block {
+    width: calc(50% - 20px);
+    float: left;
+    margin: 0 10px 20px;
+    padding: 0;
+}
+#rsform_7_page_0 .rsform-block:nth-child(odd)  {
+	clear: both;
+}
 form#trade-in-trade-up .formCaption {
 	width: 40%;
 	display: block;
 	padding: 5px 0;
+}
+#rsform_7_page_0 .formCaption {
+    display: block;
+    float: none;
+    width: auto;
+    min-height: 12px;
+    padding: 13px 2px;
+    font-size: 15px;
+    color: #000;
+}
+.antispam {
+	display: none;
+}
+.antispam_check {
+	display: none;
+}
+.from_mobile{
+	display: none;
+}
+.user_agent {
+	display: none;
+}
+li.rsform-block.rsform-block-antispam-check {
+    display: none;
+}
+li.rsform-block.rsform-block-antispam {
+    display: none;
 }
 form#trade-in-trade-up select {
 	width: 100%;
@@ -2182,6 +2577,12 @@ form#pref-partners #submit {
 	background: #006ab8;
 	padding: 4px 35px;
 	text-transform: lowercase;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 form#pref-partners #submit:hover,
 form#pref-partners #submit:active {
@@ -2862,6 +3263,12 @@ ul#featuredlist li a.button.button-gray:hover {
     text-align: center;
     width: 100px;
     box-shadow: 1px 1px 0 #FFFFFF;
+}
+#rsform_7_page_0:after {
+	display: table;
+	visibility: hidden;
+	clear: both;
+	content: "";
 }
 .blue-btn:hover {
 	text-decoration: none;
