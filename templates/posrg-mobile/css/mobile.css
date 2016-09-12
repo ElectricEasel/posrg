@@ -1455,6 +1455,7 @@ h1.looking-to-sell {
   text-align: center;
   left: 83px;
   font-family: AvantBold;
+  letter-spacing: .8px;
 }
 .Ken h3 {
   font-size: 18px;
@@ -1485,8 +1486,9 @@ h1.quote-title {
   font-family: AvantBold;
   font-size: 26px;
   position: relative;
-  left: 26px;
   padding-top: 24px;
+  width: 100%;
+  text-align: center;
 }
 .sell-used-pos-systems .form_item p {
   margin-bottom: 18px;
@@ -1534,6 +1536,8 @@ li.rsform-block.rsform-block-date-available-plus {
 .heading2 h1 {
   font-family: Avant !important;
   font-size: 17px;
+  padding-bottom: 20px;
+  padding-top: 30px;
 }
 .sell-used-pos-systems #userForm li textarea {
   resize: none;
@@ -1552,7 +1556,7 @@ li.rsform-block.rsform-block-date-available-plus {
   border-radius: 10px;
   background: #0072c6;
   position: relative;
-  left: 64px;
+  left: 54px;
   bottom: 10px;
   margin-bottom: 38px;
 }
@@ -1568,6 +1572,11 @@ li.rsform-block.rsform-block-date-available-plus {
   background-repeat: no-repeat;
   padding: 0.5em 3.5em 0.5em 1em;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  border: 1px solid #CACACA;
 }
 ul#rsform_7_page_0 {
   margin-bottom: -253px;
@@ -1586,4 +1595,11 @@ button.btn-primary.sell {
 }
 button.btn-primary.sell:hover {
   background-color: #0046c6 !important;
+}
+p.time1 {
+  position: relative;
+  top: -14px;
+}
+.time2 span {
+  display: block;
 }
