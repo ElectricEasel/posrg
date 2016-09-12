@@ -1790,16 +1790,21 @@ p.ken-title {
 }
 .page-sell-used-pos-systems #state {
 	border-radius: 10px;
-    line-height: initial;
-    font-size: 16px;
-    width: 425px;
-    height: 51px;
-    background-color: #fff;
-    background: url(../images/select-arrow.png);
-    background-position: calc(100% - 21px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), 100% 0;
-    background-repeat: no-repeat;
-    padding: 0.5em 3.5em 0.5em 1em;
+	line-height: initial;
+	font-size: 16px;
+	width: 425px;
+	height: 51px;
+	background-color: #fff;
+	background: url(../images/select-arrow.png);
+	background-position: calc(100% - 21px) calc(1em + 2px), calc(100% - 16px) calc(1em + 2px), 100% 0;
+	background-repeat: no-repeat;
+	padding: 0.5em 3.5em 0.5em 1em;
     -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	border: 1px solid #CACACA;
 }
 .page-sell-used-pos-systems #txtcal7_0 {
 	border-radius: 10px;
@@ -1860,6 +1865,8 @@ h1.quote-title {
     margin: 10px 0 0.7em;
     font-family: AvantBold !important;
     text-align: center;
+    position: relative;
+    top: 30px;
 }
 .heading1 h1 {
     font-size: 17px;
@@ -3300,4 +3307,8 @@ p#success-message {
 }
 .careers-pagination .pagination-start, .careers-pagination .pagination-prev, .careers-pagination .pagination-next, .careers-pagination .pagination-end {
     padding: 0 6px;
+}
+p.time1 {
+    position: relative;
+    top: 18px;
 }
