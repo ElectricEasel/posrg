@@ -44,6 +44,14 @@ input[type="text"], textarea {
 	background-color: #fff;
 	padding: 20px 0;
 }
+@font-face {
+	font-family: Avant; 
+	src: url(/templates/posrg/fonts/avantgarde.ttf) format('truetype');
+}
+@font-face {
+	font-family: AvantBold; 
+	src: url(/templates/posrg/fonts/avantgarde-bold.ttf) format('truetype');
+}
 /*
 .item-page h1 {
 	display: none;
@@ -907,6 +915,12 @@ body.online-quote #main .wrap .form_item .form_element img {
 body.online-quote #main {
 	padding: 0;
 }
+strong.formRequired {
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 3px;
+    color: #0072c6;
+}
 #mobile-contact-box {
 	background-color: #F2F2F2;
     border-bottom: 1px solid #BFBFBF;
@@ -1027,12 +1041,13 @@ body .mobile-asset-appraisal .rsform-calendar-box {
 	width: 223px !important;
 }
 .btnCal {
-	background: url(../images/cal-pick.png) no-repeat scroll 0 0 transparent;
+	background: url(../images/date-icon.png) no-repeat scroll 0 0 transparent;
 	width: 26px;
 	height: 27px;
 	border: medium none;
 	padding: 0;
 	margin-left: 10px;
+	background-position-y: 8px;
 }
 #submitPrev {
     background: none repeat scroll 0 0 #000000;
@@ -1346,6 +1361,14 @@ body.online-quote-page #main {
 		display: none;
 	}
 }
+.sell-used-pos-systems .item-page {
+    width: 500px;
+    padding: 0px;
+    display: inline;
+}
+.page-sell-used-pos-systems {
+	overflow-x: hidden;
+}
 .contact-list {
 	list-style: none outside none;
 	margin: 0 !important;
@@ -1377,4 +1400,241 @@ body.online-quote-page #main {
 }
 body.contact-us-page hr {
 	display: none;
+}
+h1.upgrading {
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+    position: relative;
+    top: 67px;
+    font-family: Avant !important;
+    width: 265px;
+    left: 103px;
+    color: #fff;
+}
+.header-section {
+    background: url(../images/sell-header.png);
+    width: 480px;
+    height: 824px;
+    position: relative;
+    margin-top: -18px;
+    overflow: hidden;
+    right: 79px;
+    a {
+    	text-decoration: none;
+    }
+}
+.Ken {
+	background: url(../images/ken.png);
+    width: 480px;
+    height: 503px;
+    position: relative;
+    right: 80px;
+    background-repeat: no-repeat;
+    margin-top: 32px;
+    overflow: hidden;
+}
+.Ken h1{
+    color: #0072c6;
+    font-size: 23px;
+    position: relative;
+    top: -12px;
+    font-family: Avant !important;
+    width: 255px;
+    text-align: center;
+    left: 104px;
+}
+p.bullet-1 {
+    position: relative;
+    top: 252px;
+    left: 122px;
+    font-size: 15px;
+    width: 242px;
+}
+p.bullet-2 {
+    position: relative;
+    left: 122px;
+    font-size: 15px;
+    width: 279px;
+    top: 317px;
+}
+p.bullet-3 {
+    position: relative;
+    top: 203px;
+    left: 122px;
+    font-size: 15px;
+    width: 242px;
+}
+p.bullet-4 {
+    position: relative;
+    top: 270px;
+    left: 122px;
+    font-size: 15px;
+    width: 242px;
+}
+h1.buy-pos {
+    position: relative;
+    top: 57px;
+    font-size: 26px;
+    font-family: AvantBold;
+    color: #0790f5;
+    width: 100%;
+    text-align: center;
+}
+h1.looking-to-sell {
+    position: relative;
+    top: 230px;
+    width: 305px;
+    text-align: center;
+    left: 83px;
+    font-family: AvantBold;
+    letter-spacing: .8px;
+}
+.Ken {
+
+}
+.Ken h3 {
+	font-size: 18px;
+    position: relative;
+    left: 67px;
+}
+p.ken-testimonial {
+    font-size: 15px;
+    width: 314px;
+    position: relative;
+    left: 67px;
+    bottom: 4px;
+}
+p.ken-title {
+    font-size: 14px;
+    font-weight: 900;
+    position: relative;
+    top: 18px;
+    left: 87px;
+}
+p.ken-testimonial span {
+    font-size: 15px !important;
+    display: block;
+    position: relative;
+    top: 10px;
+}
+h1.quote-title {
+    font-family: AvantBold;
+    font-size: 26px;
+    position: relative;
+    padding-top: 24px;
+    width: 100%;
+    text-align: center;
+}
+.sell-used-pos-systems .form_item p {
+    margin-bottom: 18px;
+    font-size: 15px;
+    text-align: center;
+    color: #8a8787;
+    position: relative;
+    bottom: 14px;
+}
+.sell-used-pos-systems legend {
+	display: none;
+}
+fieldset.formFieldset {
+    margin-bottom: 10px;
+    border: none !important;
+}
+li.rsform-block.rsform-block-antispam-check {
+    display: none;
+}
+.sell-used-pos-systems #userForm li input[type="text"] {
+    width: 324px !important;
+    height: 50px;
+    border-radius: 10px;
+}
+.sell-used-pos-systems .formCaption {
+    font-size: 15px;
+    left: 2px;
+    position: relative;
+    bottom: 4px;
+}
+li.rsform-block.rsform-block-date-available-plus {
+    display: none;
+}
+.sell-used-pos-systems .quote-form-wrap .rsform-block, #trade-in-trade-up .rsform-block {
+    margin-bottom: 28px;
+}
+.heading1 h1 {
+    font-family: Avant !important;
+    font-size: 17px;
+    padding: 12px 0px;
+    position: relative;
+    bottom: 7px;
+}
+.heading2 h1 {
+	font-family: Avant !important;
+	font-size: 17px;
+	padding-bottom: 20px;
+    padding-top: 30px;
+}
+.sell-used-pos-systems #userForm li textarea {
+    resize: none;
+    height: 110px;
+    border-radius: 10px;
+    width: 842px;
+    font-size: 16px;
+    padding: 10px;
+}
+.sell-used-pos-systems #userForm .rsform-block-submit .readmore {
+    font-size: 19px;
+    padding: 10px;
+    width: 190px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    background: #0072c6;
+    position: relative;
+    left: 54px;
+    bottom: 10px;
+    margin-bottom: 38px;
+}
+.sell-used-pos-systems #state {
+	border-radius: 10px;
+    line-height: initial;
+    font-size: 16px;
+    width: 325px;
+    height: 51px;
+    background-color: #fff;
+    background: url(../images/select-arrow.png);
+    background-position: 298px 20px;
+    background-repeat: no-repeat;
+    padding: 0.5em 3.5em 0.5em 1em;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	border: 1px solid #CACACA;
+}
+ul#rsform_7_page_0 {
+    margin-bottom: -253px;
+}
+button.btn-primary.sell {
+    background-color: #0072c6;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+    top: 319px;
+    position: relative;
+    padding: 7px 36px;
+    font-size: 19px;
+    border-color: transparent;
+    border-radius: 3px;
+    &:hover {
+    	background-color: #0046c6 !important;
+    }
+}
+p.time1 {
+    position: relative;
+    top: -14px;
+}
+.time2 span {
+	display: block;
 }
