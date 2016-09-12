@@ -1480,13 +1480,20 @@ p.ken-testimonial span {
 h1.quote-title {
   font-family: AvantBold;
   font-size: 26px;
+  position: relative;
+  left: 26px;
+  padding-top: 24px;
 }
-.form_item p {
-  margin-bottom: 8px;
-  font-size: 17px;
+.sell-used-pos-systems .form_item p {
+  margin-bottom: 18px;
+  font-size: 15px;
   text-align: center;
   color: #8a8787;
-  font-weight: 0;
+  position: relative;
+  bottom: 14px;
+}
+.sell-used-pos-systems legend {
+  display: none;
 }
 fieldset.formFieldset {
   margin-bottom: 10px;
@@ -1516,6 +1523,9 @@ li.rsform-block.rsform-block-date-available-plus {
 .heading1 h1 {
   font-family: Avant !important;
   font-size: 17px;
+  padding: 12px 0px;
+  position: relative;
+  bottom: 7px;
 }
 .heading2 h1 {
   font-family: Avant !important;
@@ -1530,7 +1540,6 @@ li.rsform-block.rsform-block-date-available-plus {
   padding: 10px;
 }
 .sell-used-pos-systems #userForm .rsform-block-submit .readmore {
-  margin-left: 70px;
   font-size: 19px;
   padding: 10px;
   width: 190px;
@@ -1541,7 +1550,36 @@ li.rsform-block.rsform-block-date-available-plus {
   position: relative;
   left: 64px;
   bottom: 10px;
+  margin-bottom: 38px;
+}
+.sell-used-pos-systems #state {
+  border-radius: 10px;
+  line-height: initial;
+  font-size: 16px;
+  width: 325px;
+  height: 51px;
+  background-color: #fff;
+  background: url(../images/select-arrow.png);
+  background-position: 298px 20px;
+  background-repeat: no-repeat;
+  padding: 0.5em 3.5em 0.5em 1em;
+  -webkit-appearance: none;
 }
 ul#rsform_7_page_0 {
   margin-bottom: -253px;
+}
+button.btn-primary.sell {
+  background-color: #0072c6;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  top: 319px;
+  position: relative;
+  padding: 7px 36px;
+  font-size: 19px;
+  border-color: transparent;
+  border-radius: 3px;
+}
+button.btn-primary.sell:hover {
+  background-color: #0046c6 !important;
 }
