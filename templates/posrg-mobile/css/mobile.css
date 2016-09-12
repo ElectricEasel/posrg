@@ -1388,6 +1388,9 @@ h1.upgrading {
   overflow: hidden;
   right: 79px;
 }
+.header-section a {
+  text-decoration: none;
+}
 .Ken {
   background: url(../images/ken.png);
   width: 480px;
