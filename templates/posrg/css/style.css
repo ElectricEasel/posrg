@@ -160,7 +160,6 @@ a:hover {
 	width:990px;
 	padding:0 10px;
 	position: relative;
-	overflow: hidden;
 }
 #header {
 	background:url(../images/header-fade2.png) repeat-x 0 bottom scroll #f4f4f4;
