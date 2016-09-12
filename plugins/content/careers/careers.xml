@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content">
+	<name>Content - Careers</name>
+	<author>Ricky Goldman</author>
+	<creationDate>September 2016</creationDate>
+	<copyright>Copyright (C) 2016 Electric Easel, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>ricky@electriceasel.com</authorEmail>
+	<authorUrl>www.electriceasel.com</authorUrl>
+	<version>2.5.0</version>
+	<description>Put {careers} in content where you want the job listings to appear.</description>
+	<files>
+		<filename plugin="careers">careers.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

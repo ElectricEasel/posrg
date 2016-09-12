@@ -70,47 +70,6 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 		})();
 	// ]]>
 	</script>
-    <?php if ($app->input->get('option') == 'com_wanted' && $app->input->get('view') == 'manager'): ?>
-    <script type="text/javascript">
-    // <![CDATA[
-        $(function() {
-            var sortableList = $('#sortable');
-            sortableList.sortable({
-                cursor:"move",
-                handle: 'td:first',
-                update: function(event,ui) {
-                    // Get the item ID's in an array
-                    var cids = Array.prototype.map.call(
-                        $('[name="cid"]'),
-                        function (item) {
-                            return item.value;
-                        }
-                    );
-
-                    var ordering = Object.keys(cids);
-
-                    $.ajax({
-                        type: "POST",
-                        url: "/index.php",
-                        data: {
-                            option: 'com_wanted',
-                            task: 'saveOrderAjax',
-                            tmpl: 'component',
-                            cid: cids,
-                            order: ordering
-                        },
-                        context: this,
-                        success: function() {
-                            $('#success-message').show().delay(1500).fadeOut(200);
-                        }
-                    })
-                }
-            });
-            sortableList.disableSelection();
-        });
-    // ]]>
-    </script>
-    <?php endif; ?>
 	<?php if (getenv('EE_ENV') === 'development') : ?>
 	<meta name="robots" content="noindex,nofollow" />
 	<?php endif; ?>
@@ -135,10 +94,9 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 						<span id="tel"><b>866-462-1005</b></span>
 					</span>
 				</div>
-				<img class="sub-logo tenyear" src="/images/logo-10year.jpg" alt="POSRG 10th Anniversary" />
-				<a class="sub-logo-wrap" href="/about-us/posrg-news/166-posrg-naid-aaa-certified-for-data-destruction"><img class="sub-logo naid" src="/images/logo-naid-green.png" alt="" /></a> 
-				<a class="sub-logo-wrap" href="http://www.illinoisrecycles.org/2014/11/pos-remarketing-group/" target="_blank"><img class="sub-logo ira" src="/images/logo-ira.png" alt="Illinois Recycling Association since 1980" /></a>
-				<a class="sub-logo-wrap" href="/about-us/posrg-news/168-posrg-r2-certified-for-responsible-electronics-recycling"><img class="sub-logo recycling" src="/images/logo-recycle.png" alt="Responsible&trade; Recycling" /></a>
+				<a class="sub-logo-wrap" href="/services/recycling-and-asset-recovery"><img class="sub-logo naid" src="/images/logo-naid-green.png" alt="" /></a> 
+				<a class="sub-logo-wrap" href="/services/recycling-and-asset-recovery" target="_blank"><img class="sub-logo ira" src="/images/logo-ira.png" alt="Illinois Recycling Association since 1980" /></a>
+				<a class="sub-logo-wrap" href="/services/recycling-and-asset-recovery"><img class="sub-logo recycling" src="/images/logo-recycle.png" alt="Responsible&trade; Recycling" /></a>
 				<div id="top-nav">
 					<jdoc:include type="modules" name="top-nav" />
 				</div>

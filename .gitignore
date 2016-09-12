@@ -10,5 +10,6 @@ error_log
 /LICENSE.txt
 /support
 /media/video/*
+/media/com_careers/pdf/*
 /administrator/.htaccess
 /marketing
