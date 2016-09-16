@@ -87,6 +87,10 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 	<div id="header">
 		<div class="wrap">
 			<a href="/" id="logo"></a>
+			<div class="sell-pos-header">
+				<a class="sell-pos-button" href="sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png"></a>
+				<img src="/templates/posrg/images/sell-home-header.png" class="sell-home-header">
+			</div>
 			<div class="header-right">
 				<div class="header-contact">
 					<span class="phone-number">
@@ -94,9 +98,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 						<span id="tel"><b>866-462-1005</b></span>
 					</span>
 				</div>
-				<a class="sub-logo-wrap" href="/services/recycling-and-asset-recovery"><img class="sub-logo naid" src="/images/logo-naid-green.png" alt="" /></a> 
-				<a class="sub-logo-wrap" href="/services/recycling-and-asset-recovery" target="_blank"><img class="sub-logo ira" src="/images/logo-ira.png" alt="Illinois Recycling Association since 1980" /></a>
-				<a class="sub-logo-wrap" href="/services/recycling-and-asset-recovery"><img class="sub-logo recycling" src="/images/logo-recycle.png" alt="Responsible&trade; Recycling" /></a>
 				<div id="top-nav">
 					<jdoc:include type="modules" name="top-nav" />
 				</div>
