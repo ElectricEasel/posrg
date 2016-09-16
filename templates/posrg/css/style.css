@@ -1659,9 +1659,9 @@ button.btn-primary.sell {
     font-size: 19px;
     border-color: transparent;
     border-radius: 3px;
-    &:hover {
-    	background-color: #0046c6 !important;
-    }
+}
+button.btn-primary.sell:hover {
+	background-color: #0046c6 !important;
 }
 p.bullet-1 {
     top: 387px;
@@ -3311,4 +3311,47 @@ p#success-message {
 p.time1 {
     position: relative;
     top: 18px;
+}
+a.hide {
+    display: none !important;
+}
+.widget-text.sell-pos {
+    font-size: 12px;
+}
+a.readmore.sell-pos {
+    background: #46b940 !important;
+    text-transform: none !important;
+}
+a.readmore.sell-pos:hover {
+	background: #51d54b !important;
+}
+.sell-pos-header {
+    position: absolute;
+    right: 270px;
+    top: 12px;
+}
+.sell-pos-button {
+    background: none repeat scroll 0 0 #46b940;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    padding: 1px 55px 9px 14px;
+    text-decoration: none !important;
+    position: relative;
+    right: 57px;
+    top: 22px;
+}
+.sell-pos-button:hover {
+	background: #51d54b !important;
+}
+.sell-pos-button img {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+.sell-home-header {
+	position: absolute;
+    right: -32px;
+    top: -9px;
 }
