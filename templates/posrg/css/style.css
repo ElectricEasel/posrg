@@ -3355,3 +3355,13 @@ a.readmore.sell-pos:hover {
     right: -32px;
     top: -9px;
 }
+#content .homepage-widget h3 a {
+    color: #0066CC;
+    font-size: 16px;
+    padding: 12px 0px 15px 0px;
+    background: url(../images/body_bg.png) repeat scroll 0 0 transparent;
+    border-bottom: 6px solid #006AB8;
+}
+#content .homepage-widget .widget-content img:hover {
+	opacity: 0.8;
+}
