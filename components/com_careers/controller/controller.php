@@ -1,6 +1,6 @@
 <?php defined('_JEXEC') or die;
 
-class WantedController extends JController
+class CareersController extends JController
 {
 	protected $app;
 
@@ -48,22 +48,45 @@ class WantedController extends JController
 		{
 			$this->checkLogin();
 		}
-
+		
 		parent::display($cachable, $urlparams);
 	}
 
 	public function save()
 	{
 		$post  = JRequest::get('post');
-		$table = new WantedTableEntry;
+		$table = new CareersTableEntry;
+		$upload_dir = JPATH_ROOT . "/media/com_careers/pdf/";
+
+		$message = true;
 		$id    = $this->app->input->getInt('id');
+		$pdf    = $this->app->input->files->get('pdf');
 
 		if ($id)
 		{
 			$table->load($id);
 		}
 
-		if ($table->save($post))
+		if ($pdf)
+		{
+			$mime = mime_content_type($pdf['tmp_name']);
+			if ($mime === 'application/pdf') {
+				if (move_uploaded_file($pdf['tmp_name'], $upload_dir . $pdf['name']))
+				{
+					$post['pdf'] = $pdf['name'];
+				}
+				else {
+					$message = false;
+				}
+			}
+		}
+
+		if (!$table->save($post))
+		{
+			$message = false;
+		}
+
+		if ($message)
 		{
 			$this->setMessage('Product Saved Successfully.');
 		}
@@ -72,12 +95,12 @@ class WantedController extends JController
 			$this->setError('There was an error saving.');
 		}
 
-		$this->setRedirect(JRoute::_('index.php?option=com_wanted&view=manager'));
+		$this->setRedirect(JRoute::_('index.php?option=com_careers&view=manager'));
 	}
 
 	public function delete()
 	{
-		$table = new WantedTableEntry;
+		$table = new CareersTableEntry;
 		$id = $this->app->input->getInt('id');
 
 		if ($table->delete($id))
@@ -89,7 +112,7 @@ class WantedController extends JController
 			$this->setError('There was an error deleting the item.');
 		}
 
-		$this->setRedirect(JRoute::_('index.php?option=com_wanted&view=manager'));
+		$this->setRedirect(JRoute::_('index.php?option=com_careers&view=manager'));
 	}
 
 	protected function checkTK()
@@ -106,7 +129,7 @@ class WantedController extends JController
 		/* var_dump($user); */
 
 		$username = strtolower($user->get('username'));
-		if (!in_array($username, array('jim', 'gchalifoux', 'admin')))
+		if (!in_array($username, array('jim', 'admin')))
 		{
 			$this->setRedirect('index.php?option=com_users&view=login');
 			$this->redirect();
@@ -131,7 +154,7 @@ class WantedController extends JController
         JArrayHelper::toInteger($order);
 
         // Get the model
-        /** @var WantedModelManager $model */
+        /** @var CareersModelManager $model */
         $model = $this->getModel('manager');
 
         // Save the ordering
@@ -143,6 +166,5 @@ class WantedController extends JController
         // Close the application
         $this->app->close();
     }
-
 
 }
