@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<leads xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="leads.xsd">
+	<lead>
+		<form_name>POS Asset Appraisal</form_name>
+		<pos_asset_appraisal>yes</pos_asset_appraisal>
+		<email>feedemail1@xmlfeed01.com</email>
+		<company>Feed Suppliers, Inc.</company>
+		<first_name>Jacob</first_name>
+		<last_name>Sanders</last_name>
+	</lead>
+	<lead>
+		<form_name>POS Asset Appraisal</form_name>
+		<pos_asset_appraisal>yes</pos_asset_appraisal>
+		<email>feedemail2@xmlfeed02.com</email>
+		<company>XML Importers and Exporters United</company>
+		<first_name>Tammy</first_name>
+		<last_name>Whitlock</last_name>
+	</lead>
+	<lead>
+		<form_name>Online Quote</form_name>
+		<online_quote>yes</online_quote>
+		<email>feedemail3@xmlfeed03.com</email>
+		<company>Broken Goods Sellers</company>
+		<first_name>Codie</first_name>
+		<last_name>Grant</last_name>
+	</lead>
+	<lead>
+		<form_name>Online Quote</form_name>
+		<online_quote>yes</online_quote>
+		<email>feedemail4@xmlfeed04.com</email>
+		<company>Anderson and Co.</company>
+		<first_name>George</first_name>
+		<last_name>Anderson</last_name>
+	</lead>
+</leads>
