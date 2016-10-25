@@ -10,4 +10,4 @@ Disallow: /layouts/
 Disallow: /logs/
 Disallow: /tmp/
 
-Sitemap: /index.php?option=com_xmap&sitemap=1&view=xml
+Sitemap: http://www.posrg.com/index.php?option=com_xmap&sitemap=1&view=xml
