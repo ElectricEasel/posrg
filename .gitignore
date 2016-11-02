@@ -13,3 +13,5 @@ error_log
 /media/com_careers/pdf/*
 /administrator/.htaccess
 /marketing
+/leads/*
+/feed
