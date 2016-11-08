@@ -62,56 +62,62 @@ class plgSystemRsfpcrm extends JPlugin
 		{
 			$dt = new DateTime("now", new DateTimeZone('America/Chicago'));
 			$dt->setTimestamp(time());
-			$time = $dt->format('Y-m-d H:i:s');
+			$time = $dt->format('m/d/Y H:i');
 
-			$field_ignore_list = array(
-				'cd_domain',
-				'cd_visitorkey',
-				'formId',
-				'submit',
-				'cd_accountkey',
-				'name',
-				'cover_letter',
-				'resume',
-				'antispam',
-				'antispam_check',
-				'fname',
-				'lname',
-				'telephone',
-				'from_mobile',
-				'date_available_plus',
-				'user_agent'
+			$csv_headers = array(
+				'timestamp',
+				'email',
+				'last_name',
+				'first_name',
+				'form_name',
+				'pos_services',
+				'online_quote',
+				'pos_asset_appraisal',
+				'recycling_asset_recovery_quote',
+				'emv_compliance',
+				'trade_in_up',
+				'preferred_oems',
+				'notes',
+				'phone',
+				'company',
+				'manufacturer',
+				'part_number',
+				'quantity',
+				'city',
+				'state',
+				'zip',
+				'condition',
+				'date_available',
+				'equipment_location',
+				'inventory_type',
+				'info',
+				'additional_information',
+				'question',
 			);
 
-			$query = $this->db->getQuery(true);
-			$query->select('DISTINCT(FieldName) as field')
-				  ->from('#__rsform_submission_values');
-			$this->db->setQuery($query);
-			$fields = $this->db->loadRowList();
-			$csv_headers = array();
-
-			for ($i = 0; $i < count($fields); $i++) {
-				if (!in_array($fields[$i][0], $field_ignore_list)) {
-					$csv_headers[] = $fields[$i][0];
-				}
-			}
-
 			$csv_items = array();
-			foreach ($csv_headers as $item) {
-				if (isset($args['post'][$item])) {
-					$csv_items[] = $args['post'][$item];
+			foreach ($csv_headers as $header) {
+				if ($header == 'timestamp') {
+					$csv_items[] = $time;
+				}
+				else if (isset($args['post'][$header])) {
+					$csv_items[] = $args['post'][$header];
 				}
 				else {
 					$csv_items[] = '';
 				}
 			}
 
-			array_unshift($csv_headers,'timestamp');
-			array_unshift($csv_items,$time);
-
-			$fp = fopen(JPATH_ROOT.'/leads/test.csv', 'w');
-			fputcsv($fp, $csv_headers);
-			fputcsv($fp, $csv_items);
+			$file_path = JPATH_ROOT.'/leads/WebsiteLeadsCombined.csv';
+			if (file_exists($file_path)) {
+				$fp = fopen($file_path, 'a');
+				fputcsv($fp, $csv_items);
+			}
+			else {
+				$fp = fopen($file_path, 'w');
+				fputcsv($fp, $csv_headers);
+				fputcsv($fp, $csv_items);
+			}
 			fclose($fp);
 		}
 	}
