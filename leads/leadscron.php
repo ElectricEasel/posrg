@@ -1,7 +1,6 @@
 <?php
 
-$local_file		= getcwd().'/WebsiteLeadsCombined.csv';
-
+$local_file		= dirname(__FILE__).'/WebsiteLeadsCombined.csv';
 if (file_exists($local_file)) {
 	$dt = new DateTime("now", new DateTimeZone('America/Chicago'));
 	$dt->setTimestamp(time());
