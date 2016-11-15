@@ -66,7 +66,6 @@ class plgSystemRsfpcrm extends JPlugin
 			$time = $dt->format('m/d/Y H:i');
 
 			$csv_headers = array(
-				'id',
 				'timestamp',
 				'email',
 				'last_name',
@@ -95,6 +94,7 @@ class plgSystemRsfpcrm extends JPlugin
 				'info',
 				'additional_information',
 				'question',
+				'id',
 			);
 
 			$csv_items = array();
