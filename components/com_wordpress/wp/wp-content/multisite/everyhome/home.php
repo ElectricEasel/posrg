@@ -145,7 +145,6 @@ if ( empty( $content ) || !$mainframe->getCfg( 'caching' ) ) {
 		</div>
 		<?php endif; ?>
 		<header class="entry-header">
-			<?php the_post_thumbnail(); ?>
 			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
@@ -153,6 +152,7 @@ if ( empty( $content ) || !$mainframe->getCfg( 'caching' ) ) {
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 			</h1>
 			<?php endif; // is_single() ?>
+			<?php the_post_thumbnail(); ?>
 			<?php if ( comments_open() ) : ?>
 				<div class="comments-link">
 					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>

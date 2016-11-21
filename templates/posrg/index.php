@@ -25,6 +25,7 @@ $this
 	->setBase(null)
 	->setGenerator('Electric Easel, Inc.');
 
+$is_wordpress = $menu->getActive()->component;
 $body_class = 'page-' . $menu->getActive()->alias;
 $is_home = false;
 if ($menu->getActive() == $menu->getDefault())
@@ -146,9 +147,11 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 					<jdoc:include type="component" />
 
 				</div>
+				<?php if (!$is_wordpress): ?>
 				<div id="sidebar">
 					<jdoc:include type="modules" name="left" style="widget" />
 				</div>
+				<?php endif; ?>
 				<?php endif; ?>
 				<div id="bottom-widget">
 					<jdoc:include type="modules" name="content-bottom" style="blank" />
@@ -186,5 +189,6 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		jQuery(this).attr('href',email);
 	});
 	</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58331dfb2bd2e0ea"></script> 
 </body>
 </html>

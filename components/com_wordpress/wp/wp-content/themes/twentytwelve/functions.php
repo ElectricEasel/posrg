@@ -396,7 +396,7 @@ function twentytwelve_entry_meta() {
 	if ( $tag_list ) {
 		$utility_text = __( 'This entry was posted in %1$s and tagged %2$s on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
 	} elseif ( $categories_list ) {
-		$utility_text = __( 'This entry was posted in %1$s on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+		$utility_text = __( '<span class="by-author"> By %4$s</span>%3$s', 'twentytwelve' );
 	} else {
 		$utility_text = __( 'This entry was posted on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
 	}
@@ -542,6 +542,12 @@ function twentytwelve_posted_on() {
 }
 endif;
 
+function modify_read_more_link() {
+    return '<a class="more-link" href="' . get_permalink() . '">READ MORE</a>';
+}
+add_filter( 'the_content_more_link', 'modify_read_more_link' );
+
+
 if ( ! function_exists( 'twentytwelve_posted_in' ) ) :
 /**
  * Prints HTML with meta information for the current post (category, tags and permalink).
@@ -568,3 +574,9 @@ function twentytwelve_posted_in() {
 	);
 }
 endif;
+
+/* add read more link to end of excerpt in search results */
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('READ MORE', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
