@@ -52,6 +52,10 @@ textarea {
   font-family: AvantBold;
   src: url(/templates/posrg/fonts/avantgarde-bold.ttf) format('truetype');
 }
+@font-face {
+  font-family: AvantDemi;
+  src: url(/templates/posrg/fonts/avantdemi.ttf) format('truetype');
+}
 /*
 .item-page h1 {
 	display: none;
@@ -1720,7 +1724,7 @@ body .pgntn-page-pagination-block {
 }
 h2.entry-title {
   text-decoration: none;
-  font-family: Avant !important;
+  font-family: AvantDemi !important;
   font-size: 22px !important;
   color: #0072c6;
   letter-spacing: .04em;
@@ -1768,7 +1772,7 @@ a.next.page-numbers {
 .blog-banner.hide-desktop h2 {
   color: #2c60ce !important;
   text-align: center !important;
-  font-size: 38px !important;
+  font-size: 24px !important;
   font-family: Avant !important;
   font-weight: 900 !important;
   line-height: 52px !important;
@@ -1823,4 +1827,15 @@ svg.at-icon {
 #wp-page .entry-meta {
   clear: both;
   display: inline-flex;
+}
+h3.menu-toggle {
+  color: #fff !important;
+  background: #0072c6 !important;
+  padding: 8px 83px !important;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  letter-spacing: .05em;
+  border-radius: 7px !important;
+  margin: 15px 9px;
+  -webkit-appearance: none !important;
 }

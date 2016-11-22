@@ -93,7 +93,10 @@ hr {
 	font-family: AvantBold; 
 	src: url(/templates/posrg/fonts/avantgarde-bold.ttf) format('truetype');
 }
-
+@font-face {
+	font-family: AvantDemi; 
+	src: url(/templates/posrg/fonts/avantdemi.ttf) format('truetype');
+}
 .page-contact-us hr {
 	width: 95%;
 }
@@ -3389,7 +3392,7 @@ a.more-link {
 }
 h2.entry-title {
     text-decoration: none;
-    font-family: Avant !important;
+    font-family: AvantDemi !important;
     font-size: 22px !important;
     color: #0072c6;
     letter-spacing: .04em;	
