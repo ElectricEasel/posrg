@@ -67,15 +67,17 @@ jQuery(document).ready(function ($){
 		rvtitle.innerHTML = "Find an RV Resort";
 		rvpage.prepend(rvtitle);
 	}
+	var cat_menu = jQuery("#menu-blog-categories");
+	var height = $(cat_menu).outerHeight();
+	cat_menu.css('height',0);
 	$('.menu-toggle').click(function(){
-		var menu = jQuery("#menu-blog-categories");
 		if ($(this).hasClass('toggled-on'))
 		{
-			menu.slideUp(300);
+			cat_menu.css('height',height);
 		}
 		else
 		{
-			menu.slideDown(300);
+			cat_menu.css('height','0');
 		}
 	});
 });
