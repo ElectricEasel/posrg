@@ -3414,12 +3414,10 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     font-size: 15px !important;
 }
 #wp-page article {
-	background: url(/images/post-dropshadow.png);
-    background-position: bottom;
+    background: url(/images/post-dropshadow.png);
+    background-position: bottom !important;
     background-repeat: no-repeat;
-    background-size: cover;
     border: none !important;
-    background-position: 0px 0px;
 }
 #wp-page .widget-area {
 	display: none;
@@ -3529,15 +3527,15 @@ span.page-numbers.current {
 }
 .addthis_inline_share_toolbox h3 {
     position: relative;
-    top: 26px;
+    top: 23px;
     z-index: 99999;
     right: 60px;
     font-size: 15px !important;
-    color: #aaacaf;
+    color: #9d9ea1;
     display: inline;
 }
 svg.at-icon {
-    fill: #aaacaf !important; 
+    fill: #9d9ea1 !important; 
 }
 .entry-summary p {
 	position: relative;
@@ -3571,4 +3569,25 @@ nav.nav-single {
 }
 .nav-single .nav-next {
 	display: none;
+}
+svg.at-icon.at-icon-facebook {
+    width: 28px !important;
+    height: 28px !important;
+}
+svg.at-icon.at-icon-twitter {
+    width: 28px !important;
+    height: 28px !important;
+}
+svg.at-icon.at-icon-google_plusone_share {
+	width: 37px !important;
+    height: 37px !important;
+    position: relative;
+    bottom: 4px;
+}
+svg.at-icon.at-icon-email {
+	width: 27px !important;
+    height: 27px !important;
+    position: relative;
+    top: 1px;
+    left: 7px;
 }

@@ -1757,3 +1757,11 @@ a.next.page-numbers {
   color: #605959 !important;
   font-size: 14px !important;
 }
+.blog-banner.hide-desktop h2 {
+  color: #2c60ce !important;
+  text-align: center !important;
+  font-size: 38px !important;
+  font-family: Avant !important;
+  font-weight: 900 !important;
+  line-height: 52px !important;
+}
