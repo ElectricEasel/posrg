@@ -3458,6 +3458,7 @@ ul#menu-blog-categories li a {
     letter-spacing: .05em;
     border-radius: 7px !important;
     margin-left: 7px;
+    -webkit-appearance: none !important;
 }
 #wp-page .search-input {
 	padding: 13px 16px !important;

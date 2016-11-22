@@ -1637,6 +1637,7 @@ footer#colophon {
   letter-spacing: .05em;
   border-radius: 7px !important;
   margin: 15px 9px;
+  -webkit-appearance: none !important;
 }
 #wp-page .search-input {
   padding: 0px 15px !important;
