@@ -54,6 +54,7 @@ class plgSystemRsfpcrm extends JPlugin
 	 */
 	public function rsfp_f_onBeforeStoreSubmissions($args)
 	{
+		$submissionId = $args['SubmissionId'];
 		$formId = $args['formId'];
 
 		$table = new CrmTable;
@@ -93,11 +94,15 @@ class plgSystemRsfpcrm extends JPlugin
 				'info',
 				'additional_information',
 				'question',
+				'id',
 			);
 
 			$csv_items = array();
 			foreach ($csv_headers as $header) {
-				if ($header == 'timestamp') {
+				if ($header == 'id') {
+					$csv_items[] = $submissionId;
+				}
+				elseif ($header == 'timestamp') {
 					$csv_items[] = $time;
 				}
 				else if (isset($args['post'][$header])) {

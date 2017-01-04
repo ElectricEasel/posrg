@@ -1,9 +1,18 @@
 <?php
 
+$timezone = new DateTimeZone('America/Chicago');
+$dt = new DateTime("now", $timezone);
+	$dt->setTimestamp(time());
+$close_time = "8:45 pm";
+$open_time = "6:15 am";
+$ct = DateTime::createFromFormat('H:i a', $close_time, $timezone);
+$ot = DateTime::createFromFormat('H:i a', $open_time, $timezone);
+if (!($dt >= $ot && $dt <= $ct)) {
+	die; // Time out of range
+}
+
 $local_file		= dirname(__FILE__).'/WebsiteLeadsCombined.csv';
 if (file_exists($local_file)) {
-	$dt = new DateTime("now", new DateTimeZone('America/Chicago'));
-	$dt->setTimestamp(time());
 	$time = $dt->format('Ymd_Hi');
 
 	$ftp_server		= 'Neptune.posrg.com';

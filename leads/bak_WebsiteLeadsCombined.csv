@@ -1,0 +1,4 @@
+timestamp,email,last_name,first_name,form_name,pos_services,online_quote,pos_asset_appraisal,recycling_asset_recovery_quote,emv_compliance,trade_in_up,preferred_oems,notes,phone,company,manufacturer,part_number,quantity,city,state,zip,condition,date_available,equipment_location,inventory_type,info,additional_information,question
+"11/08/2016 16:18",ricky@electriceasel.com,goldman,ricky,"POS Asset Appraisal",,,yes,,,,,"test 5",8475555556,KENYACO,jamesco,85dd00012,"950,000","test city",AL,00012,new,11/24/2016,Jerusalem,,,,
+"11/08/2016 16:19",ricky@electriceasel.com,testerson,tesst,"Quick Quote: Inventory",,Yes,,,,,,"test 6",8475555555,hahaCO,okokMFG,65009fc,250000,,,,,,,Inventory,,,
+"11/08/2016 16:35",ricky@electriceasel.com,testerson,tesst,"EMV Compliance",,,,,True,,,,8475555555,company,,,,Yotown,Alabama,00012,,,,,"test 7",,
