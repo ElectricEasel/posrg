@@ -25,6 +25,7 @@ $this
 	->setBase(null)
 	->setGenerator('Electric Easel, Inc.');
 
+$environment = JFactory::getConfig()['environment'];
 $body_class = 'page-' . $menu->getActive()->alias;
 $is_home = false;
 if ($menu->getActive() == $menu->getDefault())
@@ -70,7 +71,7 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 		})();
 	// ]]>
 	</script>
-	<?php if (getenv('EE_ENV') === 'development') : ?>
+	<?php if ($environment === 'development') : ?>
 	<meta name="robots" content="noindex,nofollow" />
 	<?php endif; ?>
 	<!--Start of Zopim Live Chat Script-->
