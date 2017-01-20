@@ -25,7 +25,9 @@ $this
 	->setBase(null)
 	->setGenerator('Electric Easel, Inc.');
 
-$environment = JFactory::getConfig()['environment'];
+$config = JFactory::getConfig();
+$environment = $config->get( 'environment' );
+
 $body_class = 'page-' . $menu->getActive()->alias;
 $is_home = false;
 if ($menu->getActive() == $menu->getDefault())
@@ -44,6 +46,9 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 ?><!DOCTYPE html>
 <html lang="en-US" >
 <head>
+	<?php if ($environment == 'development') : ?>
+		<meta name="robots" content="noindex,nofollow" />
+	<?php endif; ?>
 <jdoc:include type="head" />
 	<meta name="google-site-verification" content="sF65DH0a4wU2jqT9Vh3DIAWd88iaLg2-z8N4VqqYuHg" />
 	<meta name="msvalidate.01" content="9DEB2B56752FB6326BEC00315BEBD3B9" />
@@ -71,9 +76,6 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 		})();
 	// ]]>
 	</script>
-	<?php if ($environment === 'development') : ?>
-	<meta name="robots" content="noindex,nofollow" />
-	<?php endif; ?>
 	<!--Start of Zopim Live Chat Script-->
 <!-- <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
