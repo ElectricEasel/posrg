@@ -19,6 +19,7 @@
 		<folder>images</folder>
 	</files>
 	<positions>
+		<position>head-includes</position>
 		<position>nav</position>
 		<position>left</position>
 		<position>right</position>
