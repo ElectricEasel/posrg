@@ -58,6 +58,7 @@ Redirect 301 /services/posrg-services-a-solutions http://posrg.com/services
 Redirect 301 /services/posrg-hardware-disposition-solutions http://posrg.com/services/asset-management/asset-disposal
 Redirect 301 /services/posrg-complimentary-services http://posrg.com/services
 Redirect 301 /services/asset-appraisal http://posrg.com/services/recycling-and-asset-recovery
+Redirect 301 /sell-used-pos-systems http://posrg.com/services/sell-used-pos-systems
 Redirect 301 /about-us/company-overvew http://posrg.com/about-us/posrg-story 
 Redirect 301 /about-us/affiliations http://posrg.com/preferred-oems
 Redirect 301 /markets-served/conveniencegas-staions http://posrg.com/markets-served/convenience-gas-staions
