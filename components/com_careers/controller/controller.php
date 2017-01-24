@@ -70,7 +70,7 @@ class CareersController extends JController
 		if ($pdf)
 		{
 			$mime = exec("file -bi '" . $pdf['tmp_name'] . "'");
-			if ($mime === 'application/pdf') {
+			if ($mime === 'application/pdf' || 'regular file') {
 				if (move_uploaded_file($pdf['tmp_name'], $upload_dir . $pdf['name']))
 				{
 					$post['pdf'] = $pdf['name'];
