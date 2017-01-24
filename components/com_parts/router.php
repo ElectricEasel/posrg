@@ -52,7 +52,7 @@ function PartsBuildRoute(&$query)
 
 	if (isset($query['id']))
 	{
-		$segments[] = PartsHelper::getPartNumberFromId($query['id']);
+		$segments[] = str_replace(".","_",PartsHelper::getPartNumberFromId($query['id']));
 		unset($query['id']);
 	}
 
@@ -76,7 +76,7 @@ function PartsParseRoute($segments)
 
 	if ($count === 1)
 	{
-		$idFromPN = PartsHelper::getIdFromPartNumber($segments[0]);
+		$idFromPN = PartsHelper::getIdFromPartNumber(str_replace("_",".",$segments[0]));
 
 		if ($idFromPN)
 		{
@@ -92,7 +92,7 @@ function PartsParseRoute($segments)
 	elseif ($count === 2)
 	{
 		$args['mfc'] = $segments[0];
-		$args['id'] = PartsHelper::getIdFromPartNumber($segments[1]);
+		$args['id'] = PartsHelper::getIdFromPartNumber(str_replace("_",".",$segments[1]));
 		$args['view'] = 'form';
 	}
 

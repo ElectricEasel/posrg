@@ -8,7 +8,8 @@ $tpath = $this->baseurl . '/templates/' . $this->template;
 $this
 	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 	->addScript($tpath . '/js/jquery.fancybox.min.js')
-	->addScript($tpath . '/js/jquery.fancybox-media.js')
+	->addScript($tpath . '/js/jquery.fancybox-media.min.js')
+	// ->addScript($tpath . '/js/jquery.fancybox-media.js')
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/jquery.accordion.js')
 	->addScript($tpath . '/js/site.js')
@@ -18,9 +19,12 @@ $this
 			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen({allow_single_deselect:true});});
 		// ]]>
 ')
-	->addStyleSheet($tpath . '/js/chosen/chosen.css')
-	->addStyleSheet($tpath . '/css/jquery.fancybox.css')
-	->addStyleSheet($tpath . '/css/style.css')
+	->addStyleSheet($tpath . '/js/chosen/chosen.min.css')
+	->addStyleSheet($tpath . '/css/jquery.fancybox.min.css')
+	->addStyleSheet($tpath . '/css/style.min.css')
+	// ->addStyleSheet($tpath . '/js/chosen/chosen.css')
+	// ->addStyleSheet($tpath . '/css/jquery.fancybox.css')
+	// ->addStyleSheet($tpath . '/css/style.css')
 	->setTab("\t")
 	->setBase(null)
 	->setGenerator('Electric Easel, Inc.');
