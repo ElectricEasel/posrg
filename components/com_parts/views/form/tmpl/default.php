@@ -11,7 +11,7 @@ JRequest::setVar('inventory_type', $this->item->inventory_type);
 <div class="quotebox dropshadow">
     <div class="quotebox-inner">
         <div class="logobox" style="width:100%;border-bottom:2px solid #bdbdbd;margin-bottom:10px;">
-            <img src="<?php echo $this->item->image; ?>" /> <br /><br />
+            <img src="<?=$this->item->image?>" alt="<?=$this->item->mfc?>" /> <br /><br />
         </div>
         <p><strong>Manufacturer:</strong> <?php echo $this->item->mfc; ?></p><br />
         <p><strong>Part:</strong> <?php echo $this->item->part_number; ?></p><br />
@@ -24,7 +24,7 @@ JRequest::setVar('inventory_type', $this->item->inventory_type);
         <br />
         <div class="form_item">
             <div style="width:100%;border-bottom:2px solid #bdbdbd;margin-bottom:10px;" class="form_element cf_heading">
-                <img src="/images/quickquote.png" style="float:right;padding:0 10px 10px 20px;position:relative;top:-20px" />
+                <img src="/images/quickquote.png" alt="Quick Quote" style="float:right;padding:0 10px 10px 20px;position:relative;top:-20px" />
                 <p style="font-size:14px;font-weight:normal;margin:0;line-height:18px;">POSRG prides itself on customer service. Please fill out the form below and a POSRG customer services representative will be in touch with you right away.</p>
                 <br />
                 <p style="font-size:14px;font-weight:bold">Fill out the form below and we'll get right back with you.</p>
