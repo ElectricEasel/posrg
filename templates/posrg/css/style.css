@@ -136,6 +136,7 @@ table {
 /*** STRUCTURE ***/
 body {
 	background: url(../images/body_bg.png) repeat 0 0 scroll transparent;
+	overflow-x: hidden;
 }
 * {
 	font-family: "Arial", sans-serif !important;
@@ -1648,19 +1649,25 @@ h1.looking-to-sell {
     color: #0072c6;
     font-family: AvantBold !important;
 }
-button.btn-primary.sell {
+.btn-primary.sell {
     background-color: #0072c6;
     color: #fff;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
+    width: 181px;
+    left: 50%;
+    margin-left: -57px;
     top: 405px;
     position: relative;
-    padding: 7px 36px;
-    font-size: 19px;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px !important;
+    line-height: 1.4em !important;
     border-color: transparent;
     border-radius: 3px;
 }
-button.btn-primary.sell:hover {
+.btn-primary.sell:hover {
 	background-color: #0046c6 !important;
 }
 p.bullet-1 {
@@ -1884,10 +1891,8 @@ h1.quote-title {
     position: relative;
     top: 4px;
 }
-.page-sell-used-pos-systems li.rsform-block.rsform-block-quantity {
-    position: relative;
-    right: 450px;
-    bottom: 20px;
+.page-sell-used-pos-systems li.rsform-block.rsform-block-notes {
+    width: 100%;
 }
 .page-sell-used-pos-systems #userForm li textarea {
     resize: none;
@@ -1914,7 +1919,7 @@ ul#rsform_7_page_0 {
     width: 900px;
     position: relative;
     right: 140px;
-    margin-bottom: -158px;
+    margin-bottom: -90px;
 }
 input#btn7_0.btnCal.rsform-calendar-button {
 	display: none;
@@ -1922,15 +1927,24 @@ input#btn7_0.btnCal.rsform-calendar-button {
 .page-sell-used-pos-systems li.rsform-block.rsform-block-equipment-location {
     display: inline-table;
 }
+.page-sell-used-pos-systems li.rsform-block.rsform-block-submit {
+	width: 100% !important;
+    clear: both;
+}
+.page-sell-used-pos-systems #userForm .rsform-block-submit .formCaption {
+	display: none;
+}
+.page-sell-used-pos-systems #userForm .rsform-block-submit .formBody {
+	width: 100%;
+	text-align: center;
+}
 .page-sell-used-pos-systems #userForm .rsform-block-submit .readmore {
     margin-left: 42px;
     font-size: 19px;
     text-transform: none;
     padding: 9px 70px;
-    margin: 0 auto;
-    position: relative;
-    left: 320px;
-    bottom: 10px;
+    margin: 15px 0 0 -30px;
+    display: inline-block;
 }
 .page-sell-used-pos-systems .btnCal .rsform-calendar-button {
 	display: none;
@@ -3365,4 +3379,205 @@ a.readmore.sell-pos:hover {
 }
 .tradeshow-2 {
 	padding-top: 13px;
+}
+.page-blog #banner {
+	display: none;
+}
+#wp-page.site {
+	overflow: inherit !important;
+}
+#wp-page .entry-header .entry-title a {
+    text-decoration: none;
+    font-family: Avant !important;
+    font-size: 22px;
+    color: #0072c6;
+    letter-spacing: .04em;
+}
+.blog-banner img {
+    position: relative;
+    right: 204px;
+}
+a.more-link {
+    display: block;
+    padding: 25px 0px !important;
+    color: #0072c6 !important;
+    font-size: 14px !important;
+}
+a.post-edit-link {
+    display: none;
+}
+span.by-author {
+    display: block;
+    font-size: 16px !important;
+    font-weight: 600;
+    color: grey;
+    padding: 8px 0px !important;
+}
+time.entry-date {
+    font-size: 16px !important;
+}
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    padding-top: 20px !important;
+}
+.entry-content p {
+    font-size: 15px !important;
+}
+#wp-page article {
+	background: url(/images/post-dropshadow.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none !important;
+    background-position: 0px 0px;
+}
+#wp-page .widget-area {
+	display: none;
+}
+#wp-page .site-content {
+    float: none !important;
+    width: 990px !important;
+    position: relative !important;
+    right: 245px !important;
+}
+ul#menu-blog-categories {
+    width: 990px !important;
+    position: relative;
+    right: 266px;
+    text-align: center !important;
+    border: none !important;
+	padding-top: 16px !important;
+}
+ul#menu-blog-categories li {
+    position: relative !important;
+    margin: 0px 18px !important;
+    font-size: 13.8px !important;
+    font-weight: 900 !important;
+    color: blue !important;
+}
+ul#menu-blog-categories li a {
+    color: #0072c6 !important;
+}
+#menu-blog-categories li.current-menu-item a {
+    color: #aaacaf !important;
+}
+#wp-page .search-button {
+    color: #fff !important;
+    background: #0072c6 !important;
+    padding: 8px 77px !important;
+    font-size: 18px !important;
+    font-weight: 900 !important;
+    letter-spacing: .05em;
+    border-radius: 7px !important;
+    margin-left: 7px;
+}
+#wp-page .search-input {
+	padding: 13px 16px !important;
+    border-radius: 7px !important;
+    width: 315px;
+}
+#wp-page .entry-header img.wp-post-image {
+    width: 765px;
+}
+#wp-page .entry-header {
+    position: relative;
+    left: 108px;
+	padding-top: 47px;
+}
+#wp-page .entry-content p {
+    position: relative;
+    left: 108px;
+    width: 765px;
+}
+.searchbar-and-button {
+    position: relative;
+    padding: 38px 0px 8px 0px !important;
+    right: 44px;
+}
+.blog-banner {
+    padding-top: 22px !important;
+}
+#nav-below {
+	display: none !important;
+}
+.pgntn-page-pagination.pgntn-bottom {
+    position: relative;
+    left: 200px;
+	padding: 31px 0px !important;
+	bottom: 5px;
+}
+a.prev.page-numbers {
+    position: relative;
+    right: 36px;
+	color: #605959 !important;
+    font-size: 14px !important;
+}
+a.next.page-numbers {
+    position: relative;
+    left: 36px;
+	color: #605959 !important;
+    font-size: 14px !important;
+}
+.page-blog .certification-bar {
+	display: none !important;
+}
+footer#colophon {
+	display: none !important;
+}
+a.page-numbers {
+    font-size: 14px !important;
+    margin: 0px 3px !important;
+}
+span.page-numbers.current {
+    font-size: 14px !important;
+    margin: 0px 3px !important;
+}
+.addthis_inline_share_toolbox {
+    position: absolute;
+    left: 639px;
+    top: 76px;
+}
+.addthis_inline_share_toolbox h3 {
+    position: relative;
+    top: 26px;
+    z-index: 99999;
+    right: 60px;
+    font-size: 15px !important;
+    color: #aaacaf;
+    display: inline;
+}
+svg.at-icon {
+    fill: #aaacaf !important; 
+}
+.entry-summary p {
+	position: relative;
+    left: 108px;
+    width: 765px;
+    font-size: 15px !important;
+}
+#wp-page .page-header {
+	padding-bottom: none !important;
+	border-bottom: none !important;
+}
+h2.page-title {
+    font-size: 18px !important;
+    position: relative;
+    left: 107px;
+}
+#wp-page .archive-header {
+	display: none !important;
+}
+#wp-page .nav-single + .comments-area, #wp-page #comment-nav-above {
+    padding: 0px 105px;
+}
+nav.nav-single {
+    display: none !important;
+}
+.comment {
+	background: none !important;
+}
+a.read-more {
+    display: block;
+    padding: 25px 0px !important;
+    color: #0072c6 !important;
+    font-size: 14px !important;
 }
