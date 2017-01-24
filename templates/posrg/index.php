@@ -25,7 +25,11 @@ $this
 	->setBase(null)
 	->setGenerator('Electric Easel, Inc.');
 
+$config = JFactory::getConfig();
+$environment = $config->get( 'environment' );
+
 $is_wordpress = $menu->getActive()->component;
+
 $body_class = 'page-' . $menu->getActive()->alias;
 $is_home = false;
 if ($menu->getActive() == $menu->getDefault())
@@ -41,9 +45,12 @@ $pageclass = '';
 if (is_object($menu_active))
 $pageclass = $menu_active->params->get('pageclass_sfx');
 
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" >
+?><!DOCTYPE html>
+<html lang="en-US" >
 <head>
+	<?php if ($environment == 'development') : ?>
+		<meta name="robots" content="noindex,nofollow" />
+	<?php endif; ?>
 <jdoc:include type="head" />
 	<meta name="google-site-verification" content="sF65DH0a4wU2jqT9Vh3DIAWd88iaLg2-z8N4VqqYuHg" />
 	<meta name="msvalidate.01" content="9DEB2B56752FB6326BEC00315BEBD3B9" />
@@ -54,7 +61,7 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 	<meta name="DC.publisher" content="POS Remarketing Group" />
 	<meta name="DC.title" content="POS Remarketing Group" />
 	<meta name="DC.identifier" content="http://www.posrg.com/" />
-	<meta name="DC.language" content="en-US" scheme="rfc1766" />
+	<meta name="DC.language" content="en-US" />
 	<meta name="DC.subject" content="Point of Sale Refurbishing" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />
     <link href="https://plus.google.com/u/0/115660277677228108714" rel="publisher" />
@@ -71,9 +78,6 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 		})();
 	// ]]>
 	</script>
-	<?php if (getenv('EE_ENV') === 'development') : ?>
-	<meta name="robots" content="noindex,nofollow" />
-	<?php endif; ?>
 	<!--Start of Zopim Live Chat Script-->
 <!-- <script type="text/javascript">
 window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -83,14 +87,17 @@ $.src='//v2.zopim.com/?28HMYMeMVn2asz5zlB6L4jpFHKJGCfCN';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 </script> -->
 <!--End of Zopim Live Chat Script-->
+
+
+	<jdoc:include type="modules" name="head-includes" />
 </head>
 <body class="<?php echo $body_class ." ". $pageclass; ?>">
 	<div id="header">
 		<div class="wrap">
 			<a href="/" id="logo"></a>
 			<div class="sell-pos-header">
-				<a class="sell-pos-button" href="sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png"></a>
-				<img src="/templates/posrg/images/sell-home-header.png" class="sell-home-header">
+				<a class="sell-pos-button" href="sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png" alt="$"></a>
+				<img src="/templates/posrg/images/sell-home-header.png" class="sell-home-header" alt="">
 			</div>
 			<div class="header-right">
 				<div class="header-contact">

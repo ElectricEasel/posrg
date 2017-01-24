@@ -1652,19 +1652,25 @@ h1.looking-to-sell {
     color: #0072c6;
     font-family: AvantBold !important;
 }
-button.btn-primary.sell {
+.btn-primary.sell {
     background-color: #0072c6;
     color: #fff;
     margin: 0 auto;
-    display: block;
+    display: inline-block;
+    width: 181px;
+    left: 50%;
+    margin-left: -57px;
     top: 405px;
     position: relative;
-    padding: 7px 36px;
-    font-size: 19px;
+    padding: 7px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px !important;
+    line-height: 1.4em !important;
     border-color: transparent;
     border-radius: 3px;
 }
-button.btn-primary.sell:hover {
+.btn-primary.sell:hover {
 	background-color: #0046c6 !important;
 }
 p.bullet-1 {
@@ -1888,10 +1894,8 @@ h1.quote-title {
     position: relative;
     top: 4px;
 }
-.page-sell-used-pos-systems li.rsform-block.rsform-block-quantity {
-    position: relative;
-    right: 450px;
-    bottom: 20px;
+.page-sell-used-pos-systems li.rsform-block.rsform-block-notes {
+    width: 100%;
 }
 .page-sell-used-pos-systems #userForm li textarea {
     resize: none;
@@ -1918,7 +1922,7 @@ ul#rsform_7_page_0 {
     width: 900px;
     position: relative;
     right: 140px;
-    margin-bottom: -158px;
+    margin-bottom: -90px;
 }
 input#btn7_0.btnCal.rsform-calendar-button {
 	display: none;
@@ -1926,15 +1930,24 @@ input#btn7_0.btnCal.rsform-calendar-button {
 .page-sell-used-pos-systems li.rsform-block.rsform-block-equipment-location {
     display: inline-table;
 }
+.page-sell-used-pos-systems li.rsform-block.rsform-block-submit {
+	width: 100% !important;
+    clear: both;
+}
+.page-sell-used-pos-systems #userForm .rsform-block-submit .formCaption {
+	display: none;
+}
+.page-sell-used-pos-systems #userForm .rsform-block-submit .formBody {
+	width: 100%;
+	text-align: center;
+}
 .page-sell-used-pos-systems #userForm .rsform-block-submit .readmore {
     margin-left: 42px;
     font-size: 19px;
     text-transform: none;
     padding: 9px 70px;
-    margin: 0 auto;
-    position: relative;
-    left: 320px;
-    bottom: 10px;
+    margin: 15px 0 0 -30px;
+    display: inline-block;
 }
 .page-sell-used-pos-systems .btnCal .rsform-calendar-button {
 	display: none;
@@ -3367,6 +3380,9 @@ a.readmore.sell-pos:hover {
 #content .homepage-widget .widget-content img:hover {
 	opacity: 0.8;
 }
+.tradeshow-2 {
+	padding-top: 13px;
+}
 .page-blog #banner {
 	display: none;
 }
@@ -3597,4 +3613,10 @@ svg.at-icon.at-icon-email {
 }
 .tradeshow-2 {
 	padding-top: 13px;
+}
+a.read-more {
+    display: block;
+    padding: 25px 0px !important;
+    color: #0072c6 !important;
+    font-size: 14px !important;
 }
