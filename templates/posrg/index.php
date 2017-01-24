@@ -29,7 +29,7 @@ $this
 	->setBase(null)
 	->setGenerator('Electric Easel, Inc.');
 
-$is_wordpress = $menu->getActive()->component;
+$activeComponent = $menu->getActive()->component;
 $body_class = 'page-' . $menu->getActive()->alias;
 $is_home = false;
 if ($menu->getActive() == $menu->getDefault())
@@ -154,7 +154,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 					<jdoc:include type="component" />
 
 				</div>
-				<?php if (!$is_wordpress): ?>
+				<?php if ($activeComponent != 'com_wordpress'): ?>
 				<div id="sidebar">
 					<jdoc:include type="modules" name="left" style="widget" />
 				</div>
