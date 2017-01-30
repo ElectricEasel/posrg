@@ -1603,3 +1603,21 @@ p.time1 {
 .time2 span {
   display: block;
 }
+#wp-page .main-navigation {
+  display: none;
+}
+.searchbar-and-button {
+  display: none;
+}
+#wp-page .entry-meta {
+  clear: both;
+  padding: 8px 0px;
+}
+.at-share-btn-elements {
+  padding: 2px 0px 8px !important;
+  position: relative;
+  right: 8px;
+}
+.blog-banner img {
+  width: 100%;
+}
