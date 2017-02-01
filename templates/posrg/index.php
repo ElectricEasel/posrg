@@ -21,7 +21,7 @@ $this
 ')
 	->addStyleSheet($tpath . '/js/chosen/chosen.min.css')
 	->addStyleSheet($tpath . '/css/jquery.fancybox.min.css')
-	->addStyleSheet($tpath . '/css/style.min.css')
+	->addStyleSheet($tpath . '/css/style.css')
 	// ->addStyleSheet($tpath . '/js/chosen/chosen.css')
 	// ->addStyleSheet($tpath . '/css/jquery.fancybox.css')
 	// ->addStyleSheet($tpath . '/css/style.css')
