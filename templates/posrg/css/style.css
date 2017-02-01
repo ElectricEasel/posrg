@@ -3447,6 +3447,7 @@ ul#menu-blog-categories {
     text-align: center !important;
     border: none !important;
 	padding-top: 16px !important;
+	display: none !important;
 }
 ul#menu-blog-categories li {
     position: relative !important;
