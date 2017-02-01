@@ -73,7 +73,7 @@ body.full-width .site-content {
 .main-navigation div.nav-menu > ul {
 	border-bottom: 1px solid #ededed;
 	border-top: 1px solid #ededed;
-	display: inline-block !important;
+	display: none !important;
 	text-align: left;
 	width: 100%;
 }

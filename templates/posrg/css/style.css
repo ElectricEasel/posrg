@@ -3636,3 +3636,12 @@ a.read-more {
     color: #0072c6;
     letter-spacing: .04em;
 }
+.searchbar-and-button {
+    display: none;
+}
+ul#menu-blog-categories {
+    display: none !important;
+    position: relative;
+    left: 30000px;
+    margin-top: -36px !important;
+}
