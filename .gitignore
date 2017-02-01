@@ -16,3 +16,4 @@ error_log
 /leads/WebsiteLeadsCombined.csv
 /feed
 /hooks
+/components/com_wordpress/wp/wp-content/uploads
