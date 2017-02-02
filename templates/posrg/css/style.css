@@ -3438,7 +3438,8 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     background-position: bottom;
     background-repeat: no-repeat;
     border: none !important;
-    padding-bottom: 45px !important;
+    padding-bottom: 23px !important;
+    padding-top: 14px !important;
 }
 #wp-page .widget-area {
 	display: none;
@@ -3635,8 +3636,8 @@ a.read-more {
   hyphens: none;
 }
 #wp-page .entry-content li, #wp-page .comment-content li, #wp-page .mu_register li {
-	list-style-type: none;
-    margin: 3px 0px -9px !important;
+    list-style-type: none;
+    margin: 6px 0px -11px !important;
     padding-bottom: 26px;
     font-size: 15px;
   -moz-hyphens: none;

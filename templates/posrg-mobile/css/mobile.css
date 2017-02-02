@@ -1681,7 +1681,8 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 #wp-page article {
   position: relative;
   border: none !important;
-  padding-bottom: 45px !important;
+  padding-bottom: 23px !important;
+  padding-top: 14px !important;
 }
 #wp-page article:after {
   background: url(/images/post-dropshadow.png);
@@ -1898,7 +1899,7 @@ a.read-more {
 #wp-page .comment-content li,
 #wp-page .mu_register li {
   list-style-type: none;
-  margin: 3px 0px -9px !important;
+  margin: 6px 0px -11px !important;
   padding-bottom: 26px;
   font-size: 15px;
   -moz-hyphens: none;
