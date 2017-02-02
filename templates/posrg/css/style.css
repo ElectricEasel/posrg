@@ -3590,13 +3590,16 @@ a.read-more {
     position: relative;
     left: 108px;
     width: 765px;
+    hyphens: none;
 }
 .entry-content p {
     font-size: 15px !important;
     margin: 0 0 24px !important;
+    hyphens: none;
 }
 .entry-content h2 {
 	font-family: "Arialfont", sans-serif !important;
+	hyphens: none;
 }
 #wp-page .entry-content h2, #wp-page .comment-content h2, #wp-page .mu_register h2 {
     font-size: 15px !important;
@@ -3604,6 +3607,7 @@ a.read-more {
     margin: 12px 0px 12px !important;
     font-family: "Arial", sans-serif !important;
     letter-spacing: .02em;
+    hyphens: none;
 }
 #wp-page .entry-content h3, #wp-page .comment-content h3 {
     font-weight: 900 !important;
@@ -3612,17 +3616,20 @@ a.read-more {
     font-family: "Arial", sans-serif !important;
 	margin-top: 30px !important;
 	font-size: 18px !important;
+	hyphens: none;
 }
 #wp-page .entry-content li, #wp-page .comment-content li, #wp-page .mu_register li {
 	list-style-type: none;
     margin: 10px 0px -7px !important;
     padding-bottom: 25px;
     font-size: 15px;
+    hyphens: none;
 }
 #wp-page .entry-content li span, #wp-page .comment-content li span, #wp-page .mu_register li span {
     display: block;
     font-weight: 600;
     font-family: "Arial", sans-serif !important;
+    hyphens: none;
 }
 #wp-page .entry-content h1, #wp-page .comment-content h1 {
 	font-size: 21px !important;
@@ -3632,6 +3639,7 @@ a.read-more {
     text-transform: uppercase;
     margin: 0px auto !important;
     width: 700px;
+    hyphens: none;
 }
 .for-more-info {
 	padding-top: 30px !important;
@@ -3643,6 +3651,7 @@ a.read-more {
 #wp-page .entry-content a {
 	text-decoration: underline !important;
 	color: #006fc1 !important;
+	hyphens: none;
 }
 #wp-page .entry-header .entry-title {
 	font-family: Avant !important;
@@ -3650,6 +3659,7 @@ a.read-more {
     letter-spacing: .04em;
     max-width: 470px;
     line-height: 1.3em;
+    hyphens: none;
 }
 .searchbar-and-button {
     display: none;

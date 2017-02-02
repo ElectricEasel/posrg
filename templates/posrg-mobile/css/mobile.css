@@ -1846,15 +1846,24 @@ a.read-more {
 .entry-content {
   position: relative;
   width: 320px;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 .entry-content p {
   font-size: 15px !important;
   margin: 0 0 24px !important;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 .entry-content h2 {
   font-family: "Arialfont", sans-serif !important;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 #wp-page .entry-content h2,
@@ -1865,6 +1874,9 @@ a.read-more {
   margin: 12px 0px 12px !important;
   font-family: "Arial", sans-serif !important;
   letter-spacing: .02em;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 #wp-page .entry-content h3,
@@ -1876,6 +1888,9 @@ a.read-more {
   margin-top: 30px !important;
   font-size: 18px !important;
   line-height: 1.5em !important;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 #wp-page .entry-content li,
@@ -1885,6 +1900,9 @@ a.read-more {
   margin: 10px 0px -7px !important;
   padding-bottom: 25px;
   font-size: 15px;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 #wp-page .entry-content li span,
@@ -1893,6 +1911,9 @@ a.read-more {
   display: block;
   font-weight: 600;
   font-family: "Arial", sans-serif !important;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 #wp-page .entry-content h1,
@@ -1904,6 +1925,9 @@ a.read-more {
   text-transform: uppercase;
   margin: 0px auto !important;
   width: 320px;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 .for-more-info {
@@ -1916,6 +1940,9 @@ a.read-more {
 #wp-page .entry-content a {
   text-decoration: underline !important;
   color: #006fc1 !important;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 #wp-page .entry-header .entry-title {
@@ -1924,6 +1951,9 @@ a.read-more {
   letter-spacing: .02em;
   max-width: 320px;
   line-height: 1.3em;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -webkit-hyphens: none;
   hyphens: none;
 }
 .searchbar-and-button {
