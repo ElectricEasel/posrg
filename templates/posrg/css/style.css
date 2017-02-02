@@ -3680,3 +3680,8 @@ img.rr-logo {
     left: 170px;
     bottom: 94px;
 }
+#wp-page .entry-meta a {
+	text-decoration: none;
+	pointer-events: none;
+    cursor: default;
+}
