@@ -1718,19 +1718,27 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     padding-top: 20px !important;
 }
 #wp-page article {
+	position: relative;;
+    border: none !important;
+}
+#wp-page article:after {
     background: url(/images/post-dropshadow.png);
     background-position: bottom;
     background-repeat: no-repeat;
     border: none !important;
+    content: '';
+    height: 182px;
+    width: 100%;
+    background-size: 100%;
+    bottom: 0px;
+    position: absolute;
 }
 #wp-page .widget-area {
 	display: none;
 }
 #wp-page .site-content {
     float: none !important;
-    width: 990px !important;
     position: relative !important;
-    right: 245px !important;
 }
 ul#menu-blog-categories {
     width: 990px !important;
@@ -1771,7 +1779,6 @@ ul#menu-blog-categories li a {
 }
 #wp-page .entry-header {
     position: relative;
-    left: 260px;
 	padding-top: 6px;
 	width: 320px;
 }
@@ -1842,7 +1849,6 @@ svg.at-icon {
 }
 .entry-summary p {
 	position: relative;
-    left: 260px;
     width: 320px;
     font-size: 15px !important;
 }
@@ -1859,8 +1865,9 @@ h2.page-title {
 	display: none !important;
 }
 #wp-page .nav-single + .comments-area, #wp-page #comment-nav-above {
-    padding: 0px 105px;
-    display: none;
+    width: 320px;
+    margin: 0 auto !important;
+    position: relative;
 }
 nav.nav-single {
     display: none !important;
@@ -1876,7 +1883,6 @@ a.read-more {
 }
 .entry-content {
     position: relative;
-    left: 260px;
     width: 320px;
 }
 .entry-content p {
@@ -1910,11 +1916,11 @@ a.read-more {
 #wp-page .entry-content li span, #wp-page .comment-content li span, #wp-page .mu_register li span {
     display: block;
     font-weight: 600;
-    font-family: AvantDemi !important;
+    font-family: "Arial", sans-serif !important;
 }
 #wp-page .entry-content h1, #wp-page .comment-content h1 {
 	font-size: 21px !important;
-    font-family: AvantBold !important;
+    font-family: "Arial", sans-serif !important;
     text-align: center;
     color: #0072c6;
     text-transform: uppercase;

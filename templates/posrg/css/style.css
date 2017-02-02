@@ -3574,7 +3574,6 @@ h2.page-title {
 }
 #wp-page .nav-single + .comments-area, #wp-page #comment-nav-above {
     padding: 0px 105px;
-    display: none;
 }
 nav.nav-single {
     display: none !important;
@@ -3624,11 +3623,11 @@ a.read-more {
 #wp-page .entry-content li span, #wp-page .comment-content li span, #wp-page .mu_register li span {
     display: block;
     font-weight: 600;
-    font-family: AvantDemi !important;
+    font-family: "Arial", sans-serif !important;
 }
 #wp-page .entry-content h1, #wp-page .comment-content h1 {
 	font-size: 21px !important;
-    font-family: AvantBold !important;
+    font-family: "Arial", sans-serif !important;
     text-align: center;
     color: #0072c6;
     text-transform: uppercase;
