@@ -3434,12 +3434,10 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     padding-top: 20px !important;
 }
 #wp-page article {
-	background: url(/images/post-dropshadow.png);
+    background: url(/images/post-dropshadow.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
     border: none !important;
-    background-position: 0px 0px;
 }
 #wp-page .widget-area {
 	display: none;
@@ -3508,6 +3506,7 @@ ul#menu-blog-categories li a {
     left: 200px;
 	padding: 31px 0px !important;
 	bottom: 5px;
+	display: none;
 }
 a.prev.page-numbers {
     position: relative;
@@ -3539,6 +3538,7 @@ span.page-numbers.current {
     position: absolute;
     left: 639px;
     top: 42px;
+    display: none;
 }
 .addthis_inline_share_toolbox h3 {
     position: relative;
@@ -3574,6 +3574,7 @@ h2.page-title {
 }
 #wp-page .nav-single + .comments-area, #wp-page #comment-nav-above {
     padding: 0px 105px;
+    display: none;
 }
 nav.nav-single {
     display: none !important;
@@ -3601,7 +3602,6 @@ a.read-more {
 }
 #wp-page .entry-content h2, #wp-page .comment-content h2, #wp-page .mu_register h2 {
     font-size: 15px !important;
-    color: #5e5e5e;
     font-weight: 900;
     margin: 12px 0px 12px !important;
     font-family: "Arial", sans-serif !important;
@@ -3611,9 +3611,9 @@ a.read-more {
     font-weight: 900 !important;
     color: #0072c6;
     margin-bottom: 0px !important;
-    font-family: AvantBoldTwo !important;
-	margin-top: 40px !important;
-	font-size: 17px !important;
+    font-family: "Arial", sans-serif !important;
+	margin-top: 30px !important;
+	font-size: 18px !important;
 }
 #wp-page .entry-content li, #wp-page .comment-content li, #wp-page .mu_register li {
 	list-style-type: none;
@@ -3622,8 +3622,9 @@ a.read-more {
     font-size: 15px;
 }
 #wp-page .entry-content li span, #wp-page .comment-content li span, #wp-page .mu_register li span {
-	display: block;
-	font-family: AvantDemi !important;
+    display: block;
+    font-weight: 600;
+    font-family: AvantDemi !important;
 }
 #wp-page .entry-content h1, #wp-page .comment-content h1 {
 	font-size: 21px !important;
@@ -3671,11 +3672,11 @@ img.epa-logo {
 	display: block;
     position: relative;
     left: 415px;
-    top: 22px;
+    top: -2px;
 }
 img.rr-logo {
     display: block;
     position: relative;
     left: 170px;
-    bottom: 70px;
+    bottom: 94px;
 }
