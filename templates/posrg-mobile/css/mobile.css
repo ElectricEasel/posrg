@@ -1785,9 +1785,8 @@ span.page-numbers.current {
 }
 .addthis_inline_share_toolbox {
   position: absolute;
-  left: 639px;
-  top: 42px;
-  display: none;
+  top: 74px;
+  right: -9px;
 }
 .addthis_inline_share_toolbox h3 {
   position: relative;
