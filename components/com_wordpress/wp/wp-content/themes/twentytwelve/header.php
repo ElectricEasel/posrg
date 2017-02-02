@@ -122,7 +122,7 @@ if(!is_home()){
 <div id="wp-page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<div class="blog-banner">
-			<img src="images/blog-banner.jpg" alt="Point of Sale Information and Resources">
+			<img src="images/blog-banner.png" alt="Point of Sale Information and Resources">
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
