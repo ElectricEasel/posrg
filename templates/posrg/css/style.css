@@ -94,6 +94,14 @@ hr {
 	src: url(/templates/posrg/fonts/avantgarde-bold.ttf) format('truetype');
 }
 @font-face {
+	font-family: AvantBoldTwo; 
+	src: url(/templates/posrg/fonts/avantgarde-bold2.otf) format('opentype');
+}
+@font-face {
+	font-family: AvantDemi; 
+	src: url(/templates/posrg/fonts/avantgarde-demi.otf) format('opentype');
+}
+@font-face {
 	font-family: Arialfont; 
 	src: url(/templates/posrg/fonts/arial.ttf) format('truetype');
 }
@@ -3411,14 +3419,16 @@ a.post-edit-link {
     display: none;
 }
 span.by-author {
-    display: block;
+    display: none;
     font-size: 16px !important;
     font-weight: 600;
     color: grey;
     padding: 8px 0px !important;
 }
 time.entry-date {
-    font-size: 16px !important;
+	font-size: 15px !important;
+    position: relative;
+    top: 3px;
 }
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     padding-top: 20px !important;
@@ -3480,7 +3490,7 @@ ul#menu-blog-categories li a {
 #wp-page .entry-header {
     position: relative;
     left: 108px;
-	padding-top: 47px;
+	padding-top: 6px;
 }
 .searchbar-and-button {
     position: relative;
@@ -3528,7 +3538,7 @@ span.page-numbers.current {
 .addthis_inline_share_toolbox {
     position: absolute;
     left: 639px;
-    top: 76px;
+    top: 42px;
 }
 .addthis_inline_share_toolbox h3 {
     position: relative;
@@ -3536,8 +3546,10 @@ span.page-numbers.current {
     z-index: 99999;
     right: 60px;
     font-size: 15px !important;
-    color: #aaacaf;
+    color: #707070;
     display: inline;
+    font-weight: 200;
+    letter-spacing: 0.04em;
 }
 svg.at-icon {
     fill: #aaacaf !important; 
@@ -3582,42 +3594,45 @@ a.read-more {
 }
 .entry-content p {
     font-size: 15px !important;
+    margin: 0 0 24px !important;
 }
 .entry-content h2 {
 	font-family: "Arialfont", sans-serif !important;
 }
 #wp-page .entry-content h2, #wp-page .comment-content h2, #wp-page .mu_register h2 {
-	font-size: 18px !important;
-    font-family: Arial !important;
-    font-style: italic;
+    font-size: 15px !important;
     color: #5e5e5e;
-    font-weight: 100;
-    margin: 15px 0px !important;
+    font-weight: 900;
+    margin: 12px 0px 12px !important;
+    font-family: "Arial", sans-serif !important;
+    letter-spacing: .02em;
 }
 #wp-page .entry-content h3, #wp-page .comment-content h3 {
     font-weight: 900 !important;
     color: #0072c6;
     margin-bottom: 0px !important;
-    font-family: AvantBold !important;
+    font-family: AvantBoldTwo !important;
 	margin-top: 40px !important;
-	font-size: 18px !important;
+	font-size: 17px !important;
 }
 #wp-page .entry-content li, #wp-page .comment-content li, #wp-page .mu_register li {
 	list-style-type: none;
-	margin: 0px !important;
-	padding-bottom: 25px;
-	font-size: 15px;
+    margin: 10px 0px -7px !important;
+    padding-bottom: 25px;
+    font-size: 15px;
 }
 #wp-page .entry-content li span, #wp-page .comment-content li span, #wp-page .mu_register li span {
 	display: block;
-	font-family: AvantBold !important;
+	font-family: AvantDemi !important;
 }
 #wp-page .entry-content h1, #wp-page .comment-content h1 {
-    font-size: 22px !important;
-	font-family: AvantBold !important;
+	font-size: 21px !important;
+    font-family: AvantBold !important;
     text-align: center;
     color: #0072c6;
     text-transform: uppercase;
+    margin: 0px auto !important;
+    width: 700px;
 }
 .for-more-info {
 	padding-top: 30px !important;
@@ -3628,13 +3643,14 @@ a.read-more {
 }
 #wp-page .entry-content a {
 	text-decoration: underline !important;
+	color: #006fc1 !important;
 }
 #wp-page .entry-header .entry-title {
-    font-weight: normal;
-    font-family: Avant !important;
+	font-family: Avant !important;
     font-size: 22px !important;
-    color: #0072c6;
     letter-spacing: .04em;
+    max-width: 470px;
+    line-height: 1.3em;
 }
 .searchbar-and-button {
     display: none;
@@ -3644,4 +3660,22 @@ ul#menu-blog-categories {
     position: relative;
     left: 30000px;
     margin-top: -36px !important;
+}
+.post-images img {
+	display: block;
+}
+.post-images {
+	height: 90px;
+}
+img.epa-logo {
+	display: block;
+    position: relative;
+    left: 415px;
+    top: 22px;
+}
+img.rr-logo {
+    display: block;
+    position: relative;
+    left: 170px;
+    bottom: 70px;
 }
