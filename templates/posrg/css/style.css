@@ -3431,7 +3431,7 @@ time.entry-date {
     top: 3px;
 }
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
-    padding-top: 20px !important;
+    // padding-top: 20px !important;
 }
 #wp-page article {
     background: url(/images/post-dropshadow.png);
@@ -3488,9 +3488,10 @@ ul#menu-blog-categories li a {
     width: 315px;
 }
 #wp-page .entry-header {
-    position: relative;
-    left: 108px;
-	padding-top: 6px;
+	position: relative;
+    padding-top: 6px;
+    padding-left: 108px;
+    padding-right: 108px;
 }
 .searchbar-and-button {
     position: relative;
@@ -3537,9 +3538,9 @@ span.page-numbers.current {
     margin: 0px 3px !important;
 }
 .addthis_inline_share_toolbox {
-    position: absolute;
-    left: 639px;
-    top: 42px;
+    float: right;
+    margin-top: -38px !important;
+    margin-bottom: 16px !important;
 }
 .addthis_inline_share_toolbox h3 {
     position: relative;
@@ -3589,13 +3590,12 @@ a.read-more {
     font-size: 14px !important;
 }
 .entry-content {
-    position: relative;
-    left: 108px;
-    width: 765px;
   -moz-hyphens: none;
   -ms-hyphens: none;
   -webkit-hyphens: none;
   hyphens: none;
+  clear: both;
+  padding: 0 108px !important;
 }
 .entry-content p {
     font-size: 15px !important;
@@ -3724,4 +3724,7 @@ img.rr-logo {
 	text-decoration: none;
 	pointer-events: none;
     cursor: default;
+}
+#wp-page .entry-meta {
+	float: left;
 }

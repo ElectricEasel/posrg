@@ -17,7 +17,6 @@
 		</div>
 		<?php endif; ?>
 		<header class="entry-header">
-			<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"><h3>SHARE</h3></div>
 			<?php if ( is_single() ) : ?>
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 			<?php else : ?>
@@ -49,6 +48,7 @@
 					</div><!-- .author-info -->
 				<?php endif; ?>
 			</div><!-- .entry-meta -->
+			<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"><h3>SHARE</h3></div>
 			<?php the_post_thumbnail(); ?>
 			<?php if ( comments_open() ) : ?>
 				<div class="comments-link">
