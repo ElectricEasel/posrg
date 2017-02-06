@@ -15,7 +15,7 @@ get_header(); ?>
 				<nav class="nav-single">
 					<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
 					<span class="nav-previous"><a href="/blog">BACK TO BLOG</a></span>
-					<span class="nav-next"><?php next_post_link( '%link', 'NEXT ARTICLE <span class="meta-nav">' . _x(  ) . '</span>' ); ?></span>
+					<span class="nav-next"><?php previous_post_link( '%link', 'NEXT ARTICLE <span class="meta-nav">' . _x(  ) . '</span>' ); ?></span>
 				</nav><!-- .nav-single -->
 				<?php get_template_part( 'content', get_post_format() ); ?>
 
