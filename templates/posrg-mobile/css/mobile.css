@@ -1793,6 +1793,7 @@ span.page-numbers.current {
   margin-bottom: 8px !important;
   position: relative;
   left: 13px;
+  bottom: 2px;
 }
 .addthis_inline_share_toolbox h3 {
   position: relative;
