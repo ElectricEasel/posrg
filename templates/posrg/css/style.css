@@ -3772,10 +3772,10 @@ nav#nav-below {
 .nav-next a:hover {
 	color: #0072c6 !important;
 }
-.nav-next:after {
+.nav-next a:after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 0px;
     height: 13px;
     width: 10px;
     background: url(/images/right-blog-arrow.png) center center no-repeat;
