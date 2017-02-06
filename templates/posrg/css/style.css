@@ -3540,6 +3540,8 @@ span.page-numbers.current {
     float: right;
     margin-top: -38px !important;
     margin-bottom: 16px !important;
+	right: 5px;
+    position: relative;
 }
 .addthis_inline_share_toolbox h3 {
     position: relative;
@@ -3733,6 +3735,8 @@ img.rr-logo {
 .nav-single {
 	display: block !important;
 	margin: 0px auto 26px !important;
+	position: relative;
+	right: 5px;
 }
 nav#nav-below {
 	display: none;
