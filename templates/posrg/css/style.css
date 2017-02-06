@@ -3509,7 +3509,6 @@ ul#menu-blog-categories li a {
     left: 200px;
 	padding: 31px 0px !important;
 	bottom: 5px;
-	display: none;
 }
 a.prev.page-numbers {
     position: relative;
@@ -3576,9 +3575,6 @@ h2.page-title {
 }
 #wp-page .nav-single + .comments-area, #wp-page #comment-nav-above {
     padding: 0px 105px;
-}
-nav.nav-single {
-    display: none !important;
 }
 .comment {
 	background: none !important;
@@ -3727,4 +3723,15 @@ img.rr-logo {
 }
 #wp-page .entry-meta {
 	float: left;
+}
+#wp-page .site-content nav {
+	display: none;
+    width: 765px;
+    margin: 0 auto;
+}
+.nav-single {
+	display: block !important;
+}
+nav#nav-below {
+	display: none;
 }
