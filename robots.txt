@@ -10,5 +10,7 @@ Disallow: /layouts/
 Disallow: /leads/
 Disallow: /logs/
 Disallow: /tmp/
+Disallow: /components/com_wordpress/wp/wp-login.php
+
 
 Sitemap: http://www.posrg.com/index.php?option=com_xmap&sitemap=1&view=xml
