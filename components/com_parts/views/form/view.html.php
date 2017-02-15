@@ -23,7 +23,7 @@ class PartsViewForm extends JView
 	protected function prepareDocument()
 	{
 		$title = sprintf(
-			'%s %s currently in stock. Shop new, used and refurbished POS equipment - POSRG.com',
+			'%s %s currently in stock - POSRG.com',
 			$this->item->mfc,
 			$this->item->part_number
 		);

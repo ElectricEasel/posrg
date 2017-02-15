@@ -90,7 +90,7 @@ abstract class PartsHelper
 			$query = $db->getQuery(true)
 			         ->select('id, mfc, part_number')
 			         ->from('#__parts')
-			         ->where(sprintf($where, $db->quote($db->escape($id))))
+			         ->where(sprintf($where, $db->quote($id)))
 			         ->order('CASE WHEN inventory_type = "regular" THEN 1 ELSE 2 END, inventory_type');
 
 			self::$cache[$cacheId] = $db->setQuery($query)->loadObject();
