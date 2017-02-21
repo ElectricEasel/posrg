@@ -18,7 +18,7 @@
 		<?php endif; ?>
 		<header class="entry-header">
 			<?php if ( is_single() ) : ?>
-			<h2 class="entry-title"><?php the_title(); ?></h2>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
 			<h2 class="entry-title">
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
