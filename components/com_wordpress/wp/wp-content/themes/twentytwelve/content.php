@@ -19,7 +19,7 @@
 		<header class="entry-header">
 			<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"><h3>SHARE</h3></div>
 			<?php if ( is_single() ) : ?>
-			<h2 class="entry-title"><?php the_title(); ?></h2>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>
 			<h2 class="entry-title">
 				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
