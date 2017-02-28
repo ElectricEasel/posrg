@@ -203,7 +203,11 @@ class RSFormProValidations
 	}
 	
 	public static function NoLinksInValue($value, $extra = null, $data = null) {
-		return (strpos($value, 'http') === false && strpos($value, '.com') === false);
+		return (
+			strpos($value, 'http') === false &&
+			strpos($value, '.com') === false &&
+			strpos($value, '.ru') === false &&
+			!preg_match('/[^\\p{Common}\\p{Latin}]/u', $value));
 	}
 	
 	public static function regex($value,$pattern=null,$data=null) {
