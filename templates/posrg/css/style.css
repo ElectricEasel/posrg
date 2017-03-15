@@ -3849,7 +3849,7 @@ div#comments {
 .repair-banner .btn-primary:hover {
 	background-color: #0046c6 !important;
 }
-.repair-banner h2 {
+.repair-banner .h2-desktop {
 	font-size: 2.27em !important;
     text-align: center;
     position: relative;
@@ -3857,6 +3857,9 @@ div#comments {
     font-family: AvantBold !important;
     margin-top: 4.5em !important;
     letter-spacing: 0.03em;
+}
+.repair-banner .h2-mobile {
+	display: none;
 }
 .repair-banner p {
     color: #fff;
@@ -3894,13 +3897,16 @@ div#comments {
     width: 990px;
     margin-left: -256px;
 }
-.why-choose-repair h1 {
+.why-choose-repair .h1-desktop {
     font-size: 2.2em !important;
     text-align: center;
     color: #0072c6 !important;
     font-family: AvantBold !important;
     letter-spacing: 0.03em;
     padding-top: 44px;
+}
+.why-choose-repair .h1-mobile {
+    display: none;
 }
 .why-choose-repair p {
 	font-size: 14px !important;
@@ -3985,7 +3991,7 @@ div#comments {
     width: 991px;
 	margin-left: -256px;
 }
-.repair-services h1 {
+.repair-services .h1-desktop {
     font-size: 2.2em !important;
     text-align: center;
     color: #0072c6 !important;
@@ -3994,6 +4000,9 @@ div#comments {
     padding-top: 60px;
     left: 5em;
     margin-left: 270px;
+}
+.repair-services .h1-mobile {
+    display: none;
 }
 .repair-services p {
     font-size: 14px !important;
