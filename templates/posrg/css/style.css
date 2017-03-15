@@ -3819,7 +3819,7 @@ div#comments {
     margin-top: -20px;
     margin-left: -256px;
 }
-.repair-banner h1 {
+.repair-banner .banner-title {
 	font-family: Avant !important;
     color: #fff;
     text-align: center;
@@ -3827,6 +3827,9 @@ div#comments {
     width: 700px;
     margin: 0 auto;
     padding-top: 50px;
+}
+.repair-banner .banner-title-mobile {
+	display: none;
 }
 .repair-banner .btn-primary {
     color: #fff;
