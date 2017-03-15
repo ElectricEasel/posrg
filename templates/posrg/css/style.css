@@ -3816,9 +3816,8 @@ div#comments {
     background: url(../images/repair-banner.jpg);
     height: 803px;
     width: 991px;
-    position: relative;
-    right: 256px;
     margin-top: -20px;
+    margin-left: -256px;
 }
 .repair-banner h1 {
 	font-family: Avant !important;
@@ -3890,13 +3889,11 @@ div#comments {
     background: url(../images/why-choose-repair.jpg);
     height: 460px;
     width: 990px;
-    position: relative;
-    right: 256px;
+    margin-left: -256px;
 }
 .why-choose-repair h1 {
     font-size: 2.2em !important;
     text-align: center;
-    position: relative;
     color: #0072c6 !important;
     font-family: AvantBold !important;
     letter-spacing: 0.03em;
@@ -3907,46 +3904,44 @@ div#comments {
     letter-spacing: .02em;
     font-weight: 100;
     max-width: 322px;
-    position: absolute;
 }
 .why-choose-repair p:nth-child(2) {
-	left: 141px;
-    top: 108px;
+    margin-left: 141px;
+    margin-top: 39px;
 }
 .why-choose-repair p:nth-child(3) {
-	left: 141px;
-    top: 186px;
+	margin-left: 141px;
+    margin-top: 19px;
 }
 .why-choose-repair p:nth-child(4) {
-    left: 141px;
-    top: 248px;
+    margin-left: 141px;
+    margin-top: 21px;
 }
 .why-choose-repair p:nth-child(5) {
-	left: 141px;
-    top: 363px;
+    margin-left: 141px;
+    margin-top: 14px;
 }
 .why-choose-repair p:nth-child(6) {
-	right: 115px;
-    top: 107px;
+    margin-left: 558px;
+    margin-top: -306px;
 }
 .why-choose-repair p:nth-child(7) {
-	right: 115px;
-    top: 222px;
+    margin-left: 558px;
+    margin-top: 16px;
 }
 .why-choose-repair p:nth-child(8) {
-    right: 115px;
-    top: 281px;
+    margin-left: 558px;
+    margin-top: 21px;
 }
 .why-choose-repair p:nth-child(9) {
-    right: 115px;
-    top: 363px;
+    margin-left: 558px;
+    margin-top: 19px;
 }
 .repair-testimonial {
     background: url(../images/repair-testimonial.jpg);
     height: 326px;
     width: 991px;
-    position: relative;
-    right: 256px;
+    margin-left: -256px;
 }
 .repair-testimonial h3 {
 	color: #fff !important;
@@ -3956,7 +3951,6 @@ div#comments {
     text-align: center;
     margin: 0 auto !important;
     padding-top: 70px;
-    position: relative;
 }
 .repair-testimonial h4 {
 	text-align: center;
@@ -3986,8 +3980,7 @@ div#comments {
     background: url(../images/repair-services.jpg);
     height: 612px;
     width: 991px;
-    position: relative;
-    right: 256px;
+	margin-left: -256px;
 }
 .repair-services h1 {
     font-size: 2.2em !important;
@@ -4004,26 +3997,25 @@ div#comments {
     letter-spacing: .02em;
     font-weight: 100;
     max-width: 515px;
-    position: absolute;
-    left: 445px;
+    margin-left: 448px;
 }
 .repair-services p:nth-child(2) {
-    top: 117px;
+    margin-top: 27px;
 }
 .repair-services p:nth-child(3) {
-    top: 164px;
+    margin-top: 29px;
 }
 .repair-services p:nth-child(4) {
-    top: 218px;
+    margin-top: 14px;
 }
 .repair-services p:nth-child(5) {
-    top: 268px;
+    margin-top: 29px;
 }
 .repair-services p:nth-child(6) {
-    top: 347px;
+    margin-top: 18px;
 }
 .repair-services p:nth-child(7) {
-    top: 409px;
+    margin-top: 23px;
 }
 .repair-services p b {
 	font-size: 14px !important;
