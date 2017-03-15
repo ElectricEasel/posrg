@@ -2105,27 +2105,27 @@ div#comments {
   position: absolute;
   width: 270px;
 }
-.repair-banner p:nth-child(5) {
+.repair-banner p:nth-child(6) {
   margin-left: 123px;
   margin-top: 18px;
 }
-.repair-banner p:nth-child(6) {
+.repair-banner p:nth-child(7) {
   margin-left: 123px;
   margin-top: 80px;
 }
-.repair-banner p:nth-child(7) {
+.repair-banner p:nth-child(8) {
   margin-left: 123px;
   margin-top: 123px;
 }
-.repair-banner p:nth-child(8) {
+.repair-banner p:nth-child(9) {
   margin-left: 123px;
   margin-top: 167px;
 }
-.repair-banner p:nth-child(9) {
+.repair-banner p:nth-child(10) {
   margin-left: 123px;
   margin-top: 231px;
 }
-.repair-banner p:nth-child(10) {
+.repair-banner p:nth-child(11) {
   margin-left: 123px;
   margin-top: 292px;
 }
@@ -2154,20 +2154,17 @@ div#comments {
   max-width: 276px;
   margin-left: 125px;
 }
-.why-choose-repair p:nth-child(2) {
+.why-choose-repair p:nth-child(3) {
   margin-top: 33px;
 }
-.why-choose-repair p:nth-child(3) {
+.why-choose-repair p:nth-child(4) {
   margin-top: 21px;
 }
-.why-choose-repair p:nth-child(4) {
+.why-choose-repair p:nth-child(5) {
   margin-top: 23px;
 }
-.why-choose-repair p:nth-child(5) {
-  margin-top: 18px;
-}
 .why-choose-repair p:nth-child(6) {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 .why-choose-repair p:nth-child(7) {
   margin-top: 22px;
@@ -2176,6 +2173,9 @@ div#comments {
   margin-top: 22px;
 }
 .why-choose-repair p:nth-child(9) {
+  margin-top: 22px;
+}
+.why-choose-repair p:nth-child(10) {
   margin-top: 23px;
 }
 .repair-testimonial {
@@ -2245,22 +2245,22 @@ div#comments {
   max-width: 275px;
   margin-left: 123px;
 }
-.repair-services p:nth-child(2) {
+.repair-services p:nth-child(3) {
   margin-top: 23px;
 }
-.repair-services p:nth-child(3) {
-  margin-top: 29px;
-}
 .repair-services p:nth-child(4) {
-  margin-top: 14px;
+  margin-top: 29px;
 }
 .repair-services p:nth-child(5) {
-  margin-top: 29px;
+  margin-top: 14px;
 }
 .repair-services p:nth-child(6) {
-  margin-top: 18px;
+  margin-top: 29px;
 }
 .repair-services p:nth-child(7) {
+  margin-top: 18px;
+}
+.repair-services p:nth-child(8) {
   margin-top: 23px;
 }
 .repair-services p b {
