@@ -4175,3 +4175,6 @@ td.repair-date {
     padding-top: 36px;
     padding-bottom: 15px;
 }
+.repair-services-title {
+	display: none;
+}
