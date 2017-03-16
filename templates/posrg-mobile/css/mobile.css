@@ -2080,6 +2080,7 @@ div#comments {
   text-align: center;
   display: block;
   margin-top: 1.4em;
+  cursor: pointer;
 }
 .repair-banner .btn-primary:hover {
   background-color: #0046c6 !important;
@@ -2216,6 +2217,7 @@ div#comments {
   text-align: center;
   display: block;
   margin-top: 1.6em;
+  cursor: pointer;
 }
 .repair-testimonial .btn-primary:hover {
   background-color: #0046c6 !important;
@@ -2361,6 +2363,9 @@ div#comments {
   color: grey;
   margin-bottom: 10px;
 }
+#repair-form .rsform-submit-button:hover {
+  background-color: #0046c6 !important;
+}
 #repair-form .rsform-submit-button {
   color: #fff;
   width: 254px;
@@ -2374,6 +2379,12 @@ div#comments {
   text-align: center;
   margin-bottom: 52px;
   margin-left: 39px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
 }
 #repair-form .rsform-error {
   border: 1px solid red !important;

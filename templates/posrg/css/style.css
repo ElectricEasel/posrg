@@ -4145,6 +4145,16 @@ div#comments {
     display: block;
     margin-left: 201px;
     margin-bottom: 52px;
+    cursor: pointer;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+}
+
+#repair-form  .rsform-submit-button:hover {
+	background-color: #0046c6 !important;
 }
 
 #repair-form .rsform-error {
