@@ -3824,9 +3824,10 @@ div#comments {
     color: #fff;
     text-align: center;
     font-size: 45px;
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
     padding-top: 50px;
+    letter-spacing: 0.03em;
 }
 .repair-banner .banner-title-mobile {
 	display: none;
@@ -4011,22 +4012,22 @@ div#comments {
     max-width: 515px;
     margin-left: 448px;
 }
-.repair-services p:nth-child(2) {
+.repair-services p:nth-child(3) {
     margin-top: 27px;
 }
-.repair-services p:nth-child(3) {
-    margin-top: 29px;
-}
 .repair-services p:nth-child(4) {
-    margin-top: 14px;
+    margin-top: 28px;
 }
 .repair-services p:nth-child(5) {
-    margin-top: 29px;
+    margin-top: 14px;
 }
 .repair-services p:nth-child(6) {
-    margin-top: 18px;
+    margin-top: 29px;
 }
 .repair-services p:nth-child(7) {
+    margin-top: 19px;
+}
+.repair-services p:nth-child(8) {
     margin-top: 23px;
 }
 .repair-services p b {
