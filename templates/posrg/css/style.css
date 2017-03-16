@@ -4042,3 +4042,126 @@ div#comments {
 .page-repair-landing-page .certification-bar {
     display: none;
 }
+
+#repair-form {
+    width: 991px;
+    margin-left: -256px;
+    background: #efefef;
+}
+#repair-form h1 {
+	color: #0072c6;
+    font-size: 38px;
+    font-family: Avant !important;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 38px;
+}
+#repair-form h2 {
+    text-align: center;
+    font-size: 17px;
+    color: #000;
+    margin: 10px 0px 32px;
+}
+#repair-form #userForm {
+    margin: 0 auto;
+    display: table;
+    width: 664px;
+}
+
+#repair-form input {
+    font-size: 16px;
+    padding: 13px 0px 13px 13px;
+}
+
+#repair-form textarea {
+    font-size: 16px;
+    padding: 13px 0px 13px 13px;
+}
+
+#repair-form input:focus {
+    border-radius: 0px;
+}
+
+#repair-form .formTableLayout tr.rsform-block {
+	float: left;
+    margin: 5px 0px;
+}
+
+#repair-form .formTableLayout tr.rsform-block > td {
+    padding: 2px;
+}
+
+.rsform-block-first-name input {
+	width: 305px;
+}
+.rsform-block-last-name input {
+	width: 305px;
+}
+.rsform-block-email input {
+	width: 305px;
+}
+.rsform-block-phone input {
+	width: 305px;
+}
+.rsform-block-company input {
+	width: 640px;
+}
+.rsform-block-manufacturer input {
+	width: 305px;
+}
+.rsform-block-model-part-number input {
+	width: 305px;
+}
+.rsform-block-describe-problem textarea {
+	width: 640px;
+	resize: none;
+}
+
+#repair-form p.time1 {
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+}
+
+#repair-form h6 {
+	margin-left: 169px;
+    font-size: 1.2em;
+    font-weight: 100;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+#repair-form  .rsform-submit-button {
+    color: #fff;
+    width: 254px;
+    padding: 9px 0 !important;
+    text-decoration: none;
+    font-size: 22px !important;
+    line-height: 1.4em !important;
+    border-radius: 9px;
+    border: 4px solid;
+    background: #0072c6;
+    text-align: center;
+    display: block;
+    margin-left: 201px;
+    margin-bottom: 52px;
+}
+
+#repair-form .rsform-error {
+	border: 1px solid red !important;
+}
+#repair-form .formError {
+	display: none;
+}
+#repair-form .formRed {
+	margin-left: 7px;
+}
+
+td.repair-date {
+    text-align: center;
+    color: #9c9a9a;
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 36px;
+    padding-bottom: 15px;
+}
