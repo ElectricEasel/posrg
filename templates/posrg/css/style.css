@@ -3869,6 +3869,17 @@ div#comments {
     letter-spacing: .02em;
     position: absolute;
 }
+
+.repair-banner p:before {
+    content: '';
+    position: absolute;
+    height: 31px;
+    width: 31px;
+    background: url(../images/blue-check.png) center center no-repeat;
+    margin-left: -40px;
+    margin-top: -6px;
+}
+
 .repair-banner p:nth-child(6) {
 	left: 170px;
     top: 462px;
@@ -3916,6 +3927,15 @@ div#comments {
     font-weight: 100;
     max-width: 322px;
 }
+.why-choose-repair p:before {
+    content: '';
+    position: absolute;
+    height: 31px;
+    width: 31px;
+    background: url(../images/blue-check.png) center center no-repeat;
+    margin-left: -40px;
+}
+
 .why-choose-repair p:nth-child(3) {
     margin-left: 141px;
     margin-top: 39px;
@@ -4014,6 +4034,17 @@ div#comments {
     max-width: 515px;
     margin-left: 448px;
 }
+
+.repair-services p:before {
+    content: '';
+    position: absolute;
+    height: 31px;
+    width: 31px;
+    background: url(../images/blue-check.png) center center no-repeat;
+    margin-left: -40px;
+    margin-top: -3px;
+}
+
 .repair-services p:nth-child(3) {
     margin-top: 27px;
 }
