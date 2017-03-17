@@ -2053,6 +2053,7 @@ div#comments {
   margin: 0 auto;
   padding-top: 1.6em;
   line-height: 1.7em;
+  text-shadow: 2px 5px 10px #000000;
 }
 .repair-banner .banner-title {
   display: none;
@@ -2278,7 +2279,11 @@ div#comments {
 }
 #repair-form {
   width: 480px;
-  background: #efefef;
+  background: url(../images/form-gradient.jpg);
+  background-color: #efefef;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #repair-form h1 {
   color: #0072c6;
@@ -2391,8 +2396,8 @@ td.repair-date {
   color: #9c9a9a;
   font-weight: 600;
   font-size: 15px;
-  padding-top: 36px;
-  padding-bottom: 15px;
+  padding-top: 28px;
+  padding-bottom: 23px;
 }
 #repair-form .formTableLayout {
   border: none;

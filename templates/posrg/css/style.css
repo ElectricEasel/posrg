@@ -3828,6 +3828,7 @@ div#comments {
     margin: 0 auto;
     padding-top: 50px;
     letter-spacing: 0.03em;
+    text-shadow: 2px 5px 10px #000000;
 }
 .repair-banner .banner-title-mobile {
 	display: none;
@@ -3987,10 +3988,11 @@ div#comments {
 	background-color: #0046c6 !important;
 }
 .repair-services {
-    background: url(../images/repair-services.jpg);
-    height: 612px;
+	background: url(../images/repair-services.jpg);
+    height: 590px;
     width: 991px;
-	margin-left: -256px;
+    margin-left: -256px;
+    border-bottom: 11px solid #000;
 }
 .repair-services .h1-desktop {
     font-size: 2.2em !important;
@@ -4046,7 +4048,8 @@ div#comments {
 #repair-form {
     width: 991px;
     margin-left: -256px;
-    background: #efefef;
+	background-color: #efefef;
+	background: url(../images/form-gradient.jpg);
 }
 #repair-form h1 {
 	color: #0072c6;
@@ -4172,8 +4175,8 @@ td.repair-date {
     color: #9c9a9a;
     font-weight: 600;
     font-size: 15px;
-    padding-top: 36px;
-    padding-bottom: 15px;
+    padding-top: 28px;
+    padding-bottom: 23px;
 }
 .repair-services-title {
 	display: none;
