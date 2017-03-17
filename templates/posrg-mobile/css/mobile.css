@@ -2416,5 +2416,5 @@ td.repair-date {
   display: block !important;
 }
 a.repair-services-menu-item {
-  display: none;
+  display: none !important;
 }
