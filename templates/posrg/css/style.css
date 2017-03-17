@@ -3796,19 +3796,19 @@ div#comments {
 
 
 
-.page-repair-landing-page .wrap {
+.repair-landing-page .wrap {
     width: 970px !important;
 }
 
-.page-repair-landing-page .contentheading {
+.repair-landing-page .contentheading {
 	display: none;
 }
 
-.page-repair-landing-page #sidebar {
+.repair-landing-page #sidebar {
 	display: none;
 }
 
-.page-repair-landing-page #banner {
+.repair-landing-page #banner {
 	display: none;
 }
 
@@ -4035,13 +4035,13 @@ div#comments {
 .repair-services p b {
 	font-size: 14px !important;
 }
-.page-repair-landing-page .bottom-logos {
+.repair-landing-page .bottom-logos {
 	right: 256px;
 	width: 990px;
     margin-top: 0px;
     margin-bottom: -20px;
 }
-.page-repair-landing-page .certification-bar {
+.repair-landing-page .certification-bar {
     display: none;
 }
 
