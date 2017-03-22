@@ -53,7 +53,7 @@ RewriteRule ^(leads/) - [F,L,NC]
 Redirect 301 /asset-appraisal http://posrg.com/services/asset-appraisal
 Redirect 301 /asset-appraisal/wanted-pos-items/ http://posrg.com/services/asset-appraisal/wanted-pos-items
 Redirect 301 /media/POSRG_Product_line_Card.pdf /media/POSRG-Product-line-Card.pdf
-Redirect 301 /services/our-green-program http://posrg.com/our-process/green-program
+Redirect 301 /services/our-green-program http://posrg.com/about-us/green-program
 Redirect 301 /services/posrg-services-a-solutions http://posrg.com/services
 Redirect 301 /services/posrg-hardware-disposition-solutions http://posrg.com/services/asset-management/asset-disposal
 Redirect 301 /services/posrg-complimentary-services http://posrg.com/services
@@ -69,6 +69,12 @@ Redirect 301 /markets-served/canadian-market http://www.posrg.ca/
 Redirect 301 /inventory/top-ten-products http://posrg.com/product-info
 Redirect 301 /about-us/letter-from-the-president http://posrg.com/about-us/mission-statement
 Redirect 301 /about-us/top-ten-products http://posrg.com/services/wanted-pos-items
+Redirect 301 /our-process/quality-assurance http://posrg.com/about-us/quality-assurance
+Redirect 301 /our-process/pos-standards http://posrg.com/about-us/pos-standards
+Redirect 301 /our-process/posrg-certified http://posrg.com/about-us/posrg-certified
+Redirect 301 /our-process/refurbish-refresh http://posrg.com/about-us/refurbish-refresh
+Redirect 301 /our-process/green-program http://posrg.com/about-us/green-program
+Redirect 301 /our-process http://posrg.com/about-us/our-process
 
 ## End - Custom redirects
 
@@ -108,6 +114,9 @@ Deny from 206.123.124.228
 Deny from 188.143.234.155
 Deny from 188.143.232.32 
 Deny from 188.143.232.27
+Deny from 5.188.211.45
+Deny from 46.161.14.99
+Deny from 5.188.211.170
 
 # Turn on Expires and set default to 0
 ExpiresActive On
