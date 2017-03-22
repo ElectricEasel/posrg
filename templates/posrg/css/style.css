@@ -4226,3 +4226,8 @@ td.repair-date {
 li.item-479 {
 	display: none !important;
 }
+.page-thank-you #content #main {
+	float: none;
+    width: 705px;
+    margin: 0 auto 50px;
+}
