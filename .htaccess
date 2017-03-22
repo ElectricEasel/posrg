@@ -69,12 +69,12 @@ Redirect 301 /markets-served/canadian-market http://www.posrg.ca/
 Redirect 301 /inventory/top-ten-products http://posrg.com/product-info
 Redirect 301 /about-us/letter-from-the-president http://posrg.com/about-us/mission-statement
 Redirect 301 /about-us/top-ten-products http://posrg.com/services/wanted-pos-items
-Redirect 301 /our-process http://posrg.com/about-us/our-process
 Redirect 301 /our-process/quality-assurance http://posrg.com/about-us/quality-assurance
 Redirect 301 /our-process/pos-standards http://posrg.com/about-us/pos-standards
 Redirect 301 /our-process/posrg-certified http://posrg.com/about-us/posrg-certified
 Redirect 301 /our-process/refurbish-refresh http://posrg.com/about-us/refurbish-refresh
 Redirect 301 /our-process/green-program http://posrg.com/about-us/green-program
+Redirect 301 /our-process http://posrg.com/about-us/our-process
 
 ## End - Custom redirects
 
