@@ -1550,6 +1550,12 @@ float:right
 .menu .item-328 {
 	display:none !important;
 }
+#nav .menu > .item-478.parent > a {
+	background: none;
+}
+#nav .menu > .item-478.parent ul {
+	display: none;
+}
 .search_pagination li {
 	display:inline-block;
 	margin:5px;
