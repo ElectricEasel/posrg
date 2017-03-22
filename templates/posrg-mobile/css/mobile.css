@@ -2442,3 +2442,6 @@ td.repair-date {
   padding-top: 16px;
   display: block !important;
 }
+li.item-479 {
+  display: none !important;
+}
