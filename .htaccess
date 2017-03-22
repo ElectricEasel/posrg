@@ -114,6 +114,9 @@ Deny from 206.123.124.228
 Deny from 188.143.234.155
 Deny from 188.143.232.32 
 Deny from 188.143.232.27
+Deny from 5.188.211.45
+Deny from 46.161.14.99
+Deny from 5.188.211.170
 
 # Turn on Expires and set default to 0
 ExpiresActive On
