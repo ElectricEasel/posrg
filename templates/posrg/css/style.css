@@ -3916,7 +3916,7 @@ div#comments {
     width: 990px;
     margin-left: -256px;
 }
-.why-choose-repair .h1-desktop {
+.why-choose-repair .h2-desktop {
     font-size: 2.2em !important;
     text-align: center;
     color: #0072c6 !important;
@@ -3924,7 +3924,7 @@ div#comments {
     letter-spacing: 0.03em;
     padding-top: 44px;
 }
-.why-choose-repair .h1-mobile {
+.why-choose-repair .h2-mobile {
     display: none;
 }
 .why-choose-repair p {
@@ -4020,7 +4020,7 @@ div#comments {
     margin-left: -256px;
     border-bottom: 11px solid #000;
 }
-.repair-services .h1-desktop {
+.repair-services .h2-desktop {
     font-size: 2.2em !important;
     text-align: center;
     color: #0072c6 !important;
@@ -4028,9 +4028,9 @@ div#comments {
     letter-spacing: 0.03em;
     padding-top: 60px;
     left: 5em;
-    margin-left: 270px;
+    margin-left: 270px !important;
 }
-.repair-services .h1-mobile {
+.repair-services .h2-mobile {
     display: none;
 }
 .repair-services p {
@@ -4088,7 +4088,7 @@ div#comments {
 	background-color: #efefef;
 	background: url(../images/form-gradient.jpg);
 }
-#repair-form h1 {
+#repair-form h3 {
 	color: #0072c6;
     font-size: 38px;
     font-family: Avant !important;
@@ -4225,4 +4225,9 @@ td.repair-date {
 
 li.item-479 {
 	display: none !important;
+}
+.page-thank-you #content #main {
+	float: none;
+    width: 705px;
+    margin: 0 auto 50px;
 }
