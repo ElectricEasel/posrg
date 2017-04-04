@@ -95,6 +95,7 @@ class plgSystemRsfpcrm extends JPlugin
 				'additional_information',
 				'question',
 				'id',
+				'repair_quote',
 			);
 
 			$csv_items = array();
