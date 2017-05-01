@@ -76,6 +76,7 @@ Redirect 301 /our-process/refurbish-refresh http://posrg.com/about-us/refurbish-
 Redirect 301 /our-process/green-program http://posrg.com/about-us/green-program
 Redirect 301 /our-process http://posrg.com/about-us/our-process
 Redirect 301 /services/pos-repair-services http://posrg.com/pos-repair-services
+Redirect 301 /blog/2016/11/21/hello-world/ http://posrg.com/blog
 
 ## End - Custom redirects
 
