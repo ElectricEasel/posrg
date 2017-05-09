@@ -2475,6 +2475,18 @@ body.preferred-partners #content #main {
     padding-top: 60px;
     border-top: 1px solid #dedede;
 }
+.pp-cisco {
+	min-height: 280px;
+    padding-right: 400px;
+    padding-top: 25px;
+    position: relative;
+}
+.pp-cisco .product-image {
+	position: absolute;
+	right: 44px;
+	top: 0;
+	height: auto;
+}
 
 #page .pp-hp h6 {
 	margin-top: 0;
