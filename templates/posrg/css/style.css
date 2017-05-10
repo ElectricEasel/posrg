@@ -2477,14 +2477,14 @@ body.preferred-partners #content #main {
 }
 .pp-cisco {
 	min-height: 280px;
-    padding-right: 400px;
+    padding-right: 420px;
     padding-top: 25px;
     position: relative;
 }
 .pp-cisco .product-image {
 	position: absolute;
 	right: 44px;
-	top: 0;
+	top: 28px;
 	height: auto;
 }
 
