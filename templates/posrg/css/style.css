@@ -2955,7 +2955,7 @@ ul#featuredlist li a.button.button-gray:hover {
 	font-size: 38px;
 	text-shadow: 0 5px 18px rgba(0,0,0,0.86), 0 1px 18px rgba(0,0,0,0.86);
 	text-transform: uppercase;
-	width: 460px;
+	width: 470px;
 }
 .recycle-recover #fully-certified {
 	text-align: center;
@@ -2967,7 +2967,8 @@ ul#featuredlist li a.button.button-gray:hover {
 	font-size: 22px;
 	font-weight: bold;
 	text-transform: none;
-	margin: 0 0 5px;
+	margin: 0 auto 5px;
+	max-width: 500px;
 }
 .recycle-recover #fully-certified p {
 	color: #000;
