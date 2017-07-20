@@ -38,9 +38,9 @@ $i		= 0;
 					<div>
 						<h4 class="gm-name gm-ptitle"><?php echo $item->product_name ?></h4>
 						<div class="gm-description"><?php echo $item->product_des ?></div>
-						<div>Price: <span class="gm-price">$<?php echo number_format($item->price, 2) ?></span></div>
+						<div>Quantity: <span class="gm-price"><?php echo $item->inventory; ?></span></div>
 						<a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="buynow">
-							<?php echo JText::_('Buy Now') ?>
+							<?php echo JText::_('Get Quote') ?>
 
 						</a>
 					</div>
