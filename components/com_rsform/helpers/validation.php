@@ -207,6 +207,7 @@ class RSFormProValidations
 			strpos($value, 'http') === false &&
 			strpos($value, '.com') === false &&
 			strpos($value, '.ru') === false &&
+			strpos($value, 'bit.ly') === false &&
 			!preg_match('/[^\\p{Common}\\p{Latin}]/u', $value));
 	}
 	
