@@ -8,7 +8,7 @@ JRequest::setVar('form_name', 'Buy Now: Specials');
 ?>
 <div id='gm-family-detail' class='gm-content'>
 	<div class='gm-head' style="margin-bottom:0;">
-		<h2>Current Specials</h2>
+		<h2>Current Inventory Surplus</h2>
 	</div>
 	<div class='gm-item-form' style="margin-bottom: 15px;">
 		<img class="size-mlarge img-left" src="<?php echo $this->image; ?>" alt="<?php echo $this->item->product_name; ?>" />
