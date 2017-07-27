@@ -30,7 +30,7 @@ $i     = 0;
 						<?php echo JHtml::_('grid.sort', JText::_('GM_PRODUCT_MANAGER_NAME'), 'product_name', $this->lists['order_Dir'], $this->lists['order'] ); ?>
 					</th>
 					<th>
-						<?php echo JHtml::_('grid.sort', JText::_('GM_PRODUCT_MANAGER_PRICE'), 'price', $this->lists['order_Dir'], $this->lists['order'] ); ?>
+						<?php echo JHtml::_('grid.sort', 'Quantity', 'price', $this->lists['order_Dir'], $this->lists['order'] ); ?>
 					</th>
 					<th>
 						<?php echo JText::_('GM_PRODUCT_MANAGER_DES'); ?>
@@ -79,7 +79,7 @@ $i     = 0;
 						<a href="<?php echo JRoute::_('index.php?option=com_product&view=form&id=' . $item->id) ?>"><?php echo $item->product_name; ?></a>
 					</td>
 					<td>
-						<?php echo number_format($item->price, 2)  ?> $
+						<?php echo $item->inventory; ?>
 					</td>
 					<td align="center">
 						<?php echo $item->product_des; ?>

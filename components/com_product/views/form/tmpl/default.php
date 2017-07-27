@@ -38,10 +38,10 @@ JHtml::_('behavior.formvalidation');
 
 		<div class="item">
 			<div class="label">
-				<label for="price"><?php echo JText::_('GM_FAMILY_FORM_PRICE') ?> <span class="req" >*</span></label>
+				<label for="inventory">Quantity <span class="req" >*</span></label>
 			</div>
 			<div class="value">
-				<input name="price" value="<?php echo number_format($this->item->price, 2);?>" id="price" class="gm-input required" type="text" /> USD
+				<input name="inventory" value="<?php echo $this->item->inventory; ?>" id="inventory" class="gm-input required" type="text" />
 			</div>
 		</div>
 

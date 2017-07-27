@@ -4,7 +4,7 @@ $count	= count($this->items);
 $i		= 0;
 ?>
 <div id="gm-family-grid" class="gm-content">
-	<h2 class="componentheading"><?php echo JText::_('GM_PRODUCT_PRODUCT_LIST') ?></h2>
+	<h2 class="componentheading"><?php echo JText::_('Current Inventory Surplus') ?></h2>
 	<?php
 	$i=0;
 	if ($count) :
@@ -38,9 +38,9 @@ $i		= 0;
 					<div>
 						<h4 class="gm-name gm-ptitle"><?php echo $item->product_name ?></h4>
 						<div class="gm-description"><?php echo $item->product_des ?></div>
-						<div>Price: <span class="gm-price">$<?php echo number_format($item->price, 2) ?></span></div>
+						<div>Quantity: <span class="gm-price"><?php echo $item->inventory; ?></span></div>
 						<a href="<?php echo $buyUrl; ?>" title="<?php echo $item->product_name; ?>" class="buynow">
-							<?php echo JText::_('Buy Now') ?>
+							<?php echo JText::_('Request Quote') ?>
 
 						</a>
 					</div>

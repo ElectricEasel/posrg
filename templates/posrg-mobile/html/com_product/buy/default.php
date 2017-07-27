@@ -11,7 +11,7 @@ JRequest::setVar('form_name', 'Buy Now: Specials');
 		<img class="specials-img" src="<?php echo $this->image; ?>" alt="<?php echo $this->item->product_name; ?>" />
 		<h4 class="spec-name"><?php echo $this->item->product_name; ?></h4>
 		<p class="product-desc"><?php echo $this->item->product_des; ?></p>
-		<p class="price">Price: <span class="gm-price">$<?php echo  number_format($this->item->price, 2);  ?></span></p>
+		<p class="price">Quantity: <span class="gm-price"><?php echo $this->item->inventory; ?></span></p>
 		<div class="clear"></div>
 	</div> <!-- Close the item div -->
 </div> <!-- Close the wrap -->

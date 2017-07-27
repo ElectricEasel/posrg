@@ -28,8 +28,8 @@ $i		= 0;
 				<img src="<?php echo $img ?>" alt="<?php echo $item->product_name ?>" />
 			</div>
 			<h4><?php echo $item->product_name ?></h4>
-			<div class="price">Price: <span>$<?php echo number_format($item->price, 2) ?></span></div>
-			<a class="button-buy" href="<?php echo $buyUrl; ?>"><?php echo JText::_('Buy Now') ?></a>
+			<div class="price">Quantity: <span><?php echo $item->inventory; ?></span></div>
+			<a class="button-buy" href="<?php echo $buyUrl; ?>"><?php echo JText::_('Get Quote') ?></a>
 		</li>	
 			
 	<?php
