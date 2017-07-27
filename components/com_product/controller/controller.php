@@ -202,7 +202,7 @@ class ProductController extends JController
 	{
 		$user = JFactory::getUser();
 		
-		$allowed = array('admin', 'posrg');
+		$allowed = array('admin', 'posrg', 'jim');
 
 		if (in_array(strtolower($user->get('username')), $allowed) === false)
 		{
