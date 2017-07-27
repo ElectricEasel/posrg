@@ -3,7 +3,7 @@
 JHtml::_('behavior.formvalidation');
 ?>
 <div class="gm-head">
-	<h2><?php echo JText::_("Current Inventory Surplus") ?></h2>
+	<h2><?php echo JText::_("GM_PRODUCT_FORM_HEAD") ?></h2>
 </div>
 <div id="gm-family-form" class="gm-content">
 	<form name="gm_form_family" id="gm_form_family" action="<?php echo JRoute::_("index.php?option=com_product&task=save") ?>" method="post"  class="form-validate gm-form">
