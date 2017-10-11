@@ -2478,9 +2478,10 @@ body.preferred-partners #content #main {
 .pp-zebra {
 	background: url(../images/pref-partners/zebra.jpg) no-repeat center bottom transparent;
 	min-height: 250px;
-    padding-left: 234px;
+    padding-left: 215px;
     padding-top: 34px;
     border-top: 1px solid #dedede;
+    background-position: 27px 78px;
 }
 .pp-cisco {
 	min-height: 280px;
