@@ -2028,8 +2028,6 @@ input:focus {
 	border-radius: 10px;
 }
 
-/* NEW CONTACT PAGE STYLING */
-
 #content .contact-list {
 	list-style: none outside none;
 	margin: 0;
@@ -2425,19 +2423,9 @@ body.preferred-partners #content #main {
 }
 .pp-panasonic {
 	border-bottom: none !important;
+	padding: 45px 85px 10px;
 }
-// .pp-posiflex {
-// 	min-height: 210px;
-// }
-// .pp-datalogic {
-// 	min-height: 255px;
-// }
-// .pp-epson {
-// 	min-height: 185px;
-// }
-// .pp-elo {
-// 	min-height: 250px;
-// }
+
 .pp-hp {
 	display: block;
 }
@@ -2459,29 +2447,10 @@ body.preferred-partners #content #main {
 	margin-bottom: 20px;
 }
 
-// .pp-hv {
-// 	min-height: 175px;
-// }
-
-// .pp-qsr {
-// 	min-height: 228px;
-// }
-
-// .pp-honeywell {
-// 	min-height: 272px;
-// }
-// .pp-zebra {
-// 	min-height: 250px;
-// }
-// .pp-cisco {
-// 	min-height: 280px;
-// }
-
 #page .pp-hp h6 {
 	margin-top: 0;
 }
 #pp-boxes {
-	//background: url(../images/dropshadow-top.png) repeat-x 0 0 transparent;
 	padding: 20px 25px 30px;
 	text-align: center;
 }
