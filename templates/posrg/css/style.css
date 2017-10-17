@@ -2448,11 +2448,11 @@ body.preferred-partners #content #main {
 }
 .pp-hp .product-image {
     display: block;
-    margin: 0 auto 25px;
+    margin: 0 auto;
     width: 980px;
     position: relative;
     right: 78px;
-    top: 3px;
+    top: -24px;
 }
 
 .product-content img {
