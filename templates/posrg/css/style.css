@@ -2342,7 +2342,6 @@ body.preferred-partners #content #main {
 	padding: 30px 50px 275px;
 	min-height: 200px;
 	text-align: center;
-	margin-bottom: 50px;
 }
 .pp-header h1 {
 	color: #006ab8;
@@ -2359,8 +2358,35 @@ body.preferred-partners #content #main {
 
 }
 .pp-product {
-	padding: 20px 100px;
+	padding: 45px 85px;
+	position: relative;
+	display: flex;
 }
+.pp-product:nth-child(odd) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,fdfdfd+9,f9f9f9+17,f6f6f6+25,ececec+34,ebebeb+41,ececec+56,f0f0f0+60,efefef+61,fafafa+82,fefefe+95,ffffff+100,f9ffff+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left, #ffffff 0%, #fdfdfd 9%, #f9f9f9 17%, #f6f6f6 25%, #ececec 34%, #ebebeb 41%, #ececec 56%, #f0f0f0 60%, #efefef 61%, #fafafa 82%, #fefefe 95%, #ffffff 100%, #f9ffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #ffffff 0%,#fdfdfd 9%,#f9f9f9 17%,#f6f6f6 25%,#ececec 34%,#ebebeb 41%,#ececec 56%,#f0f0f0 60%,#efefef 61%,#fafafa 82%,#fefefe 95%,#ffffff 100%,#f9ffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #ffffff 0%,#fdfdfd 9%,#f9f9f9 17%,#f6f6f6 25%,#ececec 34%,#ebebeb 41%,#ececec 56%,#f0f0f0 60%,#efefef 61%,#fafafa 82%,#fefefe 95%,#ffffff 100%,#f9ffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9ffff',GradientType=1 ); /* IE6-9 */
+
+}
+.pp-product:nth-child(odd) .product-content {
+	padding-left: 20px;
+}
+
+.pp-product:nth-child(even) {
+	border-bottom: 1px solid #dedede;
+}
+
+// #page:last-child .pp-product {
+// 	border-bottom: 0px;
+// }
+
+.pp-product:nth-child(even) .product-content {
+	padding-right: 20px;
+}
+
 #page .pp-product p {
 	font-size: 12px;
 }
@@ -2398,103 +2424,58 @@ body.preferred-partners #content #main {
 	margin-bottom: 20px;
 }
 .pp-panasonic {
-	background: url(../images/pref-partners/panasonic.jpg) no-repeat center bottom transparent;
-	min-height: 248px;
-	padding-right: 380px;
-	padding-top: 0;
+	border-bottom: none !important;
 }
-.pp-posiflex {
-	background: url(../images/pref-partners/posiflex.jpg) no-repeat center bottom transparent;
-	min-height: 210px;
-	padding-left: 350px;
-	padding-top: 0;
-}
-.pp-datalogic {
-	background: url(../images/pref-partners/datalogic.jpg) no-repeat center bottom transparent;
-	min-height: 255px;
-	padding-right: 380px;
-	padding-top: 40px;
-}
-.pp-epson {
-	background: url(../images/pref-partners/epson.jpg) no-repeat center bottom transparent;
-	min-height: 185px;
-    padding-left: 350px;
-    padding-top: 60px;
-}
-.pp-elo {
-	background: url(../images/pref-partners/elo.jpg) no-repeat center bottom transparent;
-	min-height: 250px;
-    padding-right: 470px;
-    padding-top: 52px;
-}
+// .pp-posiflex {
+// 	min-height: 210px;
+// }
+// .pp-datalogic {
+// 	min-height: 255px;
+// }
+// .pp-epson {
+// 	min-height: 185px;
+// }
+// .pp-elo {
+// 	min-height: 250px;
+// }
 .pp-hp {
-	background: url(../images/pref-partners/hp.jpg) no-repeat center top transparent;
-	min-height: 100px;
-	padding-top: 300px;
-	padding-right: 85px;
+	display: block;
 }
-.pp-hp:after {
-	content: "";
-	display: table;
-	clear: both;
-	visibility: hidden;
-}
-.pp-hp img {
+
+.pp-hp .product-content img {
 	float: left;
 	padding: 0 20px 50px 0;
 }
-.pp-hv {
-	background: url(../images/pref-partners/hv.jpg) no-repeat center bottom transparent;
-	min-height: 175px;
-    padding-left: 335px;
-    padding-top: 60px;
-    border-top: 1px solid #dedede;
-}
-.pp-hv img {
-	height: 30px;
-}
-.pp-qsr {
-	min-height: 228px;
-    padding-right: 326px;
-    padding-top: 52px;
+.pp-hp .product-image {
+    display: block;
+    margin: 0 auto 25px;
+    width: 980px;
     position: relative;
+    right: 78px;
+    top: 3px;
 }
-.pp-qsr img {
-	height: 76px;
+
+.product-content img {
+	margin-bottom: 20px;
 }
-.pp-qsr .product-image {
-	position: absolute;
-	right: 44px;
-	top: -15px;
-	height: auto;
-}
-.pp-honeywell {
-	background: url(../images/pref-partners/honeywell.jpg) no-repeat center bottom transparent;
-	min-height: 272px;
-    padding-left: 335px;
-    padding-top: 60px;
-    border-top: 1px solid #dedede;
-}
-.pp-zebra {
-	background: url(../images/pref-partners/zebra.jpg) no-repeat center bottom transparent;
-	min-height: 250px;
-    padding-left: 215px;
-    padding-top: 34px;
-    border-top: 1px solid #dedede;
-    background-position: 27px 78px;
-}
-.pp-cisco {
-	min-height: 280px;
-    padding-right: 420px;
-    padding-top: 25px;
-    position: relative;
-}
-.pp-cisco .product-image {
-	position: absolute;
-	right: 44px;
-	top: 15px;
-	height: auto;
-}
+
+// .pp-hv {
+// 	min-height: 175px;
+// }
+
+// .pp-qsr {
+// 	min-height: 228px;
+// }
+
+// .pp-honeywell {
+// 	min-height: 272px;
+// }
+// .pp-zebra {
+// 	min-height: 250px;
+// }
+// .pp-cisco {
+// 	min-height: 280px;
+// }
 
 #page .pp-hp h6 {
 	margin-top: 0;
