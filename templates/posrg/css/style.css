@@ -2390,9 +2390,9 @@ body.preferred-partners #content #main {
 #page .pp-product p {
 	font-size: 12px;
 }
-.pp-product img {
-	display: block;
-}
+// .pp-product img {
+// 	display: block;
+// }
 #page .pp-product h6 {
 	font-size: 14px;
 	color: #5d5d5d;
