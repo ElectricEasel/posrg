@@ -1184,7 +1184,7 @@ fieldset.phrases {
 }
 .pp-header {
   background: url(../images/banner-partners.jpg) no-repeat center bottom #ffffff;
-  padding-bottom: 90px;
+  padding-bottom: 110px;
   margin-bottom: 20px;
 }
 .pp-header h1 {
@@ -2444,4 +2444,7 @@ td.repair-date {
 }
 li.item-479 {
   display: none !important;
+}
+.pp-product .product-image {
+  display: none;
 }
