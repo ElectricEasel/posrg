@@ -2621,8 +2621,9 @@ li.item-479 {
   font-family: AvantBold !important;
   font-size: 30px !important;
   padding-top: 60px;
-  margin: 0px 0px 10px !important;
+  margin: 0px -10px 10px !important;
   display: block !important;
+  min-width: 350px;
 }
 .data-destruction-form-wrap .complete-form {
   text-align: center;
