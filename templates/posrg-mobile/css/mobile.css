@@ -2454,6 +2454,7 @@ li.item-479 {
 .data-destruction-new .item-page {
   width: 480px;
   margin: 0px 0px 0px -100px;
+  padding: 0px !important;
 }
 .data-destruction-new .wrap {
   padding-top: 0px !important;
