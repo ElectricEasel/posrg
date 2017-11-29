@@ -2452,12 +2452,14 @@ li.item-479 {
   padding: 0px !important;
 }
 .data-destruction-new .item-page {
-  width: 480px;
-  margin: 0px 0px 0px -82px;
+  max-width: 480px;
+  margin: 0px 0px 0px 0px;
   padding: 0px !important;
 }
 .data-destruction-new .wrap {
   padding-top: 0px !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
 }
 .data-destruction-new #banner {
   display: none;
