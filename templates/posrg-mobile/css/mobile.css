@@ -2453,7 +2453,7 @@ li.item-479 {
 }
 .data-destruction-new .item-page {
   max-width: 480px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px auto;
   padding: 0px !important;
 }
 .data-destruction-new .wrap {
@@ -2482,9 +2482,11 @@ li.item-479 {
 }
 .data-destruction-new .hero h3 {
   color: #fff !important;
-  position: absolute;
-  left: 125px;
-  bottom: 90px;
+  left: 15px;
+  bottom: -212px;
+  margin: 0 auto;
+  position: relative;
+  display: table;
 }
 .data-destruction-new .hero img {
   position: absolute;
@@ -2851,7 +2853,7 @@ li.item-479 {
   text-align: center;
 }
 .data-destruction-new .bottom-logos {
-  background: url(../images/bottom-logos-mobile.jpg) no-repeat;
+  background: url(../images/bottom-logos-mobile.jpg) center center no-repeat;
   height: 206px;
 }
 .data-destruction-new .formRed {
