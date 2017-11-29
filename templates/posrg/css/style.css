@@ -4304,7 +4304,7 @@ li.item-479 {
 .data-destruction-new .form-area {
     background-color: #efefef;
     background: url(../images/form-gradient.jpg);
-    height: 585px;
+    padding: 0px 0px 38px;
 }
 
 .data-destruction-form-wrap {
@@ -4626,4 +4626,17 @@ li.item-479 {
 	margin-top: 0px;
 	right: 0px;
 	margin-bottom: -103px;
+}
+
+.data-destruction-new .formRed {
+    margin-left: 10px;
+    font-size: 13px !important;
+}
+
+.data-destruction-new .formError {
+	display: none;
+}
+
+.data-destruction-new .rsform-error {
+    border: 1px solid red !important;
 }
