@@ -24,7 +24,7 @@ class ProductModelList extends JModelList
 		$params = $this->app->getParams();
 		$this->setState('params', $params);
 
-		$this->setState('list.limit', 21);
+		$this->setState('list.limit', 42);
 	}
 
 	public function getListQuery()
