@@ -155,7 +155,9 @@ span.blue {
 div.gm-family-toolbar {
 	display:block;
 	font-weight:bold;
-	margin:20px 0 10px;
+	margin:0 0 10px;
+	padding-top:10px;
+	clear: both;
 	text-align:center;
 }
 div.gm-family-toolbar ul {
