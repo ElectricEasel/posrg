@@ -152,34 +152,27 @@ span.blue {
 	margin-left: 10px;
 	
 }
-.gm-family-toolbar {
-	padding: 20px 0px 20px 0px;
-	display: block;
-	overflow: hidden;
+div.gm-family-toolbar {
+	display:block;
+	font-weight:bold;
+	margin:20px 0 10px;
+	text-align:center;
 }
-.gm-family-toolbar.first{
-	background: url('../images/line.png') repeat-x center bottom;
+div.gm-family-toolbar ul {
+	display: inline-block;
 }
-.gm-family-toolbar span{
-	font-weight: bold;
-	padding-right:2px;
-	
+div.gm-family-toolbar li {
+	float:left;
+	margin:5px;
 }
-.gm-family-toolbar span.sp{
-	background: url('../images/sp.png') no-repeat center center;
-	padding: 0px 5px;
-}
-.gm-family-toolbar span.active{
+div.gm-family-toolbar a.pagenav {
+	background:#2F7ECF;
+	color:#FFFFFF;
 	text-decoration: none;
-}
-.gm-family-toolbar .center{
-	margin-right: 150px;
-	font-weight: bold;
-}
-.gm-family-toolbar a{
-	font-weight: bold;
-	padding-right: 2px;
-	text-decoration: none;
+	display:inline;
+	height:10px;
+	padding:5px 8px;
+	width:10px;
 }
 
 .gm-family-detail-intro-container {

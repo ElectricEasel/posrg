@@ -27,7 +27,7 @@ class ProductModelForm extends JModelItem
 		$params = $this->app->getParams();
 		$this->setState('params', $params);
 
-		$this->setState('list.limit', 20);
+		$this->setState('list.limit', 21);
 	}
 
 	public function getItem()

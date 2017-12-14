@@ -51,7 +51,12 @@ $i		= 0;
 	<?php
 		$i++;
 		if($i%3 == 0) echo '<div class="clear"></div>';
-		endforeach;
+		endforeach; ?>
+
+		<div class="gm-family-toolbar">
+			<?php echo $this->pagination->getPagesLinks(); ?>
+		</div>
+	<?php
 	else :
 		echo '<div style="text-align: center">'.JText::_('GM_PRODUCT_LIST_NO_ITEM').'</div>';
 	endif; ?>

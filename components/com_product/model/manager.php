@@ -19,6 +19,7 @@ class ProductModelManager extends JModelList
 		$search = $this->app->getUserStateFromRequest("com_product.search", 'search', '', 'string');
 		$search = strtolower($search);
 		$this->setState('filter.search', $search);
+		$this->setState('list.limit', 21);
 
 		$params = $this->app->getParams();
 		$this->setState('params', $params);
