@@ -1906,7 +1906,7 @@ h1.quote-title {
 .heading2 {
     clear: both;
 }
-.heading2 h1 {
+.heading2 h1, .heading2 h5 {
     font-size: 17px;
     font-family: Avant !important;
     padding-top: 50px;
