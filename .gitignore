@@ -18,3 +18,4 @@ error_log
 /hooks
 /components/com_wordpress/wp/wp-content/uploads
 /logos
+.htaccess
