@@ -13,7 +13,7 @@ $params = $this->item->params;
 
 <div id="page" class="article">
 <?php if ($params->get('show_category')) : ?>
-	<h1 class="clearfix"><?php echo $this->escape($this->item->category_title);?>
+	<h2 class="clearfix"><?php echo $this->escape($this->item->category_title);?>
 	
 	<?php 	$title = $this->escape($this->item->category_title);
 					$url = '<a class="blue-btn right" href="'.JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->catslug)).'">&laquo; back to '.$title.'</a>';?>
@@ -23,7 +23,7 @@ $params = $this->item->params;
 				<?php echo JText::sprintf('COM_CONTENT_CATEGORY', $title); ?>
 			<?php endif; ?>	
 		
-	</h1>
+	</h2>
 <?php endif; ?>
 
 <?php if ((intval($this->item->modified) !=0 && $this->params->get('show_modify_date')) || ($this->params->get('show_author') && ($this->item->author != "")) || ($this->params->get('show_create_date'))) : ?>
