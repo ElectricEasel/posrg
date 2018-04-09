@@ -1734,7 +1734,7 @@ p.bullet-4 {
     margin-top: 32px;
     overflow: hidden;
 }
-.Ken h1{
+.Ken h5{
     color: #0072c6;
     font-size: 27px;
     position: relative;
@@ -1897,7 +1897,7 @@ h1.quote-title {
     position: relative;
     top: 30px;
 }
-.heading1 h1 {
+.heading1 h1, .heading1 h5 {
     font-size: 17px;
     font-family: Avant !important;
     position: relative;
