@@ -20,7 +20,8 @@ $template_path = '/templates/posrg';
 	// ]]>
 	</script>
 	<div class="slides">
-		<a href="/services/data-destruction"><img src="<?php echo $template_path; ?>/images/banner-naid.jpg" alt="POSRG NAID AAA Certified for Data Destruction" /></a>
+		<a href="https://show.restaurant.org/exhibitors/current-exhibitor-dashboard/exhibitor-marketing-tools/promotional-materials" target="_blank"><img src="<?php echo $template_path; ?>/images/tradeshow_banners.jpg" alt="National Restaurant Association 2018 Trade Show" /></a>
+<!-- 		<a href="/services/data-destruction"><img src="<?php echo $template_path; ?>/images/banner-naid.jpg" alt="POSRG NAID AAA Certified for Data Destruction" /></a> -->
 		<a href="/pos-repair-services" style="display: none;"><img src="<?=$template_path?>/images/banner-repair.jpg" alt="POS Repair Services Quote" /></a>
 		<a href="/about-us/posrg-news/168-posrg-r2-certified-for-responsible-electronics-recycling" style="display: none;"><img src="<?php echo $template_path; ?>/images/banner-responsible-recycling.jpg" alt="POSRG Certified for Responsible Electronics Recycling. Certification positions POSRG as leader in point of sale solutions industry." /></a>
 		<a href="/preferred-oems" style="display: none;"><img src="<?php echo $template_path; ?>/images/banner-new-hardware.jpg" alt="New Hardware" /></a>
