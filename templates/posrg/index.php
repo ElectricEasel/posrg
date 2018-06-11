@@ -96,7 +96,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 		<div class="wrap">
 			<a href="/" id="logo"></a>
 			<div class="sell-pos-header">
-				<a class="sell-pos-button" href="sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png" alt="$"></a>
+				<a class="sell-pos-button" href="/services/sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png" alt="$"></a>
 				<img src="/templates/posrg/images/sell-home-header.png" class="sell-home-header" alt="">
 			</div>
 			<div class="header-right">
