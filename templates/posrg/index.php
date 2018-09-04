@@ -99,6 +99,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 				<a class="sell-pos-button" href="/services/sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png" alt="$"></a>
 				<img src="/templates/posrg/images/sell-home-header.png" class="sell-home-header" alt="">
 			</div>
+			<img src="/templates/posrg/images/bbb.png" class="header-bbb">
 			<div class="header-right">
 				<div class="header-contact">
 					<span class="phone-number">
