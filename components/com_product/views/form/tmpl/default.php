@@ -13,7 +13,8 @@ JHtml::_('behavior.formvalidation');
 				<label for="product_name"><?php echo JText::_('GM_PRODUCT_FORM_NAME') ?> <span class="req" >*</span></label>
 			</div>
 			<div class="value">
-				<input name="product_name" value="<?php echo $this->item->product_name ?>" id="product_name" class="gm-input required" type="text" maxlength="26" />
+			<?php $product_name = isset($this->item->product_name) ? $this->item->product_name : ''; ?>
+				<input name="product_name" value="<?php echo $product_name ?>" id="product_name" class="gm-input required" type="text" maxlength="26" />
 			</div>
 		</div>
 		<div class="item">
@@ -21,7 +22,8 @@ JHtml::_('behavior.formvalidation');
 				<label for="product_des"><?php echo JText::_('GM_FAMILY_FORM_DES') ?></label>
 			</div>
 			<div class="value">
-				<input name="product_des" value="<?php echo $this->item->product_des ?>" id="product_des" class="gm-input" type="text" maxlength="29" />
+			<?php $product_des = isset($this->item->product_des) ? $this->item->product_des : ''; ?>
+				<input name="product_des" value="<?php echo $product_des ?>" id="product_des" class="gm-input" type="text" maxlength="29" />
 			</div>
 		</div>
 		<div class="item">
@@ -29,9 +31,13 @@ JHtml::_('behavior.formvalidation');
 				<label  for="image"><?php echo JText::_('GM_PRODUCT_FORM_IMAGE') ?></label>
 			</div>
 			<div class="value">
+			<?php
+			$product_image = isset($this->item->product_image) ? $this->item->product_image : '';
+			$this->profile_img = isset($this->profile_img) ? $this->profile_img : '';
+			?>
 				<div class="gm-image-container size-min jmc-upload" id="gm-special">
 					<img src="<?php echo $this->profile_img ?>" class="gm-image-size size-min" alt="Upload"  />
-					<input type="hidden" name="image" value="<?php echo $this->item->image  ?>" class="gm-input" />
+					<input type="hidden" name="image" value="<?php echo $product_image  ?>" class="gm-input" />
 				</div>
 			</div>
 		</div>
@@ -41,7 +47,8 @@ JHtml::_('behavior.formvalidation');
 				<label for="inventory">Quantity <span class="req" >*</span></label>
 			</div>
 			<div class="value">
-				<input name="inventory" value="<?php echo $this->item->inventory; ?>" id="inventory" class="gm-input required" type="text" />
+			<?php $product_inventory = isset($this->item->product_inventory) ? $this->item->product_inventory : ''; ?>
+				<input name="inventory" value="<?php echo $product_inventory; ?>" id="inventory" class="gm-input required" type="text" />
 			</div>
 		</div>
 

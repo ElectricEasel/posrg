@@ -32,13 +32,20 @@ class ProductViewForm extends JView
 			)
 		);
 
-		$this->status = JHtml::_('select.genericlist', $arr, 'frontpage', 'class="gm-input"', 'value', 'text', $this->item->frontpage);
-
-		$this->profile_image = $this->getThumb('components/com_product/assets/upload/upload.gif', 50, 50);
-
-		if(JFile::exists(JPATH_COMPONENT . '/assets/upload/' . $this->item->image))
+		if ($this->item)
 		{
-			$this->profile_img = $this->getThumb('components/com_product/assets/upload/' . $this->item->image, 50, 50);
+			$this->status = JHtml::_('select.genericlist', $arr, 'frontpage', 'class="gm-input"', 'value', 'text', $this->item->frontpage);
+
+			$this->profile_image = $this->getThumb('components/com_product/assets/upload/upload.gif', 50, 50);
+
+			if(JFile::exists(JPATH_COMPONENT . '/assets/upload/' . $this->item->image))
+			{
+				$this->profile_img = $this->getThumb('components/com_product/assets/upload/' . $this->item->image, 50, 50);
+			}
+		}
+		else
+		{
+			$this->status = JHtml::_('select.genericlist', $arr, 'frontpage', 'class="gm-input"', 'value', 'text', '');
 		}
 
 		$this->prepareDocument();
