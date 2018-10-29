@@ -8,10 +8,13 @@ class ProductViewList extends JView
 		$thumb_ext = substr($image_path, $file_div);
 		$thumb_prev = substr($image_path, 0, $file_div);
 		$thumb_path =  $thumb_prev . "_sectcont_thumb" . $thumb_ext;
-		@unlink($thumb_path);
-		$thumb = new Varien_Image_Adapter_Gd2();
-		$thumb->keepAspectRatio(true);				$thumb->keepFrame(false);				//$thumb->keepTransparency(true);		//$thumb->backgroundColor(array(255,255,255));
-		$thumb->open($image_path)->resize($w, $h)->save($thumb_path)->__destruct();
+		if (!file_exists($thumb_path))
+		{
+			@unlink($thumb_path);
+			$thumb = new Varien_Image_Adapter_Gd2();
+			$thumb->keepAspectRatio(true);				$thumb->keepFrame(false);				//$thumb->keepTransparency(true);		//$thumb->backgroundColor(array(255,255,255));
+			$thumb->open($image_path)->resize($w, $h)->save($thumb_path)->__destruct();
+		}
 		return JUri::base() . $thumb_path;
 	}
 
