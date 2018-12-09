@@ -4736,27 +4736,102 @@ li.item-479 {
     text-align: center;
 }
 
-.page-grocery-store-pos  #content #main {
+.marketing-pos-page  #content #main {
     float: none;
     width: 950px !important;
     margin: 0 auto;
 }
 
-.page-grocery-store-pos p, .page-grocery-store-pos span {
+.marketing-pos-page p, .marketing-pos-page span {
 	font-size: 17px !important;
 	line-height: 1.4em !important;
 }
 
-.page-grocery-store-pos #banner{
+.marketing-pos-page #banner{
 	display: none;
 }
-.page-grocery-store-pos #sidebar{
+.marketing-pos-page #sidebar{
 	display: none;
 }
+
+/* marketing hero background images */
 
 .page-grocery-store-pos .marketing-pos-hero {
 	background-image: url(/templates/posrg/images/marketing-hero-grocery.jpg);
 }
+.page-general-merchandise-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-gm.jpg);
+}
+.page-home-goods-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-homegoods.jpg);
+}
+.page-discount-stores-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-discount.jpg);
+}
+.page-hotel-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-hotel.jpg);
+}
+.page-department-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-department.jpg);
+}
+.page-convenience-stores-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-convenience.jpg);
+}
+.page-restaurant-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-restaurant.jpg);
+}
+.page-gas-stations-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-gas.jpg);
+}
+.page-drug-stores-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-drugstore.jpg);
+}
+.page-apparel-stores-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-apparel.jpg);
+}
+.page-cannabis-dispensary-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-cannabis.jpg);
+}
+
+/* marketing about background images */
+
+.page-grocery-store-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-grocery.png);
+}
+.page-general-merchandise-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-gm.png);
+}
+.page-home-goods-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-homegoods.png);
+}
+.page-discount-stores-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-discount.png);
+}
+.page-hotel-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-hotel.png);
+}
+.page-department-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-department.png);
+}
+.page-convenience-stores-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-convenience.png);
+}
+.page-restaurant-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-restaurant.png);
+}
+.page-gas-stations-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-gas.png);
+}
+.page-drug-stores-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-drugstore.png);
+}
+.page-apparel-stores-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-apparel.png);
+}
+.page-cannabis-dispensary-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-cannabis.png);
+}
+
 
 .marketing-pos-hero {
     margin: -20px -20px 0;
@@ -4885,7 +4960,6 @@ li.item-479 {
 }
 
 .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-grocery.png);
 	margin: 0 -20px 0;
     background-repeat: no-repeat;
     background-position: top right;
