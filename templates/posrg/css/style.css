@@ -109,6 +109,10 @@ hr {
 	font-family: AvantExtraLight;
 	src: url(/templates/posrg/fonts/AvantGarExtLig.otf) format('opentype');
 }
+@font-face {
+	font-family: DIN;
+	src: url(/templates/posrg/fonts/DIN-Condensed-Bold.otf) format('opentype');
+}
 
 .page-contact-us hr {
 	width: 95%;
@@ -4658,4 +4662,367 @@ li.item-479 {
 
 .data-destruction-new .certification-bar {
 	display: none;
+}
+
+.page-marketing #banner{
+	display: none;
+}
+.page-marketing #sidebar{
+	display: none;
+}
+
+.page-marketing #content #main {
+    float: none;
+    width: 950px !important;
+    margin: 0 auto;
+}
+
+.page-marketing #bottom-widget {
+	display: none;
+}
+
+.page-marketing .marketing-hero {
+    background-image: url(/templates/posrg/images/title-bar-bg.jpg);
+    padding: 5.7em 0;
+    margin: -20px -20px 0;
+}
+
+.page-marketing .marketing-hero h1 {
+	font-family: DIN !important;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 73px;
+    text-align: center;
+    margin-bottom: 0.15em;
+}
+
+.page-marketing .marketing-hero span {
+	text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #6dbaf6;
+    font-size: 18px;
+}
+
+.page-marketing .marketing-tiles {
+    display: table;
+    margin: 2em 0 0em;
+    padding-bottom: 2em;
+}
+
+.page-marketing .marketing-tiles .list-unstyled {
+	margin: 0 !important;
+}
+
+.page-marketing .marketing-tiles .list-unstyled li {
+	width: 302px;
+    float: left;
+    padding: 7px !important;
+    background: none !important;
+}
+
+.page-marketing .marketing-tiles .list-unstyled li a {
+	
+}
+
+.page-marketing .marketing-tiles .list-unstyled li a img {
+	width: 100%;
+}
+
+.page-marketing .marketing-tiles .list-unstyled li a h3 {
+	font-family: DIN !important;
+    color: #545454 !important;
+    font-size: 26px;
+    text-align: center;
+}
+
+.page-grocery-store-pos  #content #main {
+    float: none;
+    width: 950px !important;
+    margin: 0 auto;
+}
+
+.page-grocery-store-pos p, .page-grocery-store-pos span {
+	font-size: 17px !important;
+	line-height: 1.4em !important;
+}
+
+.page-grocery-store-pos #banner{
+	display: none;
+}
+.page-grocery-store-pos #sidebar{
+	display: none;
+}
+
+.page-grocery-store-pos .marketing-pos-hero {
+	background-image: url(/templates/posrg/images/marketing-hero-grocery.jpg);
+}
+
+.marketing-pos-hero {
+    margin: -20px -20px 0;
+    height: 430px;
+    position: relative;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.marketing-pos-hero img {
+	position: absolute;
+    right: -12em;
+    bottom: -1.5em;
+}
+
+.marketing-pos-hero .title-and-button {
+	position: absolute;
+	top: 7em;
+	left: 4em;
+}
+
+.marketing-pos-hero h1 {
+    color: #fff;
+    font-family: DIN !important;
+    font-size: 88px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 0em 0.1em 0.4em #000;
+}
+
+.marketing-pos-hero .btn-blue {
+    display: block;
+    text-align: center;
+    max-width: 180px;
+    margin: 1em auto 0;
+}
+
+.btn-blue {
+    background: none repeat scroll 0 0 #0074c5;
+    border-radius: 0.5em;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    font-size: 20px !important;
+    border: 0.15em solid #fff;
+}
+.btn-blue:hover {
+	text-decoration: none;
+	background: #0069bb
+}
+
+.marketing-pos-form-area {
+	margin: 0 -20px;
+    display: inline-block;
+    height: 100%;
+}
+
+.marketing-pos-form-area strong {
+	font-size: 18px !important;
+	line-height: 1.5em;
+}
+
+.marketing-pos-form-area li {
+	background: url(../images/green-check.png) no-repeat left 0px scroll transparent !important;
+	padding-left: 48px !important;
+	margin-bottom: 1.6em;
+}
+
+.marketing-pos-form-area .list-unstyled li span {
+	font-size: 25px !important;
+	color: #0074c5;
+	font-family: DIN !important;
+}
+
+.marketing-pos-form-area .list-unstyled li p {
+    font-size: 17px !important;
+    line-height: 1.4em !important;
+}
+
+.marketing-pos-form-area .list-unstyled {
+	margin-top: 2.5em !important;
+	margin-left: 0 !important;
+}
+
+.marketing-pos-form-area .left-section {
+	width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 30px 30px;
+}
+
+.marketing-pos-form-area .right-section {
+	background-color: #f3f3f3;
+    width: 50%;
+    float: left;
+}
+
+.marketing-pos-testimonial {
+	background-image: url(/templates/posrg/images/testimonial-bg.png);
+	margin: 0 -20px;
+	padding: 6em 0;
+}
+
+.marketing-pos-testimonial img {
+    margin: 0 auto;
+    display: block;
+}
+
+.marketing-pos-testimonial p {
+	color: #fff;
+    font-size: 17px !important;
+    line-height: 1.6em !important;
+    margin: 1.8em auto 1em;
+    text-align: center;
+    font-weight: 100;
+    max-width: 750px;
+}
+
+.marketing-pos-testimonial span {
+	font-weight: bold;
+    font-style: italic;
+    margin: 1.8em auto 0;
+    display: table;
+    font-size: 17px !important;
+    color: #fff;
+}
+
+.marketing-pos-about {
+	background-image: url(/templates/posrg/images/marketing-img-grocery.png);
+	margin: 0 -20px 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.marketing-pos-about .marketing-pos-faq {
+	padding: 0 30px 4em !important;
+}
+
+.marketing-pos-about .marketing-pos-faq ul {
+	margin: 0 !important;
+}
+
+.marketing-pos-about .marketing-pos-faq ul li {
+	padding: 0 !important;
+	background: none !important;
+	margin-bottom: 2em;
+}
+
+.marketing-pos-about .marketing-pos-faq ul li span {
+	font-weight: bold;
+	color: #6dbaf6;
+    margin-bottom: 0.3em;
+    display: block;
+}
+
+.marketing-pos-about h3 {
+	font-family: DIN !important;
+    color: #0074c5 !important;
+    font-size: 34px;
+    text-transform: none !important;
+}
+
+.marketing-pos-about .side-text {
+	max-width: 450px;
+    margin-bottom: 4em;
+    padding: 3em 30px 0;
+}
+
+.consultation-form-area {
+	background-color: #0074c5;
+	margin: 0 -20px 0;
+    padding: 4.5em 0;
+}
+
+.consultation-form-area h2 {
+	color: #fff !important;
+	font-family: DIN !important;
+	font-size: 65px !important;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 0.15em !important;
+}
+
+.consultation-form-area p {
+	color: #fff !important;
+	text-align: center;
+	margin-bottom: 4px !important;
+}
+
+.consultation-form-area b {
+	font-size: 17px;
+}
+
+.consultation-form-area .contact {
+	text-align: center;
+}
+
+.consultation-form-area .contact span strong {
+	font-size: 14px;
+	color: #6dbaf6 !important;
+}
+
+.consultation-form-area .contact span a {
+	font-size: 17px !important;
+	color: #6dbaf6 !important;
+}
+
+.marketing-pos-slider {
+    background-image: url(/templates/posrg/images/slider-bg.jpg);
+    margin: 0px -20px -20px -20px;
+    padding: 2.5em 0 4em;
+}
+
+.logo-slider {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.marketing-pos-slider .logo h3 {
+	text-align: center;
+    color: #d9d9d9 !important;
+    text-decoration: none;
+    text-transform: none !important;
+    font-size: 16px;
+    line-height: 1.4em !important;
+}
+
+.marketing-pos-slider .logo img {
+	margin: 0 auto;
+}
+
+.marketing-pos-slider .logo a:hover {
+	text-decoration: none !important;
+}
+.marketing-pos-slider .title {
+	font-family: DIN !important;
+	color: #6dbaf6 !important;
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: .5em !important;
+}
+.logos-arrow {
+	display: inline;
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 25px;
+    top: 22%;
+    background-image: url(/templates/posrg/images/slider-arrow.png);
+    opacity: .79;
+    filter: alpha(opacity=79);
+    -webkit-transition: opacity .25s linear;
+    -o-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+    cursor: pointer;
+    z-index: 999999999;
+}
+
+.logos-prev {
+	left: -20px;
+}
+
+.logos-next {
+	right: -20px;
+	-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }

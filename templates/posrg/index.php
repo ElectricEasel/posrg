@@ -4,6 +4,13 @@ $app  = JFactory::getApplication();
 $menu = $app->getMenu();
 $tpath = $this->baseurl . '/templates/' . $this->template;
 
+
+
+unset($this->_scripts[JURI::root(true).'/media/system/js/caption.js']);
+unset($this->_scripts[JURI::root(true).'/media/system/js/mootools-core.js']);
+unset($this->_scripts[JURI::root(true).'/media/system/js/mootools-more.js']);
+
+
 // $this JDocument
 $this
 	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
@@ -13,6 +20,7 @@ $this
 	->addScript($tpath . '/js/chosen/chosen.jquery.min.js')
 	->addScript($tpath . '/js/jquery.accordion.js')
 	->addScript($tpath . '/js/site.js')
+	->addScript($tpath . '/js/slick.min.js')
     ->addStyleSheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
 	->addScriptDeclaration('
 		// <![CDATA[
@@ -21,6 +29,7 @@ $this
 ')
 	->addStyleSheet($tpath . '/js/chosen/chosen.min.css')
 	->addStyleSheet($tpath . '/css/jquery.fancybox.min.css')
+	->addStyleSheet($tpath . '/css/slick.css')
 	->addStyleSheet($tpath . '/css/style.css')
 	// ->addStyleSheet($tpath . '/js/chosen/chosen.css')
 	// ->addStyleSheet($tpath . '/css/jquery.fancybox.css')
