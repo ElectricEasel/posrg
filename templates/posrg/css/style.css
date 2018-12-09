@@ -4664,30 +4664,30 @@ li.item-479 {
 	display: none;
 }
 
-.page-marketing #banner{
+.page-markets #banner{
 	display: none;
 }
-.page-marketing #sidebar{
+.page-markets #sidebar{
 	display: none;
 }
 
-.page-marketing #content #main {
+.page-markets #content #main {
     float: none;
     width: 950px !important;
     margin: 0 auto;
 }
 
-.page-marketing #bottom-widget {
+.page-markets #bottom-widget {
 	display: none;
 }
 
-.page-marketing .marketing-hero {
+.page-markets .marketing-hero {
     background-image: url(/templates/posrg/images/title-bar-bg.jpg);
     padding: 5.7em 0;
     margin: -20px -20px 0;
 }
 
-.page-marketing .marketing-hero h1 {
+.page-markets .marketing-hero h1 {
 	font-family: DIN !important;
     text-transform: uppercase;
     color: #fff;
@@ -4696,7 +4696,7 @@ li.item-479 {
     margin-bottom: 0.15em;
 }
 
-.page-marketing .marketing-hero span {
+.page-markets .marketing-hero span {
 	text-align: center;
     margin: 0 auto;
     display: block;
@@ -4704,32 +4704,32 @@ li.item-479 {
     font-size: 18px;
 }
 
-.page-marketing .marketing-tiles {
+.page-markets .marketing-tiles {
     display: table;
     margin: 2em 0 0em;
     padding-bottom: 2em;
 }
 
-.page-marketing .marketing-tiles .list-unstyled {
+.page-markets .marketing-tiles .list-unstyled {
 	margin: 0 !important;
 }
 
-.page-marketing .marketing-tiles .list-unstyled li {
+.page-markets .marketing-tiles .list-unstyled li {
 	width: 302px;
     float: left;
     padding: 7px !important;
     background: none !important;
 }
 
-.page-marketing .marketing-tiles .list-unstyled li a {
+.page-markets .marketing-tiles .list-unstyled li a {
 	
 }
 
-.page-marketing .marketing-tiles .list-unstyled li a img {
+.page-markets .marketing-tiles .list-unstyled li a img {
 	width: 100%;
 }
 
-.page-marketing .marketing-tiles .list-unstyled li a h3 {
+.page-markets .marketing-tiles .list-unstyled li a h3 {
 	font-family: DIN !important;
     color: #545454 !important;
     font-size: 26px;
