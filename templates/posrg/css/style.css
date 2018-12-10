@@ -4851,7 +4851,17 @@ li.item-479 {
 	position: absolute;
 	top: 7em;
 	left: 4em;
+	z-index: 1;
 }
+
+.page-cannabis-dispensary-pos .marketing-pos-hero .title-and-button, .page-general-merchandise-pos .marketing-pos-hero .title-and-button,  {
+	top: 4em;
+}
+
+.page-hotel .marketing-pos-hero .title-and-button {
+	top: 9em;
+}
+
 
 .marketing-pos-hero h1 {
     color: #fff;
