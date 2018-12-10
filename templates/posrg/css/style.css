@@ -4885,7 +4885,7 @@ li.item-479 {
 
 .marketing-pos-form-area {
 	margin: 0 -20px;
-    display: inline-block;
+    display: table;
     height: 100%;
 }
 
@@ -4926,7 +4926,8 @@ li.item-479 {
 .marketing-pos-form-area .right-section {
 	background-color: #f3f3f3;
     width: 50%;
-    float: left;
+    float: right;
+    height: 100%;
 }
 
 .marketing-pos-form-area .right-section .content {
