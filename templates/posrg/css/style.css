@@ -4726,10 +4726,11 @@ li.item-479 {
     float: left;
     padding: 7px !important;
     background: none !important;
+    margin-bottom: 2em;
 }
 
 .page-markets .marketing-tiles .list-unstyled li a {
-	
+	text-decoration: none !important;
 }
 
 .page-markets .marketing-tiles .list-unstyled li a img {
@@ -4741,6 +4742,7 @@ li.item-479 {
     color: #545454 !important;
     font-size: 26px;
     text-align: center;
+    text-transform: none !important;
 }
 
 .marketing-pos-page  #content #main {
