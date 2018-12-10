@@ -4929,6 +4929,26 @@ li.item-479 {
     float: left;
 }
 
+.marketing-pos-form-area .right-section .content {
+    display: table;
+    margin: 0 auto;
+	width: 100%;
+    max-width: 380px;
+}
+
+.marketing-pos-form-area .right-section .content h3 {
+    font-size: 38px !important;
+    color: #0074c5 !important;
+    font-family: DIN !important;
+    display: inline-block;
+    float: left;
+	margin-top: 0.6em !important;
+}
+
+.marketing-pos-form-area .right-section .content img {
+	float: right;
+}
+
 .marketing-pos-testimonial {
 	background-image: url(/templates/posrg/images/testimonial-bg.png);
 	margin: 0 -20px;
