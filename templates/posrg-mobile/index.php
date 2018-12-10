@@ -16,17 +16,23 @@ define('CSS_PATH', TEMPLATE_PATH.'css/');
 define('IMG_PATH', TEMPLATE_PATH.'images/');
 define('JS_PATH', TEMPLATE_PATH.'js/');
 
+unset($this->_scripts[JURI::root(true).'/media/system/js/caption.js']);
+unset($this->_scripts[JURI::root(true).'/media/system/js/mootools-core.js']);
+unset($this->_scripts[JURI::root(true).'/media/system/js/mootools-more.js']);
+
 JFactory::getDocument()
 	// add stylesheets
 	//->addStyleSheet('//fonts.googleapis.com/css?family=Open+Sans:400,300,600')
 	->addStyleSheet('/templates/system/css/system.css')
 	->addStyleSheet(CSS_PATH.'general.css')
+	->addStyleSheet(CSS_PATH.'slick.css')
 	->addStyleSheet(CSS_PATH.'mobile.css')
 	// add scripts
 	->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
 	//->addScript(JS_PATH.'jquery.cycle.all.latest.min.js')
 	->addScript(JS_PATH.'jquery.touchwipe.min.js')
 	->addScript(JS_PATH.'mobile.js')
+	->addScript(JS_PATH.'slick.min.js')
 	->addScriptDeclaration('
 	// <![CDATA[
 	jQuery.noConflict();

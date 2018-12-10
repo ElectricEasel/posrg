@@ -67,6 +67,34 @@ jQuery(document).ready(function ($){
 		rvtitle.innerHTML = "Find an RV Resort";
 		rvpage.prepend(rvtitle);
 	}
+
+
+	// Slick Carousel
+	var lgMin = 1200;
+	var medMin = 992;
+	var smallMin = 768;
+	var mobileMin = 650;
+	$('.logo-slider').slick({
+		prevArrow: '<i class="logos-arrow logos-prev"></i>',
+		nextArrow: '<i class="logos-arrow logos-next"></i>',
+		lazyLoad: 'progressive',
+		autoplay: true,
+		autoplaySpeed: 3000,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: mobileMin,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+
+
 });
 var toggleMenu = function()
 {
