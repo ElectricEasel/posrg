@@ -4928,11 +4928,12 @@ li.item-479 {
     width: 50%;
     float: right;
     height: 100%;
+    padding-top: 3em;
 }
 
 .marketing-pos-form-area .right-section .content {
     display: table;
-    margin: 0 auto;
+    margin: 0 auto 0.6em;
 	width: 100%;
     max-width: 380px;
 }
@@ -5047,6 +5048,7 @@ li.item-479 {
 
 .consultation-form-area .contact {
 	text-align: center;
+	padding-bottom: 2em;
 }
 
 .consultation-form-area .contact span strong {
@@ -5120,4 +5122,93 @@ li.item-479 {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.buyer-guide-form .btn-green {
+    background: none repeat scroll 0 #20a933;
+    margin: 0.5em auto 0;
+    display: block;
+}
+
+.buyer-guide-form .btn-green:hover {
+    background-color: #309F29;
+}
+
+.buyer-guide-form .rsform-input-box {
+    width: 100%;
+    font-size: 17px;
+    color: #aeaeae !important;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0.6em 0;
+}
+
+.buyer-guide-form .formTableLayout {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+}
+
+.buyer-guide-form .formRed {
+    text-align: center;
+}
+
+.market-form .btn-green {
+    background: none repeat scroll 0 #20a933;
+    margin: 0.5em auto 0;
+    display: block;
+}
+
+.market-form .btn-green:hover {
+    background-color: #309F29;
+}
+
+.market-form .rsform-input-box {
+    width: 305px;
+    font-size: 17px;
+    color: #aeaeae !important;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0.6em 0;
+}
+
+.market-form .formTableLayout {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.market-form .formRed {
+    text-align: center;
+    color: #CF4D4D !important;
+}
+
+.rsform-block-market {
+    float: left;
+}
+
+.rs-half {
+    width: 50%;
+}
+
+.rs-full {
+    width: 100%;
+}
+
+.market-form .rsform-text-box {
+    font-size: 17px;
+    color: #aeaeae !important;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0.6em 0;
+    width: 630px;
+}
+
+.market-form .rsform-block-submit {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
 }
