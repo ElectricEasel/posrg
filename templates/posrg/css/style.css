@@ -4935,10 +4935,12 @@ li.item-479 {
 
 .marketing-pos-form-area .right-section {
 	background-color: #f3f3f3;
-    width: 50%;
-    float: right;
-    height: 100%;
-    padding-top: 3em;
+	width: 50%;
+	float: right;
+	height: 100%;
+	padding-top: 3em;
+	display: table;
+	box-sizing: border-box;
 }
 
 .marketing-pos-form-area .right-section .content {
@@ -5182,6 +5184,8 @@ li.item-479 {
     box-sizing: border-box;
     border-radius: 8px;
     margin: 0.6em 0;
+    background: #0060ab !important;
+    border: 1px solid #0060ab !important;
 }
 
 .market-form .formTableLayout {
@@ -5215,6 +5219,9 @@ li.item-479 {
     border-radius: 8px;
     margin: 0.6em 0;
     width: 630px;
+    background: #0060ab !important;
+    border: 1px solid #0060ab !important;
+    resize: none;
 }
 
 .market-form .rsform-block-submit {
