@@ -2889,7 +2889,7 @@ li.item-479 {
 }
 .markets .marketing-hero {
   background-image: url(/templates/posrg/images/title-bar-bg.jpg);
-  padding: 3em 0;
+  padding: 3em 20px;
   margin: -20px -20px 0;
 }
 .markets .marketing-hero h1 {
@@ -3037,9 +3037,9 @@ li.item-479 {
 }
 .marketing-pos-hero img {
   position: absolute;
-  left: -6em;
+  right: 0;
   bottom: 5.5em;
-  max-width: 500px;
+  max-width: 430px;
 }
 .marketing-pos-hero .title-and-button {
   position: relative;
@@ -3075,6 +3075,7 @@ li.item-479 {
   border: none;
   border-radius: 0;
   padding: 25px 0;
+  text-decoration: none;
 }
 .btn-blue {
   background: none repeat scroll 0 0 #0074c5;
@@ -3142,7 +3143,6 @@ li.item-479 {
 }
 .marketing-pos-form-area .right-section .content img {
   float: right;
-  max-width: 130px;
 }
 .marketing-pos-testimonial {
   background-image: url(/templates/posrg/images/testimonial-bg.png);
@@ -3181,7 +3181,10 @@ li.item-479 {
 .marketing-pos-about p {
   margin-top: 0;
 }
-.marketing-pos-about .marketing-pos-faq {
+.marketing-pos-faq {
+  display: none;
+}
+.marketing-pos-about {
   padding: 0 20px 2em !important;
 }
 .marketing-pos-about .marketing-pos-faq ul {

@@ -4852,8 +4852,8 @@ li.item-479 {
 
 .marketing-pos-hero img {
 	position: absolute;
-    right: -12em;
-    bottom: -1.5em;
+    right: 0;
+    bottom: 0;
 }
 
 .marketing-pos-hero .title-and-button {
@@ -5008,9 +5008,14 @@ li.item-479 {
     background-position: top right;
 }
 
-.marketing-pos-about .marketing-pos-faq {
-	padding: 0 30px 4em !important;
+.marketing-pos-faq {
+    display: none;
+    padding: 0 30px;
 }
+
+/*.marketing-pos-about .marketing-pos-faq {
+	padding: 0 30px 4em !important;
+}*/
 
 .marketing-pos-about .marketing-pos-faq ul {
 	margin: 0 !important;
