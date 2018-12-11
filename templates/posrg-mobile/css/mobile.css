@@ -3174,18 +3174,15 @@ li.item-479 {
 .marketing-pos-about {
   margin: 0 -20px 0;
   background-repeat: no-repeat;
-  padding-top: 27em;
   background-position: -13em 0em;
   background-size: 600px;
+  padding: 26em 20px 0 !important;
 }
 .marketing-pos-about p {
   margin-top: 0;
 }
 .marketing-pos-faq {
   display: none;
-}
-.marketing-pos-about {
-  padding: 0 20px 2em !important;
 }
 .marketing-pos-about .marketing-pos-faq ul {
   margin: 0 !important;
