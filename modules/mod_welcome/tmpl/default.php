@@ -20,7 +20,7 @@ $template_path = '/templates/posrg';
 	// ]]>
 	</script>
 	<div class="slides">
-		<a href="https://nrfbigshow.nrf.com/register" style="display: none;"><img src="<?=$template_path?>/images/NRF_Banner.jpg" alt="NRF Big Show" /></a>
+		<a href="https://registration.experientevent.com/showNRF191/?ingo=1&flow=ATT&_ga=2.209267094.540015085.1543946188-1040665917.1541699301" style="display: none;"><img src="<?=$template_path?>/images/NRF_Banner.jpg" alt="NRF Big Show" /></a>
 		<a href="/pos-repair-services" style="display: none;"><img src="<?=$template_path?>/images/banner-repair.jpg" alt="POS Repair Services Quote" /></a>
 		<a href="/about-us/posrg-news/168-posrg-r2-certified-for-responsible-electronics-recycling" style="display: none;"><img src="<?php echo $template_path; ?>/images/banner-responsible-recycling.jpg" alt="POSRG Certified for Responsible Electronics Recycling. Certification positions POSRG as leader in point of sale solutions industry." /></a>
 		<a href="/preferred-oems" style="display: none;"><img src="<?php echo $template_path; ?>/images/banner-new-hardware.jpg" alt="New Hardware" /></a>
