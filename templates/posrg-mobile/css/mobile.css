@@ -3031,7 +3031,8 @@ li.item-479 {
 .marketing-pos-hero {
   margin: -20px -20px 0;
   position: relative;
-  background-position: bottom;
+  background-position: top;
+  background-repeat: no-repeat;
   overflow: hidden;
   padding-bottom: 5em;
 }
