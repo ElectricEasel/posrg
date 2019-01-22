@@ -2947,6 +2947,7 @@ li.item-479 {
 }
 .markets span {
   display: block;
+  padding: 3px 0;
 }
 .marketing #banner {
   display: none;
