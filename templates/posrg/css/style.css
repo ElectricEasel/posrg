@@ -4806,39 +4806,51 @@ li.item-479 {
 
 .page-grocery-store-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-grocery.png);
+	background-color: #fff;
 }
 .page-general-merchandise-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-gm.png);
+	background-color: #fff;
 }
 .page-home-goods-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-homegoods.png);
+	background-color: #fff;
 }
 .page-discount-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-discount.png);
+	background-color: #fff;
 }
 .page-hotel-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-hotel.png);
+	background-color: #fff;
 }
 .page-department-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-department.png);
+	background-color: #fff;
 }
 .page-convenience-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-convenience.png);
+	background-color: #fff;
 }
 .page-restaurant-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-restaurant.png);
+	background-color: #fff;
 }
 .page-gas-stations-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-gas.png);
+	background-color: #fff;
 }
 .page-drug-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-drugstore.png);
+	background-color: #fff;
 }
 .page-apparel-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-apparel.png);
+	background-color: #fff;
 }
 .page-cannabis-dispensary-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-cannabis.png);
+	background-color: #fff;
 }
 
 
@@ -5059,7 +5071,7 @@ li.item-479 {
 	font-size: 65px !important;
 	text-align: center;
 	text-transform: uppercase;
-	margin-bottom: 0.15em !important;
+	margin-bottom: 0 !important;
 }
 
 .consultation-form-area p {
