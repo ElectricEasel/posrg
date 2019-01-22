@@ -3349,6 +3349,9 @@ li.item-479 {
 .buyer-guide-form .formRed {
   text-align: center;
 }
+.market-form {
+  margin-top: 35px;
+}
 .market-form .btn-green {
   background: none repeat scroll 0 #20a933;
   margin: 0.5em auto 0;
