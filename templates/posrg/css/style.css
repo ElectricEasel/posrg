@@ -5202,6 +5202,14 @@ li.item-479 {
     border: 1px solid #0060ab !important;
 }
 
+.market-form .rsform-input-box::placeholder {
+	color: #8acbfe;
+}
+
+.market-form .rsform-text-box::placeholder {
+	color: #8acbfe;
+}
+
 .market-form .formTableLayout {
     width: 100%;
     max-width: 650px;

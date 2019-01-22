@@ -3376,6 +3376,12 @@ li.item-479 {
   resize: none;
   width: 320px;
 }
+.market-form .rsform-input-box::placeholder {
+  color: #8acbfe;
+}
+.market-form .rsform-text-box::placeholder {
+  color: #8acbfe;
+}
 .market-form .rsform-block-submit {
   display: table;
   margin: 0 auto;
