@@ -4812,61 +4812,73 @@ li.item-479 {
 	background-image: url(/templates/posrg/images/grocery-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-general-merchandise-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/general-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-home-goods-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/homegoods-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-discount-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/discount-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-hotel-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/hotel-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-department-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/department-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-convenience-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/convenience-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-restaurant-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/restaurant-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-gas-stations-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/gas-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-drug-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/drug-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-apparel-stores-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/apparel-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 .page-cannabis-dispensary-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/cannabis-faded.jpg);
 	background-color: #fff;
 	overflow: auto;
+	background-size: contain;
 }
 
 
