@@ -4808,17 +4808,15 @@ li.item-479 {
 
 /* marketing about background images */
 
-/*.page-grocery-store-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-grocery.png);
+.page-grocery-store-pos .marketing-pos-about {
+	background-image: url(/templates/posrg/images/grocery-faded.jpg);
 	background-color: #fff;
-}*/
-
-/*.page-general-merchandise-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-gm.png);
+}
+.page-general-merchandise-pos .marketing-pos-about {
+/*	background-image: url(/templates/posrg/images/marketing-img-gm.png);*/
 	background-color: #fff;
-}*/
-
-/*.page-home-goods-pos .marketing-pos-about {
+}
+.page-home-goods-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-homegoods.png);
 	background-color: #fff;
 }
@@ -4857,7 +4855,7 @@ li.item-479 {
 .page-cannabis-dispensary-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/marketing-img-cannabis.png);
 	background-color: #fff;
-}*/
+}
 
 
 .marketing-pos-hero {
@@ -5060,9 +5058,13 @@ li.item-479 {
 }
 
 .marketing-pos-about .side-text {
-/*	max-width: 450px;*/
+	max-width: 450px;
     margin-bottom: 4em;
     padding: 3em 30px 0;
+}
+
+.page-general-merchandise-pos .marketing-pos-about .side-text {
+	max-width: none;
 }
 
 .consultation-form-area {
