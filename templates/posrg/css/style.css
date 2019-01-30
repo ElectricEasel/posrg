@@ -4811,6 +4811,7 @@ li.item-479 {
 .page-grocery-store-pos .marketing-pos-about {
 	background-image: url(/templates/posrg/images/grocery-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-general-merchandise-pos .marketing-pos-about {
 /*	background-image: url(/templates/posrg/images/marketing-img-gm.png);*/
