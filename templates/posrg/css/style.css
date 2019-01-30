@@ -4814,48 +4814,59 @@ li.item-479 {
 	overflow: auto;
 }
 .page-general-merchandise-pos .marketing-pos-about {
-/*	background-image: url(/templates/posrg/images/marketing-img-gm.png);*/
+	background-image: url(/templates/posrg/images/general-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-home-goods-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-homegoods.png);
+	background-image: url(/templates/posrg/images/homegoods-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-discount-stores-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-discount.png);
+	background-image: url(/templates/posrg/images/discount-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-hotel-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-hotel.png);
+	background-image: url(/templates/posrg/images/hotel-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-department-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-department.png);
+	background-image: url(/templates/posrg/images/department-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-convenience-stores-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-convenience.png);
+	background-image: url(/templates/posrg/images/convenience-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-restaurant-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-restaurant.png);
+	background-image: url(/templates/posrg/images/restaurant-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-gas-stations-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-gas.png);
+	background-image: url(/templates/posrg/images/gas-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-drug-stores-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-drugstore.png);
+	background-image: url(/templates/posrg/images/drug-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-apparel-stores-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-apparel.png);
+	background-image: url(/templates/posrg/images/apparel-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 .page-cannabis-dispensary-pos .marketing-pos-about {
-	background-image: url(/templates/posrg/images/marketing-img-cannabis.png);
+	background-image: url(/templates/posrg/images/cannabis-faded.jpg);
 	background-color: #fff;
+	overflow: auto;
 }
 
 
@@ -5062,10 +5073,6 @@ li.item-479 {
 	max-width: 450px;
     margin-bottom: 4em;
     padding: 3em 30px 0;
-}
-
-.page-general-merchandise-pos .marketing-pos-about .side-text {
-	max-width: none;
 }
 
 .consultation-form-area {
