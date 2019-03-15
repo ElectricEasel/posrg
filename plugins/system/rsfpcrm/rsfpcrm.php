@@ -96,6 +96,8 @@ class plgSystemRsfpcrm extends JPlugin
 				'question',
 				'id',
 				'repair_quote',
+				'vertical_landing',
+				'lead_source',
 			);
 
 			$csv_items = array();
