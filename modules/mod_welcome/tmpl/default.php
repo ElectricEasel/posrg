@@ -20,7 +20,6 @@ $template_path = '/templates/posrg';
 	// ]]>
 	</script>
 	<div class="slides">
-		<a href="http://www.thengashow.com/" style="display: none;"><img src="<?=$template_path?>/images/NGA19_Banner.jpg" alt="NGA Show 2019" /></a>
 		<a href="/pos-repair-services" style="display: none;"><img src="<?=$template_path?>/images/banner-repair.jpg" alt="POS Repair Services Quote" /></a>
 		<a href="/about-us/posrg-news/168-posrg-r2-certified-for-responsible-electronics-recycling" style="display: none;"><img src="<?php echo $template_path; ?>/images/banner-responsible-recycling.jpg" alt="POSRG Certified for Responsible Electronics Recycling. Certification positions POSRG as leader in point of sale solutions industry." /></a>
 		<a href="/preferred-oems" style="display: none;"><img src="<?php echo $template_path; ?>/images/banner-new-hardware.jpg" alt="New Hardware" /></a>
