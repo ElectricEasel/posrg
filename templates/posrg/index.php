@@ -21,7 +21,7 @@ $this
 	->addScript($tpath . '/js/jquery.accordion.js')
 	->addScript($tpath . '/js/site.js')
 	->addScript($tpath . '/js/slick.min.js')
-    ->addStyleSheet('http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
+    ->addStyleSheet('https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css')
 	->addScriptDeclaration('
 		// <![CDATA[
 			jQuery(document).ready(function($){$(".chzn-select, #mfc").chosen({allow_single_deselect:true});});
@@ -69,7 +69,7 @@ $pageclass = $menu_active->params->get('pageclass_sfx');
 	<meta name="DC.identifier" content="http://www.posrg.com/" />
 	<meta name="DC.language" content="en-US" />
 	<meta name="DC.subject" content="Point of Sale Refurbishing" />
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css' />
     <link href="https://plus.google.com/u/0/115660277677228108714" rel="publisher" />
 	<script type="text/javascript">
 	// <![CDATA[
