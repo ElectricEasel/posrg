@@ -35,6 +35,8 @@ if(($cat = $this->category->name) != NULL && $this->category->_parent->name != '
 {
 	$title .= ' '.$cat;
 }
+$page = isset($_GET['page']) ? ' Page '.$_GET['page'] : '';
+$title .= $page;
 $this->app->document->setTitle($title);
 ?>
 
