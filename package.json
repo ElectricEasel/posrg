@@ -1,0 +1,26 @@
+{
+  "name": "posrg",
+  "version": "0.1.0",
+  "author": "EE",
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElectricEasel/posrg.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElectricEasel/posrg/issues"
+  },
+  "homepage": "https://github.com/ElectricEasel/posrg#readme",
+  "description": ""
+}

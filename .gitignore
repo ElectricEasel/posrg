@@ -19,3 +19,4 @@ error_log
 /components/com_wordpress/wp/wp-content/uploads
 /logos
 .htaccess
+node_modules
