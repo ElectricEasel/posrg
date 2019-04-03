@@ -11,6 +11,6 @@ Disallow: /leads/
 Disallow: /logs/
 Disallow: /tmp/
 Disallow: /components/com_wordpress/wp/wp-login.php
-
+Allow: /cache/com_zoo/images/
 
 Sitemap: http://www.posrg.com/index.php?option=com_xmap&sitemap=1&view=xml

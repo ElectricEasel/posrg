@@ -111,7 +111,7 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 				<a class="sell-pos-button" href="/services/sell-used-pos-systems">Sell Your Used POS &raquo;<img src="/templates/posrg/images/dollar-sign.png" alt="$"></a>
 				<img src="/templates/posrg/images/sell-home-header.png" class="sell-home-header" alt="">
 			</div>
-			<a href="https://www.bbb.org/us/il/wauconda/profile/point-of-sale-systems/pos-remarketing-group-inc-0654-88285547" target="_blank"><img src="/templates/posrg/images/bbb.png" class="header-bbb"></a>
+			<a href="https://www.bbb.org/us/il/wauconda/profile/point-of-sale-systems/pos-remarketing-group-inc-0654-88285547" target="_blank"><img src="/templates/posrg/images/bbb.png" class="header-bbb" alt="Better Business Bureau"></a>
 			<div class="header-right">
 				<div class="header-contact">
 					<span class="phone-number">
