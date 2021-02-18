@@ -3398,3 +3398,230 @@ li.item-479 {
 .rsform-block-market {
   display: block;
 }
+
+
+
+/*Zebra LP*/
+
+.zebra-lp {
+    background-color: #000;
+    margin-top: -22px;
+}
+.zebra-lp .formRed {
+    padding-left: 10px;
+}
+.storeops-page #banner {
+    display: none;
+}
+.storeops-page #sidebar {
+    display: none;
+}
+.storeops-page #content #main {
+    margin: 0;
+    width: 100%;
+}
+.storeops-page .disclaimer p {
+    color: #fff;
+    font-size: 17px !important;
+    text-align: center;
+    max-width: 725px;
+    margin: 0 auto;
+    padding: 15px;
+    margin-bottom: 0 !important;
+}
+.storeops-page .disclaimer p strong {
+    font-size: 17px;
+}
+.storeops-page .form-area {
+    background: #000;
+    padding: 15px;
+}
+.storeops-page .form-area h3 {
+    font-size: 17px;
+    color: #fff !important;
+    text-transform: none !important;
+    line-height: 1.4em !important;
+    text-align: center;
+}
+.storeops-page .form-area h3 span {
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    display: block;
+    line-height: 1.4em !important;
+    margin-bottom: 0.5em;
+}
+.storeops-page .form-area .container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.storeops-page .one-leap-ahead h3 {
+    font-size: 25px;
+    color: #fff !important;
+    text-align: center;
+    font-weight: 900 !important;
+    text-transform: none !important;
+    margin: 0 !important;
+    padding: 20px 15px;
+    margin: 0;
+}
+
+.storeops-page .checkmarks .listings {
+  display: block;
+  margin: 0 auto !important;
+  height: 325px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.storeops-page .checkmarks .listing {
+  font-size: 17px;
+  color: #000;
+  position: relative;
+  padding-left: 44px!important;
+  padding-bottom: 2em!important;
+  line-height: 1.4em!important;
+  background: 0 0!important;
+}
+
+.storeops-page .checkmarks .listing:before {
+  content: '';
+  height: 31px;
+  width: 31px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background-image: url(/images/zebra-lp/checkmark.png);
+}
+
+.storeops-page .points {
+  padding: 15px;
+}
+
+.storeops-page .points p {
+  color: #fff;
+  font-size: 17px!important;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-bottom: 2em;
+  padding-top: 1em;
+  line-height: 1.3 !important;
+}
+
+.storeops-page .points .listings {
+    display: block;
+    margin: 0 auto !important;
+}
+
+.storeops-page .points .listing {
+    font-size: 17px;
+    color: #fff;
+    position: relative;
+    padding-left: 54px !important;
+    padding-bottom: 2em !important;
+    padding: 0;
+}
+
+.storeops-page .points .listing:before {
+  content: '';
+  height: 41px;
+  width: 41px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.storeops-page .points .first:before {
+  background-image: url(/images/zebra-lp/icon-gear.png);
+}
+
+.storeops-page .points .second:before {
+  background-image: url(/images/zebra-lp/icon-tool.png);
+}
+
+.storeops-page .points .third:before {
+  background-image: url(/images/zebra-lp/icon-hat.png);
+}
+
+.storeops-page .points .fourth:before {
+  background-image: url(/images/zebra-lp/icon-pole.png);
+}
+
+.storeops-page .points .fifth:before {
+  background-image: url(/images/zebra-lp/icon-checkmark.png);
+}
+
+.storeops-page .points .sixth:before {
+  background-image: url(/images/zebra-lp/icon-calendar.png);
+}
+
+.storeops-page .points .seventh:before {
+  background-image: url(/images/zebra-lp/icon-ninety.png);
+}
+
+.storeops-page .points .eigth:before {
+  background-image: url(/images/zebra-lp/icon-recycle.png);
+}
+
+.storeops-page .innovative {
+    background-image: url(/images/zebra-lp/innovation-bg-mobile.jpg);
+    padding: 1em 15px 1.5em;
+}
+
+.storeops-page .innovative h3 {
+    margin: 0;
+    font-family: AvantBold;
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
+.storeops-page .innovative p {
+  font-size: 17px;
+}
+
+.storeops-page .innovative .btn-blue {
+  margin: 0 auto;
+  display: block;
+  max-width: 150px;
+  text-align: center;
+}
+.storeops-page .wrap {
+    padding: 0;
+}
+.storeops-page .thank-you {
+    color: #76b34b !important;
+    font-size: 17px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+.placeholder-style .rsform-block input[type=text] {
+    background: #fff !important;
+}
+
+.img-desktop {
+  display: none;
+}
+
+#rsform_14_page_0 {
+  max-width: 245px;
+}
+
+#rsform_14_page_0 .btn-blue {
+  margin-top: 1em !important;
+}
+
+#rsform_14_page_0 input {
+  width: 100%;
+  max-width: 230px;
+}
+
+.storeops-page fieldset {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.storeops-page #main {
+  padding: 22px 0 0;
+}

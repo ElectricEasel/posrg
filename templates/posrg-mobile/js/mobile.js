@@ -11,6 +11,9 @@ jQuery(document).ready(function ($){
         }
     });
     
+	// Change Value of Zebra Page submit button
+	$('#rsform_14_page_0 .btn-blue').attr('value', 'Download Survey');
+
 	$(".slidingDiv").hide();
 	$(".show_hide").show().addClass("block");
 	
@@ -70,6 +73,8 @@ jQuery(document).ready(function ($){
 
 	// Add smooth scrolling to all links
 	$(".marketing-pos-hero .btn-blue").on('click', function(event) {
+
+
 
 	// Make sure this.hash has a value before overriding default behavior
 	if (this.hash !== "") {
